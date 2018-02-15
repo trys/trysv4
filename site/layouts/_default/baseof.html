@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language.Lang }}">
+	<head>
+		<meta charset="UTF-8" />
+		<base href="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+		<link rel="stylesheet" href="css/main.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>{{ .Title }} | {{ .Site.Title }}</title>
+	</head>
+	<body>
+
+		<header role="banner" class="top">
+			<nav class="wrap">
+				<a href="/">Trys Mudford</a>
+				<a href="/blog/">Blog</a>
+				<a href="https://twitter.com/trysmudford" rel="me">Twitter</a>
+			</nav>
+		</header>
+
+		<main role="main" class="main">
+			{{ block "main" . }}
+
+			{{ end }}
+		</main>
+
+		<footer role="contentinfo" class="low">
+			<nav class="wrap">
+				<a href="/">Trys Mudford</a>
+				<a href="https://twitter.com/trysmudford" rel="me">Twitter</a>
+				<a href="https://github.com/trys" rel="me">GitHub</a>
+				<a href="https://instagram.com/trysmudford" rel="me">IG</a>
+			</nav>
+		</footer>
+
+		<script src="app.js"></script>
+
+	</body>
+</html>

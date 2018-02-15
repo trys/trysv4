@@ -1,0 +1,24 @@
+{{ define "main" }}
+	<div class="blog">
+		<div class="wrap insulate">
+			<h1 class="page-title blog-title">{{ .Title }}</h1>
+			<div class="center">{{ .Content }}</div>
+
+			<div class="posts">
+				{{ range (.Paginator 20).Pages }}
+					{{ if eq .Params.categories "Video" }}
+						{{ partial "post-video" . }}
+					{{ else if eq .Params.categories "Image" }}
+						{{ partial "post-image" . }}
+					{{ else }}
+						{{ partial "post" . }}
+					{{ end }}
+				{{ end }}
+			</div>
+
+			{{ if .Paginator.HasNext }}
+			    <a class="button" href="{{ .Paginator.Next.URL }}">More posts</a>
+			{{ end }}
+		</div>
+	</div>
+{{ end }}

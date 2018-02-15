@@ -1,0 +1,7 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Trys Mudford"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true

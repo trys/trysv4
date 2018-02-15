@@ -1,0 +1,46 @@
+{{ define "main" }}
+	<div class="opening">
+		<div class="wrap">
+			<div class="opening__content">
+				{{ .Content }}
+			</div>
+
+			<figure>
+				<picture>
+				  <source srcset="images/trys.webp" type="image/webp">
+				  <source srcset="images/trys.png" type="image/png"> 
+				  <img src="images/trys.png" alt="Trys Mudford">
+				</picture>
+			</figure>
+		</div>
+	</div>
+
+	<section class="work">
+		<h1 class="page-title">Some examples of my work</h1>
+		<article class="insulate">
+			<div class="wrap">
+				<h1>Concept Tag PWA</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+				<p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</article>
+		<article class="insulate">
+			<div class="wrap">
+				<h1>Hartwell Insurance</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+				<p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+			</div>
+		</article>
+	</section>
+
+	<section class="feed">
+		<div class="insulate wrap">
+			<h1 class="page-title"><a href="/blog/">Latest articles</a></h1>
+			<div class="posts">
+				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "==" "Web" ) }}
+					{{ partial "post" . }}
+				{{ end }}
+			</div>
+		</div>
+	</section>
+{{ end }}
