@@ -1,0 +1,8 @@
+<article class="post post--article">
+	<h2>
+		<a href="{{ .Params.link }}">{{ .Title }}</a>
+	</h2>
+	{{ if .Params.for }}
+		<span class="categories">{{ .Params.for }}</span>
+	{{ end }}
+</article>

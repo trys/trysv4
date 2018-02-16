@@ -2,6 +2,7 @@
 title: Hugo + PWA + Netlify = Huge performance wins
 date: 2018-01-27
 description: "Hugo + Netlify + PWA makes for a rapid website."
+categories: Web
 ---
 
 We’ve just launched a shiny new website for [Hartwell Insurance](https://www.hartwell-insurance.com/) – I’m really proud of it. It was tackled in a different way to most previous Tomango site builds, using some fancy new tools and some vintage web standards.

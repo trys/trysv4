@@ -1,7 +1,7 @@
 ---
 title: The Recap
 date: 2018-02-03
-categories: Web
+categories: Training
 ---
 
 Before moving onto a bigger project, I thought it would be worth consolidating the past six sessions. We've tackled the following subjects:

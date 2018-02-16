@@ -66,3 +66,24 @@ hr {
 	border: none;
 	border-top: 2px solid var(--mid);
 }
+
+.button {
+	margin: 1rem auto;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: var(--dark);
+	transition: 300ms background;
+	padding: 1rem 2rem;
+	text-align: center;
+	color: #FFF;
+	display: inline-block;
+	min-width: 200px;
+	width: auto;
+
+	&:hover {
+		background: #1F1821;
+		color: #FFF;
+	}
+}

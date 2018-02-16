@@ -1,4 +1,6 @@
-<figure class="post post--image">
+<figure class="post post--image{{ if .Params.size }} post--image--large{{ end }}">
+	{{ if .Params.imageLarge }}<a href="{{ .Params.imageLarge }}">{{ end }}
 	<img src="{{ .Params.image }}" alt="{{ .Title }}">
+	{{ if .Params.imageLarge }}</a>{{ end }}
 	<figcaption>{{ .Title }}</figcaption>
 </figure>
