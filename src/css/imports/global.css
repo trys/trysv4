@@ -82,8 +82,28 @@ hr {
 	min-width: 200px;
 	width: auto;
 
+
 	&:hover {
 		background: #1F1821;
 		color: #FFF;
+	}
+
+	&.button--success {
+		background: #2c753c;
+	}
+
+	&.button--failure {
+		background: #9a3730;
+	}
+}
+
+.password {
+	& .password__result {
+		display: block;
+		margin: 1.8em 0 1em;
+	}
+
+	& .button {
+		min-width: auto;
 	}
 }

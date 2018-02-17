@@ -5,4 +5,7 @@
 			{{ .Content }}
 		</div>
 	</div>
+	{{ if .Params.js }} 
+		<script async src="app.js"></script>
+	{{ end }}
 {{ end }}
