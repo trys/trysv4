@@ -67,9 +67,49 @@
 
 	& article:nth-child(odd) {
 		background: var(--light);
+
+		& figure {
+			order: -1;
+		}
+	}
+
+	@media (min-width: 850px) {
+		& .page-title {
+			margin-bottom: 0;
+		}
 	}
 }
 
 .feed {
 	background: var(--mid);
+}
+
+.project {
+	max-width: 580px;
+
+	& figure {
+		margin: 30px auto 0;
+	}
+	& img {
+		margin: 0 auto;
+		display: block;
+		background: linear-gradient(#A6C0FE, #4CACC1);
+		padding: 20px;
+	}
+
+	@media (min-width: 850px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		@supports (display: grid) {
+			max-width: 1180px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 60px;
+
+			& figure {
+				margin: 0;
+			}
+		}
+	}
 }

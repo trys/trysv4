@@ -2,6 +2,10 @@ body {
 	background: var(--light);
 }
 
+.main {
+	min-height: calc(100vh - 7em)
+}
+
 .wrap {
 	max-width: 1180px;
 	padding-left: 20px;
@@ -13,10 +17,6 @@ body {
 .insulate {
 	padding-top: 1.666em;
 	padding-bottom: 1.666em;
-}
-
-.low {
-	margin-top: 30px;
 }
 
 .top,

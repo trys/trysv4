@@ -19,7 +19,7 @@ I then took all the content from the design file and moved it into Markdown, put
 
 For example, this two column layout shown below. I used CSS Columns with a  `break-after: always;` on the `<h1>`. No multi-wrapper or difficult-to-clear shortcodes, just clean HTML.
 
-![The multi-column setup on Hartwell Insurance](hartwell-columns.png)
+![The multi-column setup on Hartwell Insurance](images/blog/hartwell-columns.png)
 
 For the ripple effects on the section headings, I used JS to prepend a `<canvas>` element then animated it with `RequestAnimationFrame`. It adds a nice bit of movement on the page.
 
@@ -43,11 +43,11 @@ Finally, the [Service Worker](https://www.hartwell-insurance.com/sw.js) could be
 
 The WebPageTest results are looking good. The speed index is 456, 10x smaller than the average Alexa top 300,000 score.
 
-![WebPageTest results](hartwell-webpagetest.png)
+![WebPageTest results](images/blog/hartwell-webpage.png)
 
 [TestMySite.io](https://testmysite.io/5a7e1bb2df99531a23c9ad2f/hartwell-insurance.com) is return ~2ms time to first byte from the CDN edge nodes. Lighthouse audits are also very promising. There’s still some improvement to be gained lazy-loading the images and inlining the CSS. I’m less excited about the [second suggestion](http://www.trysmudford.com/css-in-2017/), but I’ll certainly look at some lazy-loading, especially as I’m already using `IntersectionObserver` for some animations.
 
-![Lighthouse results](hartwell-lighthouse.png)
+![Lighthouse results](images/blog/hartwell-lighthouse.png)
 
 The most encouraging result is how quick the site is around the world. Most Tomango clients (and their customers) are pretty local and almost exclusively UK-based. We have a dedicated server in Surrey that serves our market pretty well. It did take me by surprise just how much slower a connection from the USA, Australia and Japan to our server was. They’re waiting ~500ms just for the first byte, let alone downloading each asset.
 
