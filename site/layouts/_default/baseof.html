@@ -5,6 +5,15 @@
 		<meta charset="UTF-8" />
 		<base href="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4cacc1">
+		<meta name="apple-mobile-web-app-title" content="Trys Mudford">
+		<meta name="application-name" content="Trys Mudford">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="theme-color" content="#4cacc1">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
@@ -36,5 +45,20 @@
 		{{ if .Params.js }} 
 			<script async src="app.js"></script>
 		{{ end }}
+		<script async>
+			var MTUserId='ee7b3c82-404b-4839-8a08-c21c3aed8823';
+			var MTFontIds = new Array();
+
+			MTFontIds.push("1475520"); // Avenir® W01 55 Roman 
+			MTFontIds.push("1475544"); // Avenir® W01 85 Heavy 
+			(function() {
+			    var mtTracking = document.createElement('script');
+			    mtTracking.type='text/javascript';
+			    mtTracking.async='true';
+			    mtTracking.src='fonts/mtiFontTrackingCode.js';
+
+			    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
+			})();
+		</script>
 	</body>
 </html>
