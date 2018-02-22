@@ -25,6 +25,10 @@
 	display: flex;
 	align-items: center;
 
+	& a {
+		display: block;
+	}
+
 	& h2 {
 		margin: 0;
 
@@ -48,12 +52,19 @@
 .posts {
 	grid-gap: 30px;
 	display: grid;
+	max-width: 750px;
+	margin: 0 auto;
+
+	@supports (display: grid) {
+		max-width: none;
+		margin: 0;		
+	}
 
 	& > * {
 		margin: 0;
 	}
 
-	@media (min-width: 750px) {
+	@media (min-width: 850px) {
 		grid-template-columns: 1fr 1fr;
 		grid-auto-flow: dense;
 		grid-gap: 60px;

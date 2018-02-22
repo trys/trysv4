@@ -15,7 +15,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	 -webkit-font-smoothing: antialiased;
 	color: var(--dark);
-	font: 400 16px/1.79 'Avenir LT', serif, 'Avenir', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font: 400 16px/1.79 'Avenir LT', 'Avenir', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	font-size: calc( 16px + (24 - 16) * (100vw - 320px) / (750 - 320) );
 
 	@media (min-width: 750px) {

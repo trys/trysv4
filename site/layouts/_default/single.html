@@ -3,6 +3,11 @@
 		<h1 class="page-title">{{ .Title }}</h1>
 		<div class="single content">
 			{{ .Content }}
+
+			{{ if eq "/blog/" .Parent.URL }}
+				<hr>
+				<p>Posted on {{ .Date.Format "02 January 2006" }} in <a href="/categories/{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>
+			{{ end }}
 		</div>
 	</div>
 {{ end }}

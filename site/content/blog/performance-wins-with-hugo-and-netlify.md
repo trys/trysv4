@@ -56,7 +56,3 @@ The most encouraging result is how quick the site is around the world. Most Toma
 ---
 
 This project was such a blast to develop, it’s a real pleasure to put new technologies to good use in production, and to see real performance and usability benefits from them. Even using classic web methods of serving folders with files is fun when you’ve been databasing for a while – there’s something really ‘pure’ about it.
-
----
-
-_This was originally posted on [my website](http://www.trysmudford.com/perfomance-wins-with-hugo-and-netlify/)_

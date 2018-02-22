@@ -13,7 +13,15 @@
 	}
 
 	& figure {
-		display: none;
+		background: linear-gradient(#A6C0FE, #4CACC1);
+		margin: 0 auto 20px;
+		max-width: 461px;
+	}
+
+	@media (min-width: 500px) {
+		& figure {
+			display: none;
+		}
 	}
 
 	@media (min-width: 1000px) {
@@ -35,11 +43,12 @@
 		}
 
 		& figure {
-			background: linear-gradient(#A6C0FE, #4CACC1);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			width: 340px;
+			max-width: none;
+			margin: 0;
 		}
 
 		& img {

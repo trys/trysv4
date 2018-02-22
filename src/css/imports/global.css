@@ -12,6 +12,10 @@ body {
 	padding-right: 20px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (min-width: 500px) {
+		width: 90%;
+	}
 }
 
 .insulate {
