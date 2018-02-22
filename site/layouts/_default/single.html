@@ -4,7 +4,7 @@
 		<div class="single content">
 			{{ .Content }}
 
-			{{ if eq "/blog/" .Parent.URL }}
+			{{ if eq .CurrentSection.URL "/blog/" }}
 				<hr>
 				<p><small>Posted on {{ .Date.Format "02 January 2006" }}{{ if .Params.categories }} in <a href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>{{ end }}</small></p>
 			{{ end }}

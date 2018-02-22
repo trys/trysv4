@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="{{ $.Site.Language.Lang }}">
 	<head>
 		<meta charset="UTF-8" />
@@ -19,6 +18,12 @@
 		<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 		<meta name="twitter:description" content="{{ .Title }} | Frontend developer | Trys Mudford" />
 		<meta name="twitter:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
+		{{ if (.IsPage) and eq .Section "blog" }}
+		<meta name="twitter:label1" value="Posted in" />
+		<meta name="twitter:data1" value="{{ .Params.categories }}" />
+		<meta name="twitter:label2" value="Reading time" />
+		<meta name="twitter:data2" value="{{ .ReadingTime }} minute{{ if not (eq .ReadingTime 1) }}s{{ end }}" />
+		{{ end }}
 		
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
