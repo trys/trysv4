@@ -5,6 +5,21 @@
 		<meta charset="UTF-8" />
 		<base href="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 		<link rel="stylesheet" href="css/main.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>{{ .Title }} | {{ .Site.Title }}</title>
+
+		<meta property="og:url" content="{{ getenv "URL" }}{{ .URL }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		<meta property="og:description" content="{{ .Title }} | Frontend developer | Trys Mudford" />
+		<meta property="og:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
+		<meta property="og:image:alt" content="Hartwell Insurance logo" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		<meta name="twitter:description" content="{{ .Title }} | Frontend developer | Trys Mudford" />
+		<meta name="twitter:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
+		
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,9 +29,6 @@
 		<meta name="application-name" content="Trys Mudford">
 		<meta name="msapplication-TileColor" content="#00aba9">
 		<meta name="theme-color" content="#4cacc1">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	</head>
 	<body>
 
