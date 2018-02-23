@@ -85,6 +85,7 @@ hr {
 	display: inline-block;
 	border: none;
 	min-width: 200px;
+	cursor: pointer;
 	width: auto;
 
 
