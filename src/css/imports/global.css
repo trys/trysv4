@@ -83,6 +83,7 @@ hr {
 	text-align: center;
 	color: #FFF;
 	display: inline-block;
+	border: none;
 	min-width: 200px;
 	width: auto;
 
