@@ -11,12 +11,12 @@
 		<meta property="og:url" content="{{ getenv "URL" }}{{ .URL }}" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta property="og:description" content="{{ .Title }} | Frontend developer | Trys Mudford" />
+		<meta property="og:description" content="{{ .Title }} | Trys Mudford | Frontend developer" />
 		<meta property="og:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
 		<meta property="og:image:alt" content="Hartwell Insurance logo" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta name="twitter:description" content="{{ .Title }} | Frontend developer | Trys Mudford" />
+		<meta name="twitter:description" content="{{ .Title }} | Trys Mudford | Frontend developer" />
 		<meta name="twitter:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
 		{{ if (.IsPage) and eq .Section "blog" }}
 		<meta name="twitter:label1" value="Posted in" />
