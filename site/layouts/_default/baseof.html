@@ -61,20 +61,5 @@
 		{{ if .Params.js }} 
 			<script async src="app.js"></script>
 		{{ end }}
-		<script async>
-			var MTUserId='ee7b3c82-404b-4839-8a08-c21c3aed8823';
-			var MTFontIds = new Array();
-
-			MTFontIds.push("1475520"); // Avenir® W01 55 Roman 
-			MTFontIds.push("1475544"); // Avenir® W01 85 Heavy 
-			(function() {
-			    var mtTracking = document.createElement('script');
-			    mtTracking.type='text/javascript';
-			    mtTracking.async='true';
-			    mtTracking.src='fonts/mtiFontTrackingCode.js';
-
-			    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
-			})();
-		</script>
 	</body>
 </html>
