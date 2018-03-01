@@ -2,7 +2,7 @@
   const wrap = document.querySelector('.password')
   if (!wrap) return
 
-  const input = 'ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz?!*^%'.split('')
+  const input = 'ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz?!*^%0123456789'.split('')
   const output = wrap.querySelector('.password__result')
 
   const rand = (min, max) => Math.floor(Math.random() * ( max - min + 1) + min)
