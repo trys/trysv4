@@ -154,7 +154,7 @@ signupForm.addEventListener('submit', function(event) {
   auth.signup(
     this.email.value,
     this.password.value,
-    { name: this.name.value }
+    { full_name: this.name.value }
   ).then(
     response => console.log("Confirmation email sent"),
     error => console.error("Error during signup: %o", error)
