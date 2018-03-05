@@ -59,7 +59,7 @@ I'll admit, my shell knowledge is non-existent. But I'm a programmer, so bodging
 
 Creating a shell file was the first task, making the file `build.sh` seemed to work, as did running `bash build.sh` in the command line. Strike 1.
 
-Next up. Creating deployment directories. This did the trick of making both the `dist` dirctory, as well as the `about` dirctory:
+Next up. Creating deployment directories. This did the trick of making both the `dist` directory, as well as the `about` directory:
 
 ```bash
 mkdir -p "./dist/about/"
