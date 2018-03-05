@@ -11,7 +11,7 @@ I was reading the latest Netlify newsletter and spotted a cheeky line at the bot
 
 PHP builds on Netlify, this was news to me! I've wanted to port a few static PHP sites, but haven't felt up for rebuilding them in Hugo.
 
-There was only one thing for it, time for testing...
+There was only one thing for it, time for some testing...
 
 ## Local setup
 
@@ -65,7 +65,13 @@ Next up. Creating deployment directories. This did the trick of making both the 
 mkdir -p "./dist/about/"
 ```
 
-Finally, the `php` CLI command to convert the files. Initially I tried `php about.php > "./dist/about.html"`, but that didn't take the `.htaccess` file into account. I needed to route the request through the `./index.php` file, spoofing the `REQUEST_URI`. Here's what I ended up with:
+Finally, the `php` CLI command to convert the files. Initially I tried:
+
+```
+php about.php > "./dist/about.html"
+```
+
+Sadly that didn't take the `.htaccess` file into account. I needed to route the request through the `./index.php` file, spoofing the `REQUEST_URI`. Here's what I ended up with:
 
 ```bash
 mkdir -p "./dist/about/"
@@ -85,4 +91,4 @@ dist/
 
 ## Next steps
 
-That build script is pretty brittle, but it does enough to test the concept out. If there was a file that lists all page URLs which was read in, creating all the files and folders, this could be a workable setup. More testing required, and a lot more bash knowledge...
+That build script is pretty brittle, but it does enough to test the concept out. If there was a file that listed all page URLs which was read in to the bash script and created all the files and folders, this could be a workable setup. More testing required, and a lot more bash knowledge...
