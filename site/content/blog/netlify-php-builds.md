@@ -82,3 +82,7 @@ dist/
 ```
 
 {{< button "https://romantic-kowalevski-afd890.netlify.com/" >}}View the site{{</ button >}}
+
+## Next steps
+
+That build script is pretty brittle, but it does enough to test the concept out. If there was a file that lists all page URLs which was read in, creating all the files and folders, this could be a workable setup. More testing required, and a lot more bash knowledge...
