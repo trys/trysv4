@@ -25,7 +25,7 @@ I defined the default pattern and brandlines on the `:root` element:
 
 Then I could begin using the variables within the hero area `.scss` file:
 
-```scss
+```css
 [role=banner] {
   background-image: var(--pattern);
   background-color: $black;
