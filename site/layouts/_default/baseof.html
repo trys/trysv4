@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.Language.Lang }}">
 	<head>
 		<meta charset="UTF-8" />
-		<base href="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+		<base href="{{ cond (eq "" (getenv "CONTEXT")) $.Site.BaseURL (getenv (cond (eq "production" (getenv "CONTEXT")) "URL" "DEPLOY_PRIME_URL")) }}">
 		<link rel="stylesheet" href="css/main.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
