@@ -1,5 +1,5 @@
 ---
-title: "The web can be weaponised – and we can't count on big tech to stop it"
+title: "The web can be weaponised"
 date: 2018-03-12T13:06:00Z
 categories: Useful
 ---
