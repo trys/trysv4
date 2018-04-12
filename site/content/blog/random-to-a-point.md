@@ -17,7 +17,7 @@ And this gave me an idea.
 
 > Use hashes to give every page a unique style, but keep it consistent between refreshes and site builds.
 
-Using Steve Schoger's brilliant [Hero patterns](https://www.heropatterns.com/) and some lovely hex codes from [FlatUIColors](https://flatuicolors.com/palette/us), we're going to create some psuedo-random styling on a Hugo blog, and host it on Netlify.
+Using Steve Schoger's brilliant [Hero patterns](https://www.heropatterns.com/) and some lovely hex codes from [FlatUIColors](https://flatuicolors.com/palette/us), we're going to create some pseudo-random styling on a Hugo blog, and host it on Netlify.
 
 {{< button "https://random-to-a-point.netlify.com/posts/the-first-post/" >}}See the end result{{</ button >}}
 
