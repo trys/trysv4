@@ -14,17 +14,15 @@ But the interesting thing is it's **random to a point**. If you pass in the same
 
 And this gave me an idea.
 
-> What if you could give every blog post a unique style, but keep it consistent between page refreshes and site builds.
+> Use hashes to give every page a unique style, but keep it consistent between refreshes and site builds.
 
 Using Steve Schoger's brilliant [Hero patterns](https://www.heropatterns.com/) and some lovely hex codes from [FlatUIColors](https://flatuicolors.com/palette/us), we're going to create some psuedo-random styling on a Hugo blog, and host it on Netlify.
 
-{{< button "http://random-to-a-point.netlify.com/posts/the-first-post/" >}}Visit the website{{</ button >}}
+{{< button "https://random-to-a-point.netlify.com/posts/the-first-post/" >}}See the end result{{</ button >}}
 
 ### The code
 
-I'll admit, the code is pretty <del>knarly</del> shoddy, as it's written in a Hugo template, but I'll run through it line by line:
-
-First we need a data object of colours and SVG patterns:
+First we need a data object of [colours](https://flatuicolors.com/palette/us) and [repeatable SVG patterns](https://www.heropatterns.com/):
 
 ```json
 {
@@ -38,7 +36,7 @@ First we need a data object of colours and SVG patterns:
 }
 ```
 
-Then we can start on the template:
+I'll admit, the code is pretty <del>knarly</del> shoddy, as it's written in a Hugo template, but I'll run through it line by line:
 
 ```go
 // The markup
