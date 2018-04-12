@@ -1,5 +1,6 @@
 ---
 title: "Making the static dynamic: Random to a point"
+description: "I've been thinking about ways to inject an element of 'random' to a static website. This is part one: making things random at the time of writing..."
 date: 2018-04-11
 categories: Web
 ---
