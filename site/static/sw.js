@@ -17,6 +17,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     '/blog/',
     '/password/',
     '/offline/',
+    '/app.js',
     '/css/main.css',
     '/fonts/1475520/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2',
     '/fonts/1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2'
