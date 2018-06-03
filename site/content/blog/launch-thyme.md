@@ -1,5 +1,5 @@
 ---
-title: Launching Thyme
+title: Launch Thyme
 date: 2018-06-02
 categories: Web
 ---
