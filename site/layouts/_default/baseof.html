@@ -61,5 +61,19 @@
 		{{ if .Params.js }} 
 			<script async src="app.js"></script>
 		{{ end }}
+		{{ if not .Site.BuildDrafts }}
+		<script>
+			if (navigator.serviceWorker) {
+				navigator.serviceWorker.register('/sw.js', {
+					scope: '/'
+				});
+				window.addEventListener('load', function() {
+					if (navigator.serviceWorker.controller) {
+						navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
+					}
+				});
+			}
+		</script>
+		{{ end }}
 	</body>
 </html>

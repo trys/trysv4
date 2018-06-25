@@ -6,7 +6,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 
 (function() {
   const version = 'v1';
-  const cacheName = version + '::trysmudford-2018:';
+  const cacheName = version + ':trysmudford-2018:';
 
   const staticCacheName = cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
@@ -85,17 +85,9 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     const request = event.request;
     const url = new URL(request.url);
 
-    if (url.href.indexOf('https://www.trysmudford.com') !== 0) {
-      return;
-    }
-
-    if (request.method !== 'GET') {
-      return;
-    }
-
-    if (url.href.indexOf('?') !== -1) {
-      return;
-    }
+    if (url.href.indexOf('https://www.trysmudford.com') !== 0) return;
+    if (request.method !== 'GET') return;
+    if (url.href.indexOf('?') !== -1) return;
 
     if (request.headers.get('Accept').includes('text/html')) {
       event.respondWith(
