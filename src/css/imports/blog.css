@@ -121,3 +121,28 @@
 .load-more {
 	padding: 60px 0;
 }
+
+.post--quote {
+	background: rgba(0, 0, 0, 0.05);
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& blockquote {
+		margin: 0;
+		border: none;
+		padding: 0;
+		line-height: 1.2;
+	}
+
+	& p {
+		margin: 0;
+	}
+
+	& cite {
+		font-style: normal;
+		font-size: 0.6em;
+	}
+}

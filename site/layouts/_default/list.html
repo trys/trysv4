@@ -14,6 +14,8 @@
 						{{ partial "post-external" . }}
 					{{ else if eq .Params.categories "Image" }}
 						{{ partial "post-image" . }}
+					{{ else if eq .Params.type "quote" }}
+						{{ partial "post-quote" . }}
 					{{ else }}
 						{{ partial "post" . }}
 					{{ end }}
