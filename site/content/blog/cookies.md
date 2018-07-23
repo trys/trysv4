@@ -1,0 +1,8 @@
+---
+title: Minimal cookie bar
+date: 2018-07-23
+---
+
+{{< gist trys b10819f753bd801c04edbc95f0d5b7da "cookies.js" >}}
+
+Because the world needs another cookie bar.
