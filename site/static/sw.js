@@ -5,7 +5,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 */
 
 (function() {
-  const version = 'v1';
+  const version = 'v2';
   const cacheName = version + ':trysmudford-2018:';
 
   const staticCacheName = cacheName + 'static';
@@ -122,7 +122,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
         .catch( () => {
           return caches.match(request)
             .then(response => response)
-            .catch()
+            .catch(console.error)
         })
     );
 
