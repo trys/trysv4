@@ -5,10 +5,10 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 */
 
 (function() {
-  const version = 'v2';
-  const cacheName = version + ':trysmudford-2018:';
+  const version = 'v3';
+  const cacheName = ':trysmudford-2018:';
 
-  const staticCacheName = cacheName + 'static';
+  const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
   const imagesCacheName = cacheName + 'images';
 
