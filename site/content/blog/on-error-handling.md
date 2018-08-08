@@ -7,7 +7,7 @@ categories: Web
 
 [Jeremy Keith](https://adactio.com) has written about [handling errors in Service Workers](https://adactio.com/journal/14241).
 
-It's a pertinent subject for me at the moment. I was recently reflecting back to when I began building websites. There were some programming concepts dubbed as _essential_ that totally went over my head! Starting with HTML and CSS made it appear that these were heavy, complex, and only required learning for 'proper programmers'. Two concepts sprang that to mind were **Git**, and **Exceptions**.
+It's a pertinent subject for me at the moment. I was recently reflecting back to when I began building websites. There were some programming concepts dubbed as _essential_ that totally went over my head! Starting with HTML and CSS made it appear that these were heavy, complex, and only required learning for 'proper programmers'. One of those concepts was **Exceptions**.
 
 Early me couldn't understand why you'd ever want a third-party library to throw a fatal error, let alone throw one yourself. Why would you intentionally cause an error that breaks the program flow?
 
@@ -29,7 +29,7 @@ A dangling `catch` doing nothing. I knew it looked stupid, but in mixture of pro
 
 ## Code will fail
 
-Your code will error, and that's fine, everyone's does. Accepting that is an empowering step, it's the first step towards writing [resilient code](https://resilientwebdesign.com/). The web is a chaotic place full of packet-loss, ad-blockers and browsers in various states of stability - even the best code can fail in these conditions. Therefore, how we handle failure is crucial.
+Your code will error, and that's fine, everyone's does. Accepting that is empowering, it's the first step towards writing [resilient code](https://resilientwebdesign.com/). The web is a chaotic place full of packet-loss, ad-blockers and browsers in various states of stability - even the best code can fail in these conditions. Therefore, how we handle failure is crucial.
 
 **Websites, URLs and APIs are public interfaces. They'll be used in whatever way a user deems fit.** We cannot pin that down, it's what makes the web special. If a user wishes to browse a site blocking images, CSS and JavaScript, they can. Failing to return sensible error messages makes the users' interaction with the interface more challenging. This extends from Exceptions to 404, 500 & offline pages, empty API responses, toasts and form validation.
 
