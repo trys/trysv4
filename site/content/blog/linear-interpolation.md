@@ -7,7 +7,11 @@ description: Building native-like scroll-aware animations in JS
 
 tldr; Native-like scroll-aware animations:
 
-<video src="/images/blog/blur.mp4" type="video/mp4" controls style="width: 100%; margin-bottom: 30px;"></video>
+---
+
+{{< vimeo "288522233" >}}
+
+---
 
 ## Learning about lerps
 
@@ -153,7 +157,9 @@ header img {
 
 The end result:
 
-<video src="/images/blog/blur.mp4" type="video/mp4" controls style="width: 100%; margin-bottom: 30px;"></video>
+{{< vimeo "288522233" >}}
+
+---
 
 {{< button "https://codepen.io/trys/pen/XPaYBj/" >}}Codepen{{</ button >}}
 
@@ -220,7 +226,9 @@ main {
 }
 ```
 
-<video src="/images/blog/far-too-much.mp4" type="video/mp4" controls style="width: 100%; margin-bottom: 30px;"></video>
+{{< vimeo "288522168" >}}
+
+---
 
 This is clearly over the top! But it shows how you can animate all manner of CSS values based of scroll position. And this example could be extended to handle resize events, time changes, maybe even the Ambient Light API!
 

@@ -34,3 +34,7 @@ nav {
 *:after{
 	box-sizing: border-box;
 }
+
+iframe {
+	border: none;
+}
