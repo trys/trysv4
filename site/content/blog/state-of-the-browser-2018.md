@@ -32,6 +32,10 @@ And the Basic Attention Token (BAT) appears to be an interesting approach to tra
 
 It encourages paywalls. If reforming digital ads means walling off the open web, then stop the train and count me out.
 
+![Black Mirror episode, Fifteen Million Merits](images/blog/fifteen-million-merits.jpg)
+
+Watching adverts to earn credits was the premise of one of the first Black Mirror episodes. This approach by Brave feels like it could be the first step down that path; providing justification for gated content, crediting users for consuming advertising, and placing a tangible value on our time.
+
 This talk generated so much discussion at lunch and I'm so glad to have heard it. When discussing Brave, we conceded that we take for granted just how established and shady the current 'system' is. Google Chrome, Google Adwords, Google Analytics - there's a trend here.
 
 I think the feeling of discomfort was partly due to a new and potentially disruptive technology, but also it made us stop and thinkg about the current landscape a little more.
@@ -72,6 +76,18 @@ Web XR will be the only viable option to get XR to the masses.
 
 ## How to be a Web A/V Artist Part 2: Picking Up the Threads
 
-Ruth John talked about Web Audio and visualisations, but the key part of the talk was on web workers and worklets.
+Ruth John talked about Web Audio and visualisations, but the key part of the talk was on web workers and worklets. Workers
 
+Workers bring multi-threading to JavaScript. Computationally complex tasks can be pushed to other threads leaving the main thread to handle scrolling, rendering and general DOM work.
 
+It was super interesting to learn about transferable, and how they literally pluck the data from one thread to the other, leaving nothing behind.
+
+This all feels pretty low-level and scary! But the API is actually quite straightforward. `worker.postMessage()` sends the data, and `worker.addEventListener('message');` receives it.
+
+## Bring on the design tools
+
+Chris Mills walked us through the exciting new tools in Firefox, and showed how perfect they are for designers to use.
+
+The easing tool, variable fonts editor and animation inspector were particular highlights. They're set up to allow on-the-fly adjustments to make your site 'feel' right - something designes are incredibly good at!
+
+I'm also really excited to see how Firefox works in a dev tools 'history' to make changes persist across page loads.
