@@ -13,11 +13,11 @@ State of the Browser 2018 was a wonderful conference. The talks were thought pro
 
 Michelle Barker kicked off the event tackling CSS Grid Layout & CSS Custom Properties. It was amazing - there were so many knowledge-bombs dropped.
 
-The square-bracket syntax for line names had totally passed me by till now! _Side note: I love it when you learn something new about a language you've been writing for years. The `turn` unit knocked me for six the other day_. The `-start` and `-end` suffix shorthand was another brilliant revelation.
+The square-bracket syntax for line names had totally passed me by. _Side note: I love it when you learn something new about a language you've been writing for years. The `turn` unit knocked me for six the other day_. The `-start` and `-end` suffix shorthand was another brilliant revelation.
 
-Combining Grid and Custom properties looks so exciting! Both specs have been written in such a thoughtful manner, and clearly built to solve real-world problems. It shouldn't be a surprise that they work well together, but it is!
+Combining Grid and Custom properties looks so exciting! Both specs have been written in such a thoughtful manner, and clearly built to solve real-world problems. It shouldn't be a surprise that they work well together!
 
-One key reason I attend conferences is to be inspired, and Michelle's talk did just that. I was scribbling notes throughout the day as new ideas arrived on how to incorporate custom properties into my CSS.
+One key reason I attend conferences is to be inspired, and Michelle's talk did just that. I was scribbling notes throughout the day as new ideas formed on how to incorporate custom properties into my CSS.
 
 ---
 
@@ -27,21 +27,21 @@ If inspiration is one reason to attend a conference, having ideas challenged has
 
 Brave looks like a totally different challenger in the browser market. It's new, it's different, and I'm still not really sure how I feel about it! But that's cool!
 
-The goals sound noble:
+The goals sound noble enough:
 
 - Private by default
 - Reform digital ads
 - Pay users to browse
 
-And the Basic Attention Token (BAT) appears to be an interesting approach to tracking behaviour. But the BAT is also used as currency, and this is where the Brave direction started to feel uncomfortable.
+And the Basic Attention Token (BAT) appears to be an interesting approach to user tracking. But the BAT is also used as currency, and this is where the Brave direction started to feel uncomfortable.
 
-It encourages pay walls. If reforming digital ads means walling off the open web, then stop the train and count me out.
+It encourages pay walls. If reforming digital ads means walling off the open web, then count me out.
 
 ![Black Mirror episode, Fifteen Million Merits](images/blog/fifteen-million-merits.jpg)
 
 Intentionally consuming advertisements to earn credits was the premise of one of the first Black Mirror episodes. This approach by Brave feels like it could be the first step down that path; providing justification for gated content, crediting users for consuming advertising, and placing a tangible value on our time.
 
-This talk generated so much discussion at lunch and I'm so glad to have heard it. When discussing Brave, we conceded that we take for granted just how established and shady the current 'system' is. Google Chrome, Google Adwords, Google Analytics - there's a trend here.
+This talk generated so much discussion at lunch and I'm glad to have heard it. When discussing Brave, we conceded that we take for granted just how established and **shady** the current 'system' is. Google Chrome, Google Adwords, Google Analytics - there's a trend here.
 
 I think the feeling of discomfort was partly down to Brave being a new and potentially disruptive technology, but also it made us stop and thinking about the current landscape a little more.
 
@@ -49,7 +49,7 @@ I think the feeling of discomfort was partly down to Brave being a new and poten
 
 ## Stop the #divFest!
 
-Sara's talk was brilliant. It was a fast-paced and hilarious dive into the div-soup that makes up many modern web applications.
+Sara Vieira's talk was brilliant. It was a fast-paced and hilarious dive into the div-soup that makes up many modern web applications.
 
 It's a subject I feel strongly about being a passionate supporter of semantic HTML.
 
@@ -67,7 +67,7 @@ This is a mind shift from app-centric to task-centric.
 
 Rowan showed a great example contrived from the idea of buying a sofa. Most customers are not in the business of buying sofas everyday (👀 looking at you Amazon and your suggest products feed ). Bombarding a user with newsletter signups, push notification requests, and add to homescreen popups too early on the process is futile. They'll quite rightly block the requests and might even get fed up enough to try a different site.
 
-Instead, we can view their visit in a task-centric way, and look to help them with their specific goal. Don't prompt the user to add the whole site to their homescreen from the offset. Catch that event, and serve it when they've invested some time - perhaps once they've ordered?
+Instead, we can view their visit in a task-centric way, and look to help them with their specific goal. Don't prompt the user to add the whole site to their homescreen from the offset. Catch that event, and serve it when they've invested some time - perhaps after an order has been placed?
 
 Better still; look into creating micro PWAs that serve the single purpose of handling their order. It stands to reason that a customer will be more likely to install a PWA that is relevant, timely and concise.
 
@@ -77,9 +77,11 @@ Follow the same approach with push notifications. Use the web platform tools we'
 
 ## WebXR and the Immersive Web
 
-Ada shared about the amazing possibilities of Web XR. Virtual reality and augmented reality are two ends of the same spectrum.
+Ada Rose Cannon shared about the amazing possibilities of Web XR.
 
-The most encouraging part of this talk was seeing how much care is going into developing this spec. The transition from desktop to mobile was shaky, so it's amazing to hear how browsers and companies are preparing for this next shift. Pokémon Go showed the world how massive XR can be, so we need to be ready to steward this new medium well.
+Virtual reality and augmented reality are two ends of the same spectrum.
+
+The most encouraging part of this talk was seeing how much care is going into developing these specifications. The transition from desktop to mobile was shaky, so it's great to hear how browsers and companies are preparing for this next shift. Pokémon Go showed the world how massive XR can be, so we need to be ready to steward this new medium well.
 
 Ada raised a really interesting point about the problem with native XR apps. We know how large 'normal' native apps can get, and how expensive their daily updates are for many users. Native XR apps are often an order of magnitude larger. And when each content provider creates their own walled product, it's going to be very costly to the user.
 
@@ -115,9 +117,9 @@ I'm also really excited to see how Firefox works in a dev tools 'history' to mak
 
 Christian Heilmann started off the final three impassioned talks on a better, progressive web. 
 
-Developer convenience and a desire to release often trump performance. When you're constantly AB testing, changing interfaces and pushing updates, nothing stays around long enough to be improved. The `#divFest` Sara Vieira talked about is rarely around for enough time to be spotted, nor is it noticed by our current crop of tools.
+Developer convenience and a desire to release quickly often trump performance. When you're constantly AB testing, changing interfaces and pushing updates, nothing stays around long enough to be improved. The `#divFest` Sara talked about is rarely around for enough time to be spotted, nor is it noticed by our current crop of tools.
 
-Our online resources (👀 looking at you Stack Overflow) favour the how over the why. How can we encourage learning to those who need it?
+Our online resources (👀 looking at you Stack Overflow) favour the **how over the why**. How can we encourage learning to those who need it?
 
 Being a web expert is less exciting than being a full stack developer. Should we be specialising more?
 
@@ -157,13 +159,13 @@ Working together, collaborating and coming to agreement are not _soft skills_. T
 
 Charlie Owen's talk was like oxygen.
 
-I was nodding and scribbling furiously throughout! It was such a great talk, linking in perfectly to the truths dropped in the preceding two talks. I can't wait for the video of this talk to be released.
+I was nodding and scribbling furiously throughout! It was such a great talk, linking in perfectly to the truths dropped in the preceding two talks. I can't wait for the recording of this talk to be released.
 
-The web is strong because of stupid layers.
+> The web is strong because of stupid layers.
 
 🔥 _A few developers on Twitter should consider this point in light of the CSS drama this weekend_ 🔥
 
-It is robust. The fact that you can open dev-tools and delete whole chunks of code **at runtime** and the site stays error free is incredible. We don't remember this enough.
+It is robust. The fact that you can open dev-tools and delete whole chunks of markup; **at runtime**, and the site stays error free is incredible. We don't remember this enough.
 
 The web was weird, free and wild. And then it became commercial. After several years, the iPhone changed everything - it was a lesson in diversity. Now we're starting to exclude people again.
 
