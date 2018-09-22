@@ -17,5 +17,6 @@ Thanks to a tip-off from [Tom](https://www.twitter.com/truzyllo), some links fro
 - [Ableism/Language](https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html)
 - [A framework for web performance](https://adactio.com/journal/14355)
 - [The 9am Rush Hour](https://medium.com/@aerotwist/the-9am-rush-hour-2d7ae687efd5)
+- [Apple - Accessibility](https://www.youtube.com/watch?v=XB4cjbYywqg)
 
 The weird, wild web is wonderful.
