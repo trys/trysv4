@@ -2,17 +2,20 @@
 title: Offline-first thoughts
 date: 2018-09-26
 categories: Web
+description: I've spent the evening experimenting with offline-first techniques, and considering the implications of this approach.
 ---
 
-I've spent the evening experimenting with Service Worker-first techniques, and pondering the implications of this approach.
+I've spent the evening experimenting with offline-first techniques, and considering the implications of this approach.
 
-Service Workers have such huge potential power, and I feel we (developers on the web) have hardly brushed the surface with what's possible with them.
+Service Workers have such huge potential power, and I feel like we (developers on the web) have hardly scratched the surface with what's possible with them.
 
 Being such a new technology, standards and best practises are yet to be formed, and I'm fascinated how these will evolve over the next couple of years.
 
+Service Workers are most commonly used as a progressive enhancement, providing an offline fallback. But they can do so much more than that. What if they were central to your site architecture? What would that look like in practice? What if you build a **Service worker-first web application?**
+
 ---
 
-Network-first with cache fallback is a pretty safe option when it comes to PWAs. But that only helps users with **great or no connection**, it doesn't help those with slow connections, flaky connections, or high network costs.
+Network-first with cache fallback is a pretty safe option when it comes to <abbr title="Progressive Web Apps">PWAs</abbr>. But that only helps users with **great or no connection**, it doesn't help those with slow connections, flaky connections, or high network costs.
 
 > The true power of a PWA is with offline-first
 
