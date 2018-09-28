@@ -2,6 +2,7 @@
 title: Moving on
 description: Onwards and upwards. From Tomango to Daisie
 date: 2018-09-28
+categories: Web
 ---
 
 Today I leave Tomango.
