@@ -46,6 +46,13 @@ h1 {
 	font-size: 1.666em;
 	margin: 0 0 0.5em;
 	line-height: 1.5;
+
+	@supports (-webkit-text-fill-color: transparent) {
+		background-image: -webkit-gradient(linear,0% 0%,100% 100%,from(#96A0DE),to(#4CACC1));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: inline-block;
+	}
 }
 
 h2 {

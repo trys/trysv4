@@ -17,7 +17,9 @@
 
 	<section class="feed">
 		<div class="insulate wrap">
-			<h1 class="page-title"><a href="/blog/">Latest articles</a></h1>
+			<header class="center">
+				<h1 class="page-title"><a href="/blog/">Latest articles</a></h1>
+			</header>
 			<div class="posts">
 				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "==" "Web" ) }}
 					{{ partial "post" . }}
