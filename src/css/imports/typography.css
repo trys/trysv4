@@ -33,6 +33,12 @@ a {
 
 	&:hover {
 		color: var(--blue);
+
+		@supports (-webkit-text-fill-color: transparent) {
+			background-image: -webkit-gradient(linear,0% 0%,100% 100%,from(#96A0DE),to(#4CACC1));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 }
 
