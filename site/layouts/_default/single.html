@@ -1,16 +1,22 @@
 {{ define "main" }}
-	<div class="wrap insulate">
-		<div class="single content">
-			<header class="center">
-				<h1 class="page-title">{{ .Title }}</h1>
-				{{ if eq .CurrentSection.URL "/blog/" }}
-					<small>Posted on {{ .Date.Format "02 January 2006" }}{{ if .Params.categories }} in
-						<a href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>{{ end }}</small>
-				{{ end }}
-			</header>
+<div class="wrap insulate">
+	<div class="single content">
+		<header class="center">
+			<h1 class="page-title">{{ .Title }}</h1>
+			{{ if eq .CurrentSection.URL "/blog/" }}
+			<small>Posted on {{ .Date.Format "02 January 2006" }}{{ if .Params.categories }} in
+				<a href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>{{ end }}</small>
+			{{ end }}
+		</header>
 
-			{{ .Content }}
+		{{ .Content }}
 
-		</div>
+		{{ if eq .CurrentSection.URL "/blog/" }}
+		<hr>
+		<small>Posted on {{ .Date.Format "02 January 2006" }}{{ if .Params.categories }} in
+			<a href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>{{ end }}</small>
+		{{ end }}
+
 	</div>
+</div>
 {{ end }}
