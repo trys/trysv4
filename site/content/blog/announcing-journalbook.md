@@ -14,7 +14,7 @@ I've been working on a little web product over the Christmas break, and I'm prou
 
 JournalBook is a private, offline-first personal journal.
 
-Your notes are **only** stored on your device — they're never sent to a server. You don't even need to sign-in to use it! It's works offline, so you can reflect upon your day on the slow train journey home.
+Your notes are **only** stored on your device — they're never sent to a server. You don't even need to sign-in to use it! It works offline, so you can reflect upon your day on the slow train journey home.
 
 It's quick, lightweight, and developed [in the open](https://github.com/trys/JournalBook). You can even add it to your homescreen as an app.
 
