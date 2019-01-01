@@ -52,7 +52,7 @@ To ensure I actually launched this product, and it didn't fall into the pile of 
 
 Now the V1 pile is clear, the product can be launched!
 
-Next up is data visualisation, being able to navigate to previous entries, and the ability to search your content. I _really_ don't want to have heavy tracking on this, as it goes against the spirit of the product, but it would be nice to know if people are using it. Basically, I want a **90's hit counter as a service!** So that's probably next on the list.
+Next up is data visualisation, being able to navigate neatly to previous months/years, and the ability to search your content. I _really_ don't want to have heavy tracking on this, as it goes against the spirit of the product, but it would be nice to know if people are using it. Basically, I want a **90's hit counter as a service!** So that's probably next on the list.
 
 The product will continue to be developed in the open, so please file issues and suggestions on [GitHub](https://github.com/trys/JournalBook).
 
