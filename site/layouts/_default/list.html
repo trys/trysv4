@@ -22,11 +22,15 @@
 				{{ end }}
 			</div>
 
-			{{ if .Paginator.HasNext }}
-				<div class="load-more center">
-			    	<a class="button" href="{{ .Paginator.Next.URL }}">More posts</a>
-			    </div>
-			{{ end }}
+			<div class="load-more center">
+				{{ if .Paginator.HasNext }}
+					<a class="button" href="{{ .Paginator.Next.URL }}">More posts</a>
+					<br>
+				{{ end }}
+				{{ with .OutputFormats.Get "rss" -}}
+					{{ printf `<a href="%s">RSS</a>` .Permalink | safeHTML }}
+				{{ end -}}
+			</div>
 		</div>
 	</div>
 {{ end }}
