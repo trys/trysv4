@@ -1,16 +1,19 @@
 ---
-title: Mac OS Dark Mode
+title: Mac OS Dark Mode with CSS & JS
 categories: Web
 date: 2019-01-09
+description: 'Manual and automatic dark mode switching in CSS & JS'
 ---
 
-I've been using the commute to add [JournalBook](https://journalbook.co.uk) features. Yesterday saw the addition of the prize feature everyone loves but very few need: [**Dark Mode!**](https://twitter.com/trysmudford/status/1082547315146133505) Here's how it works:
+I've been using the commute to add a few [JournalBook](https://journalbook.co.uk) features. Yesterday saw the addition of the prize feature everyone loves but very few need: [**Dark Mode!**](https://twitter.com/trysmudford/status/1082547315146133505) Here's how it was built:
 
-### Getting the CSS in order
+![JournalBook in dark mode](/images/blog/journalbook-dark-mode.jpg)
 
-First on the task list was to prepare the CSS for the changeover. As someone who absolutely loves CSS, I'm a little ashamed by the state of it on this project. It's due a major refactor, but let's not dwell on that too much!
+## Getting the CSS in order
 
-All colours were hard-coded up to this point, which would've meant for a difficult time switching themes. I usually run `scss` but this project is still set up with humble ol' CSS. No matter, it's 2019, we have Custom Properties!
+First on the task list was preparing the CSS for the changeover. As someone who absolutely loves CSS, I'm a little ashamed by the state of it on this project. It's due a major refactor, but let's not dwell on that too much!
+
+All the colours were hard-coded, and scattered among the CSS file - a consolidation was required. I tend to write `.scss`, but this project is still set up with humble ol' CSS. No matter, it's 2019, we have ✨&nbsp;Custom Properties!&nbsp;✨
 
 To start with, I moved all the colours up to a single `:root` declaration and set them up as variables.
 
@@ -24,7 +27,7 @@ To start with, I moved all the colours up to a single `:root` declaration and se
 }
 ```
 
-Then I swapped out all references in the remainder of the file.
+Then I swapped out all references in the remainder of the CSS.
 
 ```css
 #app {
@@ -33,7 +36,7 @@ Then I swapped out all references in the remainder of the file.
 }
 ```
 
-Finally, I copied the `:root` variable rules, and created a 'theme'.
+Finally, to create the dark mode style, I copied the `:root` variable rules, and created a 'theme'.
 
 ```css
 [data-theme='dark'] {
@@ -44,17 +47,17 @@ Finally, I copied the `:root` variable rules, and created a 'theme'.
 }
 ```
 
-Thanks to the 🔥 wonderful nature of the cascade 🔥 (I'm a big fan if you couldn't tell), these variables are updated for any child under an element with the `[data-theme='dark']` attribute.
+Thanks to the 🔥 wonderful cascade 🔥 (big fan in case you're wondering), these variables are updated for any child elements.
 
 So from a HTML point of view, theme switching is a case of changing **one data attribute** on **one element**. Nice.
 
-### JS theme switching
+## JS theme switching
 
 [JournalBook](https://journalbook.co.uk) is written in Preact, so this code will be a bit ES6'y.
 
-Here's the base App class. We call `getDefaultTheme()` (which we'll stub out in a mo'), to set our initial state, then render the app with the afformentioned data attribute.
+Here's the base App class. We call `getDefaultTheme()` (which I'll stub out in a mo') to set our initial state, then render the app with the aforementioned data attribute.
 
-```js
+```jsx
 class App extends Component {
   state = {
     theme: getDefaultTheme()
@@ -70,7 +73,7 @@ class App extends Component {
 }
 ```
 
-In `getDefaultTheme()`, we first check to see if the theme has been explicitly set by the user. If so, we return early. Next, we run a `matchMedia` call to see if they've set their OS to have the dark colour scheme. This is part of CSS Media Queries level 5, and can be [read up on here](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme).
+In `getDefaultTheme()`, we first check to see if the theme has been explicitly set by the user. If so, we return it. Next, we run a `matchMedia` call to see if they've set their OS to have the dark colour scheme. This is part of CSS Media Queries level 5, and can be [read up on here](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme). It's only currently available in Safari tech preview, and on OS Mojave, so admitedly, this part is a niche feature. Finally, we return an empty string, which we'll class as a preference for the default theme.
 
 ```js
 const getDefaultTheme = () => {
@@ -88,11 +91,11 @@ const getDefaultTheme = () => {
 };
 ```
 
-This all works really nicely now! If you've set a theme, you get your theme. If not, you get the most appropriate theme for your system preferences.
+This all works really nicely! If you've set a theme, you get it. If not, you get the most appropriate theme for your system preferences.
 
 #### Sidenote
 
-This can all be achieved in CSS, with the media query:
+This can also be achieved in CSS, with the media query:
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -100,13 +103,15 @@ This can all be achieved in CSS, with the media query:
 }
 ```
 
-But for this use case, we need to first check to see if a user has explicitly set their own theme first.
+But for the JournalBook use case, we need to first check to see if a user has explicitly set their own theme first, hence the JS involvement.
 
-## Live switching
+## Live system switching
 
-The one issue with the current code, is that it doesn't react live to systen contrast mode changes. How is that even possible, I hear you cry! (I asked the very same question till Jason Miller came to the rescue). I had no idea you could `addListener` to `matchMedia` calls!
+There is a minor issue with the current code: it doesn't react live to system-level contrast mode changes. _Is that even possible_, I hear you cry! (I asked the very same question till [Jason Miller](https://twitter.com/trysmudford/status/1082720987202928641) came to the rescue).
 
-With that, we can add a listener when the component mounts and respond to system preference changes live in the browser!
+I had no idea you could use `addListener` on `window.matchMedia`! <small>(another sidenote, my mind is whizzing at the possibilities with this new information).</small>
+
+With that, we can add a listener and respond to system preference changes live in the browser!
 
 ```js
 componentDidMount() {
@@ -118,10 +123,44 @@ componentDidMount() {
 }
 ```
 
+Check out Jason's video of the switch in action!
+
 {{< twitter 1082728392699580422 >}}
 
-### Summary
+## Manual switching
 
-I haven't gone into the manual theme switching here, but all the code is open-source and available on [GitHub](https://github.com/trys/JournalBook/). Check out [this file](https://github.com/trys/JournalBook/blob/master/src/routes/settings/index.js#L27) for more info, and feel free to [tweet](https://twitter.com/trysmudford) any questions.
+The final piece of the puzzle is the manual theme picker. Thanks to our embrace of the cascade and CSS custom properties, it's not too bad to implement.
 
-In closing, I just wanted to extend a massive thanks to [Jason Miller](https://twitter.com/_developit/) for demonstrating `matchMedia` listeners so aptly!
+```jsx
+class Settings extends Component {
+  state = {
+    theme: getDefaultTheme()
+  };
+
+  updateTheme = event => {
+    const theme = event.target.value;
+    localStorage.setItem('journalbook_theme', theme);
+    document.querySelector('#app').dataset.theme = theme;
+    this.setState({ theme });
+  };
+
+  render(props, { theme }) {
+    return (
+      <form>
+        <label for="theme">Theme</label>
+        <select id="theme" onChange={this.updateTheme} value={theme}>
+          <option value="">Default</option>
+          <option value="dark">Dark</option>
+        </select>
+        {/* The rest of the settings form */}
+      </form>
+    );
+  }
+}
+```
+
+JournalBook doesn't yet have any global state, so we have to manually set the data attribute, which is less than ideal. But I reckon it's fine for what is a single attribute change for live theme switching.
+
+### In closing
+
+I wanted to extend a massive thanks to [Jason](https://twitter.com/_developit/) for demonstrating `matchMedia` listeners so aptly! I can't wait to experiment with them more!
