@@ -37,3 +37,7 @@ Weekend highlights included a cultured visit to the Towner gallery, constructing
 In closing, here's the handsome Wilfred, dog of the office:
 
 ![The very refined Wilfred, business dog](/images/blog/wilfred.jpg)
+
+## Videos from the week
+
+{{< youtube "e-j_zJcQjDg" >}}
