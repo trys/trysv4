@@ -28,6 +28,8 @@ Wednesday also included trying a Macha latte for the first time, and then feelin
 
 We've been working with an infrastructure consultancy firm these past few weeks and it's been fascinating watching them prepare our pipelines for production. But it has also made appreciate yet again, how truly great Netlify is. We needed a space to test this prototype, and whilst our dev environments are being finalised, another environment was required. I built the site locally, dragged the folder onto Netlify, and ten seconds later, we had a new dev environment!
 
+Friday was been spent battling cache invalidation bugs and working on the admin CMS. There's next to no client-side JS and surprise, surprise, it's one of the quickest things we've built, and an absolute joy to use!
+
 ## Songs from the week
 
 - [Fear - Ben Rector](https://open.spotify.com/track/7zSmIcTiLVW5rMflzXj9C5)
