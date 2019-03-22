@@ -2,23 +2,27 @@
 <html lang="{{ $.Site.Language.Lang }}">
 	<head>
 		<meta charset="UTF-8" />
-		<base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-		<link rel="stylesheet" href="css/main.css"/>
+		{{ $url := getenv (cond (eq "production" (getenv "CONTEXT")) "URL" "DEPLOY_PRIME_URL" ) | default (cond (eq "//localhost:1313/" (printf "%s" $.Site.BaseURL)) "//localhost:1313" $.Site.BaseURL) }}
+		<base href="{{ $url }}">
+		{{ $post := resources.Get "css/main.scss" }}
+    {{ $style := $post | resources.ToCSS | minify }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 		{{ if (.IsPage) and eq .Section "blog" }}<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />{{ else }}<meta name="description" content="My core skills are in semantic HTML &amp; CSS, progressively enhanced JS, PWA’s, web performance, Vue.js &amp; Nuxt, static site
 		generation and generally putting the user first." />{{ end }}
-		<meta property="og:url" content="{{ getenv "URL" }}{{ .URL }}" />
+		<meta property="og:url" content="{{ $url }}{{ .URL }}" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 		<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />
-		<meta property="og:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
+		<meta property="og:image" content="{{ $url }}/images/og.jpg" />
 		<meta property="og:image:alt" content="Trys Mudford" />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 		<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />
-		<meta name="twitter:image" content="{{ if getenv "URL" }}{{ getenv "URL" }}/{{ else }}{{ $.Site.BaseURL }}{{ end }}images/og.jpg" />
+		<meta name="twitter:image" content="{{ $url }}/images/og.jpg" />
 		{{ if (.IsPage) and eq .Section "blog" }}
 		<meta name="twitter:label1" value="Posted in" />
 		<meta name="twitter:data1" value="{{ .Params.categories }}" />
@@ -63,9 +67,6 @@
 				<a href="https://instagram.com/trysmudford" rel="me">IG</a>
 			</nav>
 		</footer>
-		{{ if .Params.js }} 
-			<script async src="app.js"></script>
-		{{ end }}
 		{{ if not .Site.BuildDrafts }}
 		<script>
 			if (navigator.serviceWorker) {

@@ -5,7 +5,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 */
 
 (function () {
-  const version = 'v3';
+  const version = 'v4';
   const cacheName = ':trysmudford-2018:';
 
   const staticCacheName = version + cacheName + 'static';
@@ -17,8 +17,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     '/blog/',
     '/password/',
     '/offline/',
-    '/app.js',
-    '/css/main.css',
+    '/css/main.min.css',
     '/fonts/1475520/9bdf0737-f98c-477a-9365-ffc41b9d1285-subset.woff2',
     '/fonts/1475544/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b-subset.woff2'
   ];
