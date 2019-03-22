@@ -2,30 +2,30 @@
 	position: relative;
 	text-align: center;
 
-	& .wrap {
+	.wrap {
 		background: var(--light);
 	}
 
-	& .opening__content {
+	.opening__content {
 		max-width: 800px;
 		margin: 0 auto;
 		padding: 1.666em 0;
 	}
 
-	& figure {
+	figure {
 		background: linear-gradient(#A6C0FE, #4CACC1);
 		margin: 0 auto 20px;
 		max-width: 461px;
 	}
 
 	@media (min-width: 500px) {
-		& figure {
+		figure {
 			display: none;
 		}
 	}
 
 	@media (min-width: 1000px) {
-		& .wrap {
+		.wrap {
 			width: 100%;
 			display: flex;
 			padding: 0;
@@ -34,7 +34,7 @@
 			overflow: hidden;
 		}
 
-		& .opening__content {
+		.opening__content {
 			text-align: left;
 			padding: 3.5em 0 3.5em 20px;
 			max-width: 650px;
@@ -42,7 +42,7 @@
 			margin: 0;
 		}
 
-		& figure {
+		figure {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -51,7 +51,7 @@
 			margin: 0;
 		}
 
-		& img {
+		img {
 			transform: translateX(-110px);
 			width: 460px;
 			max-width: none;
@@ -74,16 +74,16 @@
 	background: var(--mid);
 	padding: 1.666em 0 0;
 
-	& article:nth-child(odd) {
+	article:nth-child(odd) {
 		background: var(--light);
 
-		& figure {
+		figure {
 			order: -1;
 		}
 	}
 
 	@media (min-width: 850px) {
-		& .page-title {
+		.page-title {
 			margin-bottom: 0;
 		}
 	}
@@ -96,10 +96,10 @@
 .project {
 	max-width: 580px;
 
-	& figure {
+	figure {
 		margin: 30px auto 0;
 	}
-	& img {
+	img {
 		margin: 0 auto;
 		display: block;
 		background: linear-gradient(#A6C0FE, #4CACC1);
@@ -116,7 +116,7 @@
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 60px;
 
-			& figure {
+			figure {
 				margin: 0;
 			}
 		}
