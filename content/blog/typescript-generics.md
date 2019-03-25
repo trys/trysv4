@@ -5,9 +5,9 @@ categories: Web
 description: How to use generics in Typescript
 ---
 
-[tldr;](/blog/typescript-generics/#tldr) This was a learning reinforcement blog post, so a little waffly.
+[tldr;](/blog/typescript-generics/#tldr) This was a learning reinforcement blog post, so it's a little waffly.
 
-Code smells points to a need for refactoring. Such an opportunity arose today when I decided to work our main network request class. This `Http` class is a wrapper around `fetch`, adding in API authentication tokens, parsing JSON and generally making requests slightly nicer to deal with.
+Code smells point to a need for refactoring. Such an opportunity arose today when I decided to work our main network request class. This `Http` class is a wrapper around `fetch`, adding in API authentication tokens, parsing JSON and generally making requests slightly nicer to deal with.
 
 The response type of `APIResponse` was as follows:
 
