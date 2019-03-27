@@ -1,6 +1,6 @@
 ---
 title: City life
-date: 2019-03-26
+date: 2019-03-27
 categories: Web
 description: 'Thoughts on the differences between coding in London, and out in the sticks'
 ---
@@ -11,7 +11,7 @@ Prior to joining the London startup, I earned my spurs at Tomango, a creative ag
 
 I anticipated, and [looked forward to](/blog/moving-on/) the inevitable culture shock of coming to the city after six seemingly sheltered years in the field. Working in a team of 'city developers' and learning from them has been invaluable. But I, in hindsight naïvely, didn't expect some of the different approaches, values and opinions they've had, particularly when it came to the state of the web.
 
-Jake Archibald recently posted a fascinating comparison of [F1 team's web performance](https://jakearchibald.com/2019/f1-perf/), two subjects very dear to my heart. But it was the final thoughts that really struck me:
+Jake Archibald recently posted a fascinating comparison of [F1 team's web performance](https://jakearchibald.com/2019/f1-perf/), two subjects very dear to my heart. But it was the final thoughts that really hit home:
 
 > None of the teams used any of the big modern frameworks. They're mostly Wordpress & Drupal, with a lot of jQuery. It makes me feel like I've been in a bubble in terms of the technologies that make up the bulk of the web.
 
@@ -27,13 +27,13 @@ I'm extrapolating from a dataset of two points and cursory industry feelings, bu
 
 ## Products & apps, not websites
 
-Perhaps this disparity stems from the unhelpfully vague term 'web app'? Working at an agency building for small businesses, it's rarely disputed that you're building websites. Even if the client uses the site as a 'business-critical system', it's still a website.
+Perhaps this disparity stems from the unhelpfully vague term 'web app'? When working at an agency building for small/medium businesses, it's rarely disputed that your job is to create websites. Even if the client uses the site as a 'business-critical system', it's still a website.
 
-But since crossing the M25, the term web app has been floated around much more readily. _"We're building a product, a web app"_. Maybe it's a justification for funding, or a personal/corporate brand thing, but 'website' doesn't appear to cut the mustard in London.
+But since crossing the M25, I've heard the term web app floated around much more readily. _"We're building a product, a web app"_. Maybe it's a justification for funding, or a personal/corporate brand thing, but 'website' doesn't appear to cut the mustard in London.
 
 > 'Web app' covers a multitude of sins.
 
-Not only does the differentiation of terms create a divide within the industry, the term 'web app' acts as an excuse for corner cutting and the exclusion of users.
+Not only does the differentiation of terms create a divide within the industry, the term 'web app' regularly acts as an excuse for corner cutting and the exclusion of users.
 
 The phrase 'You can't build Gmail without JavaScript' is usually pretty quick off the lips of the web app aficionado. Not only is that statement false (I wholeheartedly believe you could), it totally misses that point that I'm not building Gmail, and neither are you.
 
@@ -43,9 +43,9 @@ We kid ourselves into thinking we're building groundbreakingly complex systems t
 
 ## Team size
 
-Team size could be a factor in the divide between city and rural development. Businesses in cities tend to be vast and distributed. Employees will usually have a specific role, and will be in a large team of colleagues doing similar or similarly niche roles. Everyone has their place and sticks to it, to keep the company running efficiently.
+Team size could be a factor in the divide between city and rural development. Businesses in cities tend to be vast and distributed. Employees will usually have a specific role, and will be in a team of colleagues doing similar or similarly niche roles. Everyone has their place and sticks to it, to keep the company running efficiently.
 
-Not only will the field of vision be narrow, but the number of project touch-points will probably be limited. Big companies are like big ships, they aren't all that agile and take time to react to change. New sites will come about far less frequently for those in a big company.
+Not only will the field of vision be narrow, but the number of project touch-points may well be limited. Big companies are like big ships, they aren't all that agile and take time to react to change. New and varied sites will come about far less frequently for those in a big company, so their experience will be more specific.
 
 That large team can easily exist in a bubble, much like the bubble that Jake described. So it's not a surprise when the question: _"WordPress! Who uses that anymore?!"_ gets asked. The underlying motive is often _"We haven't used WordPress in years, therefore no-one has used WordPress in years"_.
 
