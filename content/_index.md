@@ -4,6 +4,6 @@ title: Home
 
 # Hi there, I'm Trys.
 
-I work as a web developer at [daisie](https://www.daisie.com/).
+I build for the web at [Clearleft](https://clearleft.com).
 
-My core skills are in semantic HTML & CSS, progressively enhanced JS, PWA's, web performance, Vue.js & Nuxt, static site generation and generally putting the user first.
+My core skills are in semantic HTML & CSS, progressively enhanced JS, PWA's, web performance, Vue.js & React, static site generation and generally putting the user first.
