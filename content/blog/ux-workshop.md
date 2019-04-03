@@ -69,7 +69,7 @@ This part of the day properly kicked off the solution phase of the process.
 
 We began with a task to lower the barrier to sketching. Drawing is often seen as a scary and vulnerable task for those less creative, and a point of pride for those who regularly sketch! Both can get paralysed when asked to create a one-minute sketch in front of others.
 
-This icebreaker came in the form of **squiggle birds**, _yes, you read that correctly_. The premise is as follows:
+This icebreaker came in the form of [squiggle birds](https://gamestorming.com/squiggle-birds/), _yes, you read that correctly_. The premise is as follows:
 
 1. Draw a bunch of squiggles on the page!
 2. Add a beak to one of the edges
