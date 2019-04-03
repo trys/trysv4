@@ -1,0 +1,106 @@
+<style>
+  .bird svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bird {
+    margin-bottom: 40px;
+    text-align: center;
+    background: var(--mid);
+    padding: 20px 20px 0;
+  }
+</style>
+
+<div class="bird">
+  <svg
+    width="400px"
+    viewBox="0 0 188 137"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    role="presentational"
+  >
+    <g
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <g id="Group" transform="translate(1.284471, 0.783605)" stroke="#979797">
+        <path
+          d="M59.9069354,102.728114 C26.6537541,93.9818065 15.0334226,69.4698831 17.7038104,36.3023327 C18.0079934,32.5242282 24.8320659,21.2697355 27.1217792,19.2945202 C49.9402833,-0.389803024 90.1898264,-7.59486333 116.199904,10.0054577 C161.469872,40.6384289 135.16975,100.464087 88.4303729,110.728114 C81.3982402,112.272379 48.338886,117.082855 46.6920917,104.82577 C40.9922846,62.4021246 60.4425293,48.7516013 103.574904,52.9507702 C113.460081,53.9131454 122.60608,58.7063109 132.301467,60.8609265 C136.824585,61.8661036 158.762532,60.5861989 160.723342,71.7320202 C166.035669,101.928854 99.4813917,131.824251 81.6686542,104.673426 C65.094849,79.411028 81.4817512,55.4756545 104.102248,41.665614 C118.287929,33.0051135 145.649658,27.5912997 162.465529,30.9351452 C169.4575,32.3255027 181.444368,41.6695112 186.153029,44.9038952"
+          id="Path"
+        ></path>
+        <path
+          d="M16.0631854,44.5210827 C-4.49907048,64.0718327 -7.23125993,60.0356115 19.1295917,58.8179577"
+          id="Path-2"
+        ></path>
+        <path
+          d="M36.4186542,28.5640515 C36.4186542,44.9742623 54.0372678,23.4989878 36.7975604,29.9351452"
+          id="Path-3"
+        ></path>
+        <path
+          d="M59.1725604,114.060145 C56.7851202,120.802476 56.8605801,125.518945 50.6569354,129.26327 C49.5641941,129.922815 55.7081157,120.137644 56.8170917,122.798426 C58.3140024,126.389986 56.9796115,130.919696 58.9499042,134.274989 C60.5111941,136.933774 58.4134459,128.13176 58.1452167,125.060145"
+          id="Path-4"
+        ></path>
+        <path
+          d="M76.0124042,113.954676 C76.0124042,123.910281 79.1361308,127.977149 70.3327167,133.286708 C69.1664381,133.99012 71.1024612,128.971334 72.2624042,129.685145 L76.9538104,126.958583 C78.9559637,128.190677 78.2272479,131.484624 78.8639667,133.747645"
+          id="Path-5"
+        ></path>
+        <path
+          d="M146.770217,99.899989 C149.869175,105.939051 150.137415,114.713731 156.067092,118.017176 C159.446683,119.899959 160.980171,111.997374 163.871779,109.427333 C165.556225,107.930209 169.8257,108.182712 169.660842,105.935145 C169.632087,105.543122 147.519414,98.8247419 146.805373,98.6851452"
+          id="Path-6"
+        ></path>
+      </g>
+    </g>
+  </svg>
+  <button type="button" class="next button">Draw!</button>
+</div>
+
+<script>
+  (() => {
+    /**
+     * Animate all the SVG paths as a generator
+     *
+     * @link https://jakearchibald.com/2013/animated-line-drawing-svg/
+     */
+    function* draw(element, time = "1s") {
+      // Gather all the paths in the SVG
+      const paths = Array.from(element.querySelectorAll("path"));
+
+      // Loop around the paths and prepare their strokeDashOffset
+      for (let path of paths) {
+        const length = path.getTotalLength();
+        path.style.transition = path.style.WebkitTransition = "none";
+        path.style.strokeDasharray = length + " " + length;
+        path.style.strokeDashoffset = length;
+        path.getBoundingClientRect();
+        path.style.transition = path.style.WebkitTransition = `stroke-dashoffset ${time} ease-in-out`;
+      }
+
+      // Yield to kick off the generator
+      yield;
+
+      // Loop once again, but yield after triggering each animation
+      for (let path of paths) {
+        path.style.strokeDashoffset = "0";
+        yield path;
+      }
+    }
+
+    const birds = Array.from(document.querySelectorAll(".bird"));
+    birds.forEach(bird => {
+      const gen = draw(bird);
+      gen.next();
+
+      const controls = bird.querySelector(".next");
+      if (controls) {
+        controls.addEventListener("click", () => gen.next());
+      }
+    });
+  })();
+</script>
