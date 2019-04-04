@@ -13,9 +13,31 @@
 	}
 
 	figure {
-		background: linear-gradient(#A6C0FE, #4CACC1);
+		background: linear-gradient(var(--gradient-blue), var(--gradient-green));
 		margin: 0 auto 20px;
 		max-width: 461px;
+		padding: 18px;
+
+		.home-image__cover {
+			position: relative;
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+
+			img {
+				filter: saturate(0) contrast(0.7) brightness(1.2);
+			}
+
+			&:after {
+				background-image: linear-gradient(90deg, var(--gradient-overlay-blue), var(--gradient-overlay-green));
+				mix-blend-mode: overlay;
+				position: absolute;
+				opacity: 0.8;
+				content: '';
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
 	}
 
 	@media (min-width: 500px) {
@@ -51,14 +73,14 @@
 			margin: 0;
 		}
 
-		img {
-			transform: translateX(-110px);
+		.home-image__cover {
+			transform: translateX(-130px) scale(0.875);
 			width: 460px;
 			max-width: none;
 		}
 
 		&::after {
-			background: linear-gradient(#A6C0FE, #4CACC1);
+			background: linear-gradient(var(--gradient-blue), var(--gradient-green));
 			position: absolute;
 			content: '';
 			height: 100%;
@@ -102,7 +124,7 @@
 	img {
 		margin: 0 auto;
 		display: block;
-		background: linear-gradient(#A6C0FE, #4CACC1);
+		background: linear-gradient(var(--gradient-blue), var(--gradient-green));
 		padding: 20px;
 	}
 

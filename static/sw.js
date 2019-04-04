@@ -5,7 +5,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 */
 
 (function () {
-  const version = 'v4';
+  const version = 'v5';
   const cacheName = ':trysmudford-2018:';
 
   const staticCacheName = version + cacheName + 'static';
