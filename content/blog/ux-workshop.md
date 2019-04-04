@@ -77,7 +77,7 @@ This icebreaker came in the form of [squiggle birds](https://gamestorming.com/sq
 4. And some feet
 5. Maybe a tail if you're feeling adventurous!
 
-Give it a go - it's a lot of fun! I've also made a little interactive squiggle bird to demonstrate, have a click through below!
+Give it a go - it's a lot of fun! I've also made a little JS squiggle bird to demonstrate, have a click through below!
 
 {{< squiggle-birds >}}
 
@@ -87,15 +87,18 @@ The human brain is brilliant at finding meaning from noise, if we can create bir
 
 So, to the task itself...
 
-We creased our paper into six sections and had **one minute** to draw a solution to one of the problems brought to light from our story map. When the timer went, we moved onto the next section and drew another solution to a different problem. Six run-throughs later, and we had six (frankly poorly drawn) ideas on paper! We kept those ideas to ourselves and moved onto the next task.
+We creased our paper into six sections and had **one minute** to draw a solution to one of the problems brought to light from our story map. When the timer went, we moved onto the next section and drew another solution to a different problem. Six run-throughs later, and we had six (quite poorly drawn) ideas on paper! We kept those ideas to ourselves and moved onto the next task.
 
 Taking another sheet of A3, we spent 15 minutes on one idea, going into a lot more detail. The previous task, although fleeting, was a great precursor to this activity. I ended up taking two or three ideas from it, and combining it into one main proposition.
 
+![The suggestion of brown bag preparation](/images/blog/ux-workshop-solution.jpg)
+<small>If you couldn't tell, I fall into the 'not overly keen on sketching' camp!</small>
+
 ## Feedback & Critique
 
-Andy walked through a few stumbling blocks to critiques, including [GroupThink](https://en.wikipedia.org/wiki/Groupthink), an idea that in a desire to reduce conflict, a group will often reach a compromised decision without properly evaluating the matter. It made me think back to when I attended jury duty. Dropping a group of strangers together and asking them to come to an informed, and ideally unanimous decision, is a tricky task indeed.
+Andy then walked through a few stumbling blocks to critiques, including [GroupThink](https://en.wikipedia.org/wiki/Groupthink), an idea that in a desire to reduce conflict, a group will often reach a compromised decision without properly evaluating the matter. I thought back to attending jury duty. Dropping a group of strangers together and asking them to come to an informed, and ideally unanimous decision, is a tricky task indeed.
 
-To alleviate this problem, we put on [thinking hats](http://www.debonogroup.com/six_thinking_hats.php). Six distinct roles were spread around the table and we were to all assume the respective persona:
+To alleviate this problem, we put on [thinking hats](http://www.debonogroup.com/six_thinking_hats.php). Six distinct roles were spread around the table and we were to all assume the respective personas:
 
 - Blue: facilitator, the individual presenting their idea
 - White: objective, data-focused
@@ -112,7 +115,7 @@ The final part of the day went through some processes for testing our solutions.
 
 By structuring our work as **experiments**, we reduce the cost of failure. It's a great way to propose new features or ideas to a manager or stakeholder. The key is to only test **one** thing against your hypothesis.
 
-This fits nicely into a 'Observe', 'Hypothesise', 'Test', and 'Theorise' model, and can lead to great, data-driven results. Sounds remarkably similar to red, green, refactor!
+This fits nicely into a 'Observe', 'Hypothesise', 'Test', and 'Theorise' model, and can lead to great, data-driven results. Sounds a little similar to red, green, refactor!
 
 ## Summary
 
