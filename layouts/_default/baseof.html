@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 		{{ if (.IsPage) and eq .Section "blog" }}<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />{{ else }}<meta name="description" content="My core skills are in semantic HTML &amp; CSS, progressively enhanced JS, PWA’s, web performance, Vue.js &amp; Nuxt, static site
 		generation and generally putting the user first." />{{ end }}

@@ -1,124 +1,154 @@
 .opening {
-	position: relative;
-	text-align: center;
+  position: relative;
+  text-align: center;
 
-	.wrap {
-		background: var(--light);
-	}
+  .wrap {
+    background: var(--light);
+  }
 
-	.opening__content {
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 1.666em 0;
-	}
+  .opening__content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.666em 0;
+  }
 
-	figure {
-		background: linear-gradient(#A6C0FE, #4CACC1);
-		margin: 0 auto 20px;
-		max-width: 461px;
-	}
+  figure {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+    margin: 0 auto 20px;
+    max-width: 461px;
+    padding: 18px;
 
-	@media (min-width: 500px) {
-		figure {
-			display: none;
-		}
-	}
+    .home-image__cover {
+      position: relative;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 
-	@media (min-width: 1000px) {
-		.wrap {
-			width: 100%;
-			display: flex;
-			padding: 0;
-			justify-content: space-between;
-			align-items: stretch;
-			overflow: hidden;
-		}
+      img {
+        filter: saturate(0);
+      }
 
-		.opening__content {
-			text-align: left;
-			padding: 3.5em 0 3.5em 20px;
-			max-width: 650px;
-			width: 55%;
-			margin: 0;
-		}
+      &:after {
+        background-image: linear-gradient(
+          90deg,
+          var(--gradient-overlay-blue),
+          var(--gradient-overlay-green)
+        );
+        position: absolute;
+        opacity: 0.4;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
 
-		figure {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			width: 340px;
-			max-width: none;
-			margin: 0;
-		}
+        @supports (mix-blend-mode: overlay) {
+          mix-blend-mode: screen;
+          opacity: 1;
+        }
+      }
+    }
+  }
 
-		img {
-			transform: translateX(-110px);
-			width: 460px;
-			max-width: none;
-		}
+  @media (min-width: 500px) {
+    figure {
+      display: none;
+    }
+  }
 
-		&::after {
-			background: linear-gradient(#A6C0FE, #4CACC1);
-			position: absolute;
-			content: '';
-			height: 100%;
-			z-index: -1;
-			width: 50%;
-			right: 0;
-			top: 0;
-		}
-	}
+  @media (min-width: 1000px) {
+    .wrap {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      justify-content: space-between;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .opening__content {
+      text-align: left;
+      padding: 3.5em 0 3.5em 20px;
+      max-width: 650px;
+      width: 55%;
+      margin: 0;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 340px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .home-image__cover {
+      transform: translateX(-130px) scale(0.875);
+      width: 460px;
+      max-width: none;
+    }
+
+    &::after {
+      background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+      position: absolute;
+      content: '';
+      height: 100%;
+      z-index: -1;
+      width: 50%;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 .work {
-	background: var(--mid);
-	padding: 1.666em 0 0;
+  background: var(--mid);
+  padding: 1.666em 0 0;
 
-	article:nth-child(odd) {
-		background: var(--light);
+  article:nth-child(odd) {
+    background: var(--light);
 
-		figure {
-			order: -1;
-		}
-	}
+    figure {
+      order: -1;
+    }
+  }
 
-	@media (min-width: 850px) {
-		.page-title {
-			margin-bottom: 0;
-		}
-	}
+  @media (min-width: 850px) {
+    .page-title {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .feed {
-	background: var(--mid);
+  background: var(--mid);
 }
 
 .project {
-	max-width: 580px;
+  max-width: 580px;
 
-	figure {
-		margin: 30px auto 0;
-	}
-	img {
-		margin: 0 auto;
-		display: block;
-		background: linear-gradient(#A6C0FE, #4CACC1);
-		padding: 20px;
-	}
+  figure {
+    margin: 30px auto 0;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+    padding: 20px;
+  }
 
-	@media (min-width: 850px) {
-		padding-top: 30px;
-		padding-bottom: 30px;
+  @media (min-width: 850px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-		@supports (display: grid) {
-			max-width: 1180px;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 60px;
+    @supports (display: grid) {
+      max-width: 1180px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px;
 
-			figure {
-				margin: 0;
-			}
-		}
-	}
+      figure {
+        margin: 0;
+      }
+    }
+  }
 }

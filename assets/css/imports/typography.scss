@@ -45,8 +45,8 @@ a:not(.button) {
         linear,
         0% 0%,
         100% 100%,
-        from(#96a0de),
-        to(#4cacc1)
+        from(var(--gradient-dark-blue)),
+        to(var(--gradient-green))
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -70,8 +70,8 @@ h1 {
       linear,
       0% 0%,
       100% 100%,
-      from(#96a0de),
-      to(#4cacc1)
+      from(var(--gradient-blue)),
+      to(var(--gradient-green))
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
