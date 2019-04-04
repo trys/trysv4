@@ -139,6 +139,10 @@
     if (controls) {
       controls.addEventListener("click", () => {
         const result = gen.next();
+        if (typeof galite !== 'undefined') {
+          galite('send', 'event', 'Squiggle Birds', 'Click');
+        }
+
         if (result.done) {
           gen = pickABird(birds);
           gen.next();
