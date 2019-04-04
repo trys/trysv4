@@ -5,13 +5,13 @@ categories: Web
 description: "Day 1 at Clearleft: UX workshop"
 ---
 
-After trying the infamous coffee and sitting in on the Monday team meeting, I kicked off my time at Clearleft with a fascinating UX workshop led by [Andy](https://clearleft.com/team/andy-thornton). It was a fortuitous day to start, not only did I get to learn UX techniques from the very best, I got to know six of my new colleagues in a great environment.
+After sampling the infamous coffee and sitting in on the Monday team meeting, I kicked off my time at Clearleft with a fascinating 'Rough guide to UX' workshop led by [Andy](https://clearleft.com/team/andy-thornton). It was a fortuitous day to start, not only did I get to learn UX techniques from the very best, I got to know six of my new colleagues in a great environment.
 
 I arrived a little late (the new laptop took a while to set up!); they'd just finished running through the [history of UX](https://clearleft.com/posts/ux-short-history), and discussing user-centered design. This led on to the first activity, the interview.
 
 ## Empathy mapping
 
-We interviewed each other to find out more about our holidaying habits, how we decide when and where to go, and what informs our plans. As the interviewer, we categorised the answers into four categories:
+We interviewed each other to find out more about our holidaying habits, how we decide when and where to go, and what informs our plans. As the interviewer, we categorised answers into four categories:
 
 ![The empathy map template, Say/do, See, Think/feel and Hear](/images/blog/ux-workshop-empathy-map.png)
 
@@ -21,7 +21,7 @@ This empathy map helped disseminate the information, tailor our questions, and s
 
 Coming to the table with a beginners mind keeps your interviewing bias to a minimum, even if you are an expert in the field. The whole exercise really brought home what a great skill interviewing is.
 
-Another great technique that persisted throughout the day, was focusing on past and current experiences. Questions about a previous holiday will yield more accurate answers than those about a potential future holiday.
+Keeping focus on past and current experiences was a theme that persisted throughout the day. Questions about a previous holiday will yield more accurate answers than those about a potential future holiday.
 
 ## Jobs, pains & gains
 
@@ -33,7 +33,7 @@ The task was to outline the following aspects of the new starter experience:
 - **Gains:** Opportunities, practical outcomes, and soft feelings
 - **Pains:** Challenges and obstacles
 
-What was particularly interesting, was how many jobs could also be gains. 'Doing' is such a positive thing for a new starter, so many goals blended between the two. We finished by ordering the post-its in each column by importance. We found that the factor of 'time' made a large difference to the order. Short-term goals tended to place higher, but longer-term goals led to more gains overall.
+It was interesting to see how many jobs could also be gains. 'Doing' is such a positive thing for a new starter, so many goals blended between the two. We finished by ordering the post-its in each column by importance. The 'time' factor made a large difference to the order. Short-term goals tended to place higher, but longer-term goals led to more gains overall.
 
 ![Our jobs, pains and gains model](/images/blog/ux-workshop-jobs-gains-pains.jpg)
 
@@ -43,7 +43,7 @@ These two tasks were part of the problem definition phase of the heralded [doubl
 
 ## Story mapping
 
-We began to head towards finding solutions after breaking for lunch. The task was to story map the current process for new starters. Again, the onus was still to focus on what's happening now, not our desired outcomes (yet). We broke it down into a filmstrip:
+The next task was to story map the current process for new starters. Again, the onus was still to focus on what's happening now, not our desired outcomes (yet). We broke it down into a filmstrip:
 
 - **Chapters:** high-level themes
 - **Scenes:** Categories of events
@@ -59,13 +59,13 @@ The next step was to mark high and low points of the experience. This provoked m
 
 ![Our jobs, pains and gains model](/images/blog/ux-workshop-story-map.jpg)
 
-The [peak-end rule](https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule) suggests that humans remember the highs/lows and the end of an experience, so that's where we should be focusing our attention. If we identify the lows and mitigate them, we can make a dramatic difference to the view of the overall experience!
-
 The story map can also be extended to become a helpful tool in planning the whole project. Chapters become epics, scenes become stories, and actions become tasks. We can even draw sensible 'release lines' across our model!
+
+The [peak-end rule](https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule) suggests that humans remember the highs/lows and the end of an experience, so that's where we should be focusing our attention. If we identify the lows and mitigate them, we can make a dramatic difference to the view of the overall experience!
 
 ## Explore ideas
 
-This part of the day properly kicked off the solution phase of the process.
+With those lows in mind, it was time to find some solutions.
 
 We began with a task to lower the barrier to sketching. Drawing is often seen as a scary and vulnerable task for those less creative, and a point of pride for those who regularly sketch! Both can get paralysed when asked to create a one-minute sketch in front of others.
 
