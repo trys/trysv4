@@ -22,4 +22,13 @@ Following the static site chats, I spent Thursday night and Friday's train journ
 
 We had a bit of a team social on Friday evening to celebrate Jason and my first week. Mexican food, Malbec and good chats were had! It was also my birthday 🥳 so I treated myself to a Ben's cookie at lunch!
 
-I've started Bullet journalling a bit, mostly to start getting a longer term career plan in order. I'm reading the accompanying book too, which is a great read.
+I've started Bullet journalling a bit, mostly to start getting a longer term career plan in order. I'm reading the accompanying book too, which is a great read. I've also been using [Noisli](https://www.noisli.com/) again when blogging. The Clearleft office is pretty busy at times, so it helps to have some chirping crickets and whistling wind in the background!
+
+## Songs from the week
+
+- [Raise Well - Luke Sital-Singh](https://open.spotify.com/track/0bmHzq6Nx4HnGba1yVO1Zd)
+- [Ooh Lordy - Youngr](https://open.spotify.com/track/57jAhpQ1xPAtVhXuOZNp82)
+
+## Photos from the week
+
+![Brighton Seafront](/images/blog/weeknotes-4.jpg)
