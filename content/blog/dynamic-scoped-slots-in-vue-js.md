@@ -2,6 +2,7 @@
 title: Dynamic scoped slots in Vue.js
 date: 2019-04-11
 categories: Web
+description: 'A run-through of default, named, scoped and dynamic scoped slots in Vue.js'
 ---
 
 [Slots](https://vuejs.org/v2/guide/components-slots.html) are super-powerful in Vue.js. They let you inject components from a parent into a various parts of the child, helping you compose nice and generic components. But that's not all! We'll take a run-up to dynamic scoped slots through the following:
