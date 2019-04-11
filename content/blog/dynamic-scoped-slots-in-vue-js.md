@@ -156,7 +156,7 @@ export default {
 </script>
 ```
 
-Note the two attributes: `slot="item" slot-scope="{ item, remove }"`. The first tells Vue which slot to use, and the second is a destructure of the props passed to the prop. This could be a method or data from within (a bit like a render-function in React).
+Note the two attributes: `slot="item" slot-scope="{ item, remove }"`. The first tells Vue which slot to use, and the second is a destructure of the props passed to the slot. This could be a method or data and works a bit like a render-function in React.
 
 ## Dynamic scoped slots
 
