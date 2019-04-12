@@ -4,7 +4,7 @@ date: 2019-04-12
 categories: Web
 ---
 
-It's been a great week of 'doing' following last week's largely observational/getting bedded in theme.
+It's been a great week of 'doing' following last week's theme of observation and generally getting bedded in.
 
 There are quite a few meetings at Clearleft - it's a change I'm going to have to get used to. They're mostly at sociable times (early enough in the day to not cause major context switching). It's currently compounded by two things though. I'm working on two projects, meaning two stand-ups! There's also 1:1's with every member of the team as part of my induction. That's meant ~1:1/day for the first two weeks!
 
