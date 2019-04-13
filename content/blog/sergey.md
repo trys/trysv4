@@ -6,15 +6,17 @@ categories: Web
 
 Yesterday saw the launch of [Sergey](https://sergey.cool), a tiny little static site generator. It's been around a week in the making, with the idea triggered by discussions with Cassie at [Homebrew website club](https://indieweb.org/Homebrew_Website_Club#Brighton) (come along, it's great!).
 
-We were chatting about Michelle's wonderful [new site](https://michellebarker.co.uk/), built [entirely in HTML and CSS](https://twitter.com/mbarker_84/status/1107416868711743490). It's so refreshing to see such clean, semantic and understandable markup in this world/[bubble](https://adactio.com/journal/15011) of complexity. I mean, view-source [this site](https://michellebarker.co.uk/), doesn't it spark joy?! 😍
+We were chatting about Michelle's wonderful [new site](https://michellebarker.co.uk/), built [entirely in HTML and CSS](https://twitter.com/mbarker_84/status/1107416868711743490). It's so refreshing to see such clean, semantic and understandable markup in this world/[bubble](https://adactio.com/journal/15011) of complexity. I mean, please `view-source` [the website](https://michellebarker.co.uk/), doesn't it spark joy?! 😍
 
 This HTML & CSS only approach is great for very small sites, but as soon as the number of pages increases to beyond one or two, you'll quickly find yourself copying and pasting global markup to keep the pages in sync.
 
-We came across a similar conundrum at daisie, specifically for the [LDNCreates campaign site](https://ldncreates.daisie.com/). Emma built it using HTML + CSS, and it works brilliantly! At the moment it's a one-pager, but sub-pages are in the pipeline. This sounds like a job for a static site generator (SSG), but which one to choose?! The deadline was _really_ tight for that project, so we couldn't waste hours researching SSG's, testing them for viability and carefully weighing up the pro's and con's. And that's the same for [many developers](/blog/city-life/); funny how things keep coming around to bubbles, we simply don't have the luxury of time to invest in the research phase, so we keep with the tried and true methods and out pops another PHP/Rails site (for the record, I have no problems with PHP or Rails, they're my bread and butter).
+We came across a similar conundrum at daisie, specifically for the [LDNCreates campaign site](https://ldncreates.daisie.com/). Emma built it with classic HTML + CSS, and it works brilliantly! At the moment it's a one-pager, but sub-pages are in the pipeline. This sounded like a job for a static site generator (SSG), but which one to choose?!
+
+The deadline was _really_ tight for that project, so time couldn't be spent [researching SSG's](https://www.staticgen.com/), testing them for viability and weighing up the pro's and con's. And that's the same for [a lot of developers](/blog/city-life/). Funny how things keep coming back around to bubbles! Many simply don't have the luxury of time to invest in that research phase, so keep with the tried and true methods, and lo, out pops another PHP site (for the record I have zero problems with PHP, it's my bread and butter).
 
 LDNCreates went with [Hugo](https://gohugo.io/), but it's only using a **fraction** of what Hugo is capable of. That's not a problem, per se, more of a shame to use a hammer to crack a nut.
 
-What this project needed was: HTML plus some includable partials. To be fair to old PHP, it's something it did really well, but not everyone has a PHP dev envinronment to hand, and again, nor has the luxury of time to set it up.
+What this project needed was: **HTML plus some includable partials**. To be fair to PHP, it's something it did really well, but not everyone has a PHP dev envinronment to hand, and again, nor the luxury of time to set it up.
 
 Cassie mentioned that from her [Codebar](https://codebar.io/brighton) experience, there'd definitely be a market for a SSG like that. So that night, I made a start!
 
@@ -24,8 +26,6 @@ Sergey (thanks for the name [Jeremy](https://adactio.com)!), has two main featur
 
 - Imports: `<sergey-import src="" />`
 - Slots: `<sergey-slot />`
-
-It's great for prototyping,
 
 ## Basic imports
 
@@ -102,7 +102,7 @@ And all together, it'll create:
 
 ## Slot fallback content
 
-The final Sergey feature (for now!) is 'default slots' or 'slot fallbacks'. Wherever you've used a slot, you can provide some default content that'll be used if you don't provide slot content as shown above. Let's go for a `<head>` example, and create a default `<title>` tag:
+The final Sergey feature (for now!) is 'default slots' or 'slot fallbacks'. Wherever you've used a slot, you can provide some default content that'll be shown if you don't provide slot content. Let's go for a `<head>` example, and create a default `<title>` tag:
 
 ```html
 <!-- /_imports/head.html -->
@@ -196,3 +196,9 @@ Let's make a final page to show all the bits in action:
   </body>
 </html>
 ```
+
+## Have a go!
+
+To act as a starting point, I've created an example website that can be deployed straight to Netlify. You can also have a root around the code [here](https://github.com/trys/sergey-netlify). The [Sergey.cool](https://sergey.cool/) site is naturally written with Sergey, so that can be [checked out](https://github.com/trys/sergey/tree/master/example) too.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/sergey-netlify)
