@@ -1,6 +1,6 @@
 ---
 title: Fading out siblings on hover in CSS
-date: 2019-04-17 12:00:00
+date: 2019-04-18
 categories: Web
 ---
 
@@ -14,7 +14,6 @@ Here's a tiny trick for making your hover states stand out, and also a cool way 
 Hover states traditionally run on the element being hovered on (makes sense, right?). But we can also listen for the hover event on the parent element.
 
 That's the crux of this 'trick', we fade out all children when the parent is hovered, and attach another hover handler the child, fading it back in:
-
 
 ```css
 .parent:hover > * {
