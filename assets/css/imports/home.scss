@@ -1,4 +1,6 @@
 .opening {
+  --gradient: linear-gradient(var(--gradient-blue), var(--gradient-green));
+
   position: relative;
   text-align: center;
 
@@ -13,7 +15,7 @@
   }
 
   figure {
-    background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+    background: var(--gradient);
     margin: 0 auto 20px;
     max-width: 461px;
     padding: 18px;
@@ -65,36 +67,56 @@
     }
 
     .opening__content {
+      --push: 8rem;
+
       text-align: left;
       padding: 3.5em 0 3.5em 20px;
-      max-width: 650px;
+      max-width: 700px;
       width: 55%;
-      margin: 0;
+      margin: 0 auto 0 var(--push);
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        z-index: 0;
+        width: 100px;
+        right: calc(100% + var(--push));
+        top: 0;
+      }
     }
 
     figure {
+      background-image: linear-gradient(to left, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0)), var(--gradient);
+      background-size: 200px 100%, auto;
+      background-repeat: no-repeat, repeat-x;
+      background-position: right top;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      order: -1;
       width: 340px;
       max-width: none;
       margin: 0;
+      z-index: 2;
     }
 
     .home-image__cover {
-      transform: translateX(-130px) scale(0.875);
+      transform: translateX(-25px) scale(0.875);
       width: 460px;
       max-width: none;
     }
 
     &::after {
-      background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+      background: var(--gradient);
       position: absolute;
       content: '';
       height: 100%;
       z-index: -1;
       width: 50%;
-      right: 0;
+      left: 0;
       top: 0;
     }
   }
