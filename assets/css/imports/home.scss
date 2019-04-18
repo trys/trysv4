@@ -89,7 +89,12 @@
     }
 
     figure {
-      background-image: linear-gradient(to left, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0)), var(--gradient);
+      background-image: linear-gradient(
+          to left,
+          rgba(249, 250, 251, 1),
+          rgba(249, 250, 251, 0)
+        ),
+        var(--gradient);
       background-size: 200px 100%, auto;
       background-repeat: no-repeat, repeat-x;
       background-position: right top;
@@ -143,6 +148,9 @@
 
 .feed {
   background: var(--mid);
+  position: relative;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06);
+  z-index: 3;
 }
 
 .project {
