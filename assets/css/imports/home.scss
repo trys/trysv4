@@ -1,6 +1,4 @@
 .opening {
-  --gradient: linear-gradient(var(--gradient-blue), var(--gradient-green));
-
   position: relative;
   text-align: center;
 
@@ -149,7 +147,7 @@
 .feed {
   background: var(--mid);
   position: relative;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   z-index: 3;
 }
 
@@ -159,10 +157,11 @@
   figure {
     margin: 30px auto 0;
   }
+
   img {
     margin: 0 auto;
     display: block;
-    background: linear-gradient(var(--gradient-blue), var(--gradient-green));
+    background: var(--gradient);
     padding: 20px;
   }
 

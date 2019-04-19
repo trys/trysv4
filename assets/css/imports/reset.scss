@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
 blockquote,
@@ -7,15 +7,15 @@ pre,
 ol,
 ul,
 figure {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-	max-width: 100%;
-	display: block;
-	height: auto;
-	border: none;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border: none;
 }
 
 article,
@@ -26,15 +26,15 @@ header,
 aside,
 main,
 nav {
-	display: block;
+  display: block;
 }
 
 *,
 *:before,
-*:after{
-	box-sizing: border-box;
+*:after {
+  box-sizing: border-box;
 }
 
 iframe {
-	border: none;
+  border: none;
 }

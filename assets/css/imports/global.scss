@@ -1,115 +1,118 @@
 body {
-	background: var(--light);
+  background: var(--light);
+}
+
+::selection {
+  background: var(--gradient-blue);
 }
 
 .main {
-	min-height: calc(100vh - 7em)
+  min-height: calc(100vh - 7em);
 }
 
 .wrap {
-	max-width: 1180px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
-	@media (min-width: 500px) {
-		width: 90%;
-	}
+  @media (min-width: 500px) {
+    width: 90%;
+  }
 }
 
 .insulate {
-	padding-top: 1.666em;
-	padding-bottom: 1.666em;
+  padding-top: 1.666em;
+  padding-bottom: 1.666em;
 }
 
 .top,
 .low {
-	letter-spacing: 2px;
-	font-weight: 700;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-	background: var(--white);
-	font-size: 15px;
-	padding: 1.75em 0;
-	position: relative;
-	z-index: 10;
+  letter-spacing: 2px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  background: var(--white);
+  font-size: 15px;
+  padding: 1.75em 0;
+  position: relative;
+  z-index: 10;
 
-	& a {
-		text-decoration: none;
-		margin-left: 1em;
-	}
+  & a {
+    text-decoration: none;
+    margin-left: 1em;
+  }
 
-	& .wrap {
-		width: 100%;
-		display: flex;
-		justify-content: flex-end;
-		flex-wrap: wrap;
-	}
+  & .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 
-	& a:first-child {
-		margin: 0 auto 0 0;
-	}
+  & a:first-child {
+    margin: 0 auto 0 0;
+  }
 
-	@media (min-width: 350px) {
-		font-size: 16px;
+  @media (min-width: 350px) {
+    font-size: 16px;
 
-		& a {
-			margin-left: 20px;
-		}
-	}
+    & a {
+      margin-left: 20px;
+    }
+  }
 
-	@media (min-width: 450px) {
-		& a {
-			margin-left: 40px;
-		}
-	}
+  @media (min-width: 450px) {
+    & a {
+      margin-left: 40px;
+    }
+  }
 }
 
 hr {
-	margin: 1.8em 0;
-	border: none;
-	border-top: 2px solid var(--mid);
+  margin: 1.8em 0;
+  border: none;
+  border-top: 2px solid var(--mid);
 }
 
 .button {
-	margin: 1rem auto;
-	font-weight: 700;
-	font-size: 16px;
-	letter-spacing: 1px;
-	text-decoration: none;
-	background: var(--dark);
-	transition: 300ms background;
-	padding: 1rem 2rem;
-	text-align: center;
-	color: var(--white);
-	display: inline-block;
-	border: none;
-	min-width: 200px;
-	cursor: pointer;
-	width: auto;
+  margin: 1rem auto;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: var(--dark);
+  transition: 300ms background;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--white);
+  display: inline-block;
+  border: none;
+  min-width: 200px;
+  cursor: pointer;
+  width: auto;
 
+  &:hover {
+    background: var(--dark-hover);
+    color: var(--white);
+  }
 
-	&:hover {
-		background: var(--dark-hover);
-		color: var(--white);
-	}
+  &.button--success {
+    background: var(--success);
+  }
 
-	&.button--success {
-		background: var(--success);
-	}
-
-	&.button--failure {
-		background: var(--failure);
-	}
+  &.button--failure {
+    background: var(--failure);
+  }
 }
 
 .password {
-	& .password__result {
-		display: block;
-		margin: 1.8em 0 1em;
-	}
+  & .password__result {
+    display: block;
+    margin: 1.8em 0 1em;
+  }
 
-	& .button {
-		min-width: auto;
-	}
+  & .button {
+    min-width: auto;
+  }
 }
