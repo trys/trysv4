@@ -73,15 +73,15 @@ Named slots allow you to inject multiple bits of content within a child componen
 // Parent
 <template>
   <PageTemplate>
-    <template slot="header">
+    <template v-slot:header>
       <h1>Header content</h1>
     </template>
 
-    <template slot="content">
+    <template v-slot:content>
       <p>Page content</p>
     </template>
 
-    <template slot="footer">
+    <template v-slot:footer>
       &copy; 2019
     </template>
   </PageTemplate>
@@ -130,7 +130,7 @@ The parent can then implement it's own rendering style for different data struct
 // Parent
 <template>
   <List :items="items">
-    <template slot="item" slot-scope="{ item, remove }">
+    <template v-slot:item="{ item, remove }">
       {{ item.name }}
       <button
         type="button"
@@ -156,7 +156,7 @@ export default {
 </script>
 ```
 
-Note the two attributes: `slot="item" slot-scope="{ item, remove }"`. The first tells Vue which slot to use, and the second is a destructure of the props passed to the slot. This could be a method or data and works a bit like a render-function in React.
+Note the attribute: `v-slot:item="{ item, remove }"`. It tells Vue which named slot to use, exposes the passed props, which we can destructure. This could be a method or data and works a bit like a render-function in React.
 
 ## Dynamic scoped slots
 
@@ -169,12 +169,12 @@ Take a multi-step form. You want a wrapper element that'll handle all the stylin
 <template>
   <multi-step-form steps="steps">
     // Our default header
-    <template slot="header" slot-scope="{ step }">
+    <template v-slot:header="{ step }">
       <h1>{{ step.title }}</h1>
     </template>
 
     // Our additional content for the step one header
-    <template slot="header_step-1" slot-scope="{ save }">
+    <template v-slot:['header_step-1']="{ save }">
       <p>Additional content, just for step one</p>
       <button type="button" @click="save">Save</button>
     </template>
