@@ -1,7 +1,7 @@
 ---
-title: 'Sergey + Markdown + Tests + Folders'
+title: 'Sergey + Markdown + Tests + Folders + ENV + Exclusion'
 date: 2019-04-22
-description: Adding markdown support to the little static site generator
+description: Markdown and much more added to the little static site generator
 categories: Web
 ---
 
@@ -50,6 +50,14 @@ If you set the content folder to be `_imports/content`, you wouldn't need specif
 <sergey-import src="aboutMarkdownFile" />
 ```
 
-## Summing up
+## .env 🗝
+
+You've been able to pass arguments to the `sergey` command from day one, but now you can prebake those values with a `.env` file. All the options have been documented on the [options page](https://sergey.cool/options/).
+
+## Exclusion 🚫
+
+Finally, Sergey now ignores all entries in your `.gitignore`, making compilation that bit quicker. You can also pass in additional folders and files to exclude from being watched in dev mode and copied at build time.
+
+## Summing up ✨
 
 If you have any questions, spot any bugs, or think of an feature requests, please send me a message on [Twitter](https://twitter.com/trysmudford).
