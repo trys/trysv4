@@ -40,6 +40,7 @@ This is pretty great, but there's a slightly frustrating side effect when you ho
 }
 ```
 
+
 All together, here's the code for the above example:
 
 ```css
@@ -84,5 +85,31 @@ All together, here's the code for the above example:
   .fade-out-siblings > * {
     padding: 4rem 1rem;
   }
+}
+```
+
+
+## Update!
+
+As suggested by [@css](https://twitter.com/css/status/1121039342594666502), adding `:focus-within` support would be a nice _touch_.
+
+```css
+.parent:hover > *,
+.parent:focus-within > * {
+  opacity: 0.4;
+}
+
+.parent:hover > :hover,
+.parent:focus-within > :focus {
+  transform: scale(1.1);
+  opacity: 1;
+}
+```
+
+And taking [Jakob's](https://twitter.com/eriksen_dk/status/1121067556662648832) `:not()` selector idea, we can handle hovering siblings when there's already a focused element!
+
+```css
+.parent:hover > :focus:not(:hover) {
+  transform: scale(1.05);
 }
 ```
