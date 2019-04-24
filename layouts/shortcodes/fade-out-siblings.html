@@ -1,7 +1,7 @@
 <article class="fade-out-siblings">
-  <div>Card 1</div>
-  <div>Card 2</div>
-  <div>Card 3</div>
+  <button>Card 1</button>
+  <button>Card 2</button>
+  <button>Card 3</button>
 </article>
 
 <style>
@@ -29,13 +29,20 @@
   transition: 300ms opacity, 300ms transform;
 }
 
-.fade-out-siblings:hover > * {
+.fade-out-siblings:hover > *,
+.fade-out-siblings:focus-within > * {
   opacity: 0.4;
 }
 
-.fade-out-siblings:hover > *:hover {
+.fade-out-siblings:hover > :hover,
+.fade-out-siblings:focus-within > :focus {
   transform: scale(1.1);
   opacity: 1;
+  outline: none;
+}
+
+.fade-out-siblings:hover > :focus:not(:hover) {
+  transform: scale(1.05);
 }
 
 @media (min-width: 40em) {
@@ -48,4 +55,13 @@
   }
 }
 
+
+.fade-out-siblings button {
+  box-shadow: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+}
 </style>
