@@ -10,6 +10,8 @@ Using an API requires an element of trust. Trust that data you request will be w
 
 That consistency also extends to failing well. If an API fails consistently, it makes it a breeze for the consumer to check against. Though we should strive to put adequate error checking in our code, having trust in an API to fail consistently means we can run high-level checks for errors, and remain confident that the error we requested is present and correct. Failing at a macro level, staying consistent at a micro level.
 
+Components require a similar level of trust to a REST API, we interact with them in very similar ways. A component exposes a public API, an I/O in the form of props and events. Keeping this API clear and consistent will increase the trustworthiness in the component, and make it easier to integrate. A good component will be extensible.
+
 - Typescript
 - GraphQL
 - Classes _shakes fist at immutability_
