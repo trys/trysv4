@@ -41,3 +41,8 @@ Getting tweeted by CSS Tricks was pretty mega. Cassie lent round the desk when s
 
 This is rapidly becoming a weekly highlight. It sounds absurd, but it's a real privilege to spent 90 minutes working on my website with no heavy agenda. I added a side projects section to the [home page](/), and posted [some photos](/blog/learning-to-barista/) from the Small Batch trip.
 
+## Songs of the week
+
+- [Evangeline - Bears Den](https://open.spotify.com/track/4NZWbWoN4AVOCuRR0XBmPy) (new album 🎉)
+- [Silhouette - Luke Sital-Singh](https://open.spotify.com/track/1N16Qj6Va5vNHDRA1gcx6Z) (new album 🎉)
+- [Time in a bottle - Jim Croce](https://open.spotify.com/track/561F1zqRwGPCTMRsLsXVtL)
