@@ -4,7 +4,7 @@ date: 2019-04-30
 categories: Web
 ---
 
-This is the first in a series called 'coding with contracts'.
+This is the first in a series called 'coding with contracts', a look into writing more robust API's, components, and more!
 
 ---
 
@@ -133,3 +133,18 @@ I say 'regular' JS, because Typescript still ultimately compiles down to JS. The
 
 Marking up a network request with an interface is a great start, and I [wrote about it](/blog/typescript-generics/) last month.
 
+This approach leads on nicely to a consolidation of API responses. A `BlogPost` will usually appear in multiple places across an API: On a blog index page, as a related post, as a list of posts by an author, attached to a comment, and as a direct request to a post. It's inefficient to send the full post for all of those use-cases, so it's common to return a subset of the data. **These subsets are where problems tend to occur.**
+
+Nailing down the two or three forms in which a post can be returned is an essential part of a good data contract. Take this interface:
+
+```ts
+interface BlogPost {
+  id: Number;
+  title: String;
+  relatedPosts: BlogPost[];
+}
+```
+
+It gives the impression that the `relatedPosts` will contain full `BlogPost` objects within. But chances are, they'll be a subset of the full post. In this instance, creating a `BlogPostPreview`, or `SimpleBlogPost` might be a good idea. Then create a service that returns posts in that shape, and use it everywhere you need that amount of data. Aim to synchronise these interfaces so you're left with a couple of options.
+
+It might be tempting to reach for the `Partial<BlogPost>`, but do not give into that temptation. `Partial<>` is a trojan horse, and will lead to problems further down the line.
