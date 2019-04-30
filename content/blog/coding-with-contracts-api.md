@@ -4,15 +4,18 @@ date: 2019-04-30
 categories: Web
 ---
 
-This is the first in a series called 'coding with contracts', a look into writing more robust API's, components, and more!
+This is the first in a little series called 'coding with contracts', a look into writing more robust API's, components, and more!
 
 ---
 
-Using an API requires an element of trust. Trust that the data you request will be well-formed, quick and most importantly, consistent. Consistency is _everything_ for an API.
+Using an API is an exercise in trust. Trust that the data you request will be well-formed, quick and most importantly, consistent. Consistency is _everything_ for an API.
 
-That consistency extends to failing well. If an API fails consistently, it's a breeze to check against as a consumer. As diligent developers, we should strive to put adequate error checking in our code. But if we can trust an API to fail consistently, we can run high-level checks for errors, remaining confident that the data we request is present and correct.
+That consistency extends to failing well. If an API fails consistently, it's a breeze for a consumer to check against. As diligent developers, we should strive to put adequate error checking in our code. But if we can trust an API to fail consistently, we can run high-level checks for errors, remaining confident that the data we request is present and correct.
 
-> Failing at a high level, staying consistent & concise at a low level.
+> Fail at a high level,  
+> Stay consistent & concise at a low level.
+
+## Future-proof responses
 
 Take the following API response for a list of blog posts:
 
@@ -29,7 +32,7 @@ Take the following API response for a list of blog posts:
 ]
 ```
 
-It seems sensible enough at first glance - let's start asking some 'what ifs':
+It seems sensible enough at first glance. Let's start asking some 'what if' questions:
 
 - What if there are no blog posts?
 - What if there's new data for each post?
@@ -43,7 +46,7 @@ Things get more tricky when there's an error. Do we swap the array for a string 
 
 Pagination? If we're stuck with an array, we can't add data such as the total page count or the next/previous page cursors. And likewise, adding more data is out the question. We've painted ourselves into a corner. 👨🏼‍🎨
 
-Our contrived API isn't consistent, and it means we have to handle multiple eventualities, _every time_ we interact with it, and it really sucks. See how many arbitrary checks we're having to make, just to confirm we can safely access the data:
+Our contrived API isn't consistent, and it means we have to handle multiple eventualities _every time_ we interact with it, and it really sucks. See how many arbitrary checks we're having to make, just to confirm we can safely access the data:
 
 ```js
 try {
@@ -92,22 +95,23 @@ try {
 }
 ```
 
-This is so much more readable and confident. We glean this confidence from a **contract**.
+## API contracts
 
-For an API, a contract can come in two forms:
+The above is more common sense than contractual, so let's move on to that...
 
-- Schema
-- Documentation
+An API contract tends to come in two forms: a schema, and documentation.
 
-A live schema will surface _exactly_ what the API is expecting to send & receive, but it'll often be in a code-y format and not overly readable.
+A live schema will surface _exactly_ what the API is expecting to send & receive, but it'll often be in a code-y format and not overly readable. It's often used within an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) to keep a database in sync with API models. [Sequelize](http://docs.sequelizejs.com/) and [TypeORM](https://github.com/typeorm/typeorm) are pretty common choices.
 
-Documentation is great, assuming it is kept up to date. Much like a pattern library, as soon as it goes stale, it's useless. It needs to become both part of the project culture, and part of the codebase itself. Colocating documentation with code is a great way to increase the chances of documentation accuracy. Tools like [Swagger](https://swagger.io) and [JSDoc](http://usejsdoc.org/) can help with this.
+Documentation is great, assuming it's kept up to date. Much like a pattern library, it's useless the minute it gets stale. It needs to become both part of the project culture, and part of the codebase itself. Colocating documentation with code is a great way to increase the chances of documentation accuracy. Tools like [Swagger](https://swagger.io) and [JSDoc](http://usejsdoc.org/) can help with this.
 
-Where a schema will answer the **what** and **how** questions, documentation can provide context, answering the **whys**.
+Where a schema will answer the **what** questions, documentation examples answer **how** and can also provide context for the **why**'s.
 
-## Adding confidence to your API
+Clear product specifications also really help. If backend, frontend, and design are all working from the same pre-agreed specs, and the feature intention is clear, the room for errors is reduced.
 
 [GraphQL](https://graphql.org/) is a super-interesting development in this field. Not only is it a fresh way to interact with a data source, it acts as hybrid of schema and documentation. Furthermore, the schema is shared between client and server, providing even greater levels of confidence to both parties.
+
+## Increasing confidence with Typescript
 
 [Typescript](https://www.typescriptlang.org/) can also help in the quest for contract confidence. By defining [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html), you can describe the shape of the many arbitrary objects that float around a codebase. Here's an interface example:
 
@@ -125,17 +129,15 @@ interface BlogPost {
 
 When we tell Typescript that an object is a `BlogPost`, the compiler, codebase and IDE suddenly know a huge amount more about this piece of data. In fact, **data begins to become information**. This information, in the form of type-checking, gives us confidence.
 
-We know that the `BlogPost.comments` will be an array of comments, so it's safe to access `.length`, or run `.map()` over it.
+We know that the `BlogPost.comments` will always be an array of comments, so it's safe to access `.length`, or run `.map()` over it.
 
 We also know that `BlogPost.image` is an optional property, so might be missing from any API response. If we try and access `BlogPost.image.url` (for example) without first checking that `BlogPost.image` exists, the code simply won't compile. It prevents us from making mistakes that would cause 'regular' JS to fall over.
 
-I say 'regular' JS, because Typescript still ultimately compiles down to JS. These type-checks are purely theoretical, and if the API fails to provide `comments`, you'll still have problems. This 'false' confidence is dangerous if you can't trust your API. Fortunately, it's where a **shared schema** can come to the rescue. If the backend is also written in Typescript, you can share your interfaces between the two codebases, and if either party makes a breaking change, the code won't compile and you'll be alerted!
-
 Marking up a network request with an interface is a great start, and I [wrote about it](/blog/typescript-generics/) last month.
 
-This approach leads on nicely to a consolidation of API responses. A `BlogPost` will usually appear in multiple places across an API: On a blog index page, as a related post, as a list of posts by an author, attached to a comment, and as a direct request to a post. It's inefficient to send the full post for all of those use-cases, so it's common to return a subset of the data. **These subsets are where problems tend to occur.**
+This approach leads on nicely to a consolidation of API responses. A `BlogPost` will usually appear in multiple places across an API: On a blog index page, as a related post, as a list of posts by an author, attached to a comment, or as a direct request to a post. It's inefficient to send the full post for all of those use-cases, so it's common to return a subset of the data. **These subsets are where problems tend to occur.**
 
-Nailing down the two or three forms in which a post can be returned is an essential part of a good data contract. Take this interface:
+Take this interface:
 
 ```ts
 interface BlogPost {
@@ -145,6 +147,24 @@ interface BlogPost {
 }
 ```
 
-It gives the impression that the `relatedPosts` will contain full `BlogPost` objects within. But chances are, they'll be a subset of the full post. In this instance, creating a `BlogPostPreview`, or `SimpleBlogPost` might be a good idea. Then create a service that returns posts in that shape, and use it everywhere you need that amount of data. Aim to synchronise these interfaces so you're left with a couple of options.
+It gives the impression that the `relatedPosts` will contain full `BlogPost` objects within. But chances are, they'll be a subset of the full post.
 
-It might be tempting to reach for the `Partial<BlogPost>`, but do not give into that temptation. `Partial<>` is a trojan horse, and will lead to problems further down the line.
+In this instance, creating a `BlogPostPreview`, or `SimpleBlogPost` interface might be a good idea. It might be tempting to reach for the `Partial<BlogPost>`, but do not give into that temptation. `Partial<>` is a trojan horse, and will lead to problems further down the line.
+
+Aim to synchronise these interfaces so you're left with a couple of options. Nailing down the two or three forms in which a post can be returned is an essential part of a good data contract. This'll mean working with the API developers to set in stone all the possible permutations where `BlogPost`s are used. Then, they can create services that return posts in that shape, and use it throughout the project.
+
+## Data colocation
+
+```js
+db.find('posts')
+  .where(x => x.id === comment.postId)
+  .select('id, title, author');
+```
+
+From an API perspective, something like this in a comments service would be a red flag. We want to limit the number of `select` calls, and colocate them with their common counterparts.
+
+## Issues with Typescript
+
+Earlier I said 'regular' JS, because Typescript still ultimately compiles down to JS. These type-checks are purely theoretical, and if the API fails to provide `comments`, you'll still have problems. This 'false' confidence is dangerous if you can't trust your API. Fortunately, it's where a **shared schema** can come to the rescue. If the backend is also written in Typescript, you can share your interfaces between the two codebases, and if either party makes a breaking change, the code won't compile and you'll be alerted!
+
+Typescript also raises the barrier of entry the codebase, something that should be avoided if possible. But much like SCSS to CSS, Typescript can be adopted in a JS + types approach. You won't benefit from all the of the fancy language features, but it might just save your bacon at build time.
