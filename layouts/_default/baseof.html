@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.Language.Lang }}">
 	<head>
-		<meta charset="UTF-8" />
 		{{ $url := getenv (cond (eq "production" (getenv "CONTEXT")) "URL" "DEPLOY_PRIME_URL" ) | default (cond (eq "//localhost:1313/" (printf "%s" $.Site.BaseURL)) "//localhost:1313" $.Site.BaseURL) }}
+		<meta charset="UTF-8" />
 		<base href="{{ $url }}">
 		{{ $post := resources.Get "css/main.scss" }}
-    {{ $style := $post | resources.ToCSS | minify }}
+		{{- $style := $post | resources.ToCSS | minify -}}
+		{{- $title := printf "%s | %s" .Title .Site.Title -}}
+		{{- $og := printf "%s%s" $url (.Params.image | default "/images/og-2019.jpg") -}}
+		{{- $description := printf "%s | %s | %s" (.Description | default .Title) "Trys Mudford" "Frontend developer" -}}
+		{{- $ogSize := cond (isset .Params "image") "summary_large_image" "summary" -}}
+
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>{{ .Title }} | {{ .Site.Title }}</title>
-		{{ if (.IsPage) and eq .Section "blog" }}<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />{{ else }}<meta name="description" content="My core skills are in semantic HTML &amp; CSS, progressively enhanced JS, PWA’s, web performance, Vue.js &amp; Nuxt, static site
-		generation and generally putting the user first." />{{ end }}
+		<title>{{ $title }}</title>
+		<meta name="description" content="{{ $description }}" />
 		<meta property="og:url" content="{{ $url }}{{ .URL }}" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />
-		<meta property="og:image" content="{{ $url }}/images/og-2019.jpg" />
+		<meta property="og:title" content="{{ $title }}" />
+		<meta property="og:description" content="{{ $description }}" />
+		<meta property="og:image" content="{{ $og }}" />
 		<meta property="og:image:alt" content="Trys Mudford" />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }} | Trys Mudford | Frontend developer" />
-		<meta name="twitter:image" content="{{ $url }}/images/og-2019.jpg" />
-		{{ if (.IsPage) and eq .Section "blog" }}
+		<meta name="twitter:card" content="{{ $ogSize }}" />
+		<meta name="twitter:title" content="{{ $title }}" />
+		<meta name="twitter:description" content="{{ $description }}" />
+		<meta name="twitter:image" content="{{ $og }}" />
+		{{- if (.IsPage) and eq .Section "blog" -}}
 		<meta name="twitter:label1" value="Posted in" />
 		<meta name="twitter:data1" value="{{ .Params.categories }}" />
 		<meta name="twitter:label2" value="Reading time" />
 		<meta name="twitter:data2" value="{{ .ReadingTime }} minute{{ if not (eq .ReadingTime 1) }}s{{ end }}" />
-		{{ end }}
+		{{- end -}}
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

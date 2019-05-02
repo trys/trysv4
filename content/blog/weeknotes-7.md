@@ -3,6 +3,7 @@ title: 'Weeknotes #7'
 date: 2019-04-26
 categories: Web
 description: Growing and learning.
+image: /images/blog/weeknotes-7-1.jpg
 ---
 
 Growing and learning.

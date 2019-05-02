@@ -1,5 +1,6 @@
 ---
 title: Home
+description: "My core skills are in semantic HTML & CSS, progressively enhanced JS, PWA's, web performance, Vue.js & React, static site generation and generally putting the user first."
 ---
 
 # Hi there, I'm Trys.
