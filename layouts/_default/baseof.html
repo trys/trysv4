@@ -8,7 +8,7 @@
 		{{- $style := $post | resources.ToCSS | minify -}}
 		{{- $title := printf "%s | %s" .Title .Site.Title -}}
 		{{- $og := printf "%s%s" $url (.Params.image | default "/images/og-2019.jpg") -}}
-		{{- $description := printf "%s | %s | %s" (.Description | default .Title) "Trys Mudford" "Frontend developer" -}}
+		{{- $description := .Description | default (printf "%s | %s | %s" .Title "Trys Mudford" "Frontend developer") -}}
 		{{- $ogSize := cond (isset .Params "image") "summary_large_image" "summary" -}}
 
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
