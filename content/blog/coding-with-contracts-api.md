@@ -1,5 +1,5 @@
 ---
-title: Coding with contracts - API
+title: Coding with contracts - API response design
 date: 2019-04-30
 categories: Web
 description: "This is the first in a little series called 'coding with contracts', a look into writing robust API's, components, and more!"
@@ -7,9 +7,11 @@ description: "This is the first in a little series called 'coding with contracts
 
 This is the first in a little series called 'coding with contracts', a look into writing robust API's, components, and more!
 
+There are many articles relating to API request design, focusing on URL structure, sanitization and, input acceptance. This post looks at API responses, and how better backend design can make frontend consumption more resilient and readable.
+
 ---
 
-Using an API is an exercise in trust. Trust that the data you request will be well-formed, quick and most importantly, consistent. Consistency is _everything_ for an API.
+Using an API is an exercise in trust. Trust that the data you request will be well-formed, precise and, most importantly, consistent. Consistency is _everything_ for an API.
 
 That consistency extends to failing well. If an API fails consistently, it's a breeze for a consumer to check against. As diligent frontend developers, we should strive to put adequate error checking in our code. But if we can trust an API to fail consistently, then we can run high-level checks for errors and remain confident that the data we requested is all present and correct.
 
@@ -118,6 +120,14 @@ Where a schema will answer the **what** questions, documentation examples answer
 Clear product specifications also _really_ help. If backend, frontend, and design are all working from the same pre-agreed specs, and the feature intention is clear, the room for errors is greatly reduced.
 
 [GraphQL](https://graphql.org/) is a super-interesting development in this field. Not only is it a fresh way to interact with a data source, it acts as hybrid of schema and documentation. Furthermore, the schema is shared between client and server, providing even greater levels of confidence to both parties.
+
+## A good API is fussy
+
+_Be conservative in what you send, be liberal in what you accept._
+
+Postel's principle of robustness describes good API design, and good software at large. This conservative approach is a form of tough love - an API is strict for your own good.
+
+If it was lapse, waivering to poorly formed requests, it would be doing you a disservice, and as we experienced above, would ultimately be worse to use. A stubborn and boring API that keeps responding in a consistent manner is really what we want to work with.
 
 ## Data conversion & common language
 
