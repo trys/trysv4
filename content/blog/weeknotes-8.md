@@ -18,6 +18,8 @@ We had a fascinating brown bag lunch on diversity and inclusion, organised by [D
 
 Homebrew was pretty good this week. I published a [tiny lesson](/blog/fancy-slack-meta-tags/) and [sorted out](https://github.com/trys/trysv4/commit/b8114923691eecd055bafbc8f4c362ef07ba4369) the `<head>` of my website. This should make OpenGraph output a bit nicer.
 
+I also wrote a post on [API response design](/blog/coding-with-contracts-api/) in the first of a series on 'coding with contracts'.
+
 I went for my first 'run' on Monday evening. It was pretty tought, but I just about survived. My hamstrings weren't so sure on Wednesday; the Clearleft stairs were quite the struggle. Still, I managed ~2.5k!
 
 In less welcome news, the old insomnia is creeping back again. It's not an issue getting to sleep, but I'm waking way earlier than I need to. Sleep has never been an issue till last November. Since then, bouts of awful sleep have come and gone and I'm not particularly sure why. Something to monitor.
