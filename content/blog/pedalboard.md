@@ -1,6 +1,6 @@
 ---
 title: Building a JavaScript guitar pedalboard
-date: 2019-05-04
+date: 2019-05-06 13:00:00
 categories: Web
 description: How I went about buliding a pedalboard in JS with Web Audio API
 image: /images/blog/pedals.png
@@ -90,6 +90,24 @@ await fetch('/assets/Conic Long Echo Hall.wav')
 
 The final piece of the puzzle was a mix control, created in the same way as the tremolo depth control. I was particularly proud of the name **spacer.gif** too!
 
+### Reverb and delay tails
+
+One particularly challenging feature was Reverb and Delay tails. Tails allow the sound to 'tail off' when you switch the effect pedal off. I was really struggling to work out how to route the audio without rewriting considerable chunks of code. After two failed attempts, I turned to pen and paper, sketching out the audio nodes. As it often tends to go, the solution came to me quickly. There's something enlightening about using paper to solve virtual problems, I find my brain engages differently to that medium.
+
+The solution was to split the signal into wet/dry, and expose an FX send and return from the input switch code. The FX return stays connected to the live output at all times, even when the pedal is off (which seems counter-intuitive at first). But with that in place, we can toggle the input source from wet to dry, and leave the output to provide tails!
+
+```js
+const [
+  fxSend,
+  fxReturn,
+  output,
+  toggle
+] = createInputSwitchWithTails(
+  input,
+  isActive
+);
+```
+
 ## Wah Wah
 
 [Tim](https://www.novis.co/) suggested a Wah pedal after I filled him in on the project. I'm pretty happy with the outcome, but it's definitely not as pronounced an effect as I would like. It uses the [BiquadFilterNode](https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode) in `bandpass` mode. There's an aggressive Q, and maximum attenuation, but it still sounds quite subtle. I started off with an 'autowah' approach, using another `requestAnimationFrame` loop, but nothing beats hooking up a real expression pedal... 🥁
@@ -149,6 +167,69 @@ window.addEventListener('MIDIEXP', ({ detail }) => {
 ```
 
 This 'hands-off' approach with events also keeps the rotary knobs working without MIDI, adding control as some form of progressive enhancement.
+
+## Closures and currying
+
+I found currying to be a particularly helpful technique for this project. In simple terms, a currying function is one that returns another function, but that's not really doing it justice, so it's worth [reading up on it](https://codeburst.io/callbacks-closures-and-currying-3cc14300686a). Here's one in action:
+
+```js
+const myFunction = (a) => {
+  console.log(a);
+  return (b) => {
+    console.log(a, b);
+  }
+}
+```
+
+This can be called in a slightly confusing manner:
+
+```js
+myFunction(1)(2);
+// 1
+// 1 2
+```
+
+But it can also be written in a much more readable way:
+
+```js
+const result = myFunction(1);
+// 1
+result(2);
+// 1 2
+```
+
+When you call the first function with some parameters, you 'inject' that function with some state that can be used later. I like to think of them as 'code grenades'. That first call primes the function, pulling out the grenade's safety pin, and the second call sets it off!
+
+Let's take a function for updating an `AudioNode` or 'pot' ([potentiometer](https://en.wikipedia.org/wiki/Potentiometer)). It takes a `pot` parameter and returns another function expecting a browser event:
+
+```js
+const updateNode = pot => {
+  return event => {
+    pot.value = event.target.value;
+  };
+};
+```
+
+We can use it in several ways:
+
+```js
+// Not overly readable
+input.addEventListener('input', event => {
+  updateNode(feedback.gain)(event);
+});
+
+// Getting better
+const potToUpdate = updateNode(feedback.gain);
+input.addEventListener('input', event => {
+  potToUpdate(event);
+});
+
+// So SUCCINCT
+const onInput = updateNode(feedback.gain);
+input.addEventListener('input', onInput);
+```
+
+This means we can move the `updateNode(feedback.gain)` call into another function that has access the `AudioNode` in question, and just pass around `onInput` as a generic event handler. It's a neat way to keep concerns separate, and reduce the mixing of DOM and audio API code.
 
 ## Creating the UI
 
