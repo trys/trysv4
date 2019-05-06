@@ -2,6 +2,8 @@
 title: Building a JavaScript guitar pedalboard
 date: 2019-05-04
 categories: Web
+description: How I went about buliding a pedalboard in JS with Web Audio API
+image: /images/blog/pedals.png
 ---
 
 I've just launched a new side project in the form of a [JavaScript guitar pedalboard](https://pedalboard.netlify.com/). It's a handy crossover of my coding and guitaring hobbies.
