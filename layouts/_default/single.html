@@ -2,7 +2,7 @@
 <div class="wrap insulate">
 	<div class="single content h-entry">
 		<header class="center">
-			<h1 class="page-title p-name">{{ .Title }}</h1>
+			<h1 class="p-name">{{ .Title }}</h1>
 			{{ if eq .CurrentSection.URL "/blog/" }}
 				{{ partial  "meta" . }}
 			{{ end }}
