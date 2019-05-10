@@ -84,7 +84,12 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     const request = event.request;
     const url = new URL(request.url);
 
-    if (url.href.indexOf('https://www.trysmudford.com') !== 0) return;
+    const allowedUrls = [
+      'https://www.trysmudford.com',
+      'http://localhost:1313'
+    ];
+
+    if (!allowedUrls.find(x => url.href.startsWith(x))) return;
     if (request.method !== 'GET') return;
     if (url.href.indexOf('?') !== -1) return;
 
