@@ -71,6 +71,8 @@ When using the `loop` attribute, the audio tag never sends an `ended` event. The
 
 The other stretch goal was to add some animations to the pedals, and this seemed like the perfect opportunity. I've mocked the pedal to look like a little cassette deck, complete with playback heads and spinning tape! A bit of `border-radius: 100% 95%;` and infinite rotation on the tape produced a pretty neat effect.
 
+![Emulating a little cassette deck](/images/blog/looper.gif)
+
 In the spirit of 'always on', there is no on/off switch for this pedal, this did mean re-doing the DOM code for it. I haven't refactored the DOM code just yet though - that might come if another always-on use-case arrives.
 
 MIDI control as a must, as seen by the video. It works in the same way as outlined in the [first post](/blog/pedalboard/#web-midi-api).
