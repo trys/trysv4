@@ -20,7 +20,7 @@
 	<section class="side-projects">
 		<div class="insulate wrap">
 			<header class="center">
-				<h1 class="page-title">Side projects</h1>
+				<h1 class="p-name">Side projects</h1>
 			</header>
 			<div class="projects">
 
@@ -55,7 +55,7 @@
 	<section class="feed">
 		<div class="insulate wrap">
 			<header class="center">
-				<h1 class="page-title"><a href="/blog/">Latest articles</a></h1>
+				<h1 class="p-name"><a href="/blog/">Latest articles</a></h1>
 			</header>
 			<div class="posts">
 				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "==" "Web" ) }}
