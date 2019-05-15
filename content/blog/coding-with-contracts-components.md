@@ -1,6 +1,6 @@
 ---
 title: Coding with contracts - Components
-date: 2019-05-07
+date: 2019-05-14
 categories: Web
 ---
 
@@ -17,6 +17,22 @@ A component developed in isolation within a pattern library will often face diff
 ## Props
 
 Props are the most common form of interaction with a component, and the one of the most crucial elements to tie down. They should be named logically, and declared with accepted prop types. A developer integrating a component shouldn't have to delve within the codebase to see how a prop works, it should either be painfully obvious from the prop name, or followed up with a descriptor comment. There's a great [Storybook add-on](https://github.com/pocka/storybook-addon-vue-info) for Vue, that'll let you expose these descriptions.
+
+```js
+export default {
+  name: 'card',
+
+  props: {
+    /**
+     * A heading for the card, aim for 30-50 characters
+     */
+    heading: {
+      type: String,
+      required: true
+    }
+  }
+};
+```
 
 _"Good code is it's own documentation"_ is a popular quip, most often used to explain or excuse a lack of comments. And although clarity at a micro scale (sensible variable names, logical arguments, good spacing) is hugely important, and may mean a reduced number of comments, I'm not sure a lack of documentation at a macro scale is such a good thing. A comment is perfect for explaining the **whys** and **why nots**. Finding out what a component doesn't do is very interesting, and often overlooked.
 
@@ -40,7 +56,23 @@ The default slot is often the most overlooked in Vue. One of the great joys of V
 <my-button>Label</my-button>
 ```
 
-Slots allow you to override or extend components, but they're also a way of lifting child logic and methods back up into the parent. I recently wrote an extensive run-through of [slots and how to use them](/blog/dynamic-scoped-slots-in-vue-js/), so I won't dwell on them any longer other.
+Slots allow you to override or extend components, but they're also a way of lifting child logic and methods back up into the parent. I recently wrote an extensive run-through of [slots and how to use them](/blog/dynamic-scoped-slots-in-vue-js/), so I won't dwell on them for too long.
+
+React has a much more liberal approach to passing components around than Vue. In fact, it's one of it's strongest points IMHO. Passing a component via a prop is pretty common place in React-land, but it's more difficult in Vue. This is where slots come in.
+
+```jsx
+// React
+<list render={(item) => <list-item item={item}>} />
+
+// Vue
+<list>
+  <template v-slot:item="item">
+    <list-item :item="item" />
+  </template>
+</list>
+```
+
+As you can see, React is significantly more succinct than Vue for this sort of thing, but it does look considerably less like HTML.
 
 ## Events
 
