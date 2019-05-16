@@ -1,0 +1,90 @@
+<style>
+  .datepicker thead {
+    font-size: 0;
+  }
+
+  .datepicker thead ::first-letter {
+    font-size: 1.25rem;
+  }
+
+  .datepicker {
+    font-size: 1.25rem;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light);
+  }
+
+  .datepicker td {
+    padding: 1rem 0.25rem;
+    background: var(--mid);
+  }
+
+  .datepicker td + td {
+    border-left: 1px solid var(--light);
+  }
+
+  .datepicker tr + tr td {
+    border-top: 1px solid var(--light);
+  }
+
+  .datepicker thead th {
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 0.5rem 0.25rem;
+  }
+</style>
+
+<table class="datepicker">
+  <thead>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
