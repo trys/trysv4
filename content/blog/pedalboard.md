@@ -25,6 +25,9 @@ Each pedal had to have a fun code-y name. For some, it was definitely a case of 
 - [Reverb](/blog/pedalboard/#reverb): **`spacer.gif`**
 - [Wah Wah](/blog/pedalboard/#wah-wah): **`.filter()`**
 
+**UPDATE**  
+Since this writing post, I've also added a **`Smoosh`** compressor, **`Math.pow()`** overdrive and most excitingly, a **`for(loop)`** loop pedal! You can read about them [here](/blog/media-recorder-loop-pedal/)!
+
 ## Delay
 
 Delay was a fun starting point; the Web Audio API has a [DelayNode](https://developer.mozilla.org/en-US/docs/Web/API/DelayNode) that takes a stream and delays it be a specified number of seconds. This delays the whole signal, which isn't ideal for a pedal. None of the nodes include a 'mix' control, so you have to built it yourself.
