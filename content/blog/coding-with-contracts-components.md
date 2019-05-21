@@ -1,6 +1,6 @@
 ---
 title: Coding with contracts - Components
-date: 2019-05-14
+date: 2019-05-21
 categories: Web
 ---
 
@@ -76,7 +76,13 @@ As you can see, React is significantly more succinct than Vue for this sort of t
 
 ## Events
 
-With props providing input to a component, events provide the output.
+As a general rule of thumb. props provide the input to a component, and events provide the output. It's the same execution model as HTML elements, attributes are 'input' to the element, and event listeners tell us when things have changed, ie. output.
+
+Vue does a wonderful job of separating these two concepts, exposing an 'event emitter' that you can use to fire events out of a child component. React muddies these waters somewhat, where you pass in an event listener, and call it directly on a child component. It's more hands-on and explicit, but there's something wonderful about the opt-in event model in Vue. React's never been one for separating concerns, and I wouldn't be surprised if they work in very similar ways under the hood, but personally I like that distiction between component input and output.
+
+Vue takes it one step further with `v-model`. It's a standardised way of controlling component state that works great with form inputs, and third-party dependencies. The concept is based around 'one-way data flow' - a piece of stateful data is stored in a parent component, and passed into a child component (let's say it's an input field) with a `:value` prop. When the input changes, it fires out an `input` event. We can listen to that in the parent, and update the state.
+
+This model is really powerful, and shouldn't be underestimated.
 
 ---
 
