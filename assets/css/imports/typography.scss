@@ -38,14 +38,14 @@ a:not(.button) {
   transition: 300ms color;
 
   &:hover {
-    color: var(--blue);
+    color: var(--mid-blue);
 
     @supports (-webkit-text-fill-color: transparent) {
       background-image: -webkit-gradient(
         linear,
         0% 0%,
         100% 100%,
-        from(var(--gradient-dark-blue)),
+        from(var(--gradient-blue)),
         to(var(--gradient-green))
       );
       -webkit-background-clip: text;

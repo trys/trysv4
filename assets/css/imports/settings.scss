@@ -4,12 +4,12 @@
   --dark: #2f2831;
   --dark-hover: #1f1821;
   --mid: #eaeef2;
-  --blue: #607288;
-  --gradient-blue: #a6c0fe;
-  --gradient-green: #4cacc1;
-  --gradient-overlay-green: #16754d;
-  --gradient-overlay-blue: #0b198b;
-  --gradient-dark-blue: #96a0de;
+  --mid-blue: #607288;
+  
+  --gradient-blue: hsl(222, 100%, 83%);
+  --gradient-green: hsl(191, 50%, 53%);
+  --gradient-overlay-blue: hsl(222, 100%, 25%);
+  --gradient-overlay-green: hsl(161, 100%, 30%);
   --success: #2c753c;
   --failure: #9a3730;
   --gradient: linear-gradient(var(--gradient-blue), var(--gradient-green));
