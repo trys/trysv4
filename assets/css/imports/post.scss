@@ -8,13 +8,13 @@
     margin-right: auto;
   }
 
+  .meta {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--mid-blue);
+  }
+
   & h1 {
     margin-bottom: 0.25rem;
-
-    & + small {
-      display: block;
-      margin-bottom: 30px;
-      opacity: 0.6;
-    }
   }
 }
