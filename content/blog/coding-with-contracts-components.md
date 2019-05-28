@@ -117,12 +117,12 @@ Documentation is as much a way to show how a component should and shouldn't be u
 Here's the tldr;
 
 - Lay out a consistent public API and stick to it
-- Document they whys and why nots
-- Create inheritable components with mixins and BEM
+- Document the whys and why nots
+- Create extendable base components with mixins and BEM
 - Emit standardised events
 - Be a reflection of state, not stateful
-- Be HTML-like
 - Avoid saturating props and scoped slots, keep a tiny data contract
+- Be HTML-like
 - Document refs, and any public methods
 
 There's so much that could be expanded on for component contracts. Much of these concepts have come from years of trial & error, and iteration. As you work on even a few projects, you'll quickly see where the cracks in your system are, and begin to come up with ways to solve them. **Note all problems down** the minute you encounter of them. It's far too easy to get to the end of a long project and forget the challenges you faced along the way.
