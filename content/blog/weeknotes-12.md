@@ -4,7 +4,7 @@ date: 2019-05-31
 categories: Web
 ---
 
-[Last week](/blog/weeknotes-11/) was draining, and that ran into the early parts of this week too - in fact the 'classic' weekend was much of a right off. But we had a bonus rollover weekend bank holiday!
+[Last week](/blog/weeknotes-11/) was draining, and that ran into the early parts of this week too - in fact the 'classic' weekend was much of a write off. But we had a bonus rollover weekend bank holiday!
 
 I'm beginning to form plans for getting my own place. Having avoided the whole 'uni' thing, I was never really in any rush to have my own place. Life was comfortable, and I felt to need to shake that up - it's the same reason I was at Tomango for 6 years. But having done the commute & startup thing in London, and now settled down in Brighton, I feel like the time is right.
 
