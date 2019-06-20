@@ -58,7 +58,8 @@
 				<h1 class="p-name"><a href="/blog/">Latest articles</a></h1>
 			</header>
 			<div class="posts">
-				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "==" "Web" ) }}
+				{{ $cats := slice "Web" }}
+				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "in" $cats ) }}
 					{{ partial "post" . }}
 				{{ end }}
 			</div>
