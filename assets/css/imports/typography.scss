@@ -8,6 +8,7 @@
   font-display: swap;
   unicode-range: U+20-7E;
 }
+
 @font-face {
   font-family: 'Avenir LT';
   src: url('/fonts/1475544/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b-subset.woff2')
@@ -57,7 +58,7 @@ a:not(.button) {
 p,
 ul,
 ol {
-  margin: 0 0 1.85em;
+  margin: 0 0 1.2em;
 }
 
 h1 {
@@ -145,7 +146,7 @@ h3 + .highlight pre {
   text-align: center;
 
   @media (min-width: 750px) {
-    margin: 1.1em 0 2em;
+    margin: 1em 0 1.5em;
   }
 }
 

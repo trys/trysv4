@@ -10,7 +10,7 @@
 				{{ range (.Paginator 12).Pages }}
 					{{ if eq .Params.categories "Video" }}
 						{{ partial "post-video" . }}
-					{{ else if .Params.for }}
+					{{ else if .Params.link }}
 						{{ partial "post-external" . }}
 					{{ else if eq .Params.categories "Image" }}
 						{{ partial "post-image" . }}

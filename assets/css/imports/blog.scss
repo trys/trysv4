@@ -112,13 +112,6 @@
       }
     }
   }
-
-  @media (min-width: 1200px) {
-    & .categories {
-      transform: translateY(-50%) rotate(-90deg) translateX(-50%)
-        translateY(-50%);
-    }
-  }
 }
 
 .load-more {
