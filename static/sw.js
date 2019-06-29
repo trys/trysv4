@@ -3,9 +3,8 @@ This is a modified version of Ethan Marcotte's service worker (https://ethanmarc
 which is in turn a modified version of Jeremy Keith's service worker (https://adactio.com/serviceworker.js),
 with a few additional edits borrowed from Filament Group's. (https://www.filamentgroup.com/sw.js)
 */
-
 (function() {
-  const version = 'v5';
+  const version = 'v6';
   const cacheName = ':trysmudford-2018:';
 
   const staticCacheName = version + cacheName + 'static';
@@ -40,7 +39,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     caches.open(cacheName).then(cache => {
       cache.keys().then(keys => {
         if (keys.length > maxItems) {
-          cache.delete(keys[0]).then(trimCache(cacheName, maxItems));
+          cache.delete(keys[0]).then(() => trimCache(cacheName, maxItems));
         }
       });
     });
