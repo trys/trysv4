@@ -4,7 +4,7 @@ date: 2019-07-13
 categories: Web
 ---
 
-This week was great and busy, but I'm not feeling overly inpsired to write weeknotes. Here's a few points:
+This week was great and busy, but I'm not feeling overly inspired to write weeknotes. Here's a few points:
 
 Band practice was a lot of fun on Monday night. I still dislike singing, but it's getting easier and hopefully a little better.
 
