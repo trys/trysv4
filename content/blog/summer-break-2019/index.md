@@ -49,7 +49,7 @@ City life does very little for me, I much prefer to be out in the silence of the
 ![The evening sun setting behind a tree](/blog/summer-break-2019/4-2.jpg)
 ![More sunsets](/blog/summer-break-2019/4-3.jpg)
 
-### Sheffield Park and cooking
+### Sheffield Park and cooking
 
 Thursday was a chilled day of reading, walking, film watching and burger making. Solid.
 
