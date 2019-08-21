@@ -1,7 +1,7 @@
 ---
 title: Brussels Bound
 date: 2017-10-14
-cateogories: Web
+categories: Web
 ---
 
 Tomorrow I leave for Brussels. I’m attending a three-day workshop run by Evan You, the creator of Vue.js.
