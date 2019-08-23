@@ -1,68 +1,100 @@
 {{ define "main" }}
-	<div class="opening">
-		<div class="wrap">
-			<div class="opening__content">
-				{{ .Content }}
-			</div>
+<div class="opening">
+  <div class="wrap">
+    <div class="opening__content">
+      {{ .Content }}
+    </div>
 
-			<figure class="home-image">
-				<div class="home-image__cover">
-					<picture>
-						<source srcset="images/trysmudford-2019.webp" type="image/webp">
-						<source srcset="images/trysmudford-2019.jpg" type="image/jpg"> 
-						<img src="images/trysmudford-2019.jpg" alt="Trys Mudford">
-					</picture>
-				</div>
-			</figure>
-		</div>
-	</div>
+    <figure class="home-image">
+      <div class="home-image__cover">
+        <picture>
+          <source srcset="images/trysmudford-2019.webp" type="image/webp" />
+          <source srcset="images/trysmudford-2019.jpg" type="image/jpg" />
+          <img src="images/trysmudford-2019.jpg" alt="Trys Mudford" />
+        </picture>
+      </div>
+    </figure>
+  </div>
+</div>
 
-	<section class="side-projects">
-		<div class="insulate wrap">
-			<header class="center">
-				<h1 class="p-name">Side projects</h1>
-			</header>
-			<div class="projects">
+<section class="side-projects">
+  <div class="insulate wrap">
+    <header class="center">
+      <h1 class="p-name">Side projects</h1>
+    </header>
+    <div class="projects">
+      <article>
+        <a href="https://journalbook.co.uk">
+          <img src="/images/projects/journalbook.jpg" alt="Journalbook logo" />
+        </a>
+        <div class="project-content">
+          <h3>
+            <a href="https://journalbook.co.uk">Journalbook</a>
+          </h3>
+          <p>
+            A private, offline-first, personal journal - the perfect commuting
+            companion to help you reflect on your day!
+          </p>
+        </div>
+      </article>
 
-				<article>
-					<a href="https://journalbook.co.uk">
-						<img src="/images/projects/journalbook.jpg" alt="Journalbook logo" />
-					</a>
-					<div class="project-content">
-						<h3>
-							<a href="https://journalbook.co.uk">Journalbook</a>
-						</h3>
-						<p>A private, offline-first, personal journal - the perfect commuting companion to help you reflect on your day!</p>
-					</div>
-				</article>
+      <article>
+        <a href="https://sergey.cool">
+          <img src="/images/projects/sergey.jpg" alt="Sergey logo" />
+        </a>
+        <div class="project-content">
+          <h3>
+            <a href="https://sergey.cool">Sergey</a>
+          </h3>
+          <p>
+            A very little static site generator with HTML + include files +
+            slots + markdown.
+          </p>
+        </div>
+			</article>
+			
+			<article>
+        <a href="https://pedalboard.netlify.com/">
+          <img src="/images/projects/pedalboard.jpg" alt="Pedalboard screenshot" />
+        </a>
+        <div class="project-content">
+          <h3>
+            <a href="https://pedalboard.netlify.com/">JS Pedalboard</a>
+          </h3>
+          <p>
+            A Web Audio/MIDI experiment of 9 guitar effects, including delay, reverb, overdrive and a looper.
+          </p>
+        </div>
+      </article>
 
-				<article>
-						<a href="https://sergey.cool">
-							<img src="/images/projects/sergey.jpg" alt="Sergey logo" />
-						</a>
-						<div class="project-content">
-							<h3>
-								<a href="https://sergey.cool">Sergey</a>
-							</h3>
-							<p>A very little static site generator with HTML + include files + slots + markdown.</p>
-						</div>
-					</article>
-				
-			</div>
-		</div>
-	</section>
+      <article>
+        <a href="https://trys.github.io/Enigma/">
+          <img src="/images/projects/enigma.jpg" alt="Enigma machine screenshot" />
+        </a>
+        <div class="project-content">
+          <h3>
+            <a href="https://trys.github.io/Enigma/">JS Enigma Machine</a>
+          </h3>
+          <p>
+            A recreation of a wartime Naval Enigma encryption machine.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-	<section class="feed">
-		<div class="insulate wrap">
-			<header class="center">
-				<h1 class="p-name"><a href="/blog/">Latest articles</a></h1>
-			</header>
-			<div class="posts">
-				{{ $cats := slice "Web" }}
-				{{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "in" $cats ) }}
-					{{ partial "post" . }}
-				{{ end }}
-			</div>
-		</div>
-	</section>
+<section class="feed">
+  <div class="insulate wrap">
+    <header class="center">
+      <h1 class="p-name"><a href="/blog/">Latest articles</a></h1>
+    </header>
+    <div class="posts">
+      {{ $cats := slice "Web" }}
+      {{ range first 4 (where (where .Site.RegularPages "Section" "blog") ".Params.categories" "in" $cats ) }}
+      	{{ partial "post" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
