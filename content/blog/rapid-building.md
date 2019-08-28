@@ -1,6 +1,6 @@
 ---
 title: 'Tiny lesson: rapid builds, email signatures and Airtable'
-description: ''
+description: 'How to spike problems and build fun web things fast'
 date: 2019-08-28
 categories: Web
 ---
@@ -8,7 +8,7 @@ categories: Web
 We're fortunate enough to have some rather snazzy email signatures, kindly created by [Benjamin](https://clearleft.com/about/team/benjamin-parry). He's been lovingly crafting these by hand; diligently updating them each time an event concludes or a new Clearleftie joins. This seemed like a fun and helpful task to automate. After a morning of hackery, I had a working version of the [signature generator](https://clearleft-signatures.netlify.com/) deployed and ready for an internal test.
 
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <video src="/images/blog/signature.mp4" poster="/images/blog/signature.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" preload="none" controls></video>
+  <video src="https://www.trysmudford.com/images/blog/signature.mp4" poster="https://www.trysmudford.com/images/blog/signature.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" preload="none" controls></video>
 </div>
 
 ---
@@ -33,7 +33,7 @@ For this project, I opted for [Preact](https://preactjs.com/) and a small vanill
 
 With that in place, it was time to actually build the darn thing.
 
-From the [very rough plan](/blog/rapid-building/#come-up-with-a-plan) in my head, it appeared there were two main parts to this project:
+From the [very rough plan](/blog/rapid-building/#come-up-with-a-bit-of-a-plan) in my head, it appeared there were two main parts to this project:
 
 1. The template generator - Preact
 2. The data source - JSON & Airtable
@@ -241,7 +241,7 @@ Instead of pushing the transformed data into a new array, I relied on the wonder
 
 Scaling this to work with 'events' as well as 'staff' was a case of creating a new method, adding the appropriate API URL, and writing a new transform function.
 
-## Build time scraping
+## Build time fetching
 
 One option would've been to hit the Airtable API directly on the client-side. This has the advantage of always being up to date, but has a few downsides:
 
@@ -264,7 +264,7 @@ Environment variables are one of those things that are worth setting up early do
 
 Hard coding secrets into a repository isn't a hugely clever idea, so it's good practice to create an `.env` file, pull in the [dotenv](https://www.npmjs.com/package/dotenv) module, and rely on environment variables from the start.
 
-## Come up with a plan
+## Come up with a (bit of a) plan
 
 You don't have to fly totally blind with projects like this. It's worth coming up with a small plan, even if it's only in your head. For this project, the plan looked a bit like:
 
