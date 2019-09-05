@@ -28,8 +28,6 @@ Any ideas what those posts are about? No, me either.
 
 We then played around with the categories and posed many hypothetical content scenarios. It was properly fascinating, and really made me think about the content on my site, who it's for, and how it can work harder.
 
-{{< tweet 1164593244136706050 >}}
-
 Some amazing ideas were floated in the workshop, so I'll need to weigh them, decide which are right and then make a bit of a backlog. It's very exciting!
 
 ## Photos of the week
