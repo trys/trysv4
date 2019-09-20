@@ -78,4 +78,8 @@ The CSS is nice and succinct, and straight out of 2012. Clearfixes n' all. The `
 }
 ```
 
+{{< button "https://codepen.io/trys/pen/XWryxoy" >}}Codepen example{{</ button >}}
+
+---
+
 <small>**The caveat:** Given how classic™ this code is, this has probably been implemented many times before, but my googling skills weren't good enough to find other articles on the matter.</small>
