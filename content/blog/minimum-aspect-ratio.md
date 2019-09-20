@@ -2,6 +2,7 @@
 title: Minimum aspect ratio in CSS
 date: 2019-09-20
 categories: Web
+image: '/images/blog/min-aspect-ratio.png'
 ---
 
 The `padding-bottom` aspect ratio trick has been around for a while, and until we get the [official unit](https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/), it's all we've got to create fluid-sized elements. At [Daisie](https://daisie.com), I remember needing a 'minimum aspect ratio' but never properly implemented it. Today, when working on some cards, that requirement came up again.
