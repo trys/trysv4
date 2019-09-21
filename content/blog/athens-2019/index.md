@@ -84,7 +84,6 @@ On the first day, we headed to the church and had a great morning there. We were
 ![](/blog/athens-2019/sea-2.jpg)
 ![](/blog/athens-2019/sea-3.jpg)
 ![](/blog/athens-2019/sea-4.jpg)
-![](/blog/athens-2019/sea-5.jpg)
 ![](/blog/athens-2019/sea-6.jpg)
 
 Sleep was problematic. I didn't sleep a wink the night before the flight, nor the next night in Greece. I got six hours over the next two nights, so was pretty drained by mid-week. Fortunately the rooms were air-conditioned, so sleep was, at least in theory, possible.
