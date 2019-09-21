@@ -1,7 +1,9 @@
 ---
 title: Athens Trip 2019
-date: 2019-09-19
+date: 2019-09-21
 categories: Life
+description: 'A rambling account of a week in Athens'
+image: '/blog/athens-2019/lycabettus-4.jpg'
 ---
 
 I've just returned from a week of volunteering in Athens. Nine of us joined a team from a church helping refugees in the city, giving some of their volunteers a well deserved week off. This is my rambling account, mostly written for me to look back on in the future.
@@ -98,7 +100,11 @@ Despite the sombre moments, we had a really fun time as a team. We laughed a lot
 So that was the September 2019 trip to Athens. I would _love_ to do it again and get really stuck in now I know whats's what. It's given me a fresh perspective on how lucky we are. The problems in this world are so vast that individual actions may seem negligible, but we should do what we can, without grumbling and with joy.
 
 ![](/blog/athens-2019/group-12.jpg)
+![](/blog/athens-2019/lycabettus-1.jpg)
 ![](/blog/athens-2019/lauren-1.jpg)
+![](/blog/athens-2019/lycabettus-2.jpg)
 ![](/blog/athens-2019/lauren-and-I-1.jpg)
+![](/blog/athens-2019/lycabettus-3.jpg)
 ![](/blog/athens-2019/lauren-and-I-2.jpg)
+![](/blog/athens-2019/lycabettus-4.jpg)
 ![](/blog/athens-2019/lauren-and-I-3.jpg)
