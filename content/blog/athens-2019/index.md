@@ -78,6 +78,15 @@ We hit the Acropolis on the final full day, wandering up the gusty & toasty hill
 ![](/blog/athens-2019/acropolis-18.jpg)
 ![](/blog/athens-2019/acropolis-19.jpg)
 
+On the first day, we headed to the church and had a great morning there. We were briefed with a rough plan for the week and began splitting up the tasks. After a spot of lunch, we headed down to the coast for a swim and saunter along the shore.
+
+![](/blog/athens-2019/sea-1.jpg)
+![](/blog/athens-2019/sea-2.jpg)
+![](/blog/athens-2019/sea-3.jpg)
+![](/blog/athens-2019/sea-4.jpg)
+![](/blog/athens-2019/sea-5.jpg)
+![](/blog/athens-2019/sea-6.jpg)
+
 Sleep was problematic. I didn't sleep a wink the night before the flight, nor the next night in Greece. I got six hours over the next two nights, so was pretty drained by mid-week. Fortunately the rooms were air-conditioned, so sleep was, at least in theory, possible.
 
 The climate change memo doesn't appear to have reach Athens, nor news on recycling. The impression is with the effects of the post-Olympics economic depression, and the migrant crisis, Greece has had to put the brakes on just about everything else, just to keep its head above water. From chatting to folks out there, the government is at capacity and has run out of ideas. Individuals, churches and charities have had to step up. Seeing how they quietly and humbly serve their city was so inspiring. That's true national pride; stepping up and fixing things, not clinging to the past glory days with rose-tinted spectacles.
