@@ -4,7 +4,7 @@ date: 2019-09-28
 categories: Life
 ---
 
-One year ago today, I published a blog post about moving on from my first web job. After a whirlwind year (by my standards), it feels like a lifetime ago already.
+One year ago today, I [published a blog post](/blog/moving-on/) about moving on from my first web job. After a whirlwind year (by my standards), it feels like a lifetime ago already.
 
 <figure>
   <img src="/images/blog/crazy-year-5.jpg">
