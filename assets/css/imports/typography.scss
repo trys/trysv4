@@ -158,6 +158,11 @@ h3 + .highlight pre {
   & h2 {
     margin-bottom: 0.25em;
   }
+
+  & figcaption {
+    display: block;
+    margin: -1.25em 0 2rem;
+  }
 }
 
 ul ul,
