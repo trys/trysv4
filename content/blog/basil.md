@@ -4,7 +4,7 @@ date: 2019-12-09
 categories: Web
 ---
 
-I recently launched [basil.christmas](https://basil.christmas/), a 'Secret Santa as a service'. Basil has two modes. The first is a traditional list generator, letting you shuffle the participants and print of a nice, foldable list of names. The second is a little more involved. A 'head elf' from your company can sign up and enter all participant names into the system. Basil will email everyone, letting them know who their giftee is.
+I recently launched [basil.christmas](https://basil.christmas/), a 'Secret Santa as a service'. Basil has two modes. The first is a traditional list generator, letting you shuffle the participants and print off a nice, foldable list of names. The second is a little more involved, but considerably more exciting! A 'head elf' from your company can sign up and enter all participant names into the system. Basil will email everyone, letting them know who their giftee is.
 
 But that's only the beginning. We've all been there; you start in a new company and you get assigned the one person you've never spoken to. This is where Basil steps in. In each email, there's a unique link that, when clicked, anonymously emails the giftee, asking for a little nudge in the right direction. They can respond, all without knowing who has asked for help! Basil-based encryption!
 
@@ -16,7 +16,7 @@ To be honest, it's a bit of a silly side project, but there's always ample oppor
 
 **Vue.js** is my go-to framework. When set up with **Nuxt.js**, I find it really quick and empowering to build in. Rather than spin up a Node.js server, I opted to use the `generate` mode, and host the site on **Netlify**. It gives me CDN hosting and a great devops experience with zero configuration.
 
-The database & backend layer was an interesting choice, and where I focused my learning efforts. I opted for an avant-garde option in **Airtable** + **Netlify Functions**. Airtable is a lovechild of a spreadsheet and a database. Columns are typed and rows can be linked, so it's possible to run it as a relational database. It has a very sensible API (and incredible live API docs). I used Airtable for our [signature generator](https://www.trysmudford.com/blog/rapid-building/), but rather than use the HTTP REST API, this time I went for the `npm`. Again, another learning opportunity.
+The database & backend layer was an interesting choice, and where I focused my learning efforts. I opted for an avant-garde option of **Airtable** + **Netlify Functions**. Airtable is a lovechild of a spreadsheet and a database. The columns are typed, and the rows can be linked, so it's possible to run it as a relational database. It has a very sensible API (and incredible live API docs). I used Airtable for our [signature generator](https://www.trysmudford.com/blog/rapid-building/), but rather than use the HTTP REST API, this time I went for the `npm` module. Another learning opportunity.
 
 The module still uses callbacks, so there was a bit of 'promisification' required to get it work nicely with `async/await`.
 
@@ -36,15 +36,13 @@ Emails were handled by **Mailgun**. The biggest hurdle was getting the first ema
 
 ## Classic form POSTs
 
-Rather than use AJAX and JSON requests, I ended up going old school and use form POSTs and redirects for the data exchange. This meant I could start from a base of solid HTML, without worrying about requests from JavaScript. It might not be quite as seamless having full page refreshes, but given most users will only see one form in the whole flow, it doesn't harm the experience.
+Rather than use AJAX and JSON requests as is the usual approach in this decade, I ended up going old school and use form POSTs and redirects for the data exchange. This meant I could start from a base of solid HTML, without worrying about requests from JavaScript. It might not be quite as seamless having full page refreshes, but given most users will only see one form in the whole flow, it doesn't harm the experience.
 
-Deciding when to add complexity, and when to hold back, is another skill that's worth honing. So regularly do we reach for the shiny tool, when the slightly dusty one will do just fine.
-
-Even in modern tools, like Vue.js, there's still plenty of power in the humble `<form>` and 302 redirect.
+Deciding when to add complexity, and when to hold back, is another skill that's worth honing. So regularly do we reach for the shiny tool, when the slightly dusty one will do just fine. Even in modern tools, like Vue.js, there's still plenty of power in the humble `<form>` and 302 redirect.
 
 ## Design
 
-> I'm not a designer, but I do love Christmas
+> I'm not a designer, but I do love Christmas.
 
 With those credentials out the way, I decided to have a crack at designing this site. [Creative Market](https://creativemarket.com/) was my biggest friend on this project. There are so many über talented individuals on that platform. As soon as I stumbled upon these creatures, I fell in love.
 
@@ -72,9 +70,9 @@ I came up with an 'enum' of possible error codes and shared it between the front
 
 ## Planning for 'appropriate scale'
 
-Basil was never going to take over the internet, but there was a chance a few others may like to use it. Rather than build it just for our internal use at Clearleft, I made sure the schema was set up to allow multiple groups to use the system. This did mean the added complication of putting in an authentication system, but that in itself was an opportunity to build a password-less authentication flow for the first time.
+Basil was never going to take over the internet, but there was a chance a few others may like to use it. Rather than build it just for our internal use at [Clearleft](https://clearleft.com/), I made sure the schema was set up to allow multiple groups to use the system. This did mean the added complication of putting in an authentication system, but that in itself was an opportunity to build a password-less authentication flow for the first time.
 
-There was no need to [prepare for greater scale](https://twitter.com/dhh/status/1201992702860107776) than that. I think we've all been burned in the past worrying about whether the stack will cope with X users, with not basis for whether any users will arrive. More and more, I'm realising that building for myself, keeping in mind not to be exclusionary, nor paint myself into a corner, is the best bet for web things.
+There was no need to [prepare for greater scale](https://twitter.com/dhh/status/1201992702860107776) than that. I think we've all been burned in the past worrying about whether the stack will cope with X users, with no basis for whether _any_ users will arrive. More and more, I'm realising that building for myself, keeping in mind not to be exclusionary, nor paint myself into a corner, is the best bet for web things.
 
 ## Give it a go!
 
