@@ -8,6 +8,8 @@ I recently launched [basil.christmas](https://basil.christmas/), a 'Secret Santa
 
 But that's only the beginning. We've all been there; you start in a new company and you get assigned the one person you've never spoken to. This is where Basil steps in. In each email, there's a unique link that, when clicked, anonymously emails the giftee, asking for a little nudge in the right direction. They can respond, all without knowing who has asked for help! Basil-based encryption!
 
+![Basil.christmas home page](/images/blog/basil-screenshot.jpg)
+
 The legend of 'Basil' started many moons ago at Clearleft, where a certain individual embodied the elvish role, and emailed each person in the team; acting as the encryption go-between. This worked great, but meant that individual knew all the Secret Santarers. It sounded to me like an opportunity for tech!
 
 To be honest, it's a bit of a silly side project, but there's always ample opportunity for learning on websites like this. With no client restraints or budgets to consider, a side project is a great opportunity to try out new technologies and push ones design chops.
@@ -46,11 +48,11 @@ Deciding when to add complexity, and when to hold back, is another skill that's 
 
 With those credentials out the way, I decided to have a crack at designing this site. [Creative Market](https://creativemarket.com/) was my biggest friend on this project. There are so many über talented individuals on that platform. As soon as I stumbled upon these creatures, I fell in love.
 
-![](/images/blog/characters.jpg)
+![A selection of the Basil forest characters](/images/blog/characters.jpg)
 
 The colour scheme and typography had to be suitably festive for such a project. **Zeichen**, and **DM Sans** provided a nice mix of conversational 'basil tone' and readable prose. A contrasting scheme of pink and dark blue, combined with lashings of noise, and topped with some wonderful snowflakes (created by Cassie), let to a suitably seasonable creation.
 
-![](/images/blog/scheme.jpg)
+![The pink and blue colour scheme](/images/blog/scheme.jpg)
 
 The initial design direction was decided in Sketch, but I quickly moved to the browser to roll it out. Working in Vue.js components, I was able to swiftly build out the various form-based pages with great ease.
 
