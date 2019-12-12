@@ -10,7 +10,7 @@ But that's only the beginning. We've all been there; you start in a new company 
 
 ![Basil.christmas home page](/images/blog/basil-screenshot.jpg)
 
-The legend of 'Basil' started many moons ago at Clearleft, where a certain individual embodied the elvish role, and emailed each person in the team; acting as the encryption go-between. This worked great, but meant that individual knew all the Secret Santarers. It sounded to me like an opportunity for tech!
+The legend of 'Basil' started many moons ago at Clearleft, when [Kate Bulpitt](https://twitter.com/qwertykate) discovered the mysterious elvish hero. ~~Kate~~ \*ahem\* Basil organised the whole affair, emailing each person in the team; acting as the encryption go-between. This worked great, but meant that individual knew all the Secret Santarers. It sounded to me like an opportunity for tech!
 
 To be honest, it's a bit of a silly side project, but there's always ample opportunity for learning on websites like this. With no client restraints or budgets to consider, a side project is a great opportunity to try out new technologies and push ones design chops.
 
