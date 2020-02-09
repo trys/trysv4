@@ -40,7 +40,7 @@
 
 .categories {
   position: absolute;
-  font-size: 16px;
+  font-size: var(--step--2);
   font-weight: 700;
   letter-spacing: 1px;
   left: 0;
@@ -139,6 +139,6 @@
 
   & cite {
     font-style: normal;
-    font-size: 0.6em;
+    font-size: var(--step--2);
   }
 }
