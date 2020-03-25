@@ -5,7 +5,7 @@ description: "How we profile and prioritise technical requirements"
 categories: Web
 ---
 
-In any development project, there is a point in which one must decide on the tech stack. For some, that may feel like a foregone conclusion, dictated by team appetite and experience.
+In any development project, there is a point at which one must decide on the tech stack. For some, that may feel like a foregone conclusion, dictated by team appetite and experience.
 
 Even if the decision seems obvious, it's always worth sense-checking your thought process. Along with experience and gut-feelings, we also have blind-spots and biases.
 
@@ -53,7 +53,7 @@ Does this system need to scale over time?
 How many people can use the system? User accounts.
 
 #### Availability
-Where can this system be accessed from (CMS over user)
+Where can this system be accessed from?
 
 #### Reliability
 Trust in the system & time between failures
