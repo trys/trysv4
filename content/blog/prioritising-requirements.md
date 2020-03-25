@@ -1,7 +1,7 @@
 ---
 title: Prioritising Requirements
 date: 2020-03-25
-description: "How we rank requirements"
+description: "How we profile and prioritise technical requirements"
 categories: Web
 ---
 
