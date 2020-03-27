@@ -130,7 +130,7 @@ Use your prioritised non-functional requirements as a way to justify each decisi
 
 Again, post-its are the way to go here, put the four headings on the wall, and group the requirements below them.
 
-![](/images/blog/post-its.png)
+![Group the four headings with post-it notes](/images/blog/post-its.png)
 
 **Tip:** It's a good idea to pre-prepare a bunch of post-its with common or more obvious functional requirements beforehand, then add to that list as you go.
 
@@ -168,7 +168,7 @@ To help you along, we've created a [Google Sheets template](https://docs.google.
 
 Along the top, we list our solutions, and down the side our requirements, costs and risks:
 
-![](/images/blog/spreadsheet.png)
+![Create the four requirement sections of the spreadsheet](/images/blog/spreadsheet.png)
 
 In the world of software development, anything is technically possible given the right time, budget and team. A simple boolean yes/no isn’t a fair assessment when profiling systems against functional requirements. We need a more nuanced profile, and go for a 5-point scale:
 
