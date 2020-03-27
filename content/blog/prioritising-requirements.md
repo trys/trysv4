@@ -9,6 +9,14 @@ In any development project, there is a point at which one must decide on the tec
 
 Even if the decision seems obvious, it's always worth sense-checking your thought process. Along with experience and gut-feelings, we also have blind-spots and biases.
 
+## Summary
+
+Through several group and individual prioritisation exercises, requirement gathering, tool profiling and weighted rankings, we can remove bias from our decision making and better evaluate the tools we use.
+
+Use our [requirements spreadsheet template](https://docs.google.com/spreadsheets/d/1lOs8EjQR1TCWtAob03NrILQlv7jMqAdudxOiGl3teEo/template/preview) as a starting point for your costly and crucial technical decisions.
+
+## How we prioritise
+
 We're big fans of [prioritisation exercises](https://clearleft.com/posts/getting-your-priorities-right) at Clearleft, and regularly help to steer clients in their technical and product decisions. As an agency, our role is not to dictate solutions or steamroll our agenda, but to listen, interrogate and question before using our experience to empower teams to make their best decisions.
 
 We recently helped a not-for-profit decide which content management system to use. Rather than dive straight into the build, we took a step back, using a technical discovery phase as an opportunity to ask questions, learn and come to a well-informed decision together.
@@ -114,6 +122,13 @@ Pull out the top four or five, discuss them, and write them up in a bit more det
 ## Functional requirements
 
 Functional requirements describe “what the system will do” - or perhaps more accurately, “what the system should do”. These are objective and quantifiable statements that either a system can, or cannot do.
+
+Here's a few examples:
+
+- The system should allow you to upload images
+- The tool should lint our JavaScript
+- The product should have user-editable content types
+- The project should be under £100/month to run
 
 ### Exercise: MoSCoW
 
