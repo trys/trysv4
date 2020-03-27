@@ -251,3 +251,7 @@ Explaining **why** the solutions were more or less appropriate is incredibly imp
 Discuss!
 
 The results should by no means be viewed as conclusive, but should help frame a discussion about the various options, and might just pull a few surprise options into consideration - it certainly did for us.
+
+---
+
+{{< button "https://docs.google.com/spreadsheets/d/1lOs8EjQR1TCWtAob03NrILQlv7jMqAdudxOiGl3teEo/template/preview" >}}Download the prioritisation template{{</ button >}}
