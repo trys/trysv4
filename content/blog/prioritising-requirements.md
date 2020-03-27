@@ -1,7 +1,7 @@
 ---
 title: Prioritising Requirements
 date: 2020-03-25
-description: "How we profile and prioritise technical requirements"
+description: 'How we profile and prioritise technical requirements'
 categories: Web
 ---
 
@@ -44,48 +44,63 @@ It’s also worth noting that **non-functional requirements come with trade-offs
 Take the following list of non-functional requirements, and write them on post-its, if you can think of any others, write them down too:
 
 #### Performance
+
 Response times, TTFB, traffic peaks and troughs, will dictate caching plans and approach
 
 #### Scalability
+
 Does this system need to scale over time?
 
 #### Capacity
+
 How many people can use the system? User accounts.
 
 #### Availability
+
 Where can this system be accessed from?
 
 #### Reliability
+
 Trust in the system & time between failures
 
 #### Recoverability
+
 In the event of a failure, how quickly can the system be restored?
 
 #### Maintainability
+
 Can this system be supported, and is it cost-effective?
 
 #### Security
+
 What is the risk of the system being hacked? User account and passwords
 
 #### Regulatory
+
 Does the system need to be approved, inspected, tested or regulated?
 
 #### Manageability
+
 How easy is it for the maintainers to monitor the system, and spot critical issues?
 
 #### Environmental
+
 How important is environmental impact of the system?
 
 #### Data integrity
+
 Audit trails, revision and checking
 
 #### Usability
+
 The system is prioritised based on usage patterns. User testing and an analytics plan is helpful
 
 #### Interoperability
+
 Should the system slot in with third-party services?
 
 #### Affordability
+
 How price-sensitive is this project? If costs increase, will it be problematic?
 
 Run through each one, and ensure everyone understands the difference between them all, particularly in how they differ for your project. Scalability and capacity may sound similar, but they will have very different meanings for each project.
@@ -145,6 +160,12 @@ Start gathering a list of the possible solutions. Go as wide as you can and incl
 
 It's time to start ranking our solutions against our requirements. We like to use a Google Sheet for this sort of thing, but feel free to use Airtable or a simple piece of paper!
 
+To help you along, we've created a [Google Sheets template](https://docs.google.com/spreadsheets/d/1lOs8EjQR1TCWtAob03NrILQlv7jMqAdudxOiGl3teEo/template/preview) that you can use to get you started.
+
+{{< button "https://docs.google.com/spreadsheets/d/1lOs8EjQR1TCWtAob03NrILQlv7jMqAdudxOiGl3teEo/template/preview" >}}Download the template{{</ button >}}
+
+---
+
 Along the top, we list our solutions, and down the side our requirements, costs and risks:
 
 ![](/images/blog/spreadsheet.png)
@@ -156,7 +177,7 @@ In the world of software development, anything is technically possible given the
 - 0: Possible, but would require custom coding
 - 1: Achievable, perhaps adapting an existing system feature
 - 2: Very achievable, and available out of the box
- 
+
 The same -2 to 2 scale can be used for non-functional requirements too.
 
 Work through each system, one at a time, ranking it against the requirement. Bring up the project documentation as you go - it's a great way to get a flavour of how well written their supporting information is, should you choose that solution.
@@ -197,7 +218,7 @@ Using the earlier results from the ranking exercise, reverse the order to work o
 
 To amplify the most important requirements, we multiply each score by its position in the scale. A solution that scores negatively on one of the higher priority non-functional requirements, like usability, will therefore take a larger hit than one that isn’t hugely scalable.
 
-### Functional requirement  multipliers
+### Functional requirement multipliers
 
 We can use a similar multiplier for functional requirements:
 
@@ -213,7 +234,7 @@ Multiply the final scores for each solution by 2.
 
 ## The results
 
-Adding up the totals from the four requirements section should give you a score for each possible solution. Sort the solutions  in a descending order, where the highest score is the most appropriate option.
+Adding up the totals from the four requirements section should give you a score for each possible solution. Sort the solutions in a descending order, where the highest score is the most appropriate option.
 
 If some of the results seem wildly off, double-check your multipliers, it may be for your project that costs should be multiplied by 4, rather than 2. There's no one-size-fits-all approach here.
 
@@ -230,5 +251,3 @@ Explaining **why** the solutions were more or less appropriate is incredibly imp
 Discuss!
 
 The results should by no means be viewed as conclusive, but should help frame a discussion about the various options, and might just pull a few surprise options into consideration - it certainly did for us.
-
-
