@@ -37,7 +37,7 @@ You'll each need:
 
 Click the Boggle button to get some fresh letters, and start the timer for three minutes. Write down as many words as you can find in the grid in that time. Letters can only be used once per word, and have to join horizontally, vertically, or diagonally.
 
-When the time is up, each read out your list of words. Any unique words (ie, not written down by anyone else) gets one point. Any unique 5+ letter words get two points. Add you scores to the scoring table and repeat!
+When the time is up, each read out your list of words. Any unique words (ie, not written down by anyone else) gets one point. Any unique 5+ letter words get two points. Add your scores to the scoring table and repeat!
 
 
 ## The code
