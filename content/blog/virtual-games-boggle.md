@@ -15,7 +15,7 @@ The humble spreadsheet is a wondrous thing, and the perfect medium for quickly p
 
 We've made [a template](https://docs.google.com/spreadsheets/d/1iTmSydKlmTd7ul8K8ROGp2qa0nzx18vjwykvmJzG9to/template/preview) to get you started.
 
-![Click 'Use Template' to get started](/images/blog/boggle-template.png)
+[![Click 'Use Template' to get started](/images/blog/boggle-template.png)](https://docs.google.com/spreadsheets/d/1iTmSydKlmTd7ul8K8ROGp2qa0nzx18vjwykvmJzG9to/template/preview)
 
 Click 'Use Template' to take a copy of our spreadsheet, ready for your own alterations.
 
