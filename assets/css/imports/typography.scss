@@ -163,6 +163,10 @@ h3 + .highlight pre {
     display: block;
     margin: -1.25em 0 2rem;
   }
+
+  h3 + ul {
+    margin-top: 1rem;
+  }
 }
 
 ul ul,
