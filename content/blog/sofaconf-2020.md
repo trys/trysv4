@@ -25,7 +25,7 @@ CraftCMS can output HTML, but it can also output JSON. We can stick to the CMS o
 
 The solution? Write a generic multisite event system atop CraftCMS, allowing future event CMS's to be created in the click of a button, without any code! Decision made at 10am.
 
-{{< small >}}Sidenote, time was <em>incredibly</em> tight on this project, but we were ambitious and driven to get this right. A herculian amount of effort was put in by the whole team to pull this off, and it was an honour working with them.{{</ small >}}
+{{< small >}}Sidenote, time was <em>incredibly</em> tight on this project, but we were ambitious and driven to get this right. A herculean amount of effort was put in by the whole team to pull this off, and it was an honour working with them.{{</ small >}}
 
 [Sophia](https://clearleft.com/about/team/sophia-hill) and I spent a few hours mapping out the entities and endpoints required for the system. With her wealth of events knowledge and my ruthless determinism to make things as generic as possible, we landed on a list of models & fields to create.
 
@@ -37,7 +37,7 @@ Craft does have a GraphQL API, but there's nothing wrong with a classic bit of J
 
 The [project config](https://docs.craftcms.com/v3/project-config.html) file was a lifesaver for this project. It gave us 'migrations through commits' and proved incredibly useful for deploying changes without interruption over the past week.
 
-We deployed the CMS and handed the keys over to the events team to begin   adding content - in record time.
+We deployed the CMS and handed the keys over to the events team to begin adding content - in record time.
 
 ## Choosing a frontend stack
 
