@@ -2,7 +2,7 @@
 title: Tolerance
 date: 2020-09-09
 categories: Web
-description: How we can learn from shelves
+description: Design lessons from shelves
 image: /images/blog/tolerance.jpg
 ---
 
