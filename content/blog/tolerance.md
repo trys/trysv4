@@ -3,6 +3,7 @@ title: Tolerance
 date: 2020-09-09
 categories: Web
 description: How we can learn from shelves
+image: /images/blog/tolerance.jpg
 ---
 
 My Grandpa adored the proverb: _“Measure twice, cut once”_, and it has rung clear in my ears when decorating our first home.
