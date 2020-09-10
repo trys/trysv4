@@ -142,3 +142,10 @@
     font-size: var(--step--2);
   }
 }
+
+.large-image {
+  max-width: 100vw;
+  width: 1140px;
+  transform: translateX(-50%);
+  margin: 2rem 50%;
+}
