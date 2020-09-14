@@ -26,7 +26,7 @@ The right has _tolerance_, if your drill slips slightly to the left or the right
 
 Not everything needs tolerance. A floating shelf **must** be fixed tight to the wall to be sturdy; it gains structural integrity from that, and building in room for adjustment would compromise its effectiveness.
 
-A cupboard door hinge, however, is holding far less weight; building in tolerance will not deter from the primary purpose of this, if anything, it enhances it. This hinge, for example, allows adjustment on all three axe  s for a better fit.
+A cupboard door hinge, however, is holding far less weight; building in tolerance will not deter from the primary purpose of this, if anything, it enhances it. This hinge, for example, allows adjustment on all three axes for a better fit.
 
 ## Who builds in tolerance?
 
