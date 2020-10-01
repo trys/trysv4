@@ -57,19 +57,19 @@ And along with other obvious wins like increased performance, less downtime, che
 
 As a developer taking time out to attend this conference, I have no doubt you want to try the latest and greatest technologies, and use them responsibly. So I have some tips for bringing the rest of the organisation along with you:
 
-1. Try the tech out first
+## 1. Try the tech out first
 
 Side projects or internal projects are a brilliant place to try out new tech before putting it into production with a paying client or your own company. Use them as a way of dipping your toe into the water, seeing what works and more importantly what doesn't. Side projects give you confidence to step up and put forward a bolder solution when it matters.
 
-2. Prototype
+## 2. Prototype
 
 Jumping straight into a new build is risky, so use prototypes as a way of breaking down the problem before you commit to it. Write throwaway code that answers any gut-check fears you may have. It doesn't have to be a full end-to-end solution, just enough to get you to a point of being confident that you can deliver the whole thing.
 
-3. Do your research
+## 3. Do your research
 
 Unfortunately, gathering requirements is a whole separate talk, but I've written a blog post on the subject should you wish to find out more. To summarise: I start by gathering the whole team: designers, stakeholders, marketers, developers, and we work out our non-functional requirements (ie. how the system should work) and functional requirements (what the system should do). Then I gather a long-list of stack options. Next, mark them with a weighted ranking to ensure our requirements are met. Now, break the top results down further with pros & cons; discuss the risks as much as the benefits. This should feed into the beginning of a conversation with the rest of the team.
 
-4. Change one thing at a time
+## 4. Change one thing at a time
 
 The scientific method of 'control' pays dividends if you've got wary stakeholders. Changing one thing minimises risk, and can hold the key to unlocking the go ahead on a project.
 
