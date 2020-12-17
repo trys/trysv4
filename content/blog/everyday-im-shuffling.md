@@ -11,7 +11,7 @@ Let's start with shuffling a deck of cards. This classic move is the riffle and 
 
 <figure>
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <video src="/images/blog/shuffle-small.mp4" poster="/images/blog/shuffle-poster.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" preload="none" controls></video>
+    <video src="https://www.trysmudford.com/images/blog/shuffle-small.mp4" poster="https://www.trysmudford.com/images/blog/shuffle-poster.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" preload="none" controls></video>
   </div>
   <br />
   <figcaption>Yes - I'm not very good at this shuffle yet...</figcaption>
