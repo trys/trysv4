@@ -162,6 +162,7 @@ Okay, here goes:
   <g fill="none" fill-rule="evenodd" class="distribution-group">
     <path fill="#EAEEF2" d="M0 0h740v450H0z"/>
     <path stroke="#6E6E6E" stroke-linecap="square" stroke-width="3" d="M30.5 29.5L30.066 421M710.5 421.5l-680.434-.479"/>
+    <text fill="#5E616B" font-family="Avenir-Roman, Avenir" font-size="16"><tspan x="50" y="441">Card no.</tspan></text><text fill="#5E616B" font-family="Avenir-Roman, Avenir" font-size="16" transform="rotate(-90 15 312.5)"><tspan x="-73.5" y="317.5">Distribution in position 0</tspan></text>
   </g>
 </svg>
 <button type="button" class="button" data-target="shufflePoor">Simulate</button>
@@ -213,6 +214,7 @@ Now when we run the test, the results are more far promising:
   <g fill="none" fill-rule="evenodd" class="distribution-group">
     <path fill="#EAEEF2" d="M0 0h740v450H0z"/>
     <path stroke="#6E6E6E" stroke-linecap="square" stroke-width="3" d="M30.5 29.5L30.066 421M710.5 421.5l-680.434-.479"/>
+    <text fill="#5E616B" font-family="Avenir LT, Avenir-Roman, Avenir, sans-serif" font-size="16"><tspan x="50" y="441">Card no.</tspan></text><text fill="#5E616B" font-family="Avenir LT, Avenir-Roman, Avenir, sans-serif" font-size="16" transform="rotate(-90 15 312.5)"><tspan x="-73.5" y="317.5">Distribution in position 0</tspan></text>
   </g>
 </svg>
 <button type="button" class="button" data-target="shuffle">Simulate</button>
