@@ -139,7 +139,7 @@ const distribution = {};
 deck().forEach((l, i) => distribution[i] = 0);
 ```
 
-Next we'll pop in the shuffle function, and run it 10,000 times, plotting the `indexOf` position for card 0 every time we loop around. Finally, we'll log the results. (For the record, this is running in Node 11)
+Next we'll pop in the shuffle function, and run it 10,000 times, plotting the `indexOf` position for card 0 every time we loop around. Finally, we'll log the results. (For the record, this is running in Node 11).
 
 ```js
 const shuffle = (arr) => {
@@ -158,6 +158,16 @@ console.log(distribution);
 
 Okay, here goes:
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" id="shufflePoor" data-shuffle="shufflePoor">
+  <g fill="none" fill-rule="evenodd" class="distribution-group">
+    <path fill="#EAEEF2" d="M0 0h740v450H0z"/>
+    <path stroke="#6E6E6E" stroke-linecap="square" stroke-width="3" d="M30.5 29.5L30.066 421M710.5 421.5l-680.434-.479"/>
+  </g>
+</svg>
+<button type="button" class="button" data-target="shufflePoor">Simulate</button>
+
+### Results
+
 ```
 '0': 591,
 '1': 506,
@@ -165,11 +175,6 @@ Okay, here goes:
 '3': 405,
 '4': 334,
 '5': 313,
-'6': 272,
-'7': 264,
-'8': 236,
-'9': 215,
-'10': 213,
 ...
 '45': 145,
 '46': 164,
@@ -181,6 +186,8 @@ Okay, here goes:
 ```
 
 Woah there. The chances of the Ace of Hearts appearing in position 0 is **six** times more likely than it is appearing in position 51. That's a _huge_ bias!
+
+**Sidenote**: Safari appears to have a reverse bias, in comparison to Chrome and Firefox.
 
 To be totally honest, the only reason I even contemplated this being a problem was when I'd foolishly implemented this method of sorting on an online version of Nomination Whist I created in a spreadsheet. After playing for many weeks in lockdown, one of the players regularly seemed to pick up the Ace of Hearts when they were 'randomly' dealt cards, and this was why.
 
@@ -202,6 +209,16 @@ const shuffle = (arr) => {
 
 Now when we run the test, the results are more far promising:
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" id="shuffle" data-shuffle="shuffle">
+  <g fill="none" fill-rule="evenodd" class="distribution-group">
+    <path fill="#EAEEF2" d="M0 0h740v450H0z"/>
+    <path stroke="#6E6E6E" stroke-linecap="square" stroke-width="3" d="M30.5 29.5L30.066 421M710.5 421.5l-680.434-.479"/>
+  </g>
+</svg>
+<button type="button" class="button" data-target="shuffle">Simulate</button>
+
+### Results
+
 ```
 '0': 187,
 '1': 189,
@@ -218,3 +235,92 @@ Now when we run the test, the results are more far promising:
 ```
 
 Bingo.
+
+<script>
+(() => {
+  const lerp = (x, y, a) => x * (1 - a) + y * a;
+  const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
+  const invlerp = (x, y, a) => clamp((a - x) / (y - x));
+  const range = (x1, y1, x2, y2, a) => lerp(x2, y2, invlerp(x1, y1, a));
+
+  const shuffles = {
+    shufflePoor: (arr) => {
+      const array = [...arr];
+      array.sort(() => Math.random() - 0.5)
+      return array;
+    },
+
+    shuffle: (arr) => {
+      const array = [...arr];
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]
+      }
+
+      return array;
+    }
+  }
+
+  const minX = 55;
+  const maxX = 695;
+
+  const minY = 400;
+  const maxY = 33;
+
+  let runningMin = 0;
+  let runningMax = 1;
+
+  const newDeck = () => Array.from({ length: 52 }, (_, i) => i);
+
+  function plotter(svg, method) {
+    const group = svg.querySelector('.distribution-group');
+
+    const deck = Array.from({ length: 52 }, (_, i) => ({ index: i, circle: null }));
+    const distribution = {};
+    deck.forEach((l, i) => distribution[i] = 0);
+
+    deck.forEach((card) => {
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', range(0, 51, minX, maxX, card.index));
+      circle.setAttribute('cy', range(runningMin, runningMax, minY, maxY, distribution[card.index]));
+      circle.setAttribute('r', 5);
+      circle.setAttribute('fill', '#727272');
+      group.appendChild(circle);
+      card.circle = circle;
+    });
+
+    return [distribution, () => plot(0, method, distribution, deck)]
+  }
+
+  function plot(i, method, distribution, deck) {
+    if (i >= 1000) return;
+
+    for (let i = 0; i < 10; i++) {
+      const letters = method(newDeck());
+      distribution[letters.indexOf(0)]++;
+      runningMin = Math.min(...Object.values(distribution));
+      runningMax = Math.max(...Object.values(distribution));
+
+      runningMax = runningMax * 1.25;
+      runningMin = runningMin * 0.5;
+
+      deck.forEach(card => {
+        card.circle.setAttribute('cy', range(runningMin, runningMax, minY, maxY, distribution[card.index]));
+      })
+    }
+
+    requestAnimationFrame(() => plot(i + 1, method, distribution, deck));
+  }
+
+  Array.from(document.querySelectorAll('[data-target]')).forEach(el => {
+    const svg = document.getElementById(el.getAttribute('data-target'));
+
+    const [distribution, method] = plotter(svg, shuffles[svg.getAttribute('data-shuffle')])
+
+    el.addEventListener('click', () => {
+      newDeck().forEach((l, i) => distribution[i] = 0);
+      method()
+    })
+  })
+})();
+</script>
