@@ -5,3 +5,5 @@ title = "Trys Mudford"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
+[markup.goldmark.renderer]
+  unsafe= true
