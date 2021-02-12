@@ -30,7 +30,9 @@ One option would be to multiply each step of the scale by say, 0.5. It would hav
 
 > What if, rather than alter the individual 'sizes' of the items in the scale, we could render the **whole** scale as if it were at a totally different viewport?
 
-I think it makes some sense. We've already designed and built our components to work on small screens, so why not render them in *that* context when used in a sidebar? But how?
+I think it makes some sense. We've already designed and built our components to work on small screens, so why not render them in *that* context when used in a sidebar?
+
+Furthermore, while we (currently) can't know how big _every_ component is on the screen (without JS), we do tend to know how big a sidebar is at any one time, either as a percentage of the viewport, or as a fixed size.
 
 ## Transposing the modular scale
 
