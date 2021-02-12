@@ -18,7 +18,7 @@ Heydon and Andy's amazing '[Sidebar](https://every-layout.dev/layouts/sidebar/)'
 
 James and I released [Utopia](https://utopia.fyi/) a year ago, and since then, it has become the backbone of our typographic design process. The combination of beautiful fluid typography & a common language between designer and developer has made building websites a thoroughly more joyful experience.
 
-But the one downside of Utopia, is that it 'assumes' the typographic scales run at `100vw`, the full width of the screen. It uses CSS locks under the hood, so the type sizes are capped off at a sensible point, but till that point, it doesn't care where your text is rendered. If you're displaying text in a sidebar, card or main content area, each step size is always the same size.
+One minor limitation of Utopia is that it 'assumes' the typographic scales run at `100vw`, the full width of the screen. It uses CSS locks under the hood, so the type sizes are capped off at a sensible point, but till that point, it doesn't care where your text is rendered. If you're displaying text in a sidebar, card or main content area, each step size is always the same size.
 
 In many ways, this is good. One of the points of a type scale is to promote visual consistency between items. If there is a harmonious scale tying typography together, then everything is 'in tune' with itself.
 
