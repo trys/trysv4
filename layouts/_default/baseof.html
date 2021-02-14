@@ -3,7 +3,6 @@
 	<head>
 		{{ $url := getenv (cond (eq "production" (getenv "CONTEXT")) "URL" "DEPLOY_PRIME_URL" ) | default (cond (eq "//localhost:1313/" (printf "%s" $.Site.BaseURL)) "//localhost:1313" $.Site.BaseURL) }}
 		<meta charset="UTF-8" />
-		<base href="{{ $url }}">
 		{{ $post := resources.Get "css/main.scss" }}
 		{{- $style := $post | resources.ToCSS | minify -}}
 		{{- $title := printf "%s | %s" .Title .Site.Title -}}

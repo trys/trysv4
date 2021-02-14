@@ -46,6 +46,10 @@ a:not(.button) {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      &::selection {
+        -webkit-text-fill-color: var(--dark);
+      }
     }
   }
 }
@@ -72,6 +76,10 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+
+    &::selection {
+      -webkit-text-fill-color: var(--dark);
+    }
   }
 }
 
@@ -184,4 +192,8 @@ figcaption {
   font-size: var(--step--2);
   padding: 0.2em 0 0;
   text-align: right;
+}
+
+.footnotes {
+  font-size: var(--step--1);
 }

@@ -12,7 +12,7 @@ tldr; This post is an experiment in parent-aware components written purely in CS
 
 Let's be honest, we're all just waiting for container queries to drop. We know breakpoints are arbitrary, and we'd desperately like to create components that work in *any* situation, but that's not really possible right now.
 
-Heydon and Andy's amazing '[Sidebar](https://every-layout.dev/layouts/sidebar/)' creation goes a long way to help remove media queries from within components and render them intrinsically. But that's layout, I'm interested in type and space.
+Heydon and Andy's amazing '[Sidebar][EveryLayout]' creation goes a long way to help remove media queries from within components and render them intrinsically. But that's layout, I'm interested in type and space.
 
 ## How do you get components to respect the rendering conditions of their parent?
 
@@ -65,7 +65,7 @@ At the time, I remember looking at that `--fluid-screen: 100vw` on line 4, and t
 
 ## Demo time
 
-[Here's a demo](https://space-aware-components.netlify.app) of the concept in action, moving on from the earlier [problematic version](https://space-aware-components.netlify.app/problem/). Every instance of the 'card' and 'alert' components are running **exactly** the same HTML as their siblings, whether rendered in the sidebar or main body. Using the [sidebar approach](https://every-layout.dev/layouts/sidebar/), the card itself has **no** media queries, and is sized intrinsically by the content within. There is one media query used to place the sidebar to the right of the content area at `55em`.
+[Here's a demo](https://space-aware-components.netlify.app) of the concept in action, moving on from the earlier [problematic version](https://space-aware-components.netlify.app/problem/). Every instance of the 'card' and 'alert' components are running **exactly** the same HTML as their siblings, whether rendered in the sidebar or main body. Using the [sidebar approach][EveryLayout], the card itself has **no** media queries, and is sized intrinsically by the content within. There is one media query used to place the sidebar to the right of the content area at `55em`.
 
 Crucially, when that media query matches, we also override the `--fluid-screen` custom property and instruct the browser to render all typography within **as if the screen was `320px` wide**. One property set, and all the components within the sidebar scale down in unison.
 
@@ -180,3 +180,5 @@ This 100% works with space, as well as type. James and I have been working on a 
 ## Is this useful?
 
 Honestly, I'm not sure yet! It has been burning a whole in my head for near-on a year and I'm so glad to have finally got it out. I'd *love* to hear of any ideas, use-cases and improvements so please [holler at me](https://twitter.com/trysmudford)!
+
+[EveryLayout]: https://every-layout.dev/layouts/sidebar/
