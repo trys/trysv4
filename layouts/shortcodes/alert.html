@@ -1,0 +1,6 @@
+<div class="alert {{ if .Get 0 }}alert--with-eyebrow{{ end }}">
+  {{ if .Get 0 }}
+    <span class="alert__eyebrow">{{ .Get 0 }}</span>
+  {{ end }}
+  {{ .Inner | markdownify }}
+</div>

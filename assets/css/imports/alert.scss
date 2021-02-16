@@ -1,0 +1,23 @@
+.alert {
+  font-size: var(--step--1);
+  padding: 1rem;
+  background: var(--mid);
+  position: relative;
+  margin-bottom: 1.5em;
+
+  &--with-eyebrow {
+    padding-top: 2.5rem;
+  }
+
+  &__eyebrow {
+    position: absolute;
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background: var(--gradient);
+    color: var(--white);
+    padding: 0 1rem;
+    left: 0;
+    top: 0;
+  }
+}

@@ -6,9 +6,9 @@ description: "How do you get components to respect the rendering conditions of t
 image: /images/blog/space-aware-components.png
 ---
 
-tldr; This post is an experiment in parent-aware components written purely in CSS. Feedback is very welcome!
-
----
+{{< alert "TLDR" >}}
+This post is an experiment in parent-aware components written purely in CSS. Feedback is very welcome!
+{{</ alert >}}
 
 Let's be honest, we're all just waiting for container queries to drop. We know breakpoints are arbitrary, and we'd desperately like to create components that work in *any* situation, but that's not really possible right now.
 
