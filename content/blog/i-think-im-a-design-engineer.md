@@ -18,9 +18,9 @@ In my first couple of years as a "Web Developer", the role didn't actually mean 
 
 Over time, I was given more responsibility and moved into actually *building websites*. But that also came with managing our hosting infrastructure, writing email templates, pitching in with winning and planning work, and helping with marketing campaigns. Not *just* building websites[^2].
 
-Joining a startup introduced me to two new designers, and for the first time, a backend engineering team who created the headless API's that powered the product. The frontend team covered both the 'front' and the 'back of the frontend'. [Creating the buttons, and wiring them up](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/). Still *building websites*, but in collaboration with an engineering team.
+Joining a startup introduced me to two new designers, and for the first time, a backend engineering team who created the headless API's that powered the product. The front-end team covered both the 'front' and the 'back-of-the-front-end'. [Creating the buttons, and wiring them up](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/). Still *building websites*, but in collaboration with an engineering team.
 
-Becoming a part of such a design-rich company like [Clearleft](https://clearleft.com/) opened my eyes to even better ways of collaborating with designers & engineers, and has pushed me to understand the whole design process more thoroughly. Every project is different, but more and more, we're working on the 'front of the frontend', and handing over to a 'back of the frontend' engineering team to integrate into the actual website.
+Becoming a part of such a design-rich company like [Clearleft](https://clearleft.com/) opened my eyes to even better ways of collaborating with designers & engineers, and has pushed me to understand the whole design process more thoroughly. Every project is different, but more and more, we're working on the 'front-of-the-front-end', and handing over to a 'back-of-the front-end' engineering team to integrate into the actual website.
 
 ## Understanding and realising design intention
 
@@ -33,7 +33,7 @@ If you're a web developer who "builds websites", that's on you. But what if you'
 In larger agency and most product teams, there is an 'engineering' team[^3] who tend to fall into two disciplines:
 
 - Backend
-- Back-of-the-frontend
+- Back-of-the-front-end
 
 I'm generalising, but developers in these fields tend to be 'systems thinkers' and approach things with a programming > design mindset—that's just how their brains tend to work in my experience. Their skills are in writing elegant, robust and scalable code to ensure our products don't fall over when things go awry. Their skills are in breaking down the whole product into sensible chunks, storing data efficiently, and making it easy to query. Their skills are in preventing data being leaked, stopping users from storing corrupt data, and ceasing hackers in their stride.
 
@@ -43,7 +43,7 @@ In this team, the web developer (as we've described so far) is part of a bigger 
 
 ## The design → engineering gulf
 
-However, it's becoming increasingly more common for organisations to jump straight from "design" to "engineering", missing out the front-of-the-frontend altogether. After all, the engineer codes, and the phase after design is code, so why not let the engineers build the UI?
+However, it's becoming increasingly more common for organisations to jump straight from "design" to "engineering", missing out the front-of-the-front-end altogether. After all, the engineer codes, and the phase after design is code, so why not let the engineers build the UI?
 
 Well, by jumping straight between the colossal gulf spanning the two functions, a huge wealth of design intention can disappear out of sight.
 
@@ -82,7 +82,7 @@ Both disciplines can get disappointed over their expectations not being met. But
 
 ## Translating design
 
-As web developers in a larger build chain, I think our goal is to 'translate' the design in the best way possible. From experience, that's considerably easier to do if both the development **and** design has been built using a system, rather than trying to create one from scraps. This is why we start try to start the coding phase *with* the design phase, integrated and making decisions together. Frontend code becomes an extension of design.
+As web developers in a larger build chain, I think our goal is to 'translate' the design in the best way possible. From experience, that's considerably easier to do if both the development **and** design has been built using a system, rather than trying to create one from scraps. This is why we start try to start the coding phase *with* the design phase, integrated and making decisions together. Front-end code becomes an extension of design.
 
 Or as James deftly puts it:
 
