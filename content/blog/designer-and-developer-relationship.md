@@ -24,7 +24,7 @@ As soon as his design ideas were in the browser, we'd be iterating together and 
 
 Every new job after this has felt like a 'relationship reset'. It takes time to understand how each other work, the nuances we put into our craft, and the best way to critique each others creations.
 
-You can learn a lot about a designer by looking at their design files. I pored over their Figma files and learned about how they ‘organised’ their designs, how they used grids to lay out new work, and how they iterated ideas rapidly.
+You can learn a lot about a designer by looking at their design files. I take time to pore over their Figma files and learned about how they ‘organise' their designs, how they use grids to lay out new work, and how they iterate ideas rapidly.
 
 ## Large organisations and design systems
 
