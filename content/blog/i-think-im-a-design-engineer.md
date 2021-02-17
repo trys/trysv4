@@ -114,7 +114,9 @@ That paragraph *totally* describes the role I've been trying to push towards wit
 - Rapid prototyping
 - Production code
 - UI code quality
+- Creating useful tools
 - Encapsulating systems
+- Setting up project groundwork
 - Empowering effective collaboration
 
 Yes. This was a *very* exciting discovery.
