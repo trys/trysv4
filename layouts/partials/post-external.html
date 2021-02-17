@@ -5,6 +5,6 @@
   {{ if .Params.for }}
   <span class="categories">Posted for<br>{{ .Params.for }}</span>
   {{ else if .Params.categories }}
-		<a class="categories" href="categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>
+		<a class="categories" href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>
 	{{ end }}
 </article>

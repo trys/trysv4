@@ -3,6 +3,6 @@
 		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 	</h2>
 	{{ if .Params.categories }}
-		<a class="categories" href="categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>
+		<a class="categories" href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>
 	{{ end }}
 </article>
