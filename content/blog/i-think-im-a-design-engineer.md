@@ -7,52 +7,24 @@ description: "Exploring design engineering, and deciding whether that's what I d
 ---
 
 {{< alert "Series" >}}
-This post is part of a series on Design Engineering. It contains a short, slightly self-indulgent retrospective of my career, a look at the relationship between designer and developer, and discusses the design → engineering gulf. I've also written supplementary posts on [prototyping](/blog/prototyping) and [systemised design foundations](/blog/design-foundations) to try and keep this post  at a readable length. On with the show.
+This post is part of a series on Design Engineering. It looks at the changing role of a web developer over their career, and discusses the design → engineering gulf. I've also written supplementary posts on [prototyping](/blog/prototyping/), [systemised design foundations](/blog/design-foundations/), and the [designer developer relationship](/blog/designer-and-developer-relationship/) to try and keep this post a readable length. On with the show.
 {{</ alert >}}
 
----
-
-Naming things is hard. Naming roles is even harder.
-
-For several years, I've been wondering where I fit into the web development spectrum. Having taken a step back and looked over my career, I can see a convergence towards a certain way of working. But I've not been able to name it... till now.
+For several years, I've been wondering where I fit into the web development spectrum. Reflecting on my career, I can see a convergence towards a certain way of working. But I've not been able to name it... till now.
 
 ## A web developer builds websites?
 
-### First job
+In my first couple of years as a "Web Developer", the role didn't actually mean *building websites*. It meant making copy updates on sites, FTP'ing files, making tea, and contacting our server host when something went wrong[^1].
 
-In 2012, I interviewed for the role of "Junior Web Developer / Designer" at a [small agency](https://www.tomango.co.uk/). I distinctly remember the moment where I took a deep breath and said: "Just one thing to mention... I'm not a designer, I'm a developer", fully expecting that to be the end of the engagement. Thankfully it wasn't, and I was fortunate enough to assume my first position in this fine industry of web: "Junior Web Developer".
+Over time, I was given more responsibility and moved into actually *building websites*. But that also came with managing our hosting infrastructure, writing email templates, pitching in with winning and planning work, and helping with marketing campaigns. Not *just* building websites[^2].
 
-Starting off, "Web Developer" meant making copy updates on sites, FTP'ing the changed files, and contacting our server host when something went wrong[^1]. Over time, I was given more responsibility and moved into actually **building websites**. But that also came with managing our hosting infrastructure, writing email templates, pitching in with winning and planning work, and helping with marketing campaigns. Not *just* building websites[^2]. 
+Joining a startup introduced me to two new designers, and for the first time, a backend engineering team who created the headless API's that powered the product. The frontend team covered both the 'front' and the 'back of the frontend'. [Creating the buttons, and wiring them up](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/). Still *building websites*, but in collaboration with an engineering team.
 
-### Second job
+Becoming a part of such a design-rich company like [Clearleft](https://clearleft.com/) opened my eyes to even better ways of collaborating with designers & engineers, and has pushed me to understand the whole design process more thoroughly. Every project is different, but more and more, we're working on the 'front of the frontend', and handing over to a 'back of the frontend' engineering team to integrate into the actual website.
 
-Starting at [Daisie](https://www.daisie.com/) introduced me to two new designers. It felt like a relationship reset at the start, taking time to understand how each other worked, the nuances we put into our craft, and the best way to critique each others creations.
+## Understanding and realising design intention
 
-You can learn a lot about a designer by looking at their design files. I pored over their Figma files and learned about how they 'organised' their designs, how they used grids to lay out new work, and how they iterated ideas rapidly.
-
-### Third job
-
-Joining such a design-rich company as [Clearleft](https://clearleft.com/) opened my eyes to even better ways of collaborating with designers, and has pushed me to understand the whole design process more thoroughly.
-
-{{< alert >}}
-### Designer & Developer rhythm
-
-In those early days at Tomango, I recall observing the relationship between our designer and the freelance developers we used. There was an invisible trust between the two roles: the designer knew their creation would be realised accurately, and the developer knew they'd be given all they'd need to achieve the design. They were in harmony.
-
-But in time, I found my own groove with our designer and we designed and built many sites together. We developed our own shared understanding and common language between us, through the formative process of client work. By understanding his design intention, and him understanding my development capabilities, we could build with serious efficiency and accuracy.
-
-Interestingly, this was also the time when I realised I *was* designing after all. When there's fluidity and understanding between design and development, design also happens at the development stage.
-
-As soon as his design ideas were in the browser, we'd be iterating together and feeding back into the original design file. Live tweaks in dev tools and early prototypes to prove concepts were my medium for design. It wasn't <strike>photoshop</strike> <strike>fireworks</strike> <strike>sketch</strike> Figma, but it was still design.
-{{</ alert >}}
-
----
-
-## Design intention
-
-The phrase I keep coming back to is: **Understanding and realising the design intention.**
-
-That's a huge part of the job for a web developer. And it's not _just_ visual design, it's the whole process that has come before: Research, UX, Product and Content. How do we take all of the good ideas that have preceded our involvement in the project, tie them all together elegantly, and deliver them to the user appropriately.
+This is a huge part of the job for a web developer. And it's not _just_ visual design, it's the whole process that has come before: Research, UX, Product and Content. How do we take all of the good ideas that have preceded our involvement in the project, tie them all together elegantly, and deliver them to the user appropriately.
 
 If you're a web developer who "builds websites", that's on you. But what if you're not the end of the chain? What if you're handing your code off to... Engineering.
 
@@ -93,38 +65,20 @@ The above quotes and images are extracted from Natalya's talk. [Read the script]
 
 Both disciplines can get disappointed over their expectations not being met. But with the two roles having such different mindsets, how do we ensure an efficient and successful handover at this point?
 
-## [Design foundations][Foundations]
+## Our approach
 
-A phrase [James](https://clearleft.com/about/team/james-gilyead) and I like to use at [Clearleft](https://clearleft.com) is 'Designing design'. Rather than diving straight into the divergent design process, we start by creating a foundational set of instructions to govern the project, covering:
-
-- Typography
-- Space
-- Colour
-- Grids
-
-Rather than leaving it for the engineering/development team to 'unpick' the design to try and find any logic or reason, these four pillars are decided collaboratively and are adhered to by both functions ahead of any formal coding or design phase.
-
-It's very helpful to create the rules to calculate these foundational values, rather than extracting them (hex codes, font-sizes etc.) from the design file as set-in-stone values. Here's why:
-
-1. [Creating a palette of named foundations produces a positive 'friction-point'](/blog/design-foundations/#1-creating-a-palette-of-named-foundations-produces-a-positive-friction-point)
-2. [You can tweak the system to generate interesting new possibilities, inspiring new design.](/blog/design-foundations/#2-you-can-tweak-the-system-to-generate-interesting-new-possibilities-inspiring-new-design)
-3. [It empowers developers to design](/blog/design-foundations/#3-it-empowers-developers-to-design)
-4. [Engineers are 'systems thinkers' - so built them a system](/blog/design-foundations/#4-engineers-are-systems-thinkers---built-them-a-system)
-
-I've added a load more detail on the above points in [this post][Foundations], in a vague attempt to keep this post a readable length.
-
-But design is inherently divergent, *"how do you know your system will work if you 'design it before the design phase'?"*, I hear you ask...
-
-## [Prototyping][Prototype]
-
-The key tool in my arsenal is rapid prototyping. A mid-to-high fidelity prototype helps you answer any niggling questions quickly, and more importantly, in the browser. The final medium for any design is ultimately the browser, so the quicker you can get your design onto real devices, the quicker you can validate your assumptions.
-
-- [Prototypes unearth UX assumptions](/blog/prototyping/#prototypes-unearth-ux-assumptions)
-- [Prototypes get buy-in](/blog/prototyping/#prototypes-get-buy-in)
-- [Prototypes are deliverables](/blog/prototyping/#prototypes-are-deliverables)
-- [Prototypes promote user testing](/blog/prototyping/#prototypes-promote-user-testing)
-- [Prototypes help you focus on the things that matter](/blog/prototyping/#prototypes-help-you-focus-on-the-things-that-matter)
-
+<div class="grid-of-cards">
+	<article class="card">
+		<h3><a href="/blog/design-foundations/">Design foundations</a></h3>
+		<p>Before diving into divergent design or any coding phase, we by creating a foundational set of instructions and calculations to govern the project, covering: <strong>Typography, Space, Colour and Grids</strong>.</p>
+		<p><a href="/blog/design-foundations/">Read more →</a></p>
+	</article>
+	<article class="card">
+		<h3><a href="/blog/prototyping/">Prototyping</a></h3>
+		<p>The final medium for any design is ultimately the browser, so the quicker you can get your design onto real devices, the quicker you can validate your assumptions</p>
+		<p><a href="/blog/prototyping/">Read more →</a></p>
+	</article>
+</div>
 
 ## Translating design
 

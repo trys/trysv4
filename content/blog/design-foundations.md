@@ -7,7 +7,7 @@ description: "What do we mean when we talk about design foundations?"
 ---
 
 {{< alert "Series" >}}
-This post is part of a series on Design Engineering. You can read the [main post](/blog/i-think-im-a-design-engineer), or the post on the design engineers approach to [prototyping](/blog/prototyping)
+This post is part of a series on Design Engineering. You can read the [main post](/blog/i-think-im-a-design-engineer), a post on the design engineers [approach to prototyping](/blog/prototyping), or one on the [designer developer relationship](/blog/designer-and-developer-relationship/).
 {{</ alert >}}
 
 A phrase [James](https://clearleft.com/about/team/james-gilyead) and I like to use is "Designing design". We like to start a project by creating a foundational set of instructions to govern the project, covering:

@@ -7,7 +7,7 @@ description: "How do we prototype as design engineers?"
 ---
 
 {{< alert "Series" >}}
-This post is part of a series on Design Engineering. You can read the [main post](/blog/i-think-im-a-design-engineer), or the post on [design foundations](/blog/design-foundations)
+This post is part of a series on Design Engineering. You can read the [main post](/blog/i-think-im-a-design-engineer), a post on [design foundations](/blog/design-foundations), or one on the [designer developer relationship](/blog/designer-and-developer-relationship/).
 {{</ alert >}}
 
 ## Why prototype?
