@@ -1,6 +1,6 @@
 ---
 title: "On Design Engineering: The designer & developer relationship"
-date: 2021-02-16 08:30:00
+date: 2021-02-17 08:00:00
 categories: Web
 image: /images/blog/og-de-4.jpg
 description: "Discussing the illusive designer developer relationship"
