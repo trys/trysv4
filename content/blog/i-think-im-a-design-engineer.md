@@ -151,7 +151,7 @@ Words are another tool.
 
 In essence, a design engineer's goal is to **be helpful**. Helping UX come to sound decisions, helping research get the most useful insights from their testing, helping designers generate sound & deliverable ideas, and helping engineers understand the design intention. But the primary focus is on doing anything you can to help translate the design for the engineering team.
 
-We talk of 'creators' and 'maintainers': those who do the work, and those who keep it running well. But I think it's a spectrum. Design engineers sit firmly in the most 'creationy' segment in the creator camp, building rapidly, failing early and clearing a way through the bad ideas so the other creators can follow smoothly.
+We talk of 'creators' and 'maintainers': those who do the work, and those who keep it running well. But I think it's a spectrum. Design engineers sit firmly in the most 'creationy' part of the creator camp, building rapidly, failing early and clearing a way through the bad ideas so the other creators can follow smoothly.
 
 > Building rapidly, failing early and clearing a way through the bad ideas so the other creators can follow
 
