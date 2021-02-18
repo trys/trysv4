@@ -123,7 +123,7 @@ Yes. This was a *very* exciting discovery.
 
 ## Where the design engineer sits
 
-The design engineer sits in this earlier described gulf between the two disciples and finds a way to smoothly translate between the two.
+The design engineer sits in this earlier described gulf between the two disciplines and finds a way to smoothly translate between the two.
 
 {{< longquote >}}
 On one end of the spectrum, designers strive for pixel-perfect mockups and beautiful interfaces. On the other, engineers endeavor to architect systems and optimize for patterns. In the middle are designers and engineers concerned with how those two approaches intersect.
