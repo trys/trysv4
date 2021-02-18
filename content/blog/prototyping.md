@@ -4,7 +4,6 @@ date: 2021-02-17 10:00:00
 categories: Web
 image: /images/blog/og-de-2.jpg
 description: "How do we prototype as design engineers?"
-draft: true
 ---
 
 {{< alert "Series" >}}
