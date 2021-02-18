@@ -92,7 +92,7 @@ The fidelity of the product’s code version is built up during the design phase
 
 ## What role is this?
 
-This way of working has proved incredibly effective, and has *really* peaked my interest. I love [building rapidly](https://www.trysmudford.com/blog/rapid-building/), designing systems and writing elegant and scalable code.
+This way of working has proved incredibly effective, and has *really* piqued my interest. I love [building rapidly](https://www.trysmudford.com/blog/rapid-building/), designing systems and writing elegant and scalable code.
 
 However, it doesn't really feel like **building websites** any more, and sometimes it doesn't even feel like **building for the web**. Even if the foundational systems make it to production, the prototypes are almost always throwaway. They serve their purpose of translating the design to engineering, and validating the project assumptions, and then they're gone. In some ways, this is role **building for the engineers**.
 
