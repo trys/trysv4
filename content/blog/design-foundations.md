@@ -4,6 +4,7 @@ date: 2021-02-17 09:00:00
 categories: Web
 image: /images/blog/og-de-3.jpg
 description: "What do we mean when we talk about design foundations?"
+draft: true
 ---
 
 {{< alert "Series" >}}

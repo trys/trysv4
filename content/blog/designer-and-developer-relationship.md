@@ -4,6 +4,7 @@ date: 2021-02-17 08:00:00
 categories: Web
 image: /images/blog/og-de-4.jpg
 description: "Discussing the illusive designer developer relationship"
+draft: true
 ---
 
 {{< alert "Series" >}}
