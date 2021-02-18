@@ -1,12 +1,11 @@
 @font-face {
   font-family: 'Avenir LT';
-  src: url('/fonts/1475520/9bdf0737-f98c-477a-9365-ffc41b9d1285-subset.woff2')
+  src: url('/fonts/1475520/AvenirLT-Book.woff2')
       format('woff2'),
     url('/fonts/1475520/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf')
       format('truetype');
   font-weight: 400;
   font-display: swap;
-  unicode-range: U+20-7E;
 }
 
 @font-face {
@@ -16,6 +15,16 @@
     url('/fonts/1475544/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf')
       format('truetype');
   font-weight: 700;
+  font-display: swap;
+  unicode-range: U+20-7E;
+}
+
+@font-face {
+  font-family: 'Avenir LT';
+  src: url('/fonts/1475520/AvenirLT-BookOblique.woff2')
+      format('woff2');
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
   unicode-range: U+20-7E;
 }
@@ -52,6 +61,14 @@ a:not(.button) {
       }
     }
   }
+}
+
+a.footnote-ref,
+.footnote-ref a {
+  text-decoration: none;
+  font-size: var(--step--2);
+  color: var(--gradient-green);
+  font-weight: 700;
 }
 
 p,
@@ -117,6 +134,32 @@ blockquote {
 
   & :last-child {
     margin-bottom: 0;
+  }
+
+  &.longquote {
+    font-size: var(--step-0);
+    text-align: left;
+    font-weight: 400;
+    padding-left: 1.5em;
+    font-style: italic;
+    color: var(--mid-blue);
+
+    &:before {
+      content: '“';
+      position: absolute;
+      font-size: var(--step-4);
+      font-weight: 700;
+      left: -0.25rem;
+      top: 0.6rem;
+    }
+
+    cite {
+      font-weight: 700;
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      font-size: var(--step--1);
+    }
   }
 }
 
