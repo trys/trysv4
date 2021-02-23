@@ -2,6 +2,7 @@
 title: "Encapsulated Eleventy/Nunjucks components with macros"
 date: 2021-02-19
 categories: Web
+description: "How to pass parameters to an include in Nunjucks"
 ---
 
 When I started using Eleventy, and specifically Nunjucks, it was a bit frustrating to find you couldn't pass in parameters into an `include`. Having used [Twig](https://twig.symfony.com/) quite a bit, I missed the [with](https://twig.symfony.com/doc/3.x/tags/include.html) syntax that lets you pass in a context object when including a partial.
