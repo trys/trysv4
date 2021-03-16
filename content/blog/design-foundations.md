@@ -73,7 +73,7 @@ But with shared foundations and explicit names for each size, not only does the 
 
 One rule that has held us in good stead is:
 
-> Before adding to a system, first consider whether anything similar exists, and if so, can the design can be adapted to use they system after all.
+> Before adding to a system, first consider whether anything similar exists, and if so, can the design can be adapted to use the system after all.
 
 This sense check helps to keep things consistent and prevents sporadic additions to the system. The smaller the system, the easier it is to hold in your head and utilise.
 
