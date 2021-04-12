@@ -133,6 +133,10 @@ The macro itself is just a more generic version of the earlier `button` variant.
 {%- endmacro -%}
 ```
 
+### Update - try it yourself
+
+A few people have asked for a live example demonstrating this approach, so I've created a [repository](https://github.com/trys/11ty-component-macro) and [MVP demo](https://11ty-component-macro.netlify.app/).
+
 {{< alert "Note" >}}
 You can choose to add an `ignore missing` flag to suppress errors when including a partial.
 
