@@ -4,7 +4,7 @@ date: 2020-02-06 16:00:00
 categories: Web
 ---
 
-In our first [Utopia.fyi](https://utopia.fyi/) release, I stumbled upon an elegant way to re-use [CSS locks](https://www.madebymike.com.au/writing/precise-control-responsive-typography/).
+In our first [Utopia.fyi](https://utopia.fyi/) release, I stumbled upon an elegant way to re-use [CSS locks](https://www.madebymike.com.au/writing/precise-control-responsive-typography/), a technique created by Mike Riethmuller in 2015.
 
 In a traditional CSS lock, we have a `@media` query that locks the selectors when they reach the max viewport size. In this example, we go from `2em` to `4em`, between viewports of `20em` and `80em`:
 
