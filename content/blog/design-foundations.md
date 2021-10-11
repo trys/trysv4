@@ -91,7 +91,7 @@ The most exciting part of being a design engineer on a project is the truly flui
 Try out utility classes for prototyping. I find it helpful to start working in one file (HTML) to sketch out the broad strokes of a component using utility classes. Then, when the design is converging, take the time to refactor back into encapsulated CSS.
 {{</ alert >}}
 
-### 4. Engineers are 'systems thinkers' - built them a system
+### 4. Engineers are 'systems thinkers' - build them a system
 
 Creating this backbone of logic will go a long way to bridging that gulf between the subjective and objective[^1]. I believe that the more 'system-y' your design is, the more accurately an engineer will recreate it. If you can explain the logic that goes into a design decision, other designers and engineers are more likely to apply the same pattern for similar use-cases.
 
