@@ -222,7 +222,7 @@ And that's it! Here's what it looks like:
 
 Hang on; you might be thinking, that looks pretty different to the earlier screenshots? Well yes, but that's for good reason. See, instead of rendering the component directly within a page in the design system, we render it on its own, and then include it via an `<iframe>`. This renders the component at the window size of the iframe, not at the size of the whole page. It's a subtle difference, but when you're working with viewport units or [fluid type & space](https://utopia.fyi), it's an important distinction.
 
-The solution is another `-pages.njk` file. It starts off in the same way as the previous template, reading in the `components.components` data and rendering a page for each component/variant. For each page, we then output some tabs for the various views we want for the component.
+The solution is another `-pages.njk` [file](https://github.com/trys/eleventy-design-system/blob/main/src/components-pages.njk). It starts off in the same way as the previous template, reading in the `components.components` data and rendering a page for each component/variant. For each page, we then output some tabs for the various views we want for the component.
 
 ```twig
 {# components-pages.njk #}
