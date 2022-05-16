@@ -2,7 +2,7 @@
 title: Building a design system with Eleventy
 date: 2022-05-16
 categories: Web
-image: /images/blog/es-ds-1.jpg
+image: /images/blog/e-ds-1.jpg
 description: "How to use this flexible static site generator to create the home for digital design in your company"
 ---
 
