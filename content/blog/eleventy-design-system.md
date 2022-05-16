@@ -6,7 +6,7 @@ image: /images/blog/e-ds-1.jpg
 description: "How to use this flexible static site generator to create the home for digital design in your company"
 ---
 
-One of the standout projects while working at [Clearleft](https://www.clearleft.com) was working with Malvern Panalytical to build the foundations of [their design system](https://brand.malvernpanalytical.com/). Four tech stacks within the business dictated that this system would centre around CSS, rather than language-driven component markup.
+One of the standout projects while working at [Clearleft](https://www.clearleft.com) was collaborating with Malvern Panalytical to build the foundations of [their design system](https://brand.malvernpanalytical.com/). Four tech stacks within the business dictated that this system would centre around CSS, rather than language-driven component markup.
 
 This decision gave us freedom to pick the most flexible stack for the design system, not forcing our hand to choose an off-the-shelf platform with specific language/framework support. Furthermore, we wanted a system that was beyond a component library; a true design system that could be used to articulate and accommodate brand, content and wider design standards.
 
