@@ -57,7 +57,7 @@ There are three key files in this design system (the links below go to the files
 2. [`_data/components.js`](https://github.com/trys/eleventy-design-system/blob/main/src/_data/components.js)
 3. [`components-full-pages.njk`](https://github.com/trys/eleventy-design-system/blob/main/src/components-full-pages.njk)
 
-### [_includes/components/**/*.config.js](https://github.com/trys/eleventy-design-system/blob/main/src/_includes/components/button/button.config.js)
+### Key file 1: [_includes/components/**/*.config.js](https://github.com/trys/eleventy-design-system/blob/main/src/_includes/components/button/button.config.js)
 
 A config file is what flags each component to the design system. Here's an example configuration for the quote component rendered in the screenshots above:
 
@@ -114,7 +114,7 @@ You'll see the `variants` field format is a repeat of the parent component, but 
 </button>
 ```
 
-### [_data/components.js](https://github.com/trys/eleventy-design-system/blob/main/src/_data/components.js)
+### Key file 2: [_data/components.js](https://github.com/trys/eleventy-design-system/blob/main/src/_data/components.js)
 
 JavaScript files in the `_data` folder are called at build time by Eleventy, to provide global data to templates. Usually, this would be used for API calls, gathering content before generating the website. But we can perform other asynchronous actions in this space, namely, reading from the file system:
 
@@ -187,7 +187,7 @@ function convertComponent(component) {
 
 So what we've done here is gather up all the config files, and serve them as one massive global array for Eleventy to work with.
 
-### [components-full-pages.njk](https://github.com/trys/eleventy-design-system/blob/main/src/components-full-pages.njk)
+### Key file 3: [components-full-pages.njk](https://github.com/trys/eleventy-design-system/blob/main/src/components-full-pages.njk)
 
 This ingenious little template from Eleventy loops around the data we've exposed in `components.components` (sorry, poor choice of variable naming there), and creates a page for every component _and_ variant! It renders the component using the `{{ c() }}` macro, passing in the context, and it pops it within a preview wrapper.
 
