@@ -1,9 +1,9 @@
 ---
-title: Eleventy Design System
+title: Building a design system with Eleventy
 date: 2022-05-16
 categories: Web
 image: /images/blog/es-ds-1.jpg
-description: "Building a design system with Eleventy"
+description: "How to use this flexible static site generator to create the home for digital design in your company"
 ---
 
 One of the standout projects while working at [Clearleft](https://www.clearleft.com) was working with Malvern Panalytical to build the foundations of [their design system](https://brand.malvernpanalytical.com/). Four tech stacks within the business dictated that this system would centre around CSS, rather than language-driven component markup.
