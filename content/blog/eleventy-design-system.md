@@ -12,7 +12,7 @@ This decision gave us freedom to pick the most flexible stack for the design sys
 
 Eleventy was the obvious candidate. Generating "pages from data" was the most compelling feature, and add to that the flexibility in templating and the rapid build times, there really was no other stack that came close.
 
-Taking inspiration from [Fractal](https://fractal.build/); a project birthed from design systems projects at Clearleft, I wanted to build this system around component "context". Context is a fancy word for the data that gets passed to a component to render it, and it allows you to render a component, and any number of variants by providing different data.
+Taking inspiration from [Fractal](https://fractal.build/); a project born from design systems projects at Clearleft, I wanted to build this system around component "context". Context is a fancy word for the data that gets passed to a component to render it, and it allows you to render a component, and any number of variants by providing different data.
 
 Mixed with the [encapsulated macro pattern](/blog/encapsulated-11ty-components/), we can demonstrate these  components with ease, and with a consistent interface.
 
@@ -220,7 +220,7 @@ And that's it! Here's what it looks like:
 
 ## Designing the design system
 
-Hang on; you might be thinking, that looks pretty different to the earlier screenshots? Well yes, but that's for good reason. See, instead of rendering the component directly within a page in the design system, we render it on it's own, and the include it via an `<iframe>`. This renders the component at the window size of the iframe, not at the size of the whole page. It's a subtle difference, but when you're working with viewport units or [fluid type & space](https://utopia.fyi), it's an important distinction.
+Hang on; you might be thinking, that looks pretty different to the earlier screenshots? Well yes, but that's for good reason. See, instead of rendering the component directly within a page in the design system, we render it on its own, and then include it via an `<iframe>`. This renders the component at the window size of the iframe, not at the size of the whole page. It's a subtle difference, but when you're working with viewport units or [fluid type & space](https://utopia.fyi), it's an important distinction.
 
 The solution is another `-pages.njk` file. It starts off in the same way as the previous template, reading in the `components.components` data and rendering a page for each component/variant. For each page, we then output some tabs for the various views we want for the component.
 
@@ -268,13 +268,13 @@ renderData:
 {% endblock %}
 ```
 
-In this case, I've got a tab for the visual demo of the component (housing the aforementioned `<iframe>`), a view of the generated HTML, a print-out of the context in use for the variant, and a option to see the component full screen. But this is only the start, we can render markdown documentation, prop tables, version numbers, stability labels, links to Figma, or whatever else takes your fancy.
+In this case, I've got a tab for the visual demo of the component (housing the aforementioned `<iframe>`), a view of the generated HTML, a print-out of the context in use for the variant, and an option to see the component full screen. But this is only the start, we can render markdown documentation, prop tables, version numbers, stability labels, links to Figma, or whatever else takes your fancy.
 
 The beauty of the `*.config.js` format, is you can pop in whatever data you fancy, and it'll be available in this template. If your team has other requirements, you can easily adapt!
 
 ### Styling the system
 
-The final part of this example is a sprinkly of CSS to give the design system some form, and a sidebar to render the list of components, and any other associated pages of documentation. In the past, I've written about the [systemised foundations](/blog/design-foundations/), how to release the design system on NPM, and the decisions behind the CSS methodology, along with brand guidelines, tone of voice guides and anything else required to make this the home of digital design within a company.
+The final part of this example is a [sprinkling of CSS](https://github.com/trys/eleventy-design-system/blob/main/src/static/design-system/css/design-system.css) to give the design system some form, and a sidebar to render the list of components, and any other associated pages of documentation. In the past, I've written about the [systemised foundations](/blog/design-foundations/), how to release the design system on NPM, and the decisions behind the CSS methodology, along with brand guidelines, tone of voice guides and anything else required to make this the home of digital design within a company.
 
 You can get _really_ meta, and use the components _within_ the design system, to design the design system! If you've already designed buttons & tabs for your website, why generate another load of them for the system, right?!
 
