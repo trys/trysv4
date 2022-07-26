@@ -36,7 +36,7 @@ Simon and I had our monthly mentoring session out on Ashdown forest in his campe
 
 Getting tweeted by CSS Tricks was pretty mega. Cassie lent round the desk when she spotted it, and then watched my face go bright red! It's not really something I've experienced before, and it's not been without issue, but it's cool that a silly CSS article can be helpful to others. I've also used the trick twice since writing it!
 
-{{< twitter user="trysmudford" id="1121039342594666502" >}}
+{{< twitter user="trysmudford" id=1121039342594666502 >}}
 
 ### Homebrew
 
