@@ -8,3 +8,5 @@ pygmentsCodeFencesGuessSyntax = true
 footnoteReturnLinkContents = "↩"
 [markup.goldmark.renderer]
   unsafe= true
+[security.funcs]
+  getenv = [ "^HUGO_", "^CONTEXT", "URL", "DEPLOY_PRIME_URL" ]

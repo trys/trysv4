@@ -125,7 +125,7 @@ componentDidMount() {
 
 Check out Jason's video of the switch in action!
 
-{{< twitter 1082728392699580422 >}}
+{{< twitter user="_developit" id="1082728392699580422" >}}
 
 ## Manual switching
 

@@ -24,7 +24,7 @@
 		<meta name="twitter:title" content="{{ $title }}" />
 		<meta name="twitter:description" content="{{ $description }}" />
 		<meta name="twitter:image" content="{{ $og }}" />
-		{{- if (.IsPage) and eq .Section "blog" -}}
+		{{- if and (.IsPage) (eq .Section "blog") -}}
 		<meta name="twitter:label1" value="Posted in" />
 		<meta name="twitter:data1" value="{{ .Params.categories }}" />
 		<meta name="twitter:label2" value="Reading time" />
