@@ -5,7 +5,7 @@ categories: Web
 description: 'Accessing device hardware events, and working offline'
 ---
 
-At the annual Clearleft Christmas Party, after a fabulous pub lunch and successful Secret Santa (courtesy of [Basil](https://basil.christmas/)), we ordered some drinks and settled in to play some games.
+At the annual Clearleft Christmas Party, after a fabulous pub lunch and successful Secret Santa (courtesy of [Basil](https://basil.christmas.trysmudford.com/)), we ordered some drinks and settled in to play some games.
 
 Charades was the first candidate, but after some truly questionable suggestions & acting, we thought it best to open the acting out to democracy and play the 'Heads up' game.
 

@@ -4,7 +4,7 @@ date: 2019-12-09
 categories: Web
 ---
 
-I recently launched [basil.christmas](https://basil.christmas/), a 'Secret Santa as a service'. Basil has two modes. The first is a traditional list generator, letting you shuffle the participants and print off a nice, foldable list of names. The second is a little more involved, but considerably more exciting! A 'head elf' from your company can sign up and enter all participant names into the system. Basil will email everyone, letting them know who their giftee is.
+I recently launched [basil.christmas.trysmudford.com](https://basil.christmas.trysmudford.com/), a 'Secret Santa as a service'. Basil has two modes. The first is a traditional list generator, letting you shuffle the participants and print off a nice, foldable list of names. The second is a little more involved, but considerably more exciting! A 'head elf' from your company can sign up and enter all participant names into the system. Basil will email everyone, letting them know who their giftee is.
 
 But that's only the beginning. We've all been there; you start in a new company and you get assigned the one person you've never spoken to. This is where Basil steps in. In each email, there's a unique link that, when clicked, anonymously emails the giftee, asking for a little nudge in the right direction. They can respond, all without knowing who has asked for help! Basil-based encryption!
 
@@ -80,4 +80,4 @@ There was no need to [prepare for greater scale](https://twitter.com/dhh/status/
 
 If you're in the market for a Secret Santa generator, managed or otherwise, please feel free to give Basil a whirl!
 
-{{< button "https://basil.christmas" >}}Visit Basil{{</ button >}}
+{{< button "https://basil.christmas.trysmudford.com" >}}Visit Basil{{</ button >}}
