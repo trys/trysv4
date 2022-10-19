@@ -165,7 +165,7 @@ title: Instagram - ${date.toString()}
 blog/categories:
 - instagram
 date: ${date.toISOString().slice(0,-14)}
-image: images/blog/${time}.jpg
+image: /images/blog/${time}.jpg
 originalURL: ${url}
 ---
 
@@ -252,7 +252,7 @@ title: Instagram - Sat Feb 10 2018 22:17:31 GMT+0000 (UTC)
 blog/categories:
 - instagram
 date: 2018-02-10
-image: images/blog/1518301051062.jpg
+image: /images/blog/1518301051062.jpg
 originalURL: https://www.instagram.com/p/BelWi3En8gz/
 ---
 

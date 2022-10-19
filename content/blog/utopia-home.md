@@ -2,7 +2,7 @@
 title: Building the new Utopia homepage
 date: 2022-10-19
 categories: Web
-image: images/blog/utopia-home.jpg
+image: /images/blog/utopia-home.jpg
 description: "Utopia has a new home page with a nifty demo to (hopefully) show what the fuss is about. Here's how it works."
 ---
 
