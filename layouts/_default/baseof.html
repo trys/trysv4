@@ -12,9 +12,9 @@
 		<script>
 			try {
 				var currentColorScheme = localStorage.getItem('darkMode');
-				if (currentColorScheme === null) {
+				/*if (currentColorScheme === null) {
 					localStorage.setItem('darkMode', window.matchMedia('(prefers-color-scheme: dark)').matches ? 1 : 0);
-				}
+				}*/
 				document.documentElement.classList.toggle('dark', currentColorScheme === '1');
 			} catch(e){}
 		</script>
