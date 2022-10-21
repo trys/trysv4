@@ -12,8 +12,8 @@ body {
 
 .wrap {
   max-width: 1180px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
   margin-left: auto;
   margin-right: auto;
 
@@ -41,7 +41,7 @@ body {
   & a,
   & button {
     text-decoration: none;
-    margin-left: 1em;
+    margin-left: var(--space-xs-m);
   }
 
   & .wrap {
@@ -55,37 +55,29 @@ body {
   & button:first-child {
     margin: 0 auto 0 0;
   }
+}
 
-  @media (min-width: 350px) {
-    & a,
-    & button {
-      margin-left: 20px;
-    }
-  }
-
-  @media (min-width: 450px) {
-    & a,
-    & button {
-      margin-left: 40px;
-    }
+@media (max-width: 360px) {
+  .top a:nth-child(3) {
+    display: none;
   }
 }
 
 hr {
-  margin: 1.8em 0;
+  margin: var(--space-s-m) 0;
   border: none;
   border-top: 2px solid var(--mid);
 }
 
 .button {
-  margin: 1rem auto;
+  margin: var(--space-s) auto;
   font-weight: 700;
   font-size: var(--step--2);
   letter-spacing: 1px;
   text-decoration: none;
   background: var(--button-bg);
   transition: 300ms background;
-  padding: 1rem 2rem;
+  padding: var(--space-2xs-xs) var(--space-s-m);
   text-align: center;
   color: var(--button-text);
   display: inline-block;
@@ -107,7 +99,7 @@ hr {
 .password {
   & .password__result {
     display: block;
-    margin: 1.8em 0 1em;
+    margin: var(--space-s-m) 0 var(--space-s);
   }
 
   & .button {

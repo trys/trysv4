@@ -1,74 +1,39 @@
+/* @link https://utopia.fyi/type/calculator?c=320,17,1,750,24,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
 :root {
-  --fluid-min-width: 320;
-  --fluid-max-width: 750;
-  --fluid-min-size: 17;
-  --fluid-max-size: 24;
-  --fluid-min-ratio: 1.1;
-  --fluid-max-ratio: 1.2;
+  /* Type */
+  --step--2: clamp(0.88rem, calc(0.76rem + 0.61vw), 1.04rem);
+  --step--1: clamp(0.97rem, calc(0.75rem + 1.06vw), 1.25rem);
+  --step-0: clamp(1.06rem, calc(0.74rem + 1.63vw), 1.50rem);
+  --step-1: clamp(1.17rem, calc(0.70rem + 2.35vw), 1.80rem);
+  --step-2: clamp(1.29rem, calc(0.63rem + 3.25vw), 2.16rem);
+  --step-3: clamp(1.41rem, calc(0.54rem + 4.38vw), 2.59rem);
+  --step-4: clamp(1.56rem, calc(0.40rem + 5.79vw), 3.11rem);
+  --step-5: clamp(1.71rem, calc(0.21rem + 7.52vw), 3.73rem);
 
-  --fluid-screen: 100vw;
-  --fluid-bp: calc(
-    (var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
-      ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
-  );
-}
+  /* Space units */
+  --space-3xs: clamp(0.25rem, calc(0.16rem + 0.47vw), 0.38rem);
+  --space-2xs: clamp(0.56rem, calc(0.42rem + 0.70vw), 0.75rem);
+  --space-xs: clamp(0.81rem, calc(0.58rem + 1.16vw), 1.13rem);
+  --space-s: clamp(1.06rem, calc(0.74rem + 1.63vw), 1.50rem);
+  --space-m: clamp(1.63rem, calc(1.16rem + 2.33vw), 2.25rem);
+  --space-l: clamp(2.13rem, calc(1.47rem + 3.26vw), 3.00rem);
+  --space-xl: clamp(3.19rem, calc(2.21rem + 4.88vw), 4.50rem);
+  --space-2xl: clamp(4.25rem, calc(2.95rem + 6.51vw), 6.00rem);
+  --space-3xl: clamp(6.38rem, calc(4.42rem + 9.77vw), 9.00rem);
 
-@media screen and (min-width: 750px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
-}
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(-0.12rem + 1.86vw), 0.75rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.14rem + 2.09vw), 1.13rem);
+  --space-xs-s: clamp(0.81rem, calc(0.30rem + 2.56vw), 1.50rem);
+  --space-s-m: clamp(1.06rem, calc(0.18rem + 4.42vw), 2.25rem);
+  --space-m-l: clamp(1.63rem, calc(0.60rem + 5.12vw), 3.00rem);
+  --space-l-xl: clamp(2.13rem, calc(0.36rem + 8.84vw), 4.50rem);
+  --space-xl-2xl: clamp(3.19rem, calc(1.09rem + 10.47vw), 6.00rem);
+  --space-2xl-3xl: clamp(4.25rem, calc(0.72rem + 17.67vw), 9.00rem);
 
-:root {
-  --fluid-max-negative: (1 / var(--fluid-max-ratio) / var(--fluid-max-ratio));
-  --fluid-min-negative: (1 / var(--fluid-min-ratio) / var(--fluid-min-ratio));
-  
-  --fluid-min-scale--2: var(--fluid-min-scale--1) * var(--fluid-min-ratio) * var(--fluid-min-negative);
-  --fluid-max-scale--2: var(--fluid-max-scale--1) * var(--fluid-max-ratio) * var(--fluid-max-negative);
-  --fluid-min-size--2: (var(--fluid-min-size) * var(--fluid-min-scale--2)) / 16;
-  --fluid-max-size--2: (var(--fluid-max-size) * var(--fluid-max-scale--2)) / 16;
-  --step--2: calc(((var(--fluid-min-size--2) * 1rem) + (var(--fluid-max-size--2) - var(--fluid-min-size--2)) * var(--fluid-bp))); 
-  
-  --fluid-min-scale--1: var(--fluid-min-ratio) * var(--fluid-min-negative);
-  --fluid-max-scale--1: var(--fluid-max-ratio) * var(--fluid-max-negative);
-  --fluid-min-size--1: (var(--fluid-min-size) * var(--fluid-min-scale--1)) / 16;
-  --fluid-max-size--1: (var(--fluid-max-size) * var(--fluid-max-scale--1)) / 16;
-  --step--1: calc(((var(--fluid-min-size--1) * 1rem) + (var(--fluid-max-size--1) - var(--fluid-min-size--1)) * var(--fluid-bp)));
-  
-  --fluid-min-scale-0: var(--fluid-min-ratio);
-  --fluid-max-scale-0: var(--fluid-max-ratio);
-  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
-  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
-  --step-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-  
-  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
-  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
-  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
-  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
-  --step-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
+  /* Custom pairs */
+  --space-s-l: clamp(1.06rem, calc(-0.38rem + 7.21vw), 3.00rem);
+  --space-xs-m: clamp(0.81rem, calc(-0.26rem + 5.35vw), 2.25rem);
 
-  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
-  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
-  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
-  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
-  --step-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-
-  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
-  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
-  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
-  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
-  --step-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
-
-  --fluid-min-scale-4: var(--fluid-min-scale-3) * var(--fluid-min-ratio);
-  --fluid-max-scale-4: var(--fluid-max-scale-3) * var(--fluid-max-ratio);
-  --fluid-min-size-4: (var(--fluid-min-size) * var(--fluid-min-scale-3)) / 16;
-  --fluid-max-size-4: (var(--fluid-max-size) * var(--fluid-max-scale-3)) / 16;
-  --step-4: calc(((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
-
-  --fluid-min-scale-5: var(--fluid-min-scale-4) * var(--fluid-min-ratio);
-  --fluid-max-scale-5: var(--fluid-max-scale-4) * var(--fluid-max-ratio);
-  --fluid-min-size-5: (var(--fluid-min-size) * var(--fluid-min-scale-4)) / 16;
-  --fluid-max-size-5: (var(--fluid-max-size) * var(--fluid-max-scale-4)) / 16;
-  --step-5: calc(((var(--fluid-min-size-5) * 1rem) + (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)));
 }
