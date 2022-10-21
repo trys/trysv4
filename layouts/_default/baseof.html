@@ -9,6 +9,9 @@
 		{{- $og := printf "%s%s" $url (.Params.image | default "/images/og-2019.jpg") -}}
 		{{- $description := .Description | default (printf "%s | %s | %s" .Title "Trys Mudford" "Frontend developer") -}}
 		{{- $ogSize := cond (isset .Params "image") "summary_large_image" "summary" -}}
+		<script>
+			try { document.documentElement.classList.toggle('dark', !!localStorage.getItem('darkMode')) } catch(e){}
+		</script>
 
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,6 +53,22 @@
 				<a href="/">Trys Mudford</a>
 				<a href="/blog/">Blog</a>
 				<a href="https://twitter.com/trysmudford" rel="me">Twitter</a>
+				<button type="button" aria-label="Toggle Dark Mode" class="dark-mode-toggle">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M17 18a5 5 0 0 0-10 0"></path>
+						<line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+						<line x1="1" y1="18" x2="3" y2="18"></line>
+						<line x1="21" y1="18" x2="23" y2="18"></line>
+						<line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+						<line x1="23" y1="22" x2="1" y2="22"></line>
+						
+						<line class="light-only" x1="12" y1="9" x2="12" y2="2"></line>
+						<polyline class="light-only" points="16 5 12 9 8 5"></polyline>
+
+						<line class="dark-only" x1="12" y1="2" x2="12" y2="9"></line>
+						<polyline class="dark-only" points="8 6 12 2 16 6"></polyline>
+					</svg>
+				</button>
 			</nav>
 		</header>
 
@@ -82,5 +101,19 @@
 			}
 		</script>
 		{{ end }}
+		<script>
+			const darkModeToggle = document.querySelector('.dark-mode-toggle');
+			if (darkModeToggle) {
+				darkModeToggle.addEventListener('click', function() {
+					if (!!localStorage.getItem('darkMode')) {
+						localStorage.removeItem('darkMode');
+						document.documentElement.classList.remove('dark');
+					} else {
+						localStorage.setItem('darkMode', 1);
+						document.documentElement.classList.add('dark');
+					}
+				});
+			}
+		</script>
 	</body>
 </html>

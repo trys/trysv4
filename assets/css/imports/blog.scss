@@ -1,5 +1,5 @@
 .blog {
-  background: var(--mid);
+  background: var(--blog-bg);
 }
 
 .blog-title {
@@ -7,11 +7,11 @@
 }
 
 .blog-header {
-  margin-bottom: 1.85em;
+  margin-bottom: var(--space-s-l);
 }
 
 .post {
-  margin: 0 0 60px;
+  margin: 0 0 var(--space-xl);
 
   & a {
     text-decoration: none;
@@ -19,9 +19,9 @@
 }
 
 .post--article {
-  background: var(--light);
+  background: var(--blog-post);
   position: relative;
-  padding: 1.666em;
+  padding: var(--space-s-m);
   display: flex;
   align-items: center;
 
@@ -33,7 +33,7 @@
     margin: 0;
 
     & a:visited {
-      color: var(--mid-blue);
+      color: var(--blog-visited-text);
     }
   }
 }
@@ -42,7 +42,7 @@
   position: absolute;
   font-size: var(--step--2);
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   left: 0;
   top: 50%;
   transform-origin: 0 50%;
@@ -52,7 +52,7 @@
 }
 
 .posts {
-  grid-gap: 30px;
+  grid-gap: var(--space-s-l);
   display: grid;
   max-width: 750px;
   margin: 0 auto;
@@ -69,12 +69,11 @@
   @media (min-width: 850px) {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
-    grid-gap: 60px;
 
     & .post--video {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: 1fr 60px 1fr;
+      grid-template-columns: 1fr var(--space-s-l) 1fr;
       grid-row: auto auto;
       align-items: center;
 
@@ -115,12 +114,12 @@
 }
 
 .load-more {
-  padding: 60px 0;
+  padding: var(--space-s-l) 0;
 }
 
 .post--quote {
   background: rgba(0, 0, 0, 0.05);
-  padding: 30px 20px;
+  padding: var(--space-s-m);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,13 +146,13 @@
   max-width: 100vw;
   width: 1140px;
   transform: translateX(-50%);
-  margin: 2rem 50%;
+  margin: var(--space-s-l) 50%;
 }
 
 .grid-of-cards  {
   display: grid;
-  grid-gap: 1.5rem;
-  margin: 1.5rem 0;
+  grid-gap: var(--space-s-m);
+  margin: var(--space-s-m) 0;
 
   @media (min-width: 48em) {
     width: 90vw;
@@ -165,8 +164,8 @@
 }
 
 .card {
-  background: var(--white);
-  padding: 1.5em;
+  background: var(--blog-card);
+  padding: var(--space-s-m);
   font-size: var(--step--1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
@@ -175,11 +174,11 @@
     margin-top: 0;
 
     & + * {
-      margin-top: 1em;
+      margin-top: var(--space-2xs-xs);
     }
   }
 
   p a {
-    color: var(--gradient-green);
+    color: var(--blog-card-link);
   }
 }
