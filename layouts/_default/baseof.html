@@ -10,7 +10,13 @@
 		{{- $description := .Description | default (printf "%s | %s | %s" .Title "Trys Mudford" "Frontend developer") -}}
 		{{- $ogSize := cond (isset .Params "image") "summary_large_image" "summary" -}}
 		<script>
-			try { document.documentElement.classList.toggle('dark', !!localStorage.getItem('darkMode')) } catch(e){}
+			try {
+				var currentColorScheme = localStorage.getItem('darkMode');
+				if (currentColorScheme === null) {
+					localStorage.setItem('darkMode', window.matchMedia('(prefers-color-scheme: dark)').matches ? 1 : 0);
+				}
+				document.documentElement.classList.toggle('dark', currentColorScheme === '1');
+			} catch(e){}
 		</script>
 
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
@@ -102,16 +108,12 @@
 		</script>
 		{{ end }}
 		<script>
-			const darkModeToggle = document.querySelector('.dark-mode-toggle');
+			var darkModeToggle = document.querySelector('.dark-mode-toggle');
 			if (darkModeToggle) {
 				darkModeToggle.addEventListener('click', function() {
-					if (!!localStorage.getItem('darkMode')) {
-						localStorage.removeItem('darkMode');
-						document.documentElement.classList.remove('dark');
-					} else {
-						localStorage.setItem('darkMode', 1);
-						document.documentElement.classList.add('dark');
-					}
+					var hasDarkMode = localStorage.getItem('darkMode') === '1';
+					localStorage.setItem('darkMode', hasDarkMode ? 0 : 1);
+					document.documentElement.classList.toggle('dark', !hasDarkMode);
 				});
 			}
 		</script>
