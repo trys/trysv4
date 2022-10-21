@@ -2,15 +2,93 @@
   --white: #fff;
   --light: #f9fafb;
   --dark: #2f2831;
-  --dark-hover: #1f1821;
+  --darker: #1f1821;
+  --darkest: #161118;
   --mid: #eaeef2;
+  --mid-low: #73777c;
   --mid-blue: #607288;
   
   --gradient-blue: hsl(222, 100%, 83%);
   --gradient-green: hsl(191, 50%, 53%);
-  --gradient-overlay-blue: hsl(222, 100%, 25%);
-  --gradient-overlay-green: hsl(161, 100%, 30%);
   --success: #2c753c;
-  --failure: #9a3730;
   --gradient: linear-gradient(var(--gradient-blue), var(--gradient-green));
+
+  --site-bg: var(--light);
+  --site-chrome: var(--white);
+  --site-text: var(--dark);
+  --site-link-hover-fallback: var(--mid-blue);
+  --site-text-gradient: -webkit-gradient(
+    linear,
+    0% 0%,
+    100% 100%,
+    from(var(--gradient-blue)),
+    to(var(--gradient-green))
+  );
+
+  --pre-bg: var(--mid);
+  --button-bg: var(--dark);
+  --button-bg-hover: var(--darker);
+  --button-text: var(--white);
+  --button-bg-success: var(--success);
+  
+  --alert-bg: var(--mid);
+  
+  --blog-bg: var(--mid);
+  --blog-post: var(--light);
+  --blog-visited-text: var(--mid-blue);
+  --blog-card: var(--white);
+  --blog-card-link: var(--gradient-green);
+  --blog-meta: var(--mid-blue);
+
+  --home-opening-bg: var(--light);
+  --home-opening-gradient-cover-1: rgba(249, 250, 251, 1);
+  --home-opening-gradient-cover-2: rgba(249, 250, 251, 0);
+  --home-opening-gradient: var(--gradient);
+  --home-opening-overlay-blue: hsl(222, 100%, 25%);
+  --home-opening-overlay-green: hsl(161, 100%, 30%);
+  --home-side-projects-bg: var(--white);
+  --home-side-project-bg: var(--mid);
+
+  --blockquote-quote: var(--mid-blue);
+  --blockquote-border: var(--mid);
+
+  --code-bg: var(--mid);
+
+  --dark-mode-toggle: var(--gradient-green);
+}
+
+:root.dark {
+  --site-bg: var(--darker);
+  --site-chrome: var(--darkest);
+  --site-text: var(--white);
+
+  --code-bg: var(--dark);
+  --pre-bg: var(--dark);
+
+  --blog-meta: var(--mid-low);
+
+  
+  --home-opening-bg: var(--darker);
+  --home-opening-gradient-cover-1: rgba(31, 24, 33, 1);
+  --home-opening-gradient-cover-2: rgba(31, 24, 33, 0);
+  --home-opening-gradient: linear-gradient(hsl(222, 47%, 61%), hsl(178, 53%, 52%));
+
+  --home-opening-overlay-blue: hsl(222, 93%, 16%);
+  --home-opening-overlay-green: hsl(161, 96%, 20%);
+  --home-side-projects-bg: var(--dark);
+  --home-side-project-bg: var(--darker);
+
+  --blog-bg: var(--darker);
+  --blog-post: var(--dark);
+  --blog-visited-text: var(--mid);
+  --blog-card: var(--darkest);
+  --blog-card-link: var(--gradient-green);
+  --blog-meta: var(--mid-blue);
+
+  --button-bg-hover: var(--darkest);
+
+  --alert-bg: var(--dark);
+
+  --blockquote-quote: var(--mid);
+  --blockquote-border: var(--mid-low);
 }

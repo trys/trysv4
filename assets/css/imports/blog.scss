@@ -1,5 +1,5 @@
 .blog {
-  background: var(--mid);
+  background: var(--blog-bg);
 }
 
 .blog-title {
@@ -19,7 +19,7 @@
 }
 
 .post--article {
-  background: var(--light);
+  background: var(--blog-post);
   position: relative;
   padding: 1.666em;
   display: flex;
@@ -33,7 +33,7 @@
     margin: 0;
 
     & a:visited {
-      color: var(--mid-blue);
+      color: var(--blog-visited-text);
     }
   }
 }
@@ -165,7 +165,7 @@
 }
 
 .card {
-  background: var(--white);
+  background: var(--blog-card);
   padding: 1.5em;
   font-size: var(--step--1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -180,6 +180,6 @@
   }
 
   p a {
-    color: var(--gradient-green);
+    color: var(--blog-card-link);
   }
 }

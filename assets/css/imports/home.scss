@@ -3,7 +3,7 @@
   text-align: center;
 
   .wrap {
-    background: var(--light);
+    background: var(--home-opening-bg);
   }
 
   .opening__content {
@@ -13,7 +13,6 @@
   }
 
   figure {
-    background: var(--gradient);
     margin: 0 auto 20px;
     max-width: 461px;
     padding: 18px;
@@ -29,8 +28,8 @@
       &:after {
         background-image: linear-gradient(
           90deg,
-          var(--gradient-overlay-blue),
-          var(--gradient-overlay-green)
+          var(--home-opening-overlay-blue),
+          var(--home-opening-overlay-green)
         );
         position: absolute;
         opacity: 0.4;
@@ -89,10 +88,10 @@
     figure {
       background-image: linear-gradient(
           to left,
-          rgba(249, 250, 251, 1),
-          rgba(249, 250, 251, 0)
+          var(--home-opening-gradient-cover-1),
+          var(--home-opening-gradient-cover-2)
         ),
-        var(--gradient);
+        var(--home-opening-gradient);
       background-size: 200px 100%, auto;
       background-repeat: no-repeat, repeat-x;
       background-position: right top;
@@ -113,7 +112,7 @@
     }
 
     &::after {
-      background: var(--gradient);
+      background: var(--home-opening-gradient);
       position: absolute;
       content: '';
       height: 100%;
@@ -125,32 +124,13 @@
   }
 }
 
-.work {
-  background: var(--mid);
-  padding: 1.666em 0 0;
-
-  article:nth-child(odd) {
-    background: var(--light);
-
-    figure {
-      order: -1;
-    }
-  }
-
-  @media (min-width: 850px) {
-    .p-name {
-      margin-bottom: 0;
-    }
-  }
-}
-
 .feed {
-  background: var(--mid);
+  background: var(--blog-bg);
 }
 
 .side-projects {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  background: #FFF;
+  background: var(--home-side-projects-bg);
   position: relative;
   z-index: 3;
   padding-bottom: 30px;
@@ -159,7 +139,6 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;
-    color: var(--dark);
     pointer-events: none;
 
     @media screen and (min-width: 50em) {
@@ -167,7 +146,7 @@
     }
 
     & > * {
-      background: var(--mid);
+      background: var(--home-side-project-bg);
       display: block;
       transition: 300ms box-shadow, 300ms opacity, 300ms transform;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -202,7 +181,6 @@
     }
 
     .project-content {
-      border-top: 1px solid var(--mid);
       padding: 30px;
     }
   }
