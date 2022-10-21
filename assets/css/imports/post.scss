@@ -1,6 +1,6 @@
 .single {
   max-width: 740px;
-  margin: 0 auto 120px;
+  margin: 0 auto var(--space-xl-2xl);
 
   .twitter-tweet {
     padding-bottom: 1em;
@@ -10,11 +10,11 @@
 
   .meta {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: var(--space-xs-s);
     color: var(--blog-meta);
   }
 
   & h1 {
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-3xs);
   }
 }
