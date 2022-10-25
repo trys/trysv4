@@ -55,6 +55,10 @@ body {
   & button:first-child {
     margin: 0 auto 0 0;
   }
+
+  button {
+    line-height: 1;
+  }
 }
 
 @media (max-width: 360px) {
