@@ -14,7 +14,7 @@
 				var currentColorScheme = localStorage.getItem('darkMode');
         if (currentColorScheme === null) {
           currentColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? '1' : '0';
-          localStorage.setItem('darkMode', currentColorScheme ? '1' : '0');
+          localStorage.setItem('darkMode', currentColorScheme);
         }
         document.documentElement.classList.toggle(
           'dark',
