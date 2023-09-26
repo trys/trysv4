@@ -1,5 +1,5 @@
 ---
-title: Utopia plugins now supports Figma variables
+title: Utopia plugins now support Figma variables
 date: 2023-09-19
 for: Utopia
 link: https://utopia.fyi/blog/figma-variables
