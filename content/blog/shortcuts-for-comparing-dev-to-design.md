@@ -7,7 +7,7 @@ categories: Web
 
 Pixel perfection is a myth. Now we've got that out the way, let's carry on.
 
-Well, first, we know [the ideal viewport doesn't exist](https://viewports.fyi/), and chasing absolute pixel accuracy is a fool's errand, but that doesn't stop us from trying to get pretty darn close. For me, the reasons are twofold.
+Well almost. [The ideal viewport doesn't exist](https://viewports.fyi/), and chasing *absolute* pixel accuracy is a fool's errand, but that shouldn't stop us from trying to get pretty darn close. For me, the reasons are twofold.
 
 Firstly, I take personal pride in getting as close as I ~~possibly~~ reasonably can. Call me weird, but I get such a rush delivering a dynamic component that's impossible to distinguish its static counterpart in Figma. Oh boy, do I love it.
 
