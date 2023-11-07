@@ -31,7 +31,7 @@ A <abbr title="Linear Interpolation">lerp</abbr> returns the value between two n
 ```js
 lerp(20, 80, 0)   // 20
 lerp(20, 80, 1)   // 80
-lerp(20, 80, 0.5) // 40
+lerp(20, 80, 0.5) // 50
 ```
 
 It's great for answering gnarly maths questions like: _"What number is 35% between 56 and 132?"_ with elegance: <code>lerp(56,&nbsp;132,&nbsp;0.35)</code>. My maths skills aren't all that, so it's great to have these up my sleeve.
