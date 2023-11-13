@@ -2,6 +2,8 @@
 title: 'FFConf 2023 Conference Recap'
 date: 2023-11-13
 categories: Web
+image: /images/blog/ffconf-2023.jpg
+description: A quick summary from FFConf 2023
 ---
 
 It was a pleasure to head back down to "sunny" (see the final photo) Brighton for the annual FFConf. This conference always feels like coming home; Remy and Julie do a top-notch organising this conference. The speakers are always fantastic, the talks are simultaneously challenging and reassuring, and the details are second to none.
