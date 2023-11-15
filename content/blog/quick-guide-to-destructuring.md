@@ -39,7 +39,7 @@ const { firstName, lastName, age } = user;
 
 Much neater. But if you've not encountered this syntax before, it's understandably quite confusing to see what looks like an object being used backwards to the 'normal' way.
 
-## Bonus tips
+## Bonus tips
 
 You can also use destructuring to '[spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)' the remaining variables after the initial assignment into a new object:
 
