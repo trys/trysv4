@@ -5,19 +5,19 @@ categories: Web
 description: "Fail to prepare? Prepare to feel a bit of a prune when it goes wrong"
 ---
 
-We've all been in playbacks when someone clearly hasn't prepared their demonstration. They've tried to wing it and it's painfully obvious, and takes twice as long as it needs to. Live demos can be nerve-wracking, and it's tempting to pre-record a video of the feature, sit back and hit play.
+We've all been in playbacks when someone clearly hasn't prepared their demonstration. They've tried to wing it and it's painfully obvious, taking twice as long as it needs to.
 
-But there is great power in a great live demo. A pre-recorded screencast of a Figma walkthrough is a melting Madame Tussauds exhibit when sat next to a live demo in a browser. The authenticity is palpable, and perhaps that slight element of risk adds to the experience.
+Live demos can be nerve-wracking, and it's tempting to pre-record a video of the feature, sit back and hit play. But I believe there is great power in a great live demo. A pre-recorded screencast of a Figma walkthrough is a melting Madame Tussauds model when sat next to a live demo in a browser. The authenticity is palpable, and perhaps that slight element of risk adds to the experience.
 
 Live demos needn't be as scary as they seem. Here are a few tips I've picked up over the years:
 
 ## Know your audience
 
-Tailor the demo to your audience. A room of executives might want to see a different slice of the product to your engineering colleagues. Don't discount showing the work you do to the higher-ups in the company, but try to make the content as compelling for them as possible.
+Tailor the demo to your audience. A room of executives might want to see a different slice of the product to your engineering colleagues. Don't discount showing the details of the work you do to the higher-ups in the company, but try to make the content as compelling for them as possible.
 
 ## Plan the narrative
 
-Those less intensively involved in the project may need more context than your colleagues who are actively working on that section of the project, so plan the journey you want to take your audience on. Leaping straight into a detailed section of the product might be jarring, so consider starting on the home page and working through as if you were a customer.
+Those less intensively involved in the project may need more context than your colleagues who are actively working alongside you, so plan the journey you want to take your audience on. Leaping straight into a detailed section of the product might be confusing, so consider starting on the home page and working through as if you were a customer.
 
 ## Set up your tabs
 
@@ -25,11 +25,13 @@ Once you've got your narrative planned, it's time to set up your tabs. Open a br
 
 ## Build in fallbacks
 
-If there's a risky section of the demo, prepare a fallback. Mock some data, prepare staging links, have Figma designs in your back pocket, heck even record a video if it's really risky; whatever it will take to keep the demo going and keep the audience engaged. These 'jumping off points' are safety nets you can effortlessly turn to when things break. For example, if you're expecting an email to be delivered in the demo, make sure you've got a tab open with that same email template. When the email inevitably gets stuck in the ether, you can, cool as a cucumber, switch to the tab and carry on as if nothing happened.
+If there's a risky section of the demo, prepare a fallback. Mock some data, prepare staging links, have Figma designs in your back pocket, heck even record a video if it's really risky; whatever it will take to keep the demo going and keep the audience engaged. These 'jumping off points' are safety nets you can effortlessly turn to when things break.
+
+For example, if you're expecting an email to be delivered in the demo, make sure you've got a tab open with that same email template. When the email inevitably gets stuck in the ether, you can, cool as a cucumber, switch to the tab and carry on as if nothing happened.
 
 ## Smoke and mirrors
 
-Don't be afraid of a bit of mock data, or faked interactions. We're leading our audience on a journey and we have to blend reality and fantasy a little to keep the story going, so be it. Don't be disingenuous. If you've mocked an entire feature that's not going to be ready in weeks, don't try and hide it. You can always preface your demo with a disclaimer that "some of the elements you see are mocked".
+Don't be afraid of a bit of mock data, or faked interactions. We're leading our audience on a journey and if we have to blend reality and fantasy a little to keep the story compelling, so be it. But don't be disingenuous. If you've mocked an entire feature that's not going to be ready in weeks, don't try and pass it off as production ready, it'll only come back to bite you. You can always preface your demo with a disclaimer that "some of the elements you see are mocked".
 
 ## Remote presentation tip - post-it note the key beats
 
@@ -43,7 +45,7 @@ You don't have to narrate each section but you might find it useful practise. Ag
 
 ## Reset the machine
 
-After each demo, work out how you reset back to the initial state. If you're showcasing a login flow, make sure you're logged out on each tab. Make sure there are no surprises on the tabs.
+After each demo, work out how you reset back to the initial state. If you're showcasing a login flow, make sure you're logged out on each tab. Make sure there are no surprises on the night.
 
 ## Clear your inbox
 
