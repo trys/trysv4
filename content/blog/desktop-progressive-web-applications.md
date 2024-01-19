@@ -18,6 +18,8 @@ Naturally, I had to give this a go. After upgrading to Sonoma, I booted up Visua
 
 No more! [arrows.trysmudford.com](https://arrows.trysmudford.com) is my new home for all those symbols that are hard to remember. Need an Interrobang in your life‽ Grab it from the site. Are you regularly reaching for ≠? Add it as a custom symbol and never search again.
 
+[![A screenshot of the 'arrows' application on the desktop, complete with standalone UI, custom dock icon & name, and 'about' page.](/images/blog/arrows.jpg)](https://arrows.trysmudford.com)
+
 The stack is intentionally simple. There's no build script. There's no JS framework. There's a HTML file and a Service Worker that keeps it working offline. `localStorage` is used to hold any custom icons a user may choose to store. And there's a manifest file that tells the system which icons to use when saving the site as an application. It's stored on GitHub, and hosted on Netlify. I even deployed it to the internet from my phone, domain and all!
 
 Sit with that for a second, you can write a **desktop application** with **no tooling**, launch it **from your phone** to the internet **for free**, and seconds later **install it on any computer**. You don't have to ask permission, or jump through any App Store hoops. You can write a thing, push it to the internet, and then immediately use the thing. Even better, you can send the link to your friends and *they* can immediately use the thing. That's the power of the web.
