@@ -17,7 +17,7 @@ We're in the process of refactoring Utopia.fyi & our Figma plugins to use this l
 
 On the back of that refactor, we've been able to ship some long-awaited updates to the CSS generators.
 
-![A screenshot of the updated CSS space generator on Utopia.fyi, including CSS/SCSS tabs, a clamp/css locks toggle, a rem/px toggle and a viewport/container toggle](/images/blog/utopia-generator.jpeg)
+![A screenshot of the updated CSS space generator on Utopia.fyi, including CSS/SCSS tabs, a clamp/css locks toggle, a rem/px toggle and a viewport/container toggle](/images/blog/utopia-generator.jpg)
 
 Firstly, if you're using the new [SCSS plugin](https://www.npmjs.com/package/utopia-core-scss), you can copy the SCSS config and paste it into your project.
 
