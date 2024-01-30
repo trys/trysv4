@@ -15,11 +15,11 @@ Here's a CSS clamp function:
 clamp(1.62rem, 1.5041rem + 0.5793vi, 1.9531rem)
 ```
 
-The middle argument combines `rem` and `vi` (sidenote: this is the bit that makes the value fluid). But if you zoom the browser in, only one half of that equation is getting bigger. Although Chrome has a 500% zoom limit, but that might only equate to an ~150% text size increase. And [WCAG SC 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html) states:
+The middle argument combines `rem` and `vi` (sidenote: this is the bit that makes the value fluid). But if you zoom the browser in, only one half of that equation is getting bigger. Although Chrome has a 500% zoom limit, it might only equate to an ~150% text size increase. And [WCAG SC 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html) states:
 
 > Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
 
-Much fluid typography automatically meets this criteria, but as you use more dramatic typographic scales (eg. a larger disparity between minimum and maximum sizes), you can start to fall foul of this rule. Larger headings on larger screens can struggle to increase in size by 200%.
+Most _'standard'_ fluid typography automatically meets this criteria, but as you use more dramatic typographic scales (eg. a larger disparity between minimum and maximum sizes), you can start to fall foul of this rule. Larger headings on larger screens can struggle to increase in size by 200%.
 
 [Max Barvian](https://barvian.me/) has written a tremendously [in-depth dive](https://www.smashingmagazine.com/2023/11/addressing-accessibility-concerns-fluid-type/) into why this happens, and more importantly, how to calculate _when_ it will happen. To top it off, as the creator of the fantastic [fluid.style](https://fluid.style), Max kindly shared the calculations with us to power this feature ❤️
 
