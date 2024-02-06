@@ -1,5 +1,5 @@
 ---
-title: 'Preparing for a live demo'
+title: '13 common sense tips for better live demos'
 date: 2023-11-30
 categories: Web
 description: "Fail to prepare? Prepare to feel a bit of a prune when it goes wrong"
@@ -29,7 +29,7 @@ If there's a risky section of the demo, prepare a fallback. Mock some data, prep
 
 For example, if you're expecting an email to be delivered in the demo, make sure you've got a tab open with that same email template. When the email inevitably gets stuck in the ether, you can, cool as a cucumber, switch to the tab and carry on as if nothing happened.
 
-## Smoke and mirrors
+## A little smoke and mirrors goes a long way
 
 Don't be afraid of a bit of mock data, or faked interactions. We're leading our audience on a journey and if we have to blend reality and fantasy a little to keep the story compelling, so be it. But don't be disingenuous. If you've mocked an entire feature that's not going to be ready in weeks, don't try and pass it off as production ready, it'll only come back to bite you. You can always preface your demo with a disclaimer that "some of the elements you see are mocked".
 
