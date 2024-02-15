@@ -10,6 +10,11 @@
     max-width: 800px;
     margin: 0 auto;
     padding: var(--space-s-l) 0;
+
+    a {
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
   }
 
   figure {
@@ -129,7 +134,7 @@
 }
 
 .side-projects {
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px var(--space-l) rgba(0, 0, 0, 0.03);
   background: var(--home-side-projects-bg);
   position: relative;
   z-index: 3;
