@@ -1,6 +1,9 @@
 <article class="post post--article">
 	<h2>
-		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		<a href="{{ .RelPermalink }}">
+			{{ .Title }}
+			{{ if .Params.subtitle }}<span class="subtitle">{{ .Params.subtitle }}</span>{{ end }}
+		</a>
 	</h2>
 	{{ if .Params.categories }}
 		<a class="categories" href="/categories/{{ urlize .Params.categories }}/">{{ .Params.categories }}</a>

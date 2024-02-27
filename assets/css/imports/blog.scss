@@ -23,7 +23,8 @@
   position: relative;
   padding: var(--space-s-m);
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   & a {
     display: block;
@@ -35,6 +36,11 @@
     & a:visited {
       color: var(--blog-visited-text);
     }
+  }
+
+  & .subtitle {
+    display: block;
+    font-size: var(--step--1);
   }
 }
 
