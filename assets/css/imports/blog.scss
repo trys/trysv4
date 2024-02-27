@@ -182,3 +182,35 @@
     color: var(--blog-card-link);
   }
 }
+
+.talk.single {
+  max-width: 100%;
+}
+
+.talk.single .e-content {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: var(--space-s-l);
+}
+
+.talk.single .e-content figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-s-m);
+}
+
+.talk.single .e-content figure figcaption {
+  flex-grow: 1;
+  flex-basis: 350px;
+  margin: 0;
+  text-align: left;
+  font-size: var(--step--1);
+}
+
+.talk.single .e-content figure img {
+  margin: 0;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+  align-self: flex-start;
+}
