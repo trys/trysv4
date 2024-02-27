@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="wrap insulate">
-	<div class="single content h-entry">
+	<div class="single content h-entry {{ .Params.className }}">
 		<header class="center">
 			<h1 class="p-name">{{ .Title }}</h1>
 			{{ if eq .CurrentSection.RelPermalink "/blog/" }}
