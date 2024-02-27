@@ -5,6 +5,7 @@ description: The good, the bad, and the plain undocumented
 date: 2024-02-20
 categories: Web
 className: talk
+image: '/images/blog/next-server-actions/Section 1 - Slide 1.jpg'
 ---
 
 <figure>
