@@ -3,6 +3,7 @@
 	<div class="single content h-entry {{ .Params.className }}">
 		<header class="center">
 			<h1 class="p-name">{{ .Title }}</h1>
+			{{ if .Params.subtitle }}<h2 class="subtitle">{{ .Params.subtitle }}</h2>{{ end}}
 			{{ if eq .CurrentSection.RelPermalink "/blog/" }}
 				{{ partial  "meta" . }}
 			{{ end }}

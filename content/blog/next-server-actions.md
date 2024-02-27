@@ -1,5 +1,6 @@
 ---
 title: Next.js Server Actions
+subtitle: The good, the bad, and the plain undocumented
 description: The good, the bad, and the plain undocumented
 date: 2024-02-20
 categories: Web
@@ -8,6 +9,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 1.jpg"
 		alt="Title slide of the talk: Lessons from using Next.js Server Actions: The good, the bad, and the plain undocumented"
 		loading="lazy"
@@ -20,6 +23,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 3.jpg"
 		alt="What are server actions: Stable in Next 14"
 		loading="lazy"
@@ -31,17 +36,21 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 4.jpg"
 		alt="Built into React Canary"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>Although released as part of Next.js, they are built into React Canary and utilise several 'core' hooks. Although, as you might've read on recent blog posts, the gaps between React Canary and Vercel are hazy at best.</p>
+		<p>Although released as part of Next.js, they are built into React Canary and utilise several 'core' hooks. Although, as you might've read recently, the gap between React Canary and Vercel is hazy at best.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 6.jpg"
 		alt="Server actions only ever run on the server"
 		loading="lazy"
@@ -49,11 +58,14 @@ className: talk
 	<figcaption>
 		<p>But what <em>exactly</em> are they? They are asynchronous functions that <strong>only</strong> ever run on the server. Whereas you may currently write what <em>looks</em> like a server function to get some initial page state, you'll find they're regularly called by the client-side as the SPA mode of Next.js takes over.</p>
 		<p>Server Actions will <strong>only</strong> run on the server, which brings a tonne of security, performance and accessibility benefits. Next.js provides the tooling to make your application continue to <em>feel</em> like it's making client-side requests, but under the hood, there's a load more native, web-standard plumbing going on.</p>
+		<p>Think of them as the perfect backend-for-frontend starting point.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 7.jpg"
 		alt="Typically receive a FormData class"
 		loading="lazy"
@@ -65,6 +77,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 8.jpg"
 		alt="Return object/redirects"
 		loading="lazy"
@@ -76,6 +90,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 9.jpg"
 		alt="The three methods to invoke server actions:"
 		loading="lazy"
@@ -92,6 +108,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 1 - Slide 10.jpg"
 		alt="Server Components + Server Actions"
 		loading="lazy"
@@ -103,6 +121,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 2.jpg"
 		alt="Example no. 1 - the cookie bar"
 		loading="lazy"
@@ -114,31 +134,37 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 3.jpg"
 		alt="A code snippet of a client-side component that shows/hides a cookie bar"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>Here's a pseudo-code snippet of a pretty normal implementation of a Cookie bar. Let's walk through it. We pull in <code>useState</code> and a third-party client-side cookie library because it's 2023 and we still need a decentt interface for reading/setting cookies. We set up some state for whether the cookie has been set or not by reading in the cookie. Note, we now have two sources of truth&hellip;</p>
+		<p>Here's a pseudo-code snippet of a pretty normal implementation of a Cookie bar. Let's walk through it. We pull in <code>useState</code> and a third-party client-side cookie library because it's 2023 and we still need a decent interface for reading/setting cookies. We set up some state for whether the cookie has been set or not by reading in the cookie. Now we have two sources of truth&hellip;</p>
 		<p>Then we create a method to update our state <strong>and</strong> update the cookie. If the bar has been accepted, we return nothing and if not, we return some markup that renders the bar and calls our method.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 4.jpg"
 		alt="A flow diagram of the client-side cookie bar implementation"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>We can also plot this onto a flow-chart.</p>
+		<p>Let's plot this rendering timeline onto a flow-chart.</p>
 		<p>The thing about React components is it's easy to forget where they start; rendered on a server. So the request comes into the server and because we're using a client-side cookie library, we don't know whether the cookie has been set or not, so we return nothing. The response gets to the browser and we hit <abbr title="Time to first byte">(TTFB)</abbr>.</p>
-		<p>As the page loads, we also get our <abbr title="Largest contentful paint">(LCP)</abbr> before the JS is parsed, hydrated and some time later, is interactive. This marks <abbr title="Time to interactive">(TTI)</abbr>. Only now we can re-check whether the cookie is set, which may or may not show the cookie bar. If it does, we're in danger of triggering a <abbr title="Cumulative layout shift">(CLS)</abbr>.</p>
+		<p>As the page loads, we also get our <abbr title="Largest contentful paint">(LCP)</abbr> before the JS is parsed, hydrated and some time later, is interactive. This marks <abbr title="Time to interactive">(TTI)</abbr>. Only now we can re-check whether the cookie is set, which may or may not show the cookie bar. If it does, we're in danger of triggering a <abbr title="Cumulative layout shift">(CLS)</abbr>. Not good.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 5.jpg"
 		alt="Another flow diagram of the client-side cookie bar implementation"
 		loading="lazy"
@@ -150,6 +176,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 6.jpg"
 		alt="Code snippet of a server action implementation of a cookie bar"
 		loading="lazy"
@@ -161,18 +189,22 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 7.jpg"
 		alt="Code snippet of the cookie bar server action"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>And here's the first Server Action of the day. It's in a file with a <code>'use server'</code> directive. This is important, and one of the hallmarks of a Server Action. It tells Next to <strong>never</strong> send this file to the client-side or bundle it into a script so we're safe to work with API secrets and import weightier libraries without penalising our users.</p>
+		<p>And here's the first Server Action of the day. It's in a file with a <code>'use&nbsp;server'</code> directive. This is crucial, and one of the hallmarks of a Server Action. It tells Next to <strong>never</strong> send this file to the client-side or bundle it into a script so we're safe to work with API secrets and import weightier libraries without penalising our users.</p>
 		<p>We import the very same <code>cookies</code> helper as we did in our component and do one thing in the action: set the cookie. Nice and simple.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 8.jpg"
 		alt="Rendering flow chart of the server action cookie example"
 		loading="lazy"
@@ -184,6 +216,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 9.jpg"
 		alt="Interaction flow chart of the server action cookie example"
 		loading="lazy"
@@ -195,6 +229,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 10.jpg"
 		alt="Example no. 1.1 - Cookie bar withough Javascript. What happens when JS fails?"
 		loading="lazy"
@@ -206,6 +242,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 11.jpg"
 		alt="Flow chart of the client-side cookie bar with no JS"
 		loading="lazy"
@@ -217,6 +255,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 12.jpg"
 		alt="Everything is broken after the button is clicked."
 		loading="lazy"
@@ -228,6 +268,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 13.jpg"
 		alt="Flow chart for the Server Action version"
 		loading="lazy"
@@ -239,6 +281,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 14.jpg"
 		alt="Benefit no. 1 - No client-side JS required"
 		loading="lazy"
@@ -250,6 +294,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 15.jpg"
 		alt="Benefit no. 2 - Interactive before and during hydration"
 		loading="lazy"
@@ -261,6 +307,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 16.jpg"
 		alt="Gotcha no. 1 - Cookies can only be set in Server Actions & Route handlers"
 		loading="lazy"
@@ -272,6 +320,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 17.jpg"
 		alt="Gotcha no. 2 - setting cookies in middleware requires cloning headers"
 		loading="lazy"
@@ -283,6 +333,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 2 - Slide 18.jpg"
 		alt=""
 		loading="lazy"
@@ -295,6 +347,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 1.jpg"
 		alt=""
 		loading="lazy"
@@ -306,6 +360,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 2.jpg"
 		alt=""
 		loading="lazy"
@@ -319,6 +375,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 3.jpg"
 		alt=""
 		loading="lazy"
@@ -331,6 +389,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 4.jpg"
 		alt=""
 		loading="lazy"
@@ -342,6 +402,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 5.jpg"
 		alt=""
 		loading="lazy"
@@ -353,6 +415,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 6.jpg"
 		alt=""
 		loading="lazy"
@@ -364,6 +428,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 8.jpg"
 		alt=""
 		loading="lazy"
@@ -376,6 +442,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 9.jpg"
 		alt=""
 		loading="lazy"
@@ -387,6 +455,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 10.jpg"
 		alt=""
 		loading="lazy"
@@ -398,17 +468,21 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 11.jpg"
 		alt=""
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>If you try and redirect within the <code>try</code> block, it will throw an error. Use <code>try/catch</code> around asynchronous or volatile calls, then redirect afterwards.</p>
+		<p>If you redirect within the <code>try</code> block, it will throw an error. Use <code>try/catch</code> around asynchronous or volatile calls, then redirect afterwards.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 3 - Slide 12.jpg"
 		alt=""
 		loading="lazy"
@@ -420,6 +494,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 1.jpg"
 		alt=""
 		loading="lazy"
@@ -432,18 +508,22 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 2.jpg"
 		alt=""
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>Up until now, all our Server Action forms have been server components, and haven't required any client-side state or hooks. That's going to change in this example. Although it's possible to handle error checking with server components, we're going to use the new <code>useFormState</code> hook imported not from Next, but from <code>react-dom</code>. For this reason, I like to explicitely mark a file with a 'use client' directive.</p>
+		<p>Up until now, all our Server Action forms have been server components, and haven't required any client-side state or hooks. That's going to change in this example. Although it's possible to handle error checking with server components, we're going to use the new <code>useFormState</code> hook imported not from Next, but from <code>react-dom</code>. You need to mark the file with a <code>'use&nbsp;client'</code> directive.</p>
 		<p>This hook takes in the Server Action import, and some default state in the shape of an object. It returns an array with a the reactive state, and a new embellished Server Action. These can then be applied to the form and used to render error messages.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 3.jpg"
 		alt=""
 		loading="lazy"
@@ -456,6 +536,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 4.jpg"
 		alt=""
 		loading="lazy"
@@ -467,6 +549,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 5.jpg"
 		alt=""
 		loading="lazy"
@@ -478,6 +562,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 6.jpg"
 		alt=""
 		loading="lazy"
@@ -490,6 +576,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 7.jpg"
 		alt=""
 		loading="lazy"
@@ -501,6 +589,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 8.jpg"
 		alt=""
 		loading="lazy"
@@ -512,6 +602,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 9.jpg"
 		alt=""
 		loading="lazy"
@@ -523,6 +615,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 10.jpg"
 		alt=""
 		loading="lazy"
@@ -534,6 +628,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 11.jpg"
 		alt=""
 		loading="lazy"
@@ -545,6 +641,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 4 - Slide 12.jpg"
 		alt=""
 		loading="lazy"
@@ -557,6 +655,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 5 - Slide 1.jpg"
 		alt=""
 		loading="lazy"
@@ -568,6 +668,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 5 - Slide 2.jpg"
 		alt=""
 		loading="lazy"
@@ -579,6 +681,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 5 - Slide 3.jpg"
 		alt=""
 		loading="lazy"
@@ -590,6 +694,8 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 6 - Slide 1.jpg"
 		alt=""
 		loading="lazy"
@@ -601,19 +707,23 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 6 - Slide 2.jpg"
-		alt=""
+		alt="useOptimistic can update the UI before the server action completes - perfect for event driven architectures"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p><code>useOptimistic</code> is a hook provided to update the UI before the Server Action has completed. The classic example for this is an instant messaging application. <a href="https://lawsofux.com/jakobs-law/">Jakob's law</a> suggest that you expect to be able to hit enter on a message and it will appear in the message list instantly, rather than waiting for the server to respond positively that the message has been sent. This hook provides some plumbing to make this pattern simpler to implement.</p>
+		<p><code>useOptimistic</code> is a hook provided to update the UI before the Server Action has completed. The classic example for this is an instant messaging application. <a href="https://lawsofux.com/jakobs-law/">Jakob's law</a> suggests that you expect to be able to hit enter on a message and it will appear in the message list instantly, rather than waiting for the server to respond positively that the message has been sent. This hook provides some plumbing to make this pattern simpler to implement.</p>
 	</figcaption>
 </figure>
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 6 - Slide 3.jpg"
-		alt=""
+		alt="Server Actions can GET data on page load in a server component"
 		loading="lazy"
 	/>
 	<figcaption>
@@ -623,8 +733,10 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 6 - Slide 4.jpg"
-		alt=""
+		alt="Server actions only every POST data from forms"
 		loading="lazy"
 	/>
 	<figcaption>
@@ -634,11 +746,42 @@ className: talk
 
 <figure>
 	<img
+		width="1152 "
+		height="648"
 		src="/images/blog/next-server-actions/Section 6 - Slide 5.jpg"
-		alt=""
+		alt="revalidatePath - bust the cache on a route before redirecting"
 		loading="lazy"
 	/>
 	<figcaption>
-		<p>If you're using the built in <code>fetch</code>lkfjdklsjfldsjfds</p>
+		<p><abbr title="Create. Read. Update. Delete.">CRUD</abbr> updates are a pretty common usecase for Server Actions. So when you create/update/delete your todo/comment/post etc, you're probably going to want to refresh the list of todos/comments/posts to reflect the change.</p>
+		<p><code>revalidatePath</code> accepts a relative URL string where it will flush the cache for any data persisted on that route. When you next visit the route, it will refetch the latest copy of the data, rather than respond with an earlier cached copy.</p>
 	</figcaption>
 </figure>
+
+<figure>
+	<img
+		width="1152 "
+		height="648"
+		src="/images/blog/next-server-actions/Section 6 - Slide 6.jpg"
+		alt="revalidateTag - mark up your fetch calls with tags and call this in a server action to bust the cache"
+		loading="lazy"
+	/>
+	<figcaption>
+		<p>If you're using the monkey-patched <code>fetch</code> implementation within Next, you're going to want to swat up on <a href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating">caching</a> within the framework. Next now caches <em>everything</em>. If you're dealing with user-specific data, you're going to want to tag up your <code>fetch</code> calls to avoid the risk of cross-pollinating another user's data. I like to include a user ID within the tag to ensure they're unique per user.</p>
+		<p><code>revalidateTag</code> accepts one of those tags and busts the cache for it.</p>
+	</figcaption>
+</figure>
+
+<figure>
+	<img
+		width="1152 "
+		height="648"
+		src="/images/blog/next-server-actions/Section 7 - Slide 1.jpg"
+		alt="Thanks for listening"
+		loading="lazy"
+	/>
+	<figcaption>
+		<p>Thanks for <del>listening</del> reading!</p>
+	</figcaption>
+</figure>
+
