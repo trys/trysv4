@@ -33,7 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--site-text);
-  font: 400 var(--step-0)/1.79 'Avenir LT', 'Avenir', -apple-system, BlinkMacSystemFont,
+  font: 400 var(--step-0)/1.6 'Avenir LT', 'Avenir', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
     sans-serif;
 }
@@ -166,8 +166,6 @@ blockquote {
 }
 
 li {
-  line-height: 1.5;
-
   & + li {
     margin-top: var(--space-xs);
   }
