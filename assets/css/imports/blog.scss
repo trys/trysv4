@@ -16,6 +16,17 @@
   & a {
     text-decoration: none;
   }
+
+  &--video {
+    & .video-embed + p {
+      margin-top: var(--space-xs);
+    }
+
+    & a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }
 
 .post--article {
@@ -103,6 +114,10 @@
           grid-row: 1 / 3;
           align-self: center;
         }
+      }
+
+      & .video-embed + p {
+        margin-top: var(--space-2xs);
       }
     }
 
