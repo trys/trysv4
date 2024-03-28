@@ -3,6 +3,7 @@ title: "Prototypes, production & fidelity layers"
 date: 2024-03-26
 categories: Web
 description: "Finding the fidelity sweet spot"
+image: /images/blog/fidelity-slices.jpg
 ---
 
 The mindsets for writing production and prototype code are often portrayed as binaries. Production code should be solid, serious and battle-hardened, whereas the fleeting nature of prototypes means they're approached with a 'good enough' mindset.
