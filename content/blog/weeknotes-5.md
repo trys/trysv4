@@ -18,7 +18,7 @@ My other evenings have been spent editing photos from Goodwood #77mm. I suppose 
 
 Wednesday at work was spent building a tricky component for a multi-step form within a modal. There were a lot of moving parts to it (literally, it was animation-heavy), so I spent an hour or so wrapping my head around the permutations of it. After a solid morning of focus, and a head-clearing lunchtime walk, I was able to wrap it up that afternoon. It was so good to get my teeth stuck into a complex problem and quell the imposter syndrome.
 
-Much of that component was solved with dynamic scoped slots, not something I've seen much written about. So I spent Thursday's train journey, and some of Homebrew website club [writing up my findings](/blog/dynamic-scoped-slots-in-vue-js/). The rest of Homebrew was used to write documentation for [Sergey](https://sergey.cool/) (more on that later).
+Much of that component was solved with dynamic scoped slots, not something I've seen much written about. So I spent Thursday's train journey, and some of Homebrew website club [writing up my findings](/blog/dynamic-scoped-slots-in-vue-js/). The rest of Homebrew was used to write documentation for [Sergey](https://sergey.trysmudford.com/) (more on that later).
 
 Jon, Danielle and I went to visit a potential client on Thursday morning. It was my first out-of-office meeting and truth be told, I was pretty nervous. Fortunately it went really well, and we had great chats on the train to and from. Two weeks in, and I'm generally feeling on top of things, which is rather nice!
 
@@ -26,7 +26,7 @@ That afternoon, I started on another project: a round of updates to a charity we
 
 Friday included more work on the charity site, a sprint retrospective, a fascinating brown bag lunch about how we plan and deliver research, all rounded out with a lovely spot of cheese and wine!
 
-I also launched [Sergey](https://sergey.cool)! It's a tiny little static site generator designed for those who don't want to spent ages configuring a full-blown SSG. It works well as a prototyping tool, a springboard to a different SSG, or an opportunity to take your first steps into the world of static site generation.
+I also launched [Sergey](https://sergey.trysmudford.com)! It's a tiny little static site generator designed for those who don't want to spent ages configuring a full-blown SSG. It works well as a prototyping tool, a springboard to a different SSG, or an opportunity to take your first steps into the world of static site generation.
 
 There's still plenty to do with it, and I'll no-doubt write a full blog post about it next week, but initial reception seems to have been positive!
 

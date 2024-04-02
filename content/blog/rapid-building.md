@@ -21,13 +21,13 @@ One of my passions is rapidly testing ideas on the web. Development pace is one 
 
 It's worth saying upfront that rapid builds are **definitely not** for everything. In fact, they should be used sparingly for prototypes or side projects that aren't business-critical. Like the [good, fast, cheap](https://fastgood.cheap/) venn diagram, quick builds are inherently flawed, but they do still have merit.
 
-I really love a thorough plan and technical spec, but there's something wonderful about rapidly spiking a problem and not worrying too much about the details. It's how [Sergey](https://sergey.cool), [JS Pedalboard](https://pedalboard.netlify.com/), [Javasnack](https://javasnack.cool/) and several marginally popular [F1 parody websites](https://wtf1.com/post/someones-made-a-has-mclaren-broken-down-today-website/) came about.
+I really love a thorough plan and technical spec, but there's something wonderful about rapidly spiking a problem and not worrying too much about the details. It's how [Sergey](https://sergey.trysmudford.com), [JS Pedalboard](https://pedalboard.netlify.com/), [Javasnack](https://javasnack.cool/) and several marginally popular [F1 parody websites](https://wtf1.com/post/someones-made-a-has-mclaren-broken-down-today-website/) came about.
 
 > The stack choice isn't really important.
 
 Spikes are a great way to try a new technology and learn by making mistakes. The only pre-requisite I'd suggest is to **use a stack that you can deploy easily**. There's nothing worse than getting something working locally, then finding you can't host it without an AWS degree or pricey hosting infrastructure.
 
-In the past, PHP was my jam. It's still _so_ much easier to host than Node.js, and you can build quickly without getting too bogged down in implementation details. These days I'm tending to lean on static site generators like [Hugo](https://gohugo.io) and [Sergey](https://sergey.cool) (shameless plug), before deploying to Netlify.
+In the past, PHP was my jam. It's still _so_ much easier to host than Node.js, and you can build quickly without getting too bogged down in implementation details. These days I'm tending to lean on static site generators like [Hugo](https://gohugo.io) and [Sergey](https://sergey.trysmudford.com) (shameless plug), before deploying to Netlify.
 
 For this project, I opted for [Preact](https://preactjs.com/) and a small vanilla Node build script. [Preact CLI](https://github.com/preactjs/preact-cli) boilerplated the site very quickly, and after a few minutes of stripping back the extra cruft, I had an ES6, reactive and hot-loaded development environment ready. I then ran a quick 'hello, world' deploy to confirm it would all build on Netlify.
 

@@ -14,7 +14,7 @@ I also took a deeeeep dive into Elf, our internal dev environment and deployment
 
 We had a fascinating brown bag lunch on diversity and inclusion, organised by [DnA](https://diversityandability.com/). It's such a treat to work in a company that prioritises learning aggresively as Clearleft.
 
-[Sergey](https://sergey.cool) got a lovely mention on [CSS Tricks](https://css-tricks.com/the-simplest-ways-to-handle-html-includes/). I was reading through the article about HTML includes thinking, "Oh, I can tweet to suggest Sergey", certainly not expecting to see the little critter in the post!
+[Sergey](https://sergey.trysmudford.com) got a lovely mention on [CSS Tricks](https://css-tricks.com/the-simplest-ways-to-handle-html-includes/). I was reading through the article about HTML includes thinking, "Oh, I can tweet to suggest Sergey", certainly not expecting to see the little critter in the post!
 
 Homebrew was pretty good this week. I published a [tiny lesson](/blog/fancy-slack-meta-tags/) and [sorted out](https://github.com/trys/trysv4/commit/b8114923691eecd055bafbc8f4c362ef07ba4369) the `<head>` of my website. This should make OpenGraph output a bit nicer.
 

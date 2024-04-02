@@ -5,13 +5,13 @@ description: Markdown and much more added to the little static site generator
 categories: Web
 ---
 
-After a bank holiday weekend of hacking, [Sergey](https://sergey.cool) has some exciting new features!
+After a bank holiday weekend of hacking, [Sergey](https://sergey.trysmudford.com) has some exciting new features!
 
 ## Markdown 📝
 
 Markdown is one of those developer experience features that usually goes hand-in-hand with a static site generator. But it was important to me for it to be an opt-in feature.
 
-Sergey doesn't profess to be the SSG for everyone, quite the opposite. It's intenionally small in scope, and will never do half the clever things many SSG's do. [Sergey's goal](https://sergey.cool/#what-is-sergey) is as much for those who've never used a SSG before, as it is for those who need a prototyping tool before picking a full generator. So markdown support had to subscribe to that philosophy (as with all new features).
+Sergey doesn't profess to be the SSG for everyone, quite the opposite. It's intenionally small in scope, and will never do half the clever things many SSG's do. [Sergey's goal](https://sergey.trysmudford.com/#what-is-sergey) is as much for those who've never used a SSG before, as it is for those who need a prototyping tool before picking a full generator. So markdown support had to subscribe to that philosophy (as with all new features).
 
 [Andy Bell](https://twitter.com/andybelldesign/status/1118062931747512320) suggested the lovely syntax, extending the existing `<sergey-import>` to include an `as` attribute. This'll also open up any future content types without the need for extra HTML tags.
 
@@ -24,7 +24,7 @@ So here's how it works:
 <sergey-import src="about" as="markdown" />
 ```
 
-Full documentation is available [here](https://sergey.cool/markdown/).
+Full documentation is available [here](https://sergey.trysmudford.com/markdown/).
 
 ## Tests! 🙌
 
@@ -52,7 +52,7 @@ If you set the content folder to be `_imports/content`, you wouldn't need specif
 
 ## .env 🗝
 
-You've been able to pass arguments to the `sergey` command from day one, but now you can prebake those values with a `.env` file. All the options have been documented on the [options page](https://sergey.cool/options/).
+You've been able to pass arguments to the `sergey` command from day one, but now you can prebake those values with a `.env` file. All the options have been documented on the [options page](https://sergey.trysmudford.com/options/).
 
 ## Exclusion 🚫
 

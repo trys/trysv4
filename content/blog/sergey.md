@@ -4,7 +4,7 @@ date: 2019-04-13
 categories: Web
 ---
 
-Yesterday saw the launch of [Sergey](https://sergey.cool), a tiny little static site generator. It's been around a week in the making, with the idea triggered by discussions with Cassie at [Homebrew website club](https://indieweb.org/Homebrew_Website_Club#Brighton) (come along, it's great!).
+Yesterday saw the launch of [Sergey](https://sergey.trysmudford.com), a tiny little static site generator. It's been around a week in the making, with the idea triggered by discussions with Cassie at [Homebrew website club](https://indieweb.org/Homebrew_Website_Club#Brighton) (come along, it's great!).
 
 We were chatting about Michelle's wonderful [new site](https://michellebarker.co.uk/), built [entirely in HTML and CSS](https://twitter.com/mbarker_84/status/1107416868711743490). It's so refreshing to see such clean, semantic and understandable markup in this world/[bubble](https://adactio.com/journal/15011) of complexity. I mean, please `view-source` [the website](https://michellebarker.co.uk/), doesn't it spark joy?! 😍
 
@@ -199,6 +199,6 @@ Let's make a final page to show all the bits in action:
 
 ## Have a go!
 
-To act as a starting point, I've created an example website that can be deployed straight to Netlify. You can also have a root around the code [here](https://github.com/trys/sergey-netlify). The [Sergey.cool](https://sergey.cool/) site is naturally written with Sergey, so that can be [checked out](https://github.com/trys/sergey/tree/master/example) too.
+To act as a starting point, I've created an example website that can be deployed straight to Netlify. You can also have a root around the code [here](https://github.com/trys/sergey-netlify). The [sergey.trysmudford.com](https://sergey.trysmudford.com/) site is naturally written with Sergey, so that can be [checked out](https://github.com/trys/sergey/tree/master/example) too.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/sergey-netlify)

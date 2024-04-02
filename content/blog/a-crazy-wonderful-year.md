@@ -46,7 +46,7 @@ Work at Clearleft has been great, but tough. With such a small team, we've had t
 
 This year has seen me start running and squashing on a regular basis. Exercise has never been that enjoyable to me, so it's been a massive surprise to be so relatively active now! I'm definitely feeling better for it.
 
-One of the first things I did after starting at Clearleft was launch [Sergey](https://sergey.cool/), the little static site generator. It was born out of chat at Homebrew Website Club and put together over the course of a week or so. I even did a [little presentation](/blog/a-talk-at-codebar-brighton/) of it at Codebar!
+One of the first things I did after starting at Clearleft was launch [Sergey](https://sergey.trysmudford.com/), the little static site generator. It was born out of chat at Homebrew Website Club and put together over the course of a week or so. I even did a [little presentation](/blog/a-talk-at-codebar-brighton/) of it at Codebar!
 
 ![](/images/blog/talking-at-codebar.jpg)
 

@@ -314,7 +314,7 @@ The chorus pedal doesn't sound great, so that should be the next point of focus.
 
 Disclaimer, I've only really tested this in Chrome and Firefox, plus Web Audio API support is limited, so apologies for the other browsers out there 😐 - It's also not hugely optimised for mobile yet!
 
-The code is also visible on [GitHub](https://github.com/trys/pedalboard), and uses [Sergey](https://sergey.cool) for compilation.
+The code is also visible on [GitHub](https://github.com/trys/pedalboard), and uses [Sergey](https://sergey.trysmudford.com) for compilation.
 
 {{< button "https://pedalboard.netlify.com/" >}}Try the pedalboard out!{{</ button >}}
 
