@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XZ Backdoor in CSS</title>
+  <meta name="description" content="Exposing the XZ Backdoor in CSS" />
+  <meta property="og:url" content="https://www.trysmudford.com/xz/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="XZ Backdoor in CSS | Trys Mudford" />
+  <meta property="og:description" content="Exposing the XZ Backdoor in CSS" />
+  <meta property="og:image" content="https://www.trysmudford.com/xz/opengraph-xz.jpg" />
+  <meta property="og:image:alt" content="Trys Mudford" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="XZ Backdoor in CSS | Trys Mudford" />
+  <meta name="twitter:description" content="Exposing the XZ Backdoor in CSS" />
+  <meta name="twitter:image" content="https://www.trysmudford.com/xz/opengraph-xz.jpg" />
+</head>
+<body>
+  <a class="xz" href="/">
+    <div class="xz-door"></div>
+  </a>
+  <style>
+    .xz {
+      width: 45vmin;
+      height: 80vmin;
+      background: linear-gradient(#FFF, #EFEFEF);
+      margin-top: 10vmin;
+      position: relative;
+      overflow: visible;
+      perspective: 400vmin;
+      z-index: 100;
+      border-radius: 0.5% 0.5% 0 0;
+    }
+    
+    .xz:after {
+      box-shadow: 0 0 1vmin rgba(0, 0, 0, 1);
+      content: '';
+      position: absolute;
+      height: calc(100% - 1.5vmin);
+      width: 1px;
+      right: 0;
+      top: 0;
+    }
+    
+    .xz-door {
+      animation: open 2s;
+      backface-visibility: visible;
+      content: '';
+      position: absolute;
+      inset: 2vmin 2vmin 0;
+      background-color: #7D5936;
+      background-image: linear-gradient(to right, #D2A880, #BB8E65),
+                        linear-gradient(to right, #CBA27E, #AD835B),
+                        linear-gradient(to bottom, #e0d2cf, #e4e2e0),
+                        linear-gradient(to bottom, #625e5d55, #514e4b55),
+                        radial-gradient(circle, #EFEFEF, #EFEFEF 60%, transparent 60%, transparent),
+                        linear-gradient(125deg, #CBA27E, #a27244),
+                        linear-gradient(45deg, #bb8658, #AD835B),
+                        linear-gradient(125deg, #CBA27E, #AD835B),
+                        linear-gradient(125deg, #CBA27E, #AD835B),
+                        linear-gradient(125deg, #CBA27E, #AD835B),
+                        linear-gradient(125deg, #CBA27E, #AD835B),
+                        linear-gradient(125deg, #CBA27E, #AD835B);
+      background-repeat: no-repeat;
+      background-size: 31vmin 8vmin,
+                      31vmin 8vmin,
+                      6vmin 1vmin,
+                      6vmin 1vmin,
+                      2.5vmin 2.5vmin,
+                      5vmin 100%,
+                      5vmin 100%,
+                      6vmin 61.8vmin,
+                      6vmin 61.8vmin,
+                      6vmin 61.8vmin,
+                      6vmin 61.8vmin,
+                      6vmin 61.8vmin;
+      background-position: 5vmin top,
+                          5vmin bottom,
+                          32.5vmin 50%,
+                          calc(32.5vmin + 2px) calc(50% + 2px),
+                          37vmin calc(50% + 1px),
+                          0 0,
+                          right 0,
+                          5.1vmin 8.1vmin,
+                          11.2vmin 8.1vmin,
+                          17.4vmin 8.1vmin,
+                          23.6vmin 8.1vmin,
+                          29.8vmin 8.1vmin;
+      transform-origin: 0 0;
+      z-index: 1;
+      box-shadow: 1vmin 0 2vmin rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes open {
+      0% {
+        transform: rotateY(-20deg);
+      }
+      
+      100% {
+        transform: rotateY(0deg);
+      }
+    }
+
+    @media (hover: hover) {
+      .xz-door {
+        transition: 2s transform;
+      }
+
+      .xz:hover .xz-door {
+        transform: rotateY(-20deg);
+      }
+    }
+
+    .xz-door:before {
+      content: '.xz';
+      font-family: cursive;
+      color: rgb(128, 105, 47);
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+      font-size: 3vmin;
+    }
+
+    html {
+      background: #715f49;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: linear-gradient(to right, #ECEDEF, #A5A5A5);
+      background-repeat: repeat-x;
+    }
+
+    body:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 88.5vmin;
+      left: 0;
+      height: 1.5vmin;
+      background: #BBAE9E;
+    }
+  </style>
+</body>
+</html>
