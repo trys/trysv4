@@ -123,9 +123,7 @@ componentDidMount() {
 }
 ```
 
-Check out Jason's video of the switch in action!
-
-{{< twitter id="1082728392699580422" user="_developit" >}}
+Check out [Jason's video](https://twitter.com/_developit/status/1082728392699580422) of the switch in action!
 
 ## Manual switching
 
