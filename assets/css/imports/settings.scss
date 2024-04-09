@@ -41,7 +41,7 @@
   --blog-meta: var(--mid-blue);
 
   --home-opening-bg: var(--light);
-  --home-opening-gradient-cover-1: rgba(249, 250, 251, 1);
+  --home-opening-gradient-cover-1: var(--home-opening-bg);
   --home-opening-gradient-cover-2: rgba(249, 250, 251, 0);
   --home-opening-gradient: var(--gradient);
   --home-opening-overlay-blue: hsl(222, 100%, 25%);
@@ -69,7 +69,7 @@
 
   
   --home-opening-bg: var(--darker);
-  --home-opening-gradient-cover-1: rgba(31, 24, 33, 1);
+  --home-opening-gradient-cover-1: var(--home-opening-bg);
   --home-opening-gradient-cover-2: rgba(31, 24, 33, 0);
   --home-opening-gradient: linear-gradient(hsl(222, 47%, 21%), hsl(178, 53%, 22%));
 
