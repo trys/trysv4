@@ -11,10 +11,10 @@ I've had the opportunity to work on a greenfield project recently and was able t
 
 ```html
 <button
-	type="button"
-	data-track="cta"
-	data-track-category="homepage"
-	data-track-name="heroCta"
+    type="button"
+    data-track="cta"
+    data-track-category="homepage"
+    data-track-name="heroCta"
 >
 
 <form data-track="submit" data-track-category="createAccount">
@@ -52,76 +52,76 @@ const TRACKING_EVENT = 'namespaced:tracking';
 
 // Fire events to all tracking providers
 const trackEvent = (eventAction, trackingDetail) => {
-	window.dispatchEvent(
-		new CustomEvent(TRACKING_EVENT, {
-			detail: {
-				eventAction,
-				trackingDetail,
-			},
-		}),
-	);
+    window.dispatchEvent(
+        new CustomEvent(TRACKING_EVENT, {
+            detail: {
+                eventAction,
+                trackingDetail,
+            },
+        }),
+    );
 };
 
 const globalTrackingHandler = async (event: Event) => {
-	// Detect if we're on a trackable element
-	const target = (event.target as HTMLElement).closest('[data-track]');
-	if (!target) return;
+    // Detect if we're on a trackable element
+    const target = (event.target as HTMLElement).closest('[data-track]');
+    if (!target) return;
 
-	// Prevent click events from firing on trackable forms
-	const action = target.dataset.track;
-	if (action === 'submit' && event.type === 'click') return;
+    // Prevent click events from firing on trackable forms
+    const action = target.dataset.track;
+    if (action === 'submit' && event.type === 'click') return;
 
-	// Extract data from the trackable element
-	const category = target.dataset['track-category'];
-	const label = target.dataset['track-label'];
-	const name = target.dataset['track-name'];
-	const url = target.dataset['track-name'] ?? target.getAttribute('href') ?? window.location.href;
+    // Extract data from the trackable element
+    const category = target.dataset['track-category'];
+    const label = target.dataset['track-label'];
+    const name = target.dataset['track-name'];
+    const url = target.dataset['track-name'] ?? target.getAttribute('href') ?? window.location.href;
 
-	// Pass events to the global tracking helper
-	switch (action) {
-		case 'click': {
-			trackEvent(action, {
-				category,
-				label,
-				name,
-				url,
-			});
-			break;
-		}
-		case 'submit': {
-			const formLabel = target.querySelector('[type="submit"]')?.textContent ?? label;
-			const formUrl = target.getAttribute('action') ?? url;
-			trackEvent('cta', {
-				category,
-				label: formLabel,
-				name,
-				url: formUrl,
-			});
-			break;
-		}
-		default:
-			break;
-	}
+    // Pass events to the global tracking helper
+    switch (action) {
+        case 'click': {
+            trackEvent(action, {
+                category,
+                label,
+                name,
+                url,
+            });
+            break;
+        }
+        case 'submit': {
+            const formLabel = target.querySelector('[type="submit"]')?.textContent ?? label;
+            const formUrl = target.getAttribute('action') ?? url;
+            trackEvent('cta', {
+                category,
+                label: formLabel,
+                name,
+                url: formUrl,
+            });
+            break;
+        }
+        default:
+            break;
+    }
 };
 
 document.addEventListener('click', globalTrackingHandler);
 document.addEventListener('submit', globalTrackingHandler);
 
 const specificTrackingHandler = (event) => {
-	const { detail } = event;
-	if (!detail) return;
-	const { eventAction, trackingDetail } = detail;
+    const { detail } = event;
+    if (!detail) return;
+    const { eventAction, trackingDetail } = detail;
 
-	switch (eventAction) {
-		case 'click':
-			trackClick(trackingDetail);
-			break;
-		case 'cta':
-			trackCta(trackingDetail);
-			break;
-		default:
-			break;
-	}
+    switch (eventAction) {
+        case 'click':
+            trackClick(trackingDetail);
+            break;
+        case 'cta':
+            trackCta(trackingDetail);
+            break;
+        default:
+            break;
+    }
 };
 
 window.addEventListener(TRACKING_EVENT, specificTrackingHandler);

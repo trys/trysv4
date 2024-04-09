@@ -6,7 +6,7 @@ categories: Web
 
 I gave a talk about [Sergey](https://sergey.trysmudford.com/) at [Codebar Brighton](https://codebar.io/brighton) on Tuesday night! Other than a post-hackathon recap, this was my first foray into public speaking - and for a first go with limited preparation time, I think it went pretty well!
 
-{{< twitter "1118504901301157889" >}}
+{{< twitter id="1118504901301157889" user="trysmudford" >}}
 
 I didn't clam up too much, nor lose my train of thought, and the live coding (yep...) went without a hitch!
 
