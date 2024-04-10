@@ -23,8 +23,8 @@ body {
 }
 
 .insulate {
-  padding-top: 1.666em;
-  padding-bottom: 1.666em;
+  padding-top: var(--space-m-l);
+  padding-bottom: var(--space-m-l);
 }
 
 .top,
@@ -34,26 +34,20 @@ body {
   box-shadow: 0 2px var(--space-l) rgba(0, 0, 0, 0.03);
   background: var(--site-chrome);
   font-size: var(--step--1);
-  padding: 1.25em 0;
+  padding: var(--space-xs-s) 0;
   position: relative;
   z-index: 10;
 
   & a,
   & button {
     text-decoration: none;
-    margin-left: var(--space-xs-m);
   }
 
   & .wrap {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
-  }
-
-  & a:first-child,
-  & button:first-child {
-    margin: 0 auto 0 0;
+    gap: var(--space-3xs) var(--space-xs);
   }
 
   button {
@@ -61,10 +55,20 @@ body {
   }
 }
 
-@media (max-width: 360px) {
-  .top a:nth-child(3) {
-    display: none;
+.top {
+  & a:first-child,
+  & button:first-child {
+    margin: 0 auto 0 0;
   }
+
+  & .wrap {
+    justify-content: flex-end;
+    gap: var(--space-xs-m);
+  }
+}
+
+.low {
+  font-size: var(--step--2);
 }
 
 hr {

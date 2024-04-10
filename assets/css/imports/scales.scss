@@ -38,3 +38,7 @@
   --space-s-l: clamp(1.0625rem, 0.4346rem + 3.1395vi, 2.75rem);
   --space-xs-m: clamp(0.8125rem, 0.3474rem + 2.3256vi, 2.0625rem);
 }
+
+:root {
+  --gutter: var(--space-s-l);
+}

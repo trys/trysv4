@@ -8,7 +8,7 @@
   .opening__content {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--space-s-l) 0;
+    padding: var(--gutter) 0;
 
     h1 {
       margin-bottom: var(--space-xs);
@@ -151,14 +151,12 @@
   .projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: var(--space-s-l);
+    grid-gap: var(--gutter);
     pointer-events: none;
-    padding-top: var(--space-xs);
     line-height: 1.4;
 
     @media screen and (min-width: 50em) {
       grid-template-columns: repeat(2, 1fr);
-      padding-top: 0;
     }
 
     & > * {
@@ -167,6 +165,7 @@
       transition: 300ms box-shadow, 300ms opacity, 300ms transform;
       box-shadow: 0 0 var(--space-m) rgba(0, 0, 0, 0.1);
       pointer-events: auto;
+      position: relative;
 
       &:hover {
         box-shadow: 0 0 var(--space-m) rgba(0, 0, 0, 0.2);
@@ -184,6 +183,16 @@
 
     a {
       text-decoration: none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
     }
 
     p {
@@ -197,7 +206,7 @@
     }
 
     .project-content {
-      padding: var(--space-s-m);
+      padding: var(--space-xs) var(--space-s) var(--space-xs-s);
     }
   }
 }

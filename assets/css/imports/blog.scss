@@ -7,7 +7,7 @@
 }
 
 .blog-header {
-  margin-bottom: var(--space-s-l);
+  margin-bottom: var(--gutter);
 }
 
 .post {
@@ -69,7 +69,7 @@
 }
 
 .posts {
-  grid-gap: var(--space-s-l);
+  grid-gap: var(--gutter);
   display: grid;
   max-width: 750px;
   margin: 0 auto;
@@ -90,7 +90,7 @@
     & .post--video {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: 1fr var(--space-s-l) 1fr;
+      grid-template-columns: 1fr var(--gutter) 1fr;
       grid-row: auto auto;
       align-items: center;
 
@@ -135,7 +135,7 @@
 }
 
 .load-more {
-  padding: var(--space-s-l) 0;
+  padding: var(--gutter) 0;
 }
 
 .post--quote {
@@ -167,7 +167,7 @@
   max-width: 100vw;
   width: 1140px;
   transform: translateX(-50%);
-  margin: var(--space-s-l) 50%;
+  margin: var(--gutter) 50%;
 }
 
 .grid-of-cards  {
@@ -211,7 +211,7 @@
 .talk.single .e-content {
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: var(--space-s-l);
+  grid-gap: var(--gutter);
 }
 
 .talk.single .e-content figure {
