@@ -32,7 +32,7 @@
 .post--article {
   background: var(--blog-post);
   position: relative;
-  padding: var(--space-s-m);
+  padding: var(--space-s) var(--space-s-m);
   display: flex;
   justify-content: center;
   flex-direction: column;
