@@ -1,6 +1,5 @@
 .opening {
   position: relative;
-  text-align: center;
 
   .wrap {
     background: var(--home-opening-bg);
@@ -10,6 +9,14 @@
     max-width: 800px;
     margin: 0 auto;
     padding: var(--space-s-l) 0;
+
+    h1 {
+      margin-bottom: var(--space-xs);
+    }
+
+    p ~ * {
+      font-size: var(--step--1);
+    }
 
     a {
       text-decoration-thickness: 1px;
@@ -24,7 +31,7 @@
 
     .home-image__cover {
       position: relative;
-      box-shadow: 0 0 var(--space-m) rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 var(--space-m) var(--home-opening-shadow);
 
       img {
         filter: saturate(0);
