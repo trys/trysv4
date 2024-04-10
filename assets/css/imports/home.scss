@@ -27,7 +27,7 @@
   figure {
     margin: 0 auto var(--space-s);
     max-width: 461px;
-    padding: var(--space-s);
+    padding: 0 0 var(--space-s);
 
     .home-image__cover {
       position: relative;
@@ -110,6 +110,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: var(--space-s);
       order: -1;
       width: 340px;
       max-width: none;
