@@ -106,10 +106,18 @@ h3 {
   margin: var(--space-s-m) 0 0;
 }
 
+h2 + h3 {
+  margin-top: 0;
+}
+
 h4 {
   line-height: 1.3;
   margin: var(--space-s) 0 0;
   font-size: var(--step-0);
+}
+
+h4 + .highlight .chroma {
+  margin-top: var(--space-xs);
 }
 
 h2.subtitle {
