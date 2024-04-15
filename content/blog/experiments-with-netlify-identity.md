@@ -34,7 +34,7 @@ The first step into using Identity is the no configuration [Identity Widget](htt
 </html>
 ```
 
-![Netlify Identity login widget](images/blog/identity-login.png)
+![Netlify Identity login widget](/images/blog/identity-login.png)
 
 That's pretty cool, right?! Google OAuth and custom logins with three lines of code.
 
@@ -220,7 +220,7 @@ One thing I wanted to mention was custom emails. In your account area, Netlify l
 
 ### Paths
 
-![Email template paths](images/blog/identity-path.png)
+![Email template paths](/images/blog/identity-path.png)
 
 The custom template path is relative to your **build directory**, not your repository. If you're generating files into a `dist` or `public` directory, you must make sure the email templates are moved in there too. For the Nuxt build I was working on, moving the `email` folder into `static/email` was sufficient, but it did trip me up initially.
 

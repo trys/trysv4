@@ -37,7 +37,7 @@ And the Basic Attention Token (BAT) appears to be an interesting approach to use
 
 It encourages pay walls. If reforming digital ads means walling off the open web, then count me out.
 
-![Black Mirror episode, Fifteen Million Merits](images/blog/fifteen-million-merits.jpg)
+![Black Mirror episode, Fifteen Million Merits](/images/blog/fifteen-million-merits.jpg)
 
 Intentionally consuming advertisements to earn credits was the premise of one of the first Black Mirror episodes. This approach by Brave feels like it could be the first step down that path; providing justification for gated content, crediting users for consuming advertising, and placing a tangible value on our time.
 

@@ -112,7 +112,7 @@ I’m yet to see a great solution for developers who are happy to use the cascad
 Utility classes and component development are two modern practises that appear to go hand-in-hand. But do they? If encapsulation is your aim, utility classes are the polar opposite. Every class is essentially a ‘globally-scoped’ modifier and we’re chaining them to our components. It doesn’t sound all that encapsulated to me.
 
 ## Critical styling
-![Eliminate render-blocking JS and CSS notice in Google page speed insights.](images/blog/css-in-2017-pagespeed.png)
+![Eliminate render-blocking JS and CSS notice in Google page speed insights.](/images/blog/css-in-2017-pagespeed.png)
 
 Google Page Speed Insights and Google Lighthouse are two tools that profile a site to test the performance (amongst other things). This ‘Eliminate render-blocking JS and CSS’ notice is an interesting one. It suggests that the classic `<link rel=”stylesheet” href=”style.css”>` is an antipattern. The reason: it blocks the first render.
 

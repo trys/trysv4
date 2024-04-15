@@ -14,7 +14,7 @@ The job fell through and I <del>moped</del> freelanced for a year. Come Summer 2
 
 Building a website for myself seemed like a logical move. I fired up 'Coffee Cup HTML editor' and got to work coding what has become affectionately known as 'the pencil site'.
 
-[![Version 1 of trysmudford.com](images/blog/v1.jpg)](http://web.archive.org/web/20130625045750/http://trysmudford.com/)
+[![Version 1 of trysmudford.com](/images/blog/v1.jpg)](http://web.archive.org/web/20130625045750/http://trysmudford.com/)
 
 Each pencil was a link to the five sections of the site, because that made total sense at the time! Each section slid into view on click using some dubious jQuery, no doubt lifted from Stack Overflow.
 
@@ -24,7 +24,7 @@ But it worked; I got through the interview and had an actual job as a web develo
 
 Fast-forward a year and I was reading [24 ways](https://24ways.org/2013/). Anna Debenham wrote a fantastic article about [Jekyll and GitHub Pages](https://24ways.org/2013/get-started-with-github-pages/). This was a huge revelation. You could have a blog without a database or a clever server. Every time you pushed to GitHub, your site was updated. [Prose.io](http://prose.io/) even let you write blog posts on the go. I had to get in on this action. Cue version 2:
 
-[![Version 2 of trysmudford.com](images/blog/v2.jpg)](http://web.archive.org/web/20140518095358/http://trysmudford.com/)
+[![Version 2 of trysmudford.com](/images/blog/v2.jpg)](http://web.archive.org/web/20140518095358/http://trysmudford.com/)
 
 Red! And a lot of it. Also lowercase titling for reasons passing understanding. I think it felt edgy. This did the trick to satisfy my desires for a static site. I distinctly remember the categories being a nightmare to set up as GitHub pages couldn't run Makefiles - this was before I'd been introduced to server-side build scripts.
 
@@ -32,7 +32,7 @@ Red! And a lot of it. Also lowercase titling for reasons passing understanding. 
 
 It was at this point that I became rather entrenched in the WordPress way of life. [Tomango](http://www.tomango.co.uk/) were busy and I was churning out a lot of WordPress builds - and getting pretty good at it. It seemed only natural that my site should follow suit. We relaunched the Tomango website in 2015, triggering the itch to redesign my own site.
 
-[![Version 3 of trysmudford.com](images/blog/v3.jpg)](http://web.archive.org/web/20160401073744/http://www.trysmudford.com/)
+[![Version 3 of trysmudford.com](/images/blog/v3.jpg)](http://web.archive.org/web/20160401073744/http://www.trysmudford.com/)
 
 There was a work section (that never got updated), an about page (that never got updated) and a blog (that thankfully did get updated).
 
@@ -49,7 +49,7 @@ So I started posting much more, often on the go. In-fact, the [View Source](/blo
 
 Here we are in February 2018, with a freshly launched website.
 
-[![Version 4 of trysmudford.com](images/blog/v4.jpg)](/)
+[![Version 4 of trysmudford.com](/images/blog/v4.jpg)](/)
 
 The design has been simplified, with a focus on readability. It all started by opening Sketch and typesetting a blog post. [Avenir](https://www.linotype.com/1245613/avenir-family.html) was the font of choice. Turns out, lovely fonts cost money! I love [Montserrat](https://fonts.google.com/specimen/Montserrat), but this font just feels next level to me.
 

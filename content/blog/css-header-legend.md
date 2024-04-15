@@ -6,7 +6,7 @@ categories: Web
 
 A discussion started in our Slack channel on how to best accomplish a design like this:
 
-![Lines around a header](images/blog/fancy-header.jpg)
+![Lines around a header](/images/blog/fancy-header.jpg)
 
 This legend-style line-on-side heading is a popular trend right now, and there doesn't appear to be a definitive approach. 
 

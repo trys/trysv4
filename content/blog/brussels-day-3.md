@@ -197,4 +197,4 @@ A massive thanks to [Evan You](https://twitter.com/youyuxi) for the brilliant tr
 
 Also a huge thanks to [Hackages](https://hackages.io/) for organising the course so well and Science14 for providing such a great venue!
 
-![Evan You and I](images/blog/7240RP1y-675x1200.jpg)
+![Evan You and I](/images/blog/7240RP1y-675x1200.jpg)

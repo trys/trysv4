@@ -37,7 +37,7 @@ The Markdown content appeared in the repo and the image file was also created, b
 
 When creating an image through the JS API, you have to first upload it as a blob. GitHub then returns the SHA of the new blob, and that’s what you refer to in the files array. Once that had been sorted, we were cooking on gas.
 
-![IFTTT setup screen](images/blog/ifttt.png)
+![IFTTT setup screen](/images/blog/ifttt.png)
 
 IFTTT lets you create a communication channel between two services – in this case: a POST request between Instagram and the cloud function. Once IFTTT is linked Instagram (pretty much one click), you provide the template of how you want to be notified:
 
@@ -54,7 +54,7 @@ AWS Lambda and Google Cloud functions are the big players in this market. Lambda
 
 Google Cloud functions was much simpler to set up but their pricing model scares me. I’m used to fixed cost hosting at Tomango so it’s quite a strange prospect not knowing how much you’ll be paying each month. Even though this is quite a basic function, there was still doubt in my mind as to whether I’d be hit with bill each month. Much to learn, I still have.
 
-![Yoda saying 'Much to learn you still have'](images/blog/yoda.jpg)
+![Yoda saying 'Much to learn you still have'](/images/blog/yoda.jpg)
 
 Fortunately, [Netlify](https://www.netlify.com/) came to my rescue, [again](http://www.trysmudford.com/perfomance-wins-with-hugo-and-netlify/). They’ve just moved Lambda Functions to private beta and; like all things they do, it was smooth and painless to migrate to their service. Functions are stored in your website repository but they’re not available directly via the web. They’re also able to access [Build Environment Variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables) via `process.env` – a handy way to separate our secret keys from the code.
 
@@ -261,7 +261,7 @@ originalURL: https://www.instagram.com/p/BelWi3En8gz/
 
 ### /site/static/images/blog/[timestamp].jpg
 
-![Macro shot of dew on a window](images/blog/1518301051062.jpg)
+![Macro shot of dew on a window](/images/blog/1518301051062.jpg)
 
 ---
 
