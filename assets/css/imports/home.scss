@@ -177,8 +177,10 @@
       opacity: 0.3;
     }
 
-    h3 {
-      margin-top: 0;
+    h2 {
+      margin: 0;
+      font-size: var(--step-1);
+      line-height: 1.5;
     }
 
     a {
