@@ -4,7 +4,7 @@ date: 2024-04-30
 categories: Web
 ---
 
-I encountered an issue with the potent combo of: Next.js App Router, Edge runtime, Pino and Datadog. After much googling, I couldn't find a solution to this problem, hence this keyword-stuffed blog post for future me/others.
+I encountered an issue with the potent combo of: Next.js App Router, Edge runtime, Server Actions, Pino and Datadog. After much googling, I couldn't find a solution to this problem, hence this keyword-stuffed blog post for future me/others.
 
 First up: logs were appearing in Datadog over multiple lines, which broke the `stdout` formatting rendering the logs unusable. Note, this only happened with the Edge runtime, not the standard Node variation. To solve this, I added a new section to the standard pino config:
 
