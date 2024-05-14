@@ -61,7 +61,7 @@ useEffect(() => {
 Which could be abstracted one step further into another helper:
 
 ```js
-export const fetchWithFriction = async (url, params = {}, friction = 0) => {
+export const fetchWithFriction = async (url, { friction = 0, ...params } = {}) => {
     const [response] = await Promise.all([
         fetch(url, params),
         sleep(friction, { signal: params?.signal })
@@ -70,5 +70,5 @@ export const fetchWithFriction = async (url, params = {}, friction = 0) => {
     return response;
 }
 
-await fetchWithFriction('/place-order', { signal }, 1000);
+await fetchWithFriction('/place-order', { friction: 1000, signal });
 ```
