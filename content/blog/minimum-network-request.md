@@ -72,3 +72,5 @@ export const fetchWithFriction = async (url, { friction = 0, ...params } = {}) =
 
 await fetchWithFriction('/place-order', { friction: 1000, signal });
 ```
+
+Thank you to [Szymon Pajka](https://medium.com/@szympajka/) for reviewing this article 👏
