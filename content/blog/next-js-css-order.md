@@ -58,13 +58,13 @@ Any unlayered styles (existing styles without a wrapping layer block), will auto
 Amazingly, this also works in SCSS (we did _not_ think it would):
 
 ```scss
-@layer reset, thc, theme, utopia, utilities;
+@layer reset, designSystem, theme, utopia, utilities;
 
 @layer reset {
     @import './reset.scss';
 }
 
-@layer thc {
+@layer designSystem {
     @import '@motorway-design-system/src/styles/reset.scss';
     @import '@motorway-design-system/src/styles/base.scss';
 }
