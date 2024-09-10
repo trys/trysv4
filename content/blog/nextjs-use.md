@@ -8,7 +8,7 @@ In the constant bid to improve page performance, I discovered `use`, an API rece
 
 [use](https://react.dev/reference/react/use) lets you read the value of a promise (or context if you're that way inclined). It feels like a bit of syntactic sugar, to avoid writing `.then()` or `await` within your component, but I'm sure there's more to it than that.
 
-## When is it useful?
+## When is 'use' useful?
 
 ![](/images/blog/use-carousel.jpg)
 
@@ -16,21 +16,18 @@ Take this carousel. Pretty standard stuff at the end of a product page. Definite
 
 Instead, we can still begin fetching the data on the server, but combine `<Suspense>` and `use` to handle the loading state before resolving it on the client.
 
-## What does it look like?
+## What does 'use' look like?
 
 Before:
 
 ```tsx
 export default async function Page() {
-	// Wait for the data to load
+    // Wait for the data to load
     const vehicles = await getVehiclesFromDB();
 
-    return {
-        <>
-            // ... render the page
-            <SimilarVehicles vehicles={vehicles} />
-        </>
-    }
+    return (
+        <SimilarVehicles vehicles={vehicles} />
+    );
 }
 
 export const SimilarVehicles: React.FC<{
@@ -56,14 +53,11 @@ export default async function Page() {
     // Crack on rendering the page
     const vehiclesPromise = getVehiclesFromDB();
 
-    return {
-        <>
-            // ... render the page
-            <Suspense fallback={<LoadingState />}>
-                <SimilarVehicles vehiclesPromise={vehiclesPromise} />
-            </Suspense>
-        </>
-    }
+    return (
+        <Suspense fallback={<LoadingState />}>
+            <SimilarVehicles vehiclesPromise={vehiclesPromise} />
+        </Suspense>
+    );
 }
 
 export const SimilarVehicles: React.FC<{
@@ -85,7 +79,7 @@ export const SimilarVehicles: React.FC<{
 };
 ```
 
-## How does it work?
+## How does 'use' work?
 
 By continuing to call the vehicles database from the server, we've kept our precious server-side secrets safe. But by omitting `await`, we can crack on with streaming the page to the user much quicker than before.
 
@@ -93,6 +87,6 @@ React pops our fallback component in place, and continues to stream the page in 
 
 You can even use `ErrorBoundary` to handle promise failures. Pretty neat.
 
-## Does it work without JS?
+## Does 'use' work without JS?
 
 Sadly not. React needs JS at runtime to swap out the loading content with the deferred content. Non-JS users will be left with the loading component for infinity. So this isn't appropriate for core user journey functionality, or spider-friendly content.
