@@ -236,3 +236,8 @@
   min-inline-size: 50%;
   align-self: flex-start;
 }
+
+.e-content > ol,
+.e-content > ul {
+  padding-left: var(--space-m);
+}
