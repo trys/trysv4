@@ -32,4 +32,4 @@ Here are a few snaps:
 ![Imran Afzal presenting the final talk of the day on reflection, standing in front of a large FFConf banner](/images/blog/ffconf-2024-7.jpg)
 ![The conference organisers, and most of the 2024 speakers standing and waving on stage.](/images/blog/ffconf-2024-5.jpg)
 
-
+{{< button "https://flickr.com/photos/remysharp/albums/72177720321895884/" >}}The full album on Flickr{{</ button >}}
