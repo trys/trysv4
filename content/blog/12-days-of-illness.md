@@ -9,7 +9,7 @@ December feels like an advent calendar of illnesses right now, so we took it a b
 <ol reversed>
 <li>Dr's phonecalls</li>
 <li>New teeth</li>
-<li>A&E visits</li>
+<li>A&E visits (strike that, it's 11 now)</li>
 <li>Bottles of Calpol</li>
 <li>Times sent home from nursery</li>
 <li>Extreme fevers</li>
