@@ -1,7 +1,7 @@
 ---
 title: "Zeldman on Consulting"
 date: 2018-02-27T20:57:43Z
-categories: Useful
+categories: Web
 ---
 
 Yes! [This article](http://www.zeldman.com/2018/02/07/consulting/) is golden.

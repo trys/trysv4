@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #8'
 date: 2019-05-03
-categories: Web
+categories: Weeknotes
 ---
 
 It's been a productive week, and fortunately, largely without incident following [last week](/blog/weeknotes-7/).

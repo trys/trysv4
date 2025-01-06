@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #1'
 date: 2019-03-17
-categories: Web
+categories: Weeknotes
 ---
 
 I've not blogged in weeks and that ain't good. I'm not 100% why that is, there's certainly a lot of _life_ going on right now. Regardless, a little weeknotes update seems like a good catalyst.

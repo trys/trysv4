@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #6'
 date: 2019-04-19
-categories: Web
+categories: Weeknotes
 ---
 
 It's been yet another frantic but enjoyable week. Following on from the Sergey launch last Friday, I spent a lot of my weekend writing documentation, blog posts and, most surprisingly, a talk about the side project!

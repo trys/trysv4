@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #17'
 date: 2019-07-05
-categories: Web
+categories: Weeknotes
 ---
 
 There's a been an awful lot of context switching this week, so it's difficult to tell whether it's been effective or not. I think on the whole, it has been.

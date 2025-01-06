@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #9'
 date: 2019-05-10
-categories: Web
+categories: Weeknotes
 ---
 
 It's the end of a another productive week, and scarily, already week 9 of these notes! Time is flying by.

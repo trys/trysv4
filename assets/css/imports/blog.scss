@@ -8,6 +8,21 @@
 
 .blog-header {
   margin-bottom: var(--gutter);
+  text-align: left;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--step--1);
+
+  & li {
+    margin: 0;
+  }
 }
 
 .post {

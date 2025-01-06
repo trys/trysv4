@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #5'
 date: 2019-04-12
-categories: Web
+categories: Weeknotes
 ---
 
 It's been a great week of 'doing' following last week's theme of observation and generally getting bedded in.

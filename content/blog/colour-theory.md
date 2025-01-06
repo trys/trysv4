@@ -1,7 +1,7 @@
 ---
 title: "Colour theory & HSL"
 date: 2018-03-01T09:53:43Z
-categories: Useful
+categories: Web
 ---
 
 > Words can’t express how thrilling it is to be able to make these kinds of color adjustments so intuitively in code.

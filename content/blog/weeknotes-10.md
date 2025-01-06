@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #10'
 date: 2019-05-17
-categories: Web
+categories: Weeknotes
 ---
 
 Monday's are usually awash with meetings, and this week wasn't any different, but there was still time to get the meaty header/navigation component merged in. We're starting to aggressively track time, so it'll be interesting to look back and see how long this component took and what we can learn going forward.

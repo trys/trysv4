@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #13'
 date: 2019-06-07
-categories: Web
+categories: Weeknotes
 ---
 
 It's fair to say the past three weeks have been stressful. I haven't had the energy to put any real work into side projects or blog at all, which sucks. I've gone through many dry spells in the past, but usually that's down to apathy or burnout. This is 100% down to stress: work stress + life stress. But that's positive in a weird sort of way. It feels like a season of business, rather than a lack of drive to code. I'm not sure if that's an important distinction, but it feels like it.
