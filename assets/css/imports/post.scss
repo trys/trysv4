@@ -16,5 +16,9 @@
 
   & h1 {
     margin-bottom: var(--space-3xs);
+
+    &:last-child {
+      margin-bottom: var(--space-s);
+    }
   }
 }

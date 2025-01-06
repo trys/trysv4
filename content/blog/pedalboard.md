@@ -6,11 +6,11 @@ description: How I went about buliding a pedalboard in JS with Web Audio API
 image: /images/blog/pedals.png
 ---
 
-I've just launched a new side project in the form of a [JavaScript guitar pedalboard](https://pedalboard.netlify.com/). It's a handy crossover of my coding and guitaring hobbies.
+I've just launched a new side project in the form of a [JavaScript guitar pedalboard](https://pedalboard.netlify.app/). It's a handy crossover of my coding and guitaring hobbies.
 
 {{< youtube "OJVmZ7hbVPQ" >}}
 
-{{< button "https://pedalboard.netlify.com/" >}}Try the pedalboard out for yourself!{{</ button >}}
+{{< button "https://pedalboard.netlify.app/" >}}Try the pedalboard out for yourself!{{</ button >}}
 
 ---
 
@@ -236,7 +236,7 @@ This means we can move the `updateNode(feedback.gain)` call into another functio
 
 ## Creating the UI
 
-[![The pedalboard](/images/blog/pedals.png)](https://pedalboard.netlify.com/)
+[![The pedalboard](/images/blog/pedals.png)](https://pedalboard.netlify.app/)
 
 There wasn't really a conscious decision to write this in vanilla JS, it sort of just happened by extension of hacking and getting a bit carried away.
 
@@ -316,7 +316,7 @@ Disclaimer, I've only really tested this in Chrome and Firefox, plus Web Audio A
 
 The code is also visible on [GitHub](https://github.com/trys/pedalboard), and uses [Sergey](https://sergey.trysmudford.com) for compilation.
 
-{{< button "https://pedalboard.netlify.com/" >}}Try the pedalboard out!{{</ button >}}
+{{< button "https://pedalboard.netlify.app/" >}}Try the pedalboard out!{{</ button >}}
 
 
 ---

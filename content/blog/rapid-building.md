@@ -21,7 +21,7 @@ One of my passions is rapidly testing ideas on the web. Development pace is one 
 
 It's worth saying upfront that rapid builds are **definitely not** for everything. In fact, they should be used sparingly for prototypes or side projects that aren't business-critical. Like the [good, fast, cheap](https://fastgood.cheap/) venn diagram, quick builds are inherently flawed, but they do still have merit.
 
-I really love a thorough plan and technical spec, but there's something wonderful about rapidly spiking a problem and not worrying too much about the details. It's how [Sergey](https://sergey.trysmudford.com), [JS Pedalboard](https://pedalboard.netlify.com/), [Javasnack](https://javasnack.cool/) and several marginally popular [F1 parody websites](https://wtf1.com/post/someones-made-a-has-mclaren-broken-down-today-website/) came about.
+I really love a thorough plan and technical spec, but there's something wonderful about rapidly spiking a problem and not worrying too much about the details. It's how [Sergey](https://sergey.trysmudford.com), [JS Pedalboard](https://pedalboard.netlify.app/), [Javasnack](https://javasnack.cool/) and several marginally popular [F1 parody websites](https://wtf1.com/post/someones-made-a-has-mclaren-broken-down-today-website/) came about.
 
 > The stack choice isn't really important.
 

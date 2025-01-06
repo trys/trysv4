@@ -13,7 +13,7 @@ After a Saturday of hacking, I'm pleased to say the loop pedal is alive and work
 
 {{< youtube "A-qqC3x6_Bk" >}}
 
-{{< button "https://pedalboard.netlify.com/" >}}Try the pedalboard out for yourself!{{</ button >}}
+{{< button "https://pedalboard.netlify.app/" >}}Try the pedalboard out for yourself!{{</ button >}}
 
 The video also uses the new Smoosh compressor and `Math.pow()` overdrive.
 
@@ -79,4 +79,4 @@ MIDI control as a must, as seen by the video. It works in the same way as outlin
 
 And yes, `for(loop)` was the best name I came up with! Please have a play and let me know what you think!
 
-{{< button "https://pedalboard.netlify.com/" >}}Try the pedalboard out for yourself!{{</ button >}}
+{{< button "https://pedalboard.netlify.app/" >}}Try the pedalboard out for yourself!{{</ button >}}

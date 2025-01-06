@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="wrap insulate">
 	<div class="single content h-entry {{ .Params.className }}">
-		<header class="center">
+		<header>
 			<h1 class="p-name">{{ .Title }}</h1>
 			{{ if .Params.subtitle }}<h2 class="subtitle">{{ .Params.subtitle }}</h2>{{ end}}
 			{{ if eq .CurrentSection.RelPermalink "/blog/" }}

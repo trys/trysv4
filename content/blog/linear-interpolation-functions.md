@@ -11,7 +11,7 @@ What I've learned is that interpolation isn't just about animation, or even abou
 
 <small>Aside: that might sound a bit heavy or dry, but it's how my brain works! I love how different coding concepts 'click' for different people in different ways.</small>
 
-Among more traditional animation-y things, I've used these techniques to calculate rotary dial positions on the [guitar pedalboard](https://pedalboard.netlify.com/), mapped usernames to fallback avatars on [Daisie](https://www.daisie.com/) and plotted typographic graphs on a side project I'm currently building.
+Among more traditional animation-y things, I've used these techniques to calculate rotary dial positions on the [guitar pedalboard](https://pedalboard.netlify.app/), mapped usernames to fallback avatars on [Daisie](https://www.daisie.com/) and plotted typographic graphs on a side project I'm currently building.
 
 ## The four functions
 
