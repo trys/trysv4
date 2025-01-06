@@ -18,14 +18,14 @@
 							</li>
 						{{ end }}
 					{{ end }}
-					{{ if eq .Path "/blog" }}
+					{{ if eq .Path "/blog/" }}
 						<li aria-current="true">
 							<span>All</span>
 							<output>({{ where .Site.RegularPages "Section" "blog" | len }})</output>
 						</li>
 					{{ else }}
 						<li>
-							<a href="/blog">All</a>
+							<a href="/blog/">All</a>
 							<output>({{ where .Site.RegularPages "Section" "blog" | len }})</output>
 						</li>
 					{{ end }}
