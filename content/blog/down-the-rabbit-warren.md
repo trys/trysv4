@@ -1,7 +1,7 @@
 ---
 title: Down the rabbit warren
 date: 2018-09-22
-categories: Other
+categories: Web
 ---
 
 Thanks to a tip-off from [Tom](http://tomruzyllo.com), some links from my sister and a great slack community, much of the evening has been spent heading down a warren of blog posts and essays.

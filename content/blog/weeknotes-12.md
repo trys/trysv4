@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #12'
 date: 2019-05-31
-categories: Web
+categories: Weeknotes
 ---
 
 [Last week](/blog/weeknotes-11/) was draining, and that ran into the early parts of this week too - in fact the 'classic' weekend was much of a write off. But we had a bonus rollover weekend bank holiday!

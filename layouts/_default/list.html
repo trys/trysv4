@@ -1,9 +1,15 @@
 {{ define "main" }}
 	<div class="blog">
 		<div class="wrap insulate">
-			<div class="blog-header center">
+			<div class="blog-header">
 				<h1 class="p-name blog-title">{{ .Title }}</h1>
 				{{ .Content }}
+
+				<ul class="categories-list">
+					{{ range $key, $value := .Site.Taxonomies.categories }}
+						<li><a href="/categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+					{{ end }}
+				</ul>
 			</div>
 
 			<div class="posts">

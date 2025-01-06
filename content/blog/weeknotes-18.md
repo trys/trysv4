@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #18'
 date: 2019-07-13
-categories: Web
+categories: Weeknotes
 ---
 
 This week was great and busy, but I'm not feeling overly inspired to write weeknotes. Here's a few points:

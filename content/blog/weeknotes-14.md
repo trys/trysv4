@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #14'
 date: 2019-06-14
-categories: Web
+categories: Weeknotes
 ---
 
 It's been a much more positive week! 🎉

@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #15'
 date: 2019-06-21
-categories: Web
+categories: Weeknotes
 ---
 
 It's been a productive week of knuckling down with the work project.

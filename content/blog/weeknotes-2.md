@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #2'
 date: 2019-03-22
-categories: Web
+categories: Weeknotes
 ---
 
 One of the original intentions for [JournalBook](https://www.jounalbook.co.uk) was to act as a reminder of day-to-day life. It has become very useful when compiling these weeknotes to have a daily summary to hand. But also as noted at the time:

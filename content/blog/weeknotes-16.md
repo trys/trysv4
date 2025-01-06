@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #16'
 date: 2019-06-27
-categories: Web
+categories: Weeknotes
 ---
 
 I'm cheating a bit this week in writing these notes on Thursday and Saturday. Friday is [Patterns Day](https://patternsday.com/) and I'm gonna be a little busy taking photographs and listening to the amazing talks!

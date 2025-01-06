@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #11'
 date: 2019-05-24
-categories: Web
+categories: Weeknotes
 ---
 
 This might be a more succinct weeknotes as I'm writing on the train home after leaving work early feeling sick 🤒

@@ -1,7 +1,7 @@
 ---
 title: "The web can be weaponised"
 date: 2018-03-12T13:06:00Z
-categories: Useful
+categories: Web
 ---
 
 Happy Birthday WWW!

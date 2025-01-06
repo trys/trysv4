@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #4'
 date: 2019-04-05
-categories: Web
+categories: Weeknotes
 ---
 
 Well then! The end of my first week at Clearleft! It's been an amazing introductory time getting to know the team, the processes and the codebases.

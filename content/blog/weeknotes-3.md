@@ -1,7 +1,7 @@
 ---
 title: 'Weeknotes #3'
 date: 2019-03-29
-categories: Web
+categories: Weeknotes
 ---
 
 This week saw the end of my tenure at [daisie](https://www.daisie.com)! The main goals were:
