@@ -18,7 +18,7 @@
 							</li>
 						{{ end }}
 					{{ end }}
-					{{ if eq .Path "/blog/" }}
+					{{ if eq .RelPermalink "/blog/" }}
 						<li aria-current="true">
 							<span>All</span>
 							<output>({{ where .Site.RegularPages "Section" "blog" | len }})</output>
