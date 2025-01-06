@@ -14,7 +14,7 @@
 .categories-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3xs) var(--space-xs);
+  gap: 0 var(--space-xs);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,6 +22,10 @@
 
   & li {
     margin: 0;
+  }
+
+  & output {
+    font-size: var(--step--2);
   }
 }
 

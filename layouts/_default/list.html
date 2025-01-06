@@ -6,8 +6,28 @@
 				{{ .Content }}
 
 				<ul class="categories-list">
+					{{ $sectionName := .Title | urlize }}
 					{{ range $key, $value := .Site.Taxonomies.categories }}
-						<li><a href="/categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+						{{ if eq $sectionName ($key | urlize) }}
+							<li aria-current="true">
+								<span>{{ $key | humanize }}</span> <output>({{ len $value }})</output>
+							</li>
+						{{ else }}
+							<li>
+								<a href="/categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> <output>({{ len $value }})</output>
+							</li>
+						{{ end }}
+					{{ end }}
+					{{ if eq .Path "/blog" }}
+						<li aria-current="true">
+							<span>All</span>
+							<output>({{ where .Site.RegularPages "Section" "blog" | len }})</output>
+						</li>
+					{{ else }}
+						<li>
+							<a href="/blog">All</a>
+							<output>({{ where .Site.RegularPages "Section" "blog" | len }})</output>
+						</li>
 					{{ end }}
 				</ul>
 			</div>
