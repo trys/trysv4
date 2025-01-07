@@ -5,7 +5,7 @@ categories: Web
 description: "I spent the evening making performance updates on my site"
 tags:
   - website
-  - digital gardening
+  - digital-gardening
 ---
 
 After [falling down the rabbit warren](/blog/down-the-rabbit-warren/), I thought it was time to perform some housekeeping on my site. This was spread over two evenings with the commits from day one [here](https://github.com/trys/trysv4/commit/b5a72e3b3404e9892d8b66100e92b2972cf2dbde). The day two commits are linked from their respective headings below.

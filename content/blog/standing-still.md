@@ -5,7 +5,7 @@ categories: Web
 tags:
   - website
   - performance
-  - digital gardening
+  - digital-gardening
 ---
 
 When I launched this site, it hit 100's across the board on Lighthouse. Using a [static site generator](https://gohugo.io/) and very little JS did most of the heavy lifting. But when I checked a couple of days ago, things weren't looking so rosy.
