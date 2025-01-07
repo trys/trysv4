@@ -3,6 +3,8 @@ title: Mac OS Dark Mode with CSS & JS
 categories: Web
 date: 2019-01-09
 description: 'Manual and automatic dark mode switching in CSS & JS'
+tags:
+  - side project
 ---
 
 I've been using the commute to add a few [JournalBook](https://journalbook.co.uk) features. Yesterday saw the addition of the prize feature everyone loves but very few need: [**Dark Mode!**](https://twitter.com/trysmudford/status/1082547315146133505) Here's how it was built:

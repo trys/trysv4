@@ -2,6 +2,10 @@
 title: "Speaking at CSS Cafe: Fluid Responsive Design"
 date: 2024-03-25
 categories: Video
+tags:
+  - utopia
+  - speaking
+  - design engineering
 ---
 
 {{< youtube xd6wSHqGreQ >}}

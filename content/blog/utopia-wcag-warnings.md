@@ -3,6 +3,10 @@ title: Utopia WCAG warnings
 date: 2024-01-29
 categories: Web
 description: "Warnings & WCAG 1.4.4"
+tags:
+  - utopia
+  - css
+  - accessibility
 ---
 
 Another day, another Utopia update. This time, we're addressing some accessibility concerns that relate to fluid typography. [Adrian&nbsp;Roselli](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html) has been warning about the dangers of untested fluid typography for many years. The issue derives from the interplay of `vw/vi` units and browser zoom.

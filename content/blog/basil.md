@@ -2,6 +2,8 @@
 title: 'Basil: Secret Santa as a Service'
 date: 2019-12-09
 categories: Web
+tags:
+  - side project
 ---
 
 I recently launched [basil.christmas.trysmudford.com](https://basil.christmas.trysmudford.com/), a 'Secret Santa as a service'. Basil has two modes. The first is a traditional list generator, letting you shuffle the participants and print off a nice, foldable list of names. The second is a little more involved, but considerably more exciting! A 'head elf' from your company can sign up and enter all participant names into the system. Basil will email everyone, letting them know who their giftee is.

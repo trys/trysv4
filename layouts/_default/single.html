@@ -11,11 +11,20 @@
 
 		<div class="e-content">
 			{{ .Content }}
+
+			{{ if eq .Params.categories "External Post" }}
+				{{ if eq .Content "" }}
+					<a href="{{ .Params.link }}" class="button">
+						Read on {{ .Params.for }}
+					</a>
+				{{ end }}
+			{{ end }}
 		</div>
 
 		{{ if eq .CurrentSection.RelPermalink "/blog/" }}
 			<hr />
 			{{ partial  "meta" . }}
+			{{ partial  "related" . }}
 		{{ end }}
 
 	</div>

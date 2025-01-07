@@ -4,6 +4,9 @@ date: 2021-02-12
 categories: Web
 description: "How do you get components to respect the rendering conditions of their parent?"
 image: /images/blog/space-aware-components.png
+tags:
+  - utopia
+  - css
 ---
 
 {{< alert "TLDR" >}}

@@ -3,6 +3,8 @@ title: "Everyday I'm Shuffling"
 date: 2020-12-17
 categories: Web
 description: "How to unshuffle cards and shuffle arrays"
+tags:
+  - side project
 ---
 
 I've been thinking about shuffling cards and arrays. That might sound odd, but having built a fair few [spreadsheet games](https://www.trysmudford.com/blog/virtual-games-boggle/), and played an awful lot of cards this year, I guess it makes sense.

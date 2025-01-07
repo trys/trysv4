@@ -2,6 +2,8 @@
 title: A talk at Codebar Brighton
 date: 2019-04-17
 categories: Web
+tags:
+  - side project
 ---
 
 I gave a talk about [Sergey](https://sergey.trysmudford.com/) at [Codebar Brighton](https://codebar.io/brighton) on Tuesday night! Other than a post-hackathon recap, this was my first foray into public speaking - and for a first go with limited preparation time, I think it went [pretty well](https://twitter.com/CodebarBrighton/status/1118504901301157889)!

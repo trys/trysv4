@@ -3,6 +3,9 @@ title: Currying in CSS?
 date: 2020-02-26
 categories: Web
 description: Is this currying in CSS? Probably not, but maybe?
+tags:
+  - utopia
+  - css
 ---
 
 There were lots of interesting discoveries found whilst developing [Utopia](https://utopia.fyi/). This one came when declaring CSS custom properties.

@@ -3,6 +3,11 @@ title: I wasted a day on CSS selector performance to make a website load 2ms fas
 description: A tale of diminishing returns...
 date: 2024-10-01
 categories: Web
+tags:
+  - next.js
+  - performance
+  - css
+  - selectors
 ---
 
 I've been doing some performance tinkering at work. It's written in [Next.js](https://nextjs.org/) and employs judicious use of [Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components) to minimise client-side JS. I'm really proud of it. It scores ~90 on Lighthouse mobile, which for Next.js isn't too bad. Sure, it pains me to see the tiny amount of client-side interaction resulting in such a large bundle, but it's the price we pay for developer convenience, apparently. But I digress.

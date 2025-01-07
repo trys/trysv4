@@ -2,6 +2,10 @@
 title: 12 days of illness
 date: 2024-12-12
 categories: Life
+tags:
+  - life
+  - family
+  - health
 ---
 
 December feels like an advent calendar of illnesses right now, so we took it a bit further and documented the whole year of questionable health in the family. You might know the tune...

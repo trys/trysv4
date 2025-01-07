@@ -3,6 +3,9 @@ title: 2024 Wrapped
 date: 2024-12-31
 categories: Life
 image: /images/blog/2024.jpg
+tags:
+  - life
+  - family
 ---
 
 I was going to write a bit of a 2024 recap, but quite frankly, don't have the energy to do so. It's been a tricky <del>Christmas break</del> year full of illness and stress and finding the headspace and time to pen anything feels impossible right now.

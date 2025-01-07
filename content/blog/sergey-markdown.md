@@ -3,6 +3,8 @@ title: 'Sergey + Markdown + Tests + Folders + ENV + Exclusion'
 date: 2019-04-23
 description: Markdown and much more added to the little static site generator
 categories: Web
+tags:
+  - side project
 ---
 
 After a bank holiday weekend of hacking, [Sergey](https://sergey.trysmudford.com) has some exciting new features!

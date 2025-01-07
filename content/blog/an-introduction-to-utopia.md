@@ -3,6 +3,8 @@ title: A video introduction to Utopia
 date: 2022-03-08
 categories: Video
 description: "The origins of Utopia, explained"
+tags:
+  - utopia
 ---
 
 {{< youtube DDuGtN-GakA >}}

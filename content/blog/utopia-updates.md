@@ -3,6 +3,9 @@ title: Utopia Updates
 date: 2024-01-26
 categories: Web
 description: "CSS & SCSS generator updates"
+tags:
+  - utopia
+  - css
 ---
 
 Utopia has recently released two new plugins to npm: `utopia-core` and `utopia-core-scss`. I wrote about the [SCSS library](https://utopia.fyi/blog/utopia-core-scss) last week, so now it's time to dig into `utopia-core`.

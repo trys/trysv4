@@ -2,6 +2,9 @@
 title: There it is again, that fluid feeling
 date: 2024-05-18
 categories: Web
+tags:
+  - utopia
+  - css
 ---
 
 For the first few years, the only way to add Utopian fluid scales to your site was to copy & paste the generated CSS. A "downside" of this delivery system is we have _absolutely no idea_ who uses Utopia.

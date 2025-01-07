@@ -2,6 +2,8 @@
 title: Line on side headings in CSS
 date: 2018-05-09
 categories: Web
+tags:
+  - css
 ---
 
 A discussion started in our Slack channel on how to best accomplish a design like this:

@@ -2,6 +2,11 @@
 title: 'Next.js edge logging with Pino/Datadog'
 date: 2024-04-30
 categories: Web
+tags:
+  - next.js
+  - logging
+  - pino
+  - datadog
 ---
 
 I encountered an issue with the potent combo of: Next.js App Router, Edge runtime, Server Actions, Pino and Datadog. After much googling, I couldn't find a solution to this problem, hence this keyword-stuffed blog post for future me/others.

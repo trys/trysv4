@@ -4,6 +4,9 @@ date: 2022-05-16
 categories: Web
 image: /images/blog/e-ds-1.jpg
 description: "How to use this flexible static site generator to create the home for digital design in your company"
+tags:
+  - eleventy
+  - design system
 ---
 
 One of the standout projects while working at [Clearleft](https://www.clearleft.com) was collaborating with Malvern Panalytical to build the foundations of [their design system](https://brand.malvernpanalytical.com/). Four tech stacks within the business dictated that this system would centre around CSS, rather than language-driven component markup.

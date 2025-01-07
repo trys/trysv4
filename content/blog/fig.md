@@ -3,6 +3,9 @@ title: Fig
 date: 2023-12-17
 categories: Life
 description: Remembering our fig that never was
+tags:
+  - life
+  - family
 ---
 
 Content-warning: miscarriage

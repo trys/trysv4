@@ -2,6 +2,10 @@
 title: "Figma plugins & asynchronous updates"
 date: 2024-04-10
 categories: Web
+tags:
+  - utopia
+  - figma
+  - typescript
 ---
 
 Utopia has two Figma plugins: [Fluid type & space calculator](https://www.figma.com/community/plugin/951884648789524000/utopia-fluid-type-space-calculator) and [Batch update text styles](https://www.figma.com/community/plugin/979005485047252094/utopia-batch-update-text-styles). Hopefully their names describe what they do.

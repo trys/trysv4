@@ -3,6 +3,11 @@ title: Declarative Tracking
 date: 2023-12-08
 categories: Web
 description: 'A declarative approach to tracking events in a reactive project'
+tags:
+  - next.js
+  - performance
+  - tracking
+  - js
 ---
 
 On 'reactive' projects, it's pretty common to attach event tracking to buttons/forms etc using inline `onClick`/`onSubmit` handlers. It usually starts with the harmless "can we track how many times this button is pressed" request, and without thinking, you attach a handler that looks something like this: `onClick={() => ga('event'))`. This continues for many months & years until your codebase is littered with these inline tracking functions.

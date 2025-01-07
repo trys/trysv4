@@ -2,6 +2,9 @@
 title: Fixing Next.js's CSS order using cascade layers
 date: 2024-08-23
 categories: Web
+tags: 
+  - next.js
+  - css
 ---
 
 Somewhere in the patch/minor releases between `14.0.2` and `14.2.0`, [Next.js](https://nextjs.org/) made a _fundamental_ change to the way it orders CSS. More problematically, it also introduced a discrepancy between development and production builds, where the CSS chunks would be in entirely different orders between the environments. Incredibly, this is documented, and intentional:

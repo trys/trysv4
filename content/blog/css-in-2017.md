@@ -2,6 +2,8 @@
 title: CSS in 2017
 date: 2017-12-09
 categories: Web
+tags:
+  - css
 ---
 
 Since beginning to dip my toes into the world of JS frameworks, I’ve noticed patterns emerging about how developers ‘should’ be styling websites. Some of those suggestions go against what I’ve learned building websites (as opposed to web ‘apps’, that’s a topic for another day), so I’m keen to find out what the ‘correct’ solutions are.

@@ -4,6 +4,8 @@ date: 2021-02-17 07:00:00
 categories: Web
 image: /images/blog/og-de-1.jpg
 description: "Exploring design engineering, and deciding whether that's what I do"
+tags:
+  - design engineering
 ---
 
 {{< alert "Series" >}}

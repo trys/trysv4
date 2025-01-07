@@ -2,6 +2,9 @@
 title: Making a loop pedal with MediaRecorder
 date: 2019-05-13
 categories: Web
+tags:
+  - side project
+  - web audio api
 ---
 
 After building the [JS pedalboard](/blog/pedalboard/), I ended the launch post with an ambitious stretch goal:

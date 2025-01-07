@@ -4,6 +4,8 @@ date: 2020-10-01
 categories: Web
 description: Video, slides and transcript from my conference talk on Jamstack, teams and requirement gathering
 image: /images/blog/uniting-thumbnail.jpg
+tags:
+  - speaking
 ---
 
 I had the wonderful opportunity to speak at GIDS Web live, and talk about how you can use a Jamstack project to unite a team. The slides are [available here](https://noti.st/trys/JskKCk/uniting-the-team-with-jamstack), and below is the subtitled video and a full transcript of that talk.

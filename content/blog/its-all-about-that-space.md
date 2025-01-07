@@ -3,6 +3,9 @@ title: "It's all about that space"
 date: 2022-11-23
 categories: Web
 description: "'bout that space. Not 12 column grid systems."
+tags:
+  - utopia
+  - css
 ---
 
 I've been working with [James](https://www.hustlersquad.net/) on the new [Utopia Grid Calculator](https://utopia.fyi/grid/calculator/), the latest tool in the Utopia arsenal. It asks for four pieces of information:

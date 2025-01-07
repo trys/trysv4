@@ -3,6 +3,8 @@ title: LetterImages
 date: 2019-02-16
 categories: Web
 description: ASCII images and how I did it
+tags:
+  - side project
 ---
 
 I've made [LetterImages](https://letterimages.netlify.com/)! It's a little website that renders images as ASCII. Not a hugely imaginative name, I know.

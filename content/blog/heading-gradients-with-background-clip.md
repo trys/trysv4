@@ -2,6 +2,10 @@
 title: Heading gradients
 date: 2018-11-18
 categories: Web
+tags:
+  - css
+  - website
+  - digital gardening
 ---
 
 Inspired by Mandy Michael's [amazing talk at ViewSource 2018](https://www.youtube.com/watch?v=5qgUC_z8syw), I made a small tweak to my website. The `h1` title at the top of this post now has a fancy gradient as a fill colour.

@@ -3,6 +3,10 @@ title: The Utopian Journey
 date: 2024-03-22
 categories: Web
 description: Spotting your design team on the fluid responsive design spectrum
+tags:
+  - utopia
+  - css
+  - design system
 ---
 
 When chatting to design teams about Utopia, the most common question is: *"But where would we even start?"*.

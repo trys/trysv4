@@ -4,6 +4,8 @@ date: 2018-12-31
 categories: Web
 description: JournalBook is a private, offline-first personal journal.
 image: /images/blog/journalbook.jpg
+tags:
+  - side project
 ---
 
 I've been working on a little web product over the Christmas break, and I'm proud to announce version 1 of [JournalBook](https://journalbook.co.uk) 🎉

@@ -2,6 +2,8 @@
 title: 'Sergey'
 date: 2019-04-13
 categories: Web
+tags:
+  - side project
 ---
 
 Yesterday saw the launch of [Sergey](https://sergey.trysmudford.com), a tiny little static site generator. It's been around a week in the making, with the idea triggered by discussions with Cassie at [Homebrew website club](https://indieweb.org/Homebrew_Website_Club#Brighton) (come along, it's great!).

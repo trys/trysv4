@@ -4,6 +4,9 @@ date: 2019-05-06 13:00:00
 categories: Web
 description: How I went about buliding a pedalboard in JS with Web Audio API
 image: /images/blog/pedals.png
+tags:
+  - side project
+  - web audio api
 ---
 
 I've just launched a new side project in the form of a [JavaScript guitar pedalboard](https://pedalboard.netlify.app/). It's a handy crossover of my coding and guitaring hobbies.

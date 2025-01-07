@@ -151,6 +151,10 @@
         grid-row: span 3;
       }
     }
+
+    &--related h2 {
+      font-size: var(--step-1);
+    }
   }
 }
 
@@ -292,4 +296,31 @@
 
 :root.dark .aboutPage {
   background: linear-gradient(hsla(178, 53%, 22%, 0.2), var(--darker) 50vh);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin: 0 0 var(--space-s);
+  padding: 0;
+  list-style: none;
+
+  & li + li {
+    margin: 0;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: var(--space-4xs) var(--space-2xs);
+  margin: 0;
+  background: var(--darkest);
+  color: var(--white);
+  font-size: var(--step--2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: 700;
 }

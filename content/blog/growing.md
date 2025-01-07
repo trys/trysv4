@@ -2,6 +2,9 @@
 title: Growing
 date: 2024-06-06
 categories: Web
+tags:
+  - utopia
+  - business
 ---
 
 On the back of Zach's post on the journey to make [11ty fully independent](https://www.zachleat.com/web/independent-sustainable-11ty/), I've been thinking about the routes to scaling a project. I work on two side projects alongside my [9-5](/blog/a-year-at-motorway): [Utopia](https://utopia.fyi), and an as yet unreleased piece of software my wife and I have created for her workplace.

@@ -4,6 +4,9 @@ date: 2022-10-19
 categories: Web
 image: /images/blog/utopia-home.jpg
 description: "Utopia has a new home page with a nifty demo to (hopefully) show what the fuss is about. Here's how it works."
+tags:
+  - utopia
+  - css
 ---
 
 [Utopia](https://utopia.fyi) has a new home page with a nifty demo to (hopefully) show what the fuss is about. This is a quick write up on how it works under the hood...

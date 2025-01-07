@@ -2,6 +2,12 @@
 title: "Using 'use' to stream deferred content"
 date: 2024-08-30
 categories: Web
+tags: 
+  - next.js
+  - react
+  - use
+  - suspense
+  - performance
 ---
 
 In the constant bid to improve page performance, I discovered `use`, an API recently shipped by React, and made available in Next.js. You'd be forgiven for not immediately understanding its function, given the oh-so-descriptive name.

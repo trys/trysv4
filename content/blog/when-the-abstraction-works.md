@@ -3,6 +3,9 @@ title: When the abstraction works
 date: 2024-06-06 18:30:00
 categories: Web
 description: "The difference between Wonderwall and type scales"
+tags:
+  - utopia
+  - css
 ---
 
 Abstractions should be justified; without that, they're just premature optimization.

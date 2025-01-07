@@ -4,6 +4,8 @@ date: 2024-11-13
 categories: Web
 image: /images/blog/ffconf-2024-2.jpg
 description: A few snaps and thoughts from FFConf 2024
+tags:
+  - FFConf
 ---
 
 I don't remember a single line of code from [FFConf 2024](https://2024.ffconf.org/).

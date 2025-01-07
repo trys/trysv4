@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: Blog
 ---
 
 Posts, thoughts, links and photos

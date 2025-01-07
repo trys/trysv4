@@ -4,6 +4,12 @@ date: 2024-10-09
 categories: Web
 description: "Intrinsic design, container queries and cqi typography"
 image: "/images/blog/hyper-alt-1.jpg"
+tags:
+  - css
+  - web components
+  - container queries
+  - shadow dom
+  - utopia
 ---
 
 Some time ago, I was assigned the task to build a new component: an embeddable call to action to sign up for email alerts. Unbranded, it looked roughly like this:

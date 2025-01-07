@@ -2,6 +2,8 @@
 title: Named slots with Sergey
 date: 2019-04-13
 categories: Web
+tags:
+  - side project
 ---
 
 Sergey launched with two main features:

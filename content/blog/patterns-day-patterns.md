@@ -4,6 +4,9 @@ date: 2024-03-11
 categories: Web
 description: "Common threads from the 2024 edition of Patterns day"
 image: /images/blog/patterns-day-2024.jpeg
+tags:
+  - utopia
+  - conference
 ---
 
 [Patterns Day 2024](https://patternsday.com/) was a fantastic celebration of all things Design System, held in the timeless Duke of York's Picturehouse in Brighton. I was fortunate enough to attend with several hats; as a Motorway design system contributor, as an ex-Clearleftie, and as a Utopia co-founder, and it was great to hang out with so many people in the design system space.

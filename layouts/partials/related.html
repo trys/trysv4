@@ -1,0 +1,40 @@
+{{ $related := where (.Site.RegularPages.Related .) "Type" "blog" | first 4 }}
+{{ $tags := .Params.tags }}
+
+
+{{ $taxonomy := "tags" }}
+{{ $tags := .Param $taxonomy }}
+
+{{ with $related }}
+<aside>
+	{{ with $tags }}
+		<nav>
+			<ul class="tags">
+				{{ range $index, $tag := . }}
+					{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+						<li>
+							<a class="tag" href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+						</li>
+					{{- end -}}
+				{{- end -}}
+			</ul>
+		</nav>
+	{{ end }}
+
+	<div class="posts posts--related">
+		{{ range . }}
+			{{ if eq .Params.categories "Video" }}
+				{{ partial "post-video" . }}
+			{{ else if .Params.link }}
+				{{ partial "post-external" . }}
+			{{ else if eq .Params.categories "Image" }}
+				{{ partial "post-image" . }}
+			{{ else if eq .Params.type "quote" }}
+				{{ partial "post-quote" . }}
+			{{ else }}
+				{{ partial "post" . }}
+			{{ end }}
+		{{ end }}
+	</div>
+</aside>
+{{ end }}

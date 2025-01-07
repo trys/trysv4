@@ -2,6 +2,9 @@
 title: Refactoring CSS Locks
 date: 2020-02-06 16:00:00
 categories: Web
+tags:
+  - utopia
+  - css
 ---
 
 In our first [Utopia.fyi](https://utopia.fyi/) release, I stumbled upon an elegant way to re-use [CSS locks](https://www.madebymike.com.au/writing/precise-control-responsive-typography/), a technique created by Mike Riethmuller in 2015.
