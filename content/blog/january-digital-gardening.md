@@ -4,7 +4,7 @@ date: 2025-01-07
 categories: Web
 tags:
   - website
-  - digital gardening
+  - digital-gardening
 ---
 
 On days where the weather has been sub-optimal for venturing outdoors, I've spent my lunch breaks making some tweaks to my website. Nothing spectacular, but it feels great to tinker, optimise, and be a bit creative.
