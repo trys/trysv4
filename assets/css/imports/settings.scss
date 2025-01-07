@@ -56,6 +56,8 @@
   --code-bg: var(--mid);
 
   --dark-mode-toggle: var(--gradient-green);
+
+  --tag: var(--mid);
 }
 
 :root.dark {
@@ -93,4 +95,6 @@
 
   --blockquote-quote: var(--mid);
   --blockquote-border: var(--mid-low);
+
+  --tag: var(--mid-blue);
 }
