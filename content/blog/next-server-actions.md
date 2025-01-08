@@ -9,6 +9,8 @@ image: '/images/blog/next-server-actions/Section 1 - Slide 1.jpg'
 tags: 
   - next.js
   - speaking
+  - hooks
+  - react
 ---
 
 <figure>

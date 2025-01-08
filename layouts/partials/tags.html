@@ -1,0 +1,14 @@
+<ul class="categories-list">
+	{{ $sectionName := .Title | urlize }}
+	{{ range $key, $value := .Site.Taxonomies.tags }}
+		{{ if eq $sectionName ($key | urlize) }}
+			<li aria-current="true">
+				<span>{{ $key | humanize }}</span> <output>({{ len $value }})</output>
+			</li>
+		{{ else }}
+			<li>
+				<a href="/tags/{{ $key | urlize  }}">{{ $key | humanize }}</a> <output>({{ len $value }})</output>
+			</li>
+		{{ end }}
+	{{ end }}
+</ul>

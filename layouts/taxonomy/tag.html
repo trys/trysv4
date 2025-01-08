@@ -2,9 +2,8 @@
 	<div class="blog">
 		<div class="wrap insulate">
 			<div class="blog-header">
-				<h1 class="p-name blog-title">{{ .Title }}</h1>
-				{{ .Content }}
-				{{ partial "categories" . }}
+				<h1 class="p-name blog-title">Tag: {{ .Title | humanize }}</h1>
+				{{ partial "tags" . }}
 			</div>
 
 			{{ partial "posts" . }}

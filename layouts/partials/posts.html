@@ -1,0 +1,15 @@
+<div class="posts">
+	{{ range (.Paginator 12).Pages }}
+		{{ partial "post-wrapper" . }}
+	{{ end }}
+</div>
+
+<div class="load-more center">
+	{{ if .Paginator.HasNext }}
+		<a class="button" href="{{ .Paginator.Next.URL }}">More posts</a>
+		<br>
+	{{ end }}
+	{{ with .OutputFormats.Get "rss" -}}
+		{{ printf `<a href="%s">RSS</a>` .Permalink | safeHTML }}
+	{{ end -}}
+</div>

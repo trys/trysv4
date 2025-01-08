@@ -94,6 +94,10 @@
   max-width: 750px;
   margin: 0 auto;
 
+  :root:not(.dark) &--related {
+    --blog-post: var(--mid);
+  }
+
   @supports (display: grid) {
     max-width: none;
     margin: 0;
