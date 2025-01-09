@@ -16,6 +16,10 @@ Here are all the things you probably forgot to do, Trys:
 
 It gives you a `result` object, as well as some very handy `waitFor` functions. These are particularly useful when the hook fires off an async function in `useEffect`.
 
+```js
+const { result, rerender } = renderHook(useHookYouAreTesting, { initialProps: { ...props } });
+```
+
 2. Wrap `act` around state updates
 
 Anything that causes a state update and subsequent rerender should be wrapped in `act`.
