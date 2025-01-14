@@ -13,9 +13,6 @@
   --success: #2c753c;
   --gradient: linear-gradient(var(--gradient-blue), var(--gradient-green));
 
-  --site-bg: var(--light);
-  --site-chrome: var(--white);
-  --site-text: var(--dark);
   --site-link-hover-fallback: var(--mid-blue);
   --site-text-gradient: -webkit-gradient(
     linear,
@@ -24,42 +21,74 @@
     from(var(--gradient-blue)),
     to(var(--gradient-green))
   );
+  --dark-mode-toggle: var(--gradient-green);
 
-  --pre-bg: var(--mid);
+  color-scheme: light dark;
+
+  --site-bg: light-dark(var(--light), var(--darker));
+  --site-chrome: light-dark(var(--white), var(--darkest));
+  --site-text: light-dark(var(--dark), var(--white));
+
   --button-bg: var(--dark);
   --button-bg-hover: var(--darker);
   --button-text: var(--white);
   --button-bg-success: var(--success);
   
-  --alert-bg: var(--mid);
-  
-  --blog-bg: var(--mid);
-  --blog-post: var(--light);
-  --blog-visited-text: var(--mid-blue);
-  --blog-card: var(--white);
-  --blog-card-link: var(--gradient-green);
-  --blog-meta: var(--mid-blue);
+  --blog-bg: light-dark(var(--mid), var(--dark));
+  --blog-post: light-dark(var(--light), var(--dark));
+  --blog-visited-text: light-dark(var(--mid-blue), var(--mid));
+  --blog-card: light-dark(var(--white), var(--dark));
+  --blog-card-link: light-dark(var(--gradient-green), var(--gradient-blue));
+  --blog-meta: light-dark(var(--mid-blue), var(--mid-low));
 
-  --home-opening-bg: var(--light);
-  --home-opening-gradient-cover-1: var(--home-opening-bg);
-  --home-opening-gradient-cover-2: rgba(249, 250, 251, 0);
-  --home-opening-gradient: var(--gradient);
-  --home-opening-overlay-blue: hsl(222, 100%, 25%);
-  --home-opening-overlay-green: hsl(161, 100%, 30%);
-  --home-side-projects-bg: var(--white);
-  --home-side-project-bg: var(--mid);
-  --home-opening-shadow: rgba(0, 0, 0, 0.15);
+  // --home-opening-bg: var(--light);
+  // --home-opening-gradient-cover-1: var(--home-opening-bg);
+  // --home-opening-gradient-cover-2: rgba(249, 250, 251, 0);
+  // --home-opening-gradient: var(--gradient);
+  // --home-opening-overlay-blue: hsl(222, 100%, 25%);
+  // --home-opening-overlay-green: hsl(161, 100%, 30%);
 
-  --blockquote-quote: var(--mid-blue);
-  --blockquote-border: var(--mid);
+  --home-opening-bg: light-dark(var(--light), var(--darker));
+  --home-opening-gradient-cover-1: light-dark(var(--home-opening-bg), var(--home-opening-bg));
+  --home-opening-gradient-cover-2: light-dark(rgba(249, 250, 251, 0), rgba(31, 24, 33, 0));
+  --home-opening-gradient: light-dark(var(--gradient), linear-gradient(hsl(222, 47%, 21%), hsl(178, 53%, 22%)));
+  --home-opening-overlay-blue: light-dark(hsl(222, 100%, 25%), hsl(222, 93%, 16%));
+  --home-opening-overlay-green: light-dark(hsl(161, 100%, 30%), hsl(161, 96%, 20%));
+  --home-side-projects-bg: light-dark(var(--white), var(--dark));
+  --home-side-project-bg: light-dark(var(--mid), var(--darker));
+  --home-opening-shadow: light-dark(rgba(0, 0, 0, 0.15), rgba(7, 34, 108, 0.25));
 
-  --code-bg: var(--mid);
+  --blockquote-quote: light-dark(var(--mid-blue), var(--mid));
+  --blockquote-border: light-dark(var(--mid), var(--mid-low));
 
-  --dark-mode-toggle: var(--gradient-green);
+  --code-bg: light-dark(var(--mid), var(--dark));
+  --pre-bg: light-dark(var(--mid), var(--dark));
 
-  --tag: var(--mid);
+  --tag: light-dark(var(--mid), var(--mid-blue));
+
+  --alert-bg: light-dark(var(--mid), var(--dark));
+
+  --syntax-dark-blue: light-dark(#0000aa, #b0b0ec);
+  --syntax-teal: light-dark(#00aaaa, #00aaaa);
+  --syntax-light-blue: light-dark(#1e90ff, #1e90ff);
+  --syntax-success: light-dark(#00aa00, #62d262);
+  --syntax-failure: light-dark(#aa0000, #dc6262);
+  --syntax-deep-red: light-dark(#880000, #dc6262);
+  --syntax-grey: #888888;
+  --syntax-light-grey: #aaaaaa;
+  --syntax-brown: light-dark(#713900, #d88838);
+  --syntax-black: #000000;
 }
 
+:root:not(.dark) > body {
+  color-scheme: light;
+}
+
+:root.dark body {
+  color-scheme: dark;
+}
+
+/*
 :root.dark {
   --site-bg: var(--darker);
   --site-chrome: var(--darkest);
@@ -98,3 +127,4 @@
 
   --tag: var(--mid-blue);
 }
+*/

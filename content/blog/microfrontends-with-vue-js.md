@@ -2,6 +2,8 @@
 title: Microfrontends with Vue.js
 date: 2019-11-13
 categories: Web
+tags:
+  - vue
 ---
 
 We've recently been building a complex search integration for a holiday provider using a microfrontends approach in Vue.js.

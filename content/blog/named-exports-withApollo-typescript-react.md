@@ -3,6 +3,8 @@ title: Named exports withApollo in Typescript React
 date: 2018-11-06
 categories: Web
 description: How to use withApollo with named exports in Typescript React
+tags:
+  - react
 ---
 
 I came across a small hurdle when working with GraphQL fragments. To get access to the Apollo client, it needed to be wrapped in the `withApollo` higher-order component, a task which is usually straightforward. However, things are a little more tricky when the component uses named exports.

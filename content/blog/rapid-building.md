@@ -5,6 +5,7 @@ date: 2019-08-28
 categories: Web
 tags:
   - side project
+  - preact
 ---
 
 We're fortunate enough to have some rather snazzy email signatures, kindly created by [Benjamin](https://clearleft.com/about/team/benjamin-parry). He's been lovingly crafting these by hand; diligently updating them each time an event concludes or a new Clearleftie joins. This seemed like a fun and helpful task to automate. After a morning of hackery, I had a working version of the [signature generator](https://clearleft-signatures.netlify.com/) deployed and ready for an internal test.
