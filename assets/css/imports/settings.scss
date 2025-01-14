@@ -23,35 +23,28 @@
   );
   --dark-mode-toggle: var(--gradient-green);
 
+  --button-bg: var(--dark);
+  --button-bg-hover: var(--darker);
+  --button-text: var(--white);
+  --button-bg-success: var(--success);
+
   color-scheme: light dark;
 
   --site-bg: light-dark(var(--light), var(--darker));
   --site-chrome: light-dark(var(--white), var(--darkest));
   --site-text: light-dark(var(--dark), var(--white));
-
-  --button-bg: var(--dark);
-  --button-bg-hover: var(--darker);
-  --button-text: var(--white);
-  --button-bg-success: var(--success);
   
-  --blog-bg: light-dark(var(--mid), var(--dark));
+  --blog-bg: light-dark(var(--mid), var(--darker));
   --blog-post: light-dark(var(--light), var(--dark));
   --blog-visited-text: light-dark(var(--mid-blue), var(--mid));
   --blog-card: light-dark(var(--white), var(--dark));
   --blog-card-link: light-dark(var(--gradient-green), var(--gradient-blue));
-  --blog-meta: light-dark(var(--mid-blue), var(--mid-low));
+  --blog-meta: var(--mid-blue);
 
-  // --home-opening-bg: var(--light);
-  // --home-opening-gradient-cover-1: var(--home-opening-bg);
-  // --home-opening-gradient-cover-2: rgba(249, 250, 251, 0);
-  // --home-opening-gradient: var(--gradient);
-  // --home-opening-overlay-blue: hsl(222, 100%, 25%);
-  // --home-opening-overlay-green: hsl(161, 100%, 30%);
-
+  --home-opening-gradient: linear-gradient(light-dark(var(--gradient-blue), hsl(222, 47%, 21%)), light-dark(var(--gradient-green), hsl(178, 53%, 22%)));
   --home-opening-bg: light-dark(var(--light), var(--darker));
-  --home-opening-gradient-cover-1: light-dark(var(--home-opening-bg), var(--home-opening-bg));
+  --home-opening-gradient-cover-1: var(--home-opening-bg);
   --home-opening-gradient-cover-2: light-dark(rgba(249, 250, 251, 0), rgba(31, 24, 33, 0));
-  --home-opening-gradient: light-dark(var(--gradient), linear-gradient(hsl(222, 47%, 21%), hsl(178, 53%, 22%)));
   --home-opening-overlay-blue: light-dark(hsl(222, 100%, 25%), hsl(222, 93%, 16%));
   --home-opening-overlay-green: light-dark(hsl(161, 100%, 30%), hsl(161, 96%, 20%));
   --home-side-projects-bg: light-dark(var(--white), var(--dark));
@@ -87,44 +80,3 @@
 :root.dark body {
   color-scheme: dark;
 }
-
-/*
-:root.dark {
-  --site-bg: var(--darker);
-  --site-chrome: var(--darkest);
-  --site-text: var(--white);
-
-  --code-bg: var(--dark);
-  --pre-bg: var(--dark);
-
-  --blog-meta: var(--mid-low);
-
-  
-  --home-opening-bg: var(--darker);
-  --home-opening-gradient-cover-1: var(--home-opening-bg);
-  --home-opening-gradient-cover-2: rgba(31, 24, 33, 0);
-  --home-opening-gradient: linear-gradient(hsl(222, 47%, 21%), hsl(178, 53%, 22%));
-
-  --home-opening-overlay-blue: hsl(222, 93%, 16%);
-  --home-opening-overlay-green: hsl(161, 96%, 20%);
-  --home-side-projects-bg: var(--dark);
-  --home-side-project-bg: var(--darker);
-  --home-opening-shadow: rgba(7, 34, 108, 0.25);
-
-  --blog-bg: var(--darker);
-  --blog-post: var(--dark);
-  --blog-visited-text: var(--mid);
-  --blog-card: var(--darkest);
-  --blog-card-link: var(--gradient-green);
-  --blog-meta: var(--mid-blue);
-
-  --button-bg-hover: var(--darkest);
-
-  --alert-bg: var(--dark);
-
-  --blockquote-quote: var(--mid);
-  --blockquote-border: var(--mid-low);
-
-  --tag: var(--mid-blue);
-}
-*/
