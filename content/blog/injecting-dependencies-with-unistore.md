@@ -5,6 +5,8 @@ categories: Web
 description: "What I've been up to this week with JournalBook"
 tags:
   - side project
+  - preact
+  - javascript
 ---
 
 I've spent a few train journeys refactoring some underlying JournalBook code. It doesn't make for exciting feature release notes, but it's good work to do, and sets the project up for future expansion. The main updates were:

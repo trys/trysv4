@@ -5,6 +5,7 @@ categories: Web
 description: 'Accessing device hardware events, and working offline'
 tags:
   - side project
+  - preact
 ---
 
 At the annual Clearleft Christmas Party, after a fabulous pub lunch and successful Secret Santa (courtesy of [Basil](https://basil.christmas.trysmudford.com/)), we ordered some drinks and settled in to play some games.

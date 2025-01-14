@@ -42,32 +42,6 @@
   padding: 0 0.4em 0 0.4em;
 }
 
-:root {
-  --syntax-dark-blue: #0000aa;
-  --syntax-teal: #00aaaa;
-  --syntax-light-blue: #1e90ff;
-  --syntax-success: #00aa00;
-  --syntax-failure: #aa0000;
-  --syntax-deep-red: #880000;
-  --syntax-grey: #888888;
-  --syntax-light-grey: #aaaaaa;
-  --syntax-brown: #713900;
-  --syntax-black: #000000;
-}
-
-:root.dark {
-  --syntax-dark-blue: #b0b0ec;
-  --syntax-teal: #00aaaa;
-  --syntax-light-blue: #1e90ff;
-  --syntax-success: #62d262;
-  --syntax-failure: #dc6262;
-  --syntax-deep-red: #dc6262;
-  --syntax-grey: #888888;
-  --syntax-light-grey: #aaaaaa;
-  --syntax-brown: #d88838;
-  --syntax-black: #000000;
-}
-
 /* Keyword */
 .chroma .k {
   color: var(--syntax-dark-blue);

@@ -2,6 +2,8 @@
 title: ApolloClient with SSR
 categories: Web
 date: 2018-11-19
+tags:
+  - react
 ---
 
 I recently came across an curious issue with `ApolloClient` on a server-side render. The GraphQL results wouldn't update until I restarted the server.
