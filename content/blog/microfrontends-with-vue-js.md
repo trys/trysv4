@@ -1,5 +1,6 @@
 ---
 title: Microfrontends with Vue.js
+year: 2019
 date: 2019-11-13
 categories: Web
 tags:

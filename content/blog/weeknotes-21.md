@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #21'
+year: 2024
 date: 2024-04-12
 categories: Weeknotes
 ---

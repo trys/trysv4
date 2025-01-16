@@ -1,5 +1,6 @@
 ---
 title: "Speaking at CSS Cafe: Fluid Responsive Design"
+year: 2024
 date: 2024-03-25
 categories: Video
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "On Design Engineering: Systemised design foundations"
+year: 2021
 date: 2021-02-17 09:00:00
 categories: Web
 image: /images/blog/og-de-3.jpg

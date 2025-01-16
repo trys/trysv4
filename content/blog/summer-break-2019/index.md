@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #19 - Summer break edition'
+year: 2019
 date: 2019-08-05
 categories: Weeknotes
 image: /blog/summer-break-2019/3-12.jpg

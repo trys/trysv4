@@ -1,6 +1,7 @@
 ---
 title: FizzBuzz in CSS
 categories: Web
+year: 2018
 date: 2018-08-16
 description: "Filed under: just because you can, doesn't mean you should."
 ---

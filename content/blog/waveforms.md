@@ -1,5 +1,6 @@
 ---
 title: "Waveforms"
+year: 2018
 date: 2018-02-23T12:43:37Z
 categories: Web
 ---

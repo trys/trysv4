@@ -1,5 +1,6 @@
 ---
 title: When the abstraction works
+year: 2024
 date: 2024-06-06 18:30:00
 categories: Web
 description: "The difference between Wonderwall and type scales"

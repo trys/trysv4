@@ -1,5 +1,6 @@
 ---
 title: Multilingual WordPress
+year: 2018
 date: 2018-01-27
 categories: Web
 ---

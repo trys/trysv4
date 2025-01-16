@@ -1,5 +1,6 @@
 ---
 title: 'Fluid & space-aware components'
+year: 2021
 date: 2021-02-12
 categories: Web
 description: "How do you get components to respect the rendering conditions of their parent?"

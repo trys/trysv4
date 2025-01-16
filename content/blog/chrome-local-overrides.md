@@ -1,5 +1,6 @@
 ---
 title: Chrome Local Overrides
+year: 2019
 date: 2019-04-24
 categories: Web
 description: The wonder of local overrides

@@ -1,5 +1,6 @@
 ---
 title: External links
+year: 2018
 date: 2018-09-22
 type: quote
 categories: Web

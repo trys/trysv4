@@ -1,5 +1,6 @@
 ---
 title: Declarative Tracking
+year: 2023
 date: 2023-12-08
 categories: Web
 description: 'A declarative approach to tracking events in a reactive project'

@@ -1,5 +1,6 @@
 ---
 title: "Implementing light-dark()"
+year: 2025
 date: 2025-01-14
 categories: Web
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Learning attributes
+year: 2024
 date: 2024-06-18
 categories: Life
 ---

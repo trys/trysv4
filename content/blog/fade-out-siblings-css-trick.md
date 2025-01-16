@@ -1,5 +1,6 @@
 ---
 title: Fading out siblings on hover in CSS
+year: 2019
 date: 2019-04-18
 categories: Web
 ---

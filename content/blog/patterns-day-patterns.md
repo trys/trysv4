@@ -1,5 +1,6 @@
 ---
 title: Patterns Day Patterns
+year: 2024
 date: 2024-03-11
 categories: Web
 description: "Common threads from the 2024 edition of Patterns day"

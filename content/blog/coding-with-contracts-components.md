@@ -1,5 +1,6 @@
 ---
 title: Coding with contracts - Components
+year: 2019
 date: 2019-05-28
 categories: Web
 description: Contracts, documentation and classical inheritance for components

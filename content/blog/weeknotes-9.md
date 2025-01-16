@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #9'
+year: 2019
 date: 2019-05-10
 categories: Weeknotes
 ---

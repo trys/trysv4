@@ -1,5 +1,6 @@
 ---
 title: JournalBook
+year: 2018
 date: 2018-12-31
 categories: Web
 description: JournalBook is a private, offline-first personal journal.

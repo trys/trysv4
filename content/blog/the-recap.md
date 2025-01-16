@@ -1,5 +1,6 @@
 ---
 title: The Recap
+year: 2018
 date: 2018-02-03
 categories: Training
 ---

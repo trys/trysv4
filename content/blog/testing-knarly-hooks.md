@@ -1,5 +1,6 @@
 ---
 title: Testing knarly React hooks
+year: 2025
 date: 2025-01-08
 categories: Web
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Tolerance
+year: 2020
 date: 2020-09-09
 categories: Web
 description: Design lessons from shelves

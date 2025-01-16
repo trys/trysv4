@@ -1,5 +1,6 @@
 ---
 title: "Making the static dynamic: Instagram Importer"
+year: 2018
 date: 2018-02-12
 categories: Web
 ---

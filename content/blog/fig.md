@@ -1,5 +1,6 @@
 ---
 title: Fig
+year: 2023
 date: 2023-12-17
 categories: Life
 description: Remembering our fig that never was

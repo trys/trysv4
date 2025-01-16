@@ -1,0 +1,14 @@
+<ul class="categories-list">
+	{{ $sectionName := .Title | urlize }}
+	{{ range .Site.Taxonomies.year.Alphabetical.Reverse }}
+		{{ if eq $sectionName .Name }}
+			<li aria-current="true">
+				<span>{{ .Name }}</span> <output>({{ len .WeightedPages }})</output>
+			</li>
+		{{ else }}
+			<li>
+				<a href="/year/{{ .Name | urlize }}">{{ .Name }}</a> <output>({{ len .WeightedPages }})</output>
+			</li>
+		{{ end }}
+	{{ end }}
+</ul>

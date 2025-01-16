@@ -1,5 +1,6 @@
 ---
 title: 'Desktop progressive web applications'
+year: 2023
 date: 2023-11-22
 categories: Web
 image: /images/blog/arrows.png

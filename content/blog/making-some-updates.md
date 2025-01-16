@@ -1,5 +1,6 @@
 ---
 title: Making some updates
+year: 2018
 date: 2018-09-23
 categories: Web
 description: "I spent the evening making performance updates on my site"

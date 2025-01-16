@@ -1,5 +1,6 @@
 ---
 title: Brussels Day 2
+year: 2017
 date: 2017-10-18
 categories: Web
 ---

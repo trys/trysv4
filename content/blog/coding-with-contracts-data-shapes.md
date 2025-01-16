@@ -1,5 +1,6 @@
 ---
 title: Coding with contracts - Data shapes
+year: 2019
 date: 2019-05-21
 categories: Web
 draft: true

@@ -1,5 +1,6 @@
 ---
 title: Athens Trip 2019
+year: 2019
 date: 2019-09-21
 categories: Life
 description: 'A rambling account of a week in Athens'

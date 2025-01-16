@@ -1,5 +1,6 @@
 ---
 title: Distinguishing cached vs. network HTML requests in a Service Worker
+year: 2019
 date: 2019-05-09
 categories: Web
 ---

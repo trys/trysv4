@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #20'
+year: 2019
 date: 2019-08-23
 categories: Weeknotes
 ---

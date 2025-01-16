@@ -1,5 +1,6 @@
 ---
 title: "Using 'use' to stream deferred content"
+year: 2024
 date: 2024-08-30
 categories: Web
 tags: 

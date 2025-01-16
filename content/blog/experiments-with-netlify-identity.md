@@ -1,5 +1,6 @@
 ---
 title: "Experiments with Netlify Identity"
+year: 2018
 date: 2018-03-03T08:36:53Z
 description: "Gotchas and things I discovered experimenting with Netlify Identity"
 categories: Web

@@ -1,0 +1,12 @@
+{{ define "main" }}
+	<div class="blog">
+		<div class="wrap insulate">
+			<div class="blog-header">
+				<h1 class="p-name blog-title">Written in {{ .Title }}</h1>
+				{{ partial "years" . }}
+			</div>
+
+			{{ partial "posts" . }}
+		</div>
+	</div>
+{{ end }}

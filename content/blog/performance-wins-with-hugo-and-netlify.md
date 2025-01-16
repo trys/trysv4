@@ -1,5 +1,6 @@
 ---
 title: Hugo + PWA + Netlify = Huge performance wins
+year: 2018
 date: 2018-01-27
 description: "Hugo + Netlify + PWA makes for a rapid website."
 categories: Web

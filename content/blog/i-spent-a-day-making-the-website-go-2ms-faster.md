@@ -1,6 +1,7 @@
 ---
 title: I wasted a day on CSS selector performance to make a website load 2ms faster
 description: A tale of diminishing returns...
+year: 2024
 date: 2024-10-01
 categories: Web
 tags:

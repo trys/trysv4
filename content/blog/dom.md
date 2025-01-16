@@ -1,5 +1,6 @@
 ---
 title: DOM
+year: 2017
 date: 2017-11-27
 categories: Training
 ---

@@ -1,5 +1,6 @@
 ---
 title: Currying in CSS?
+year: 2020
 date: 2020-02-26
 categories: Web
 description: Is this currying in CSS? Probably not, but maybe?

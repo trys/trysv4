@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #18'
+year: 2019
 date: 2019-07-13
 categories: Weeknotes
 ---

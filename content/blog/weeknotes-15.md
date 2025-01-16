@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #15'
+year: 2019
 date: 2019-06-21
 categories: Weeknotes
 ---

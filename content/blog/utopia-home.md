@@ -1,5 +1,6 @@
 ---
 title: Building the new Utopia homepage
+year: 2022
 date: 2022-10-19
 categories: Web
 image: /images/blog/utopia-home.jpg

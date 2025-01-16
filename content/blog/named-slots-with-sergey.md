@@ -1,5 +1,6 @@
 ---
 title: Named slots with Sergey
+year: 2019
 date: 2019-04-13
 categories: Web
 tags:

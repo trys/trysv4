@@ -1,6 +1,7 @@
 ---
 title: 'Shortcuts for comparing/overlaying against Figma designs'
 description: 'Keyboard shortcuts to help you get closer to pixel perfection'
+year: 2023
 date: 2023-10-05
 categories: Web
 ---

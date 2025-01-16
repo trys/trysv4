@@ -1,5 +1,6 @@
 ---
 title: Prioritising Requirements
+year: 2020
 date: 2020-03-25
 description: 'How we profile and prioritise technical requirements'
 categories: Web

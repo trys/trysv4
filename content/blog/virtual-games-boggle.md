@@ -1,5 +1,6 @@
 ---
 title: 'Virtual Games: Boggle'
+year: 2020
 date: 2020-03-30
 categories: Games
 description: 'How to play Boggle in a spreadsheet'

@@ -1,5 +1,6 @@
 ---
 title: 'Minimum network request time'
+year: 2024
 date: 2024-05-14
 categories: Web
 ---

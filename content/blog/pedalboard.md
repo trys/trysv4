@@ -1,5 +1,6 @@
 ---
 title: Building a JavaScript guitar pedalboard
+year: 2019
 date: 2019-05-06 13:00:00
 categories: Web
 description: How I went about buliding a pedalboard in JS with Web Audio API

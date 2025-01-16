@@ -1,5 +1,6 @@
 ---
 title: 'FFConf 2024'
+year: 2024
 date: 2024-11-13
 categories: Web
 image: /images/blog/ffconf-2024-2.jpg

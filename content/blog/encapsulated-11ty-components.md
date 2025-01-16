@@ -1,5 +1,6 @@
 ---
 title: "Encapsulated Eleventy/Nunjucks components with macros"
+year: 2021
 date: 2021-02-19
 categories: Web
 description: "How to pass parameters to an include in Nunjucks"

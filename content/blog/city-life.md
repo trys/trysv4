@@ -1,5 +1,6 @@
 ---
 title: City life
+year: 2019
 date: 2019-03-27
 categories: Web
 description: 'Thoughts on the differences between coding in London, and out in the sticks'

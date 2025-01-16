@@ -1,5 +1,6 @@
 ---
 title: 2024 Wrapped
+year: 2024
 date: 2024-12-31
 categories: Life
 image: /images/blog/2024.jpg

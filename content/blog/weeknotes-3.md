@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #3'
+year: 2019
 date: 2019-03-29
 categories: Weeknotes
 ---

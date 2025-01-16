@@ -1,5 +1,6 @@
 ---
 title: '13 common sense tips for better live demos'
+year: 2023
 date: 2023-11-30
 categories: Web
 description: "Fail to prepare? Prepare to feel a bit of a prune when it goes wrong"

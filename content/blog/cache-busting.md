@@ -1,5 +1,6 @@
 ---
 title: Cache busting
+year: 2018
 date: 2018-02-07
 categories: Training
 ---

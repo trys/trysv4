@@ -1,5 +1,6 @@
 ---
 title: A crazy, wonderful year.
+year: 2019
 date: 2019-09-28
 categories: Life
 description: Reflecting on the last year

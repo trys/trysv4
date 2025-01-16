@@ -1,5 +1,6 @@
 ---
 title: The Utopian Journey
+year: 2024
 date: 2024-03-22
 categories: Web
 description: Spotting your design team on the fluid responsive design spectrum

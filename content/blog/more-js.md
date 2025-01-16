@@ -1,5 +1,6 @@
 ---
 title: More JS
+year: 2017
 date: 2017-11-15
 categories: Training
 ---

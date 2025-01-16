@@ -1,5 +1,6 @@
 ---
 title: Anil Dash on 'The Web We Lost'
+year: 2017
 date: 2017-11-06
 categories: Video
 ---

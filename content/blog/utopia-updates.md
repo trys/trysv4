@@ -1,5 +1,6 @@
 ---
 title: Utopia Updates
+year: 2024
 date: 2024-01-26
 categories: Web
 description: "CSS & SCSS generator updates"

@@ -1,5 +1,6 @@
 ---
 title: Painting with a fluid space palette
+year: 2021
 date: 2021-03-16
 for: Utopia
 link: https://utopia.fyi/blog/painting-with-a-fluid-space-palette

@@ -1,5 +1,6 @@
 ---
 title: Building a design system with Eleventy
+year: 2022
 date: 2022-05-16
 categories: Web
 image: /images/blog/e-ds-1.jpg

@@ -1,5 +1,6 @@
 ---
 title: Line on side headings in CSS
+year: 2018
 date: 2018-05-09
 categories: Web
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Heading gradients
+year: 2018
 date: 2018-11-18
 categories: Web
 tags:

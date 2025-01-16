@@ -1,5 +1,6 @@
 ---
 title: "On Design Engineering: The designer & developer relationship"
+year: 2021
 date: 2021-02-17 08:00:00
 categories: Web
 image: /images/blog/og-de-4.jpg

@@ -1,5 +1,6 @@
 ---
 title: 'Virtual Games: Yahtzee'
+year: 2020
 date: 2020-04-01
 categories: Games
 description: 'How to play Yahtzee in a spreadsheet'

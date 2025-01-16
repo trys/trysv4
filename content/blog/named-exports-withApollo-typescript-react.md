@@ -1,5 +1,6 @@
 ---
 title: Named exports withApollo in Typescript React
+year: 2018
 date: 2018-11-06
 categories: Web
 description: How to use withApollo with named exports in Typescript React

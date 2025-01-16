@@ -1,5 +1,6 @@
 ---
 title: LetterImages
+year: 2019
 date: 2019-02-16
 categories: Web
 description: ASCII images and how I did it

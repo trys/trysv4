@@ -1,5 +1,6 @@
 ---
 title: Clamp
+year: 2020
 date: 2020-09-25
 for: Utopia
 link: https://utopia.fyi/blog/clamp/

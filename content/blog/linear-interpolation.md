@@ -1,5 +1,6 @@
 ---
 title: Linear Interpolation
+year: 2018
 date: 2018-09-05
 categories: Web
 description: Building native-like scroll-aware animations in JS

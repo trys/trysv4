@@ -1,6 +1,7 @@
 ---
 title: Automating your frontend workflow with Grunt & BrowserSync
 categories: Web
+year: 2015
 date: 2015-03-13
 ---
 

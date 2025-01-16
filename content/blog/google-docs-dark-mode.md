@@ -1,5 +1,6 @@
 ---
 title: Use Google Docs in dark mode
+year: 2024
 date: 2024-10-17
 categories: Web
 images: /images/blog/google-docs-dark-mode-5.png

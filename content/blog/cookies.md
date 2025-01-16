@@ -1,5 +1,6 @@
 ---
 title: Minimal cookie bar
+year: 2018
 date: 2018-07-23
 categories: Web
 ---

@@ -1,5 +1,6 @@
 ---
 title: Coding with contracts - API response design
+year: 2019
 date: 2019-05-02
 categories: Web
 description: "This is the first in a little series called 'coding with contracts', a look into writing robust API's, components, and more!"

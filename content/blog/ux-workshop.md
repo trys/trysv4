@@ -1,5 +1,6 @@
 ---
 title: UX Workshop
+year: 2019
 date: 2019-04-04
 categories: Web
 description: "Day 1 at Clearleft: UX workshop"

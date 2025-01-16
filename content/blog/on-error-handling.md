@@ -1,5 +1,6 @@
 ---
 title: Error Handling
+year: 2018
 date: 2018-08-08
 categories: Web
 description: Error handling and exceptions

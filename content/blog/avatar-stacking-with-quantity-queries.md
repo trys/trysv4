@@ -1,5 +1,6 @@
 ---
 title: Avatar stacking with Quantity Queries
+year: 2019
 date: 2019-01-10
 categories: Web
 ---

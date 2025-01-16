@@ -2,6 +2,7 @@
 title: Next.js Server Actions
 subtitle: The good, the bad, and the plain undocumented
 description: The good, the bad, and the plain undocumented
+year: 2024
 date: 2024-02-20
 categories: Web
 className: talk

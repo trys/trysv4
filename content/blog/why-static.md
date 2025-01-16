@@ -1,5 +1,6 @@
 ---
 title: Why Static
+year: 2018
 date: 2018-01-14
 categories: Web
 ---

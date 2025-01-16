@@ -1,5 +1,6 @@
 ---
 title: Uniting the team with Jamstack
+year: 2020
 date: 2020-10-01
 categories: Web
 description: Video, slides and transcript from my conference talk on Jamstack, teams and requirement gathering

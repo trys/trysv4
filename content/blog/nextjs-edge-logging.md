@@ -1,5 +1,6 @@
 ---
 title: 'Next.js edge logging with Pino/Datadog'
+year: 2024
 date: 2024-04-30
 categories: Web
 tags:

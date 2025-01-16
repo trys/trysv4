@@ -1,5 +1,6 @@
 ---
 title: January Digital Gardening
+year: 2025
 date: 2025-01-07
 categories: Web
 tags:

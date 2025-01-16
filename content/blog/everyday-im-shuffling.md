@@ -1,5 +1,6 @@
 ---
 title: "Everyday I'm Shuffling"
+year: 2020
 date: 2020-12-17
 categories: Web
 description: "How to unshuffle cards and shuffle arrays"

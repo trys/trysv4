@@ -1,5 +1,6 @@
 ---
 title: All code is fleeting
+year: 2024
 date: 2024-09-27
 categories: Web
 ---

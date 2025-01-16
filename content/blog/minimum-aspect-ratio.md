@@ -1,5 +1,6 @@
 ---
 title: Minimum aspect ratio in CSS
+year: 2019
 date: 2019-09-20
 categories: Web
 image: '/images/blog/min-aspect-ratio.png'

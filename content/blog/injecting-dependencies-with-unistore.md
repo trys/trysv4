@@ -1,5 +1,6 @@
 ---
 title: Injecting Dependencies with unistore
+year: 2019
 date: 2019-01-18
 categories: Web
 description: "What I've been up to this week with JournalBook"

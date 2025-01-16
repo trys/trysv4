@@ -1,5 +1,6 @@
 ---
 title: "Life of Lauren"
+year: 2020
 date: 2020-12-31
 categories: Life
 image: /images/blog/trys-blog-lauren.jpg

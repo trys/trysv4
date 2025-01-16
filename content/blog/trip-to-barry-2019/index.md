@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #21 - Trip to Barry'
+year: 2019
 date: 2019-09-05
 categories: Weeknotes
 image: /blog/trip-to-barry-2019/1.jpg

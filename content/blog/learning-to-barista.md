@@ -1,5 +1,6 @@
 ---
 title: Learning to barista
+year: 2019
 date: 2019-04-25
 categories: Web
 ---

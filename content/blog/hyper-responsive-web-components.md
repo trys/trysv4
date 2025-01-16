@@ -1,5 +1,6 @@
 ---
 title: "Hyper-responsive web components"
+year: 2024
 date: 2024-10-09
 categories: Web
 description: "Intrinsic design, container queries and cqi typography"

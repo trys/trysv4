@@ -1,5 +1,6 @@
 ---
 title: Training Notes - JS - Variables
+year: 2017
 date: 2017-10-27
 categories: Training
 ---

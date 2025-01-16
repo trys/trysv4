@@ -1,5 +1,6 @@
 ---
 title: "Prototypes, production & fidelity layers"
+year: 2024
 date: 2024-03-26
 categories: Web
 description: "Finding the fidelity sweet spot"

@@ -1,5 +1,6 @@
 ---
 title: "Figma plugins & asynchronous updates"
+year: 2024
 date: 2024-04-10
 categories: Web
 tags:

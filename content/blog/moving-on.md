@@ -1,6 +1,7 @@
 ---
 title: Moving on
 description: Onwards and upwards. From Tomango to Daisie
+year: 2018
 date: 2018-09-28
 categories: Web
 ---

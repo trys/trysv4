@@ -1,6 +1,7 @@
 ---
 title: Mac OS Dark Mode with CSS & JS
 categories: Web
+year: 2019
 date: 2019-01-09
 description: 'Manual and automatic dark mode switching in CSS & JS'
 tags:

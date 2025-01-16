@@ -1,5 +1,6 @@
 ---
 title: Data all the way down
+year: 2024
 date: 2024-06-04
 categories: Web
 ---

@@ -1,5 +1,6 @@
 ---
 title: Making a loop pedal with MediaRecorder
+year: 2019
 date: 2019-05-13
 categories: Web
 tags:

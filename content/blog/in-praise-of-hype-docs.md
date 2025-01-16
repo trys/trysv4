@@ -1,5 +1,6 @@
 ---
 title: In praise of hype docs
+year: 2024
 date: 2024-10-24
 categories: Web
 ---

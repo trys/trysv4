@@ -1,5 +1,6 @@
 ---
 title: A quick guide to destructuring
+year: 2023
 date: 2023-09-25
 categories: Training
 description: What is destructuring assignment all about

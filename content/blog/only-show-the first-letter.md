@@ -1,5 +1,6 @@
 ---
 title: Only show the first letter
+year: 2019
 date: 2019-05-16 16:00:00
 categories: Web
 ---

@@ -1,5 +1,6 @@
 ---
 title: Simple load more for WordPress
+year: 2014
 date: 2014-05-13
 categories: Web
 ---

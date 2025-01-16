@@ -1,5 +1,6 @@
 ---
 title: "On Design Engineering: I think I might be a design engineer..."
+year: 2021
 date: 2021-02-17 07:00:00
 categories: Web
 image: /images/blog/og-de-1.jpg

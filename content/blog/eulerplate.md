@@ -1,6 +1,7 @@
 ---
 title: Eulerplate
 categories: Web
+year: 2015
 date: 2015-04-08
 ---
 

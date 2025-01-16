@@ -1,5 +1,6 @@
 ---
 title: 12 days of illness
+year: 2024
 date: 2024-12-12
 categories: Life
 tags:

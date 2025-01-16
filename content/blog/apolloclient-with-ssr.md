@@ -1,6 +1,7 @@
 ---
 title: ApolloClient with SSR
 categories: Web
+year: 2018
 date: 2018-11-19
 tags:
   - react

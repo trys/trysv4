@@ -1,5 +1,6 @@
 ---
 title: Fancy Slack metadata
+year: 2019
 date: 2019-05-02 17:00:00
 categories: Web
 image: /images/blog/fancy-slack-meta-tags.png

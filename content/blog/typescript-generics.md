@@ -1,5 +1,6 @@
 ---
 title: Typescript Generics
+year: 2019
 date: 2019-03-25
 categories: Web
 description: How to use generics in Typescript

@@ -1,5 +1,6 @@
 ---
 title: A good reset
+year: 2022
 date: 2022-07-26
 categories: Web
 description: A response to Jeremy's post on "Control", and why developers opt for divs, not buttons

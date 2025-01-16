@@ -1,6 +1,7 @@
 ---
 title: 'Tiny lesson: rapid builds, email signatures and Airtable'
 description: 'How to spike problems and build fun web things fast'
+year: 2019
 date: 2019-08-28
 categories: Web
 tags:

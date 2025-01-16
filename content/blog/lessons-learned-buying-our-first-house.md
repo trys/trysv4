@@ -1,5 +1,6 @@
 ---
 title: Lessons learned buying our first home
+year: 2020
 date: 2020-07-16
 categories: Life
 description: "No. 1, try and avoid buying in a pandemic"

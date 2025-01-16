@@ -1,5 +1,6 @@
 ---
 title: Thoughts on Offline-first
+year: 2018
 date: 2018-09-26
 categories: Web
 description: I've spent the evening experimenting with offline-first techniques, and considering implications of this approach.

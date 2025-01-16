@@ -1,5 +1,6 @@
 ---
 title: 2018 Conferences
+year: 2018
 date: 2018-08-04T07:11:43Z
 categories: Web
 ---

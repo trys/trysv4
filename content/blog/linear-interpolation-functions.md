@@ -1,5 +1,6 @@
 ---
 title: Linear Interpolation Functions
+year: 2019
 date: 2019-08-21
 categories: Web
 description: "Linear Interpolation isn't just for animation, it's amazing for data manipulation and a worthwhile tool to have in your coding arsenal."

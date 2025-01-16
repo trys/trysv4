@@ -1,5 +1,6 @@
 ---
 title: 'Weeknotes #7'
+year: 2019
 date: 2019-04-26
 categories: Weeknotes
 description: Growing and learning.

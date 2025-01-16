@@ -38,4 +38,7 @@ footnoteReturnLinkContents = "↩"
     toLower = false
     type = 'basic'
     weight = 80
- 
+[taxonomies]
+  year = "year"
+  categories = "categories"
+  tag = "tags"

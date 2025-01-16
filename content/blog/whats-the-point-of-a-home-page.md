@@ -1,5 +1,6 @@
 ---
 title: What’s the point of a home page?
+year: 2014
 date: 2014-03-07
 categories: Web
 ---

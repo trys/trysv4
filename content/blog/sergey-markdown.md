@@ -1,5 +1,6 @@
 ---
 title: 'Sergey + Markdown + Tests + Folders + ENV + Exclusion'
+year: 2019
 date: 2019-04-23
 description: Markdown and much more added to the little static site generator
 categories: Web

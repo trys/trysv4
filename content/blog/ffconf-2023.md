@@ -1,5 +1,6 @@
 ---
 title: 'FFConf 2023 Conference Recap'
+year: 2023
 date: 2023-11-13
 categories: Web
 image: /images/blog/ffconf-2023.jpg

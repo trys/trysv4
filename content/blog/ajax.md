@@ -1,5 +1,6 @@
 ---
 title: Ajax
+year: 2017
 date: 2017-12-13
 categories: Web
 ---

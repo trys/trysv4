@@ -1,5 +1,6 @@
 ---
 title: 'SofaConf 2020 - a technical write-up'
+year: 2020
 date: 2020-05-06
 description: We've just launched SofaConf and you should come along!
 categories: Web

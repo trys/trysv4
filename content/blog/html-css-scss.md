@@ -1,5 +1,6 @@
 ---
 title: "HTML / CSS / SCSS"
+year: 2018
 date: 2018-03-21
 categories: Training
 draft: true

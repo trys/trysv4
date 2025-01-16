@@ -1,5 +1,6 @@
 ---
 title: "Making a 'post-it game' PWA with mobile accelerometer API's"
+year: 2020
 date: 2020-01-02
 categories: Web
 description: 'Accessing device hardware events, and working offline'

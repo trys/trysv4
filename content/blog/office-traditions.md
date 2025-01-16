@@ -1,5 +1,6 @@
 ---
 title: Office traditions
+year: 2019
 date: 2019-05-16
 categories: Web
 description: 'Snacking, and the problem with traditions'

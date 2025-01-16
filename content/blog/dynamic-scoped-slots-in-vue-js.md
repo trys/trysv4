@@ -1,5 +1,6 @@
 ---
 title: Dynamic scoped slots in Vue.js
+year: 2019
 date: 2019-04-11
 categories: Web
 description: 'A run-through of default, named, scoped and dynamic scoped slots in Vue.js'

@@ -1,6 +1,7 @@
 ---
 title: 'Sick of Slack'
 description: 'A little rant about real-time office communication'
+year: 2019
 date: 2019-01-24
 categories: Web
 ---

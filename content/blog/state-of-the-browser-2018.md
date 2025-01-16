@@ -1,5 +1,6 @@
 ---
 title: State of the Browser
+year: 2018
 date: 2018-09-09
 categories: Web
 description: State of the Browser 2018 was a wonderful conference. The talks were thought provoking and the whole day was organised brilliantly
