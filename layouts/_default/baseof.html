@@ -3,8 +3,6 @@
 	<head>
 		{{ $url := getenv (cond (eq "production" (getenv "CONTEXT")) "URL" "DEPLOY_PRIME_URL" ) | default (cond (eq "//localhost:1313/" (printf "%s" $.Site.BaseURL)) "//localhost:1313" $.Site.BaseURL) }}
 		<meta charset="UTF-8" />
-		{{ $post := resources.Get "css/main.scss" }}
-		{{- $style := $post | resources.ToCSS | minify -}}
 		{{- $title := printf "%s | %s" .Title .Site.Title -}}
 		{{- $og := printf "%s%s" $url (.Params.image | default "/images/og-2019.jpg") -}}
 		{{- $description := .Description | default (printf "%s | %s | %s" .Title "Trys Mudford" "Frontend developer") -}}
@@ -20,7 +18,23 @@
 			} catch(e){}
 		</script>
 
-		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+		{{ with resources.Get "css/main.scss" }}
+			{{ $opts := dict
+				"enableSourceMap" (not hugo.IsProduction)
+				"outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+				"targetPath" "css/main.css"
+				"transpiler" "libsass"
+			}}
+			{{ with . | toCSS $opts }}
+				{{ if hugo.IsProduction }}
+					{{ with . | fingerprint }}
+						<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+					{{ end }}
+				{{ else }}
+					<link rel="stylesheet" href="{{ .RelPermalink }}">
+				{{ end }}
+			{{ end }}
+		{{ end }}
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{{ $title }}</title>
 		<meta name="description" content="{{ $description }}" />
