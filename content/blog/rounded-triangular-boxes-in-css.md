@@ -11,7 +11,7 @@ In the [Motorway brand refresh](/blog/lessons-from-a-brand-refresh/), I had to b
 
 ## The filled box
 
-![](/images/blog/motorway-cvt.jpg)
+![A screenshot from the Motorway product, showing a hero image on top of several rounded triangular rectangles](/images/blog/motorway-cvt.jpg)
 
 The 'simpler' use-case is the filled box. Bennett Feely's [Clippy](https://bennettfeely.com/clippy/) continues to be the best tool for the job of generating `clip-path` shapes, and even has  'left/right point' options. Clip-path gives us a pointy edge, but doesn't give us rounded edges, or a particularly responsive solution out of the box - wider screens will have a more pronounced point than smaller screens when using percentages:
 
@@ -173,7 +173,7 @@ In addition, you'll want to avoid putting any text/images that don't want to be 
 
 ## The outlined box
 
-![](/images/blog/motorway-outline.jpg)
+![A screenshot from the Motorway product, showing an outlined triangular box](/images/blog/motorway-outline.jpg)
 
 Outlined boxes are a bit more tricky. You'd think it would just be a case of swapping background for a border, but alas not. Again, because this filter works by blurring the edges of the component, all borders effectively disappear.  To compound the problem, `box-shadow: inset`, `filter: drop-shadow()` also get blurred, and `clip-path` and `border` do not play nicely (subtle background added for effect):
 
