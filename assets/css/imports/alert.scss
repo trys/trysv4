@@ -5,6 +5,10 @@
   position: relative;
   margin-bottom: 1.5em;
 
+  code {
+    font-size: var(--step--2);
+  }
+
   &--with-eyebrow {
     padding-top: 2.5rem;
   }
