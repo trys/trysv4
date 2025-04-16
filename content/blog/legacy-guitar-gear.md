@@ -14,7 +14,7 @@ A couple of months ago, I spotted a used one for a very reasonable cost and I ju
 
 What's super interesting is how it has clearly inspired the design of modern processors. Sure, there's no touch screen and the LCD strip is dated, but there are also no buttons or switches to get broken on the road. You navigate the menu by twisting the footswitches themselves, which was way ahead of it's time.
 
-It doesn't have any amp/cab modelling or drive effects, so amazingly, the sounds haven't dated at all. Chorus hasn't really changed since the 80's, so they still sound great on a unit from the 00's. It merrily fires out relay switches to change channels on my amp and is effortlessly controllable via MIDI, which I used in a gig at Christmas.
+It doesn't have any amp/cab modelling or drive effects, so amazingly, the sounds haven't dated at all. Chorus hasn't really changed since the 80's, so they still sound great on a unit from the 00's. It merrily fires out relay switches to change channels on my amp, has four powered effect loops for drive pedals, and is effortlessly controllable via MIDI, which I used in a gig at Christmas.
 
 I've ended up selling my Strymon & Walrus Audio gear and have fully committed to this now historic (and in my opinion, timeless) piece of kit.
 
