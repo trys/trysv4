@@ -31,7 +31,6 @@
 
     .home-image__cover {
       position: relative;
-      box-shadow: 0 0 var(--space-m) var(--home-opening-shadow);
 
       img {
         filter: saturate(0);
@@ -134,6 +133,11 @@
       left: 0;
       top: 0;
     }
+
+    img,
+    .home-image__cover::after {
+      border-radius: 100%;
+    }
   }
 }
 
@@ -210,5 +214,78 @@
     .project-content {
       padding: var(--space-xs) var(--space-s) var(--space-xs-s);
     }
+  }
+}
+
+.skillz {
+  display: grid;
+  font-size: calc(3.5vw + 0.5rem);
+  font-weight: 700;
+  gap: var(--space-xs);
+  grid-template-columns: 1fr;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-block: var(--space-s-xl);
+  pointer-events: none;
+
+  > :nth-child(2) ul li:last-child {
+    padding-right: 2.5em;
+  }
+
+  ul li {
+    transition: 0.2s opacity ease-out;
+  }
+
+  li,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  ul li {
+    pointer-events: auto;
+  }
+
+  ul,
+  &:hover ul {
+    li:not(:has(h2)) {
+      opacity: 0.25;
+    }
+  }
+  
+  &:hover ul li:hover {
+    opacity: 1;
+  }
+
+  h2 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+    line-height: inherit;
   }
 }

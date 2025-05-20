@@ -53,6 +53,8 @@
 
   --blockquote-quote: light-dark(var(--mid-blue), var(--mid));
   --blockquote-border: light-dark(var(--mid), var(--mid-low));
+  --table-bg: light-dark(var(--mid), var(--mid-blue));
+  --table-border: light-dark(var(--mid-low), var(--mid-low));
 
   --code-bg: light-dark(var(--mid), var(--dark));
   --pre-bg: light-dark(var(--mid), var(--dark));

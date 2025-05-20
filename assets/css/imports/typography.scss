@@ -38,7 +38,11 @@ body {
     sans-serif;
 }
 
-a:not(.button) {
+.link {
+  color: inherit;
+}
+
+a:not(.button):not(.link) {
   color: inherit;
   transition: 300ms color;
 
@@ -81,7 +85,10 @@ h1 {
   font-size: var(--step-3);
   margin: 0 0 var(--gutter);
   line-height: 1.3;
+}
 
+h1,
+.gradient-text {
   @supports (-webkit-text-fill-color: transparent) {
     background-image: var(--site-text-gradient);
     -webkit-background-clip: text;
