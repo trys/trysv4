@@ -20,7 +20,7 @@ A friend shared this tip the other day and it was too useful not to reshare. If 
 }
 ```
 
-If you want to tidy that up, and continue to support <= Safari 16.3, you can use a query like this:
+If you want to tidy that up, and continue to [support <= Safari 16.3](https://caniuse.com/css-media-range-syntax), you can use a query like this:
 
 ```css
 @media (max-width: 60em) and (not (width: 60em)) {
@@ -28,7 +28,7 @@ If you want to tidy that up, and continue to support <= Safari 16.3, you can use
 }
 ```
 
-However, if you're bought into range queries, it all becomes much, much simpler:
+However, if you're bought into [range queries](https://caniuse.com/css-media-range-syntax), it all becomes much, much simpler:
 
 ```css
 @media (width < 60em) {}
