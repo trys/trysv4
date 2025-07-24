@@ -3,6 +3,9 @@ title: Only show the first letter
 year: 2019
 date: 2019-05-16 16:00:00
 categories: Web
+tags:
+  - css
+  - tips
 ---
 
 Time for another tiny lesson! We're working with a third-party Vue datepicker, and there was a design decision to only show the first letter of the weekdays above the calendar. The datepicker let us specify those values via props. All plain sailing, or so we thought.
