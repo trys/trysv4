@@ -3,6 +3,8 @@ title: A human review
 year: 2025
 date: 2025-07-22
 categories: Web
+tags:
+  - ai
 ---
 
 Mid-year reviews have just come around in the ol' 9-5. It's an opportunity to reflect on the first six months (H1 if you're into all that business speak) and set some goals for the end of the year. I personally find the process quite cathartic. Not only does it make the end of year review simpler (I can barely remember what I had for breakfast, let alone what business metrics I contributed towards in January), I find that as I start reflecting & writing, it quickly becomes a gratitude list of the smart colleagues I've worked with, and the interesting features I've been able to work on.

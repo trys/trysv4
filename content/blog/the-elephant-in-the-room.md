@@ -3,6 +3,8 @@ title: The elephant in the room
 year: 2025
 date: 2025-08-08
 categories: Web
+tags:
+  - ai
 ---
 
 Colton Voege has penned an excellent [debunk of the 10x AI engineer](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/). Their account of rapidly diminishing returns mirrors my experience with agentic coding. Yes, it can create 10x the code that you or I could create in the same time period, but it certainly can't create 10x the value or impact.

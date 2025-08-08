@@ -4,6 +4,8 @@ year: 2025
 date: 2025-05-09
 categories: Web
 description: Slop relief
+tags:
+  - ai
 ---
 
 If you're a maker, like I am on the web, you'll no doubt know the joy and wonder of creating [something from scratch](https://joshcollinsworth.com/blog/the-blissful-zen-of-a-good-side-project). That you can assemble something useful, useless, beautiful or brilliant from a few pixels, phrases or physical objects. To [_"see the angel in the marble, and carve to set it free"_](https://themaxim.com/find-the-angel-in-the-marble) is a feeling unique to those who create.
